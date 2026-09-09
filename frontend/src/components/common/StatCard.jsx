@@ -9,83 +9,76 @@ export const StatCard = ({
   trendPositive = false,
   variant = "default",
   badgeText = null,
+  onClick = null,
 }) => {
-  const borderVariants = {
-    default: "border-slate-200 hover:border-slate-300",
-    critical: "border-red-300 bg-gradient-to-br from-white to-red-50/40",
-    high: "border-orange-200 bg-gradient-to-br from-white to-orange-50/40",
-    medium: "border-amber-200 bg-gradient-to-br from-white to-amber-50/40",
-    low: "border-emerald-200 bg-gradient-to-br from-white to-emerald-50/40",
-    navy: "border-navy-700 bg-navy-900 text-white",
+  const variantStyles = {
+    default: {
+      card: "bg-white border-slate-200/80 hover:border-slate-300",
+      iconBg: "bg-slate-100 text-slate-700",
+      badge: "bg-slate-100 text-slate-700",
+    },
+    critical: {
+      card: "bg-white border-rose-200 hover:border-rose-300 shadow-rose-500/5",
+      iconBg: "bg-rose-50 text-rose-600 ring-4 ring-rose-50/50",
+      badge: "bg-rose-50 text-rose-700 border border-rose-200",
+    },
+    high: {
+      card: "bg-white border-amber-200 hover:border-amber-300 shadow-amber-500/5",
+      iconBg: "bg-amber-50 text-amber-600 ring-4 ring-amber-50/50",
+      badge: "bg-amber-50 text-amber-800 border border-amber-200",
+    },
+    medium: {
+      card: "bg-white border-purple-200 hover:border-purple-300 shadow-purple-500/5",
+      iconBg: "bg-purple-50 text-purple-600 ring-4 ring-purple-50/50",
+      badge: "bg-purple-50 text-purple-700 border border-purple-200",
+    },
+    navy: {
+      card: "bg-white border-indigo-200 hover:border-indigo-300 shadow-indigo-500/5",
+      iconBg: "bg-indigo-50 text-indigo-600 ring-4 ring-indigo-50/50",
+      badge: "bg-indigo-50 text-indigo-700 border border-indigo-200",
+    },
   };
 
-  const iconColors = {
-    default: "bg-slate-100 text-slate-700",
-    critical: "bg-red-100 text-red-700",
-    high: "bg-orange-100 text-orange-700",
-    medium: "bg-amber-100 text-amber-700",
-    low: "bg-emerald-100 text-emerald-700",
-    navy: "bg-navy-800 text-amber-400",
-  };
-
-  const isNavy = variant === "navy";
+  const style = variantStyles[variant] || variantStyles.default;
 
   return (
     <div
-      className={`rounded-xl border p-5 transition-all shadow-sm ${borderVariants[variant] || borderVariants.default}`}
+      onClick={onClick}
+      className={`rounded-2xl border p-6 transition-all duration-200 shadow-xs hover:shadow-md ${
+        onClick ? "cursor-pointer hover:-translate-y-0.5" : ""
+      } ${style.card}`}
     >
-      <div className="flex items-center justify-between">
-        <span
-          className={`text-xs font-semibold uppercase tracking-wider ${
-            isNavy ? "text-slate-400" : "text-slate-500"
-          }`}
-        >
-          {title}
-        </span>
+      <div className="flex items-start justify-between gap-4">
+        <div>
+          <span className="text-xs font-bold uppercase tracking-wider text-slate-500">
+            {title}
+          </span>
+          <div className="mt-2 flex items-baseline gap-2.5">
+            <span className="text-3xl font-extrabold text-slate-900 tracking-tight">
+              {value}
+            </span>
+          </div>
+        </div>
+
         {Icon && (
           <div
-            className={`flex h-9 w-9 items-center justify-center rounded-lg ${
-              iconColors[variant] || iconColors.default
-            }`}
+            className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl transition-transform duration-200 hover:scale-105 ${style.iconBg}`}
           >
-            <Icon className="h-5 w-5" />
+            <Icon className="h-6 w-6" />
           </div>
         )}
       </div>
 
-      <div className="mt-3 flex items-baseline gap-2">
-        <span
-          className={`font-mono text-2xl font-bold tracking-tight ${
-            isNavy ? "text-white" : "text-slate-900"
-          }`}
-        >
-          {value}
-        </span>
+      <div className="mt-4 flex flex-wrap items-center justify-between gap-2 pt-3 border-t border-slate-100 text-xs">
+        <span className="text-slate-500 font-medium">{subtitle}</span>
         {badgeText && (
-          <span className="rounded bg-slate-100 px-1.5 py-0.5 text-[10px] font-bold text-slate-600">
+          <span
+            className={`rounded-full px-2.5 py-0.5 text-[11px] font-bold ${style.badge}`}
+          >
             {badgeText}
           </span>
         )}
       </div>
-
-      {(subtitle || trend) && (
-        <div className="mt-2 flex items-center gap-1.5 text-xs">
-          {trend && (
-            <span
-              className={`font-semibold ${
-                trendPositive ? "text-emerald-600" : "text-red-600"
-              }`}
-            >
-              {trend}
-            </span>
-          )}
-          {subtitle && (
-            <span className={isNavy ? "text-slate-400" : "text-slate-500"}>
-              {subtitle}
-            </span>
-          )}
-        </div>
-      )}
     </div>
   );
 };

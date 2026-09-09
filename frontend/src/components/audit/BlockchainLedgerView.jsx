@@ -105,28 +105,27 @@ export const BlockchainLedgerView = ({ onSelectProject }) => {
   return (
     <div className="space-y-6">
       {/* Header Banner & Integrity Summary */}
-      <div className="bg-navy-950 text-white rounded-xl border border-navy-800 p-6 shadow-lg relative overflow-hidden">
-        <div className="absolute right-0 top-0 h-full w-1/3 bg-gradient-to-l from-emerald-500/10 to-transparent pointer-events-none" />
+      <div className="bg-white rounded-3xl border border-slate-200/80 p-7 shadow-sm relative overflow-hidden">
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 relative z-10">
           <div className="space-y-2">
-            <div className="flex items-center gap-2">
-              <span className="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-[10px] font-mono font-bold tracking-wider uppercase">
+            <div className="flex items-center gap-2.5">
+              <span className="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-100 text-[11px] font-mono font-bold tracking-wider uppercase flex items-center gap-1.5">
+                <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
                 SHA-256 Immutable Ledger
               </span>
               <span className="text-xs text-slate-400 font-medium">
-                • CVC / MoSPI Cryptographic Audit Layer
+                • Cryptographic Audit Trail
               </span>
             </div>
-            <h2 className="text-xl font-bold text-white tracking-tight flex items-center gap-2">
-              <Lock className="h-5 w-5 text-amber-400" />
-              Tamper-Evident Blockchain Audit Trail
+            <h2 className="text-2xl font-bold text-slate-900 tracking-tight flex items-center gap-2 mt-2">
+              <Lock className="h-6 w-6 text-indigo-600" />
+              Tamper-Evident Blockchain Audit Ledger
             </h2>
-            <p className="text-xs text-slate-300 max-w-2xl leading-relaxed">
-              Every critical forensic verdict, project sanction, and auditor
-              intervention is cryptographically hashed with SHA-256 and chained
-              into an append-only distributed ledger. Any retrospective
-              modification breaks the cryptographic hash pointer, generating an
-              immediate system-wide alert.
+            <p className="text-sm text-slate-500 max-w-2xl leading-relaxed">
+              Every auditor verdict, project sanction, and forensic review is
+              cryptographically hashed with SHA-256 and chained into an
+              immutable ledger. Any unauthorized data tampering invalidates the
+              hash chain immediately.
             </p>
           </div>
 
@@ -134,7 +133,7 @@ export const BlockchainLedgerView = ({ onSelectProject }) => {
             <button
               onClick={handleRunAudit}
               disabled={validating}
-              className="px-4 py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs transition shadow-md flex items-center justify-center gap-2 disabled:opacity-50"
+              className="px-5 py-3 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs transition-all shadow-md shadow-emerald-600/20 flex items-center justify-center gap-2 disabled:opacity-50"
             >
               {validating ? (
                 <>
@@ -143,7 +142,7 @@ export const BlockchainLedgerView = ({ onSelectProject }) => {
                 </>
               ) : (
                 <>
-                  <ShieldCheck className="h-4 w-4 text-emerald-200" />
+                  <ShieldCheck className="h-4 w-4 text-emerald-100" />
                   <span>Run Cryptographic Chain Audit</span>
                 </>
               )}
@@ -153,44 +152,44 @@ export const BlockchainLedgerView = ({ onSelectProject }) => {
 
         {/* Audit Status Result Display */}
         {auditResult && (
-          <div className="mt-5 pt-5 border-t border-navy-800 grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
-            <div className="bg-navy-900/80 p-3 rounded-lg border border-navy-700/80 flex items-center gap-3">
-              <div className="h-9 w-9 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
+          <div className="mt-6 pt-6 border-t border-slate-100 grid grid-cols-1 md:grid-cols-3 gap-4 text-xs animate-in fade-in slide-in-from-top-2">
+            <div className="bg-emerald-50/60 p-4 rounded-2xl border border-emerald-100 flex items-center gap-3.5">
+              <div className="h-10 w-10 rounded-xl bg-emerald-500 text-white flex items-center justify-center shrink-0 shadow-sm">
                 <CheckCircle2 className="h-5 w-5" />
               </div>
               <div>
-                <div className="text-[10px] uppercase font-bold text-slate-400">
+                <div className="text-[10px] uppercase font-bold text-emerald-800">
                   Chain Integrity Status
                 </div>
-                <div className="text-sm font-bold text-emerald-400">
+                <div className="text-sm font-extrabold text-emerald-950 mt-0.5">
                   100% Cryptographically Valid
                 </div>
               </div>
             </div>
 
-            <div className="bg-navy-900/80 p-3 rounded-lg border border-navy-700/80 flex items-center gap-3">
-              <div className="h-9 w-9 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0">
+            <div className="bg-indigo-50/60 p-4 rounded-2xl border border-indigo-100 flex items-center gap-3.5">
+              <div className="h-10 w-10 rounded-xl bg-indigo-500 text-white flex items-center justify-center shrink-0 shadow-sm">
                 <Layers className="h-5 w-5" />
               </div>
               <div>
-                <div className="text-[10px] uppercase font-bold text-slate-400">
+                <div className="text-[10px] uppercase font-bold text-indigo-800">
                   Verified Block Depth
                 </div>
-                <div className="text-sm font-bold text-white font-mono">
+                <div className="text-sm font-extrabold text-indigo-950 font-mono mt-0.5">
                   {auditResult.total_blocks} Blocks Validated
                 </div>
               </div>
             </div>
 
-            <div className="bg-navy-900/80 p-3 rounded-lg border border-navy-700/80 flex items-center gap-3">
-              <div className="h-9 w-9 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center shrink-0">
+            <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200/80 flex items-center gap-3.5">
+              <div className="h-10 w-10 rounded-xl bg-slate-800 text-white flex items-center justify-center shrink-0 shadow-sm">
                 <Hash className="h-5 w-5" />
               </div>
               <div className="overflow-hidden">
-                <div className="text-[10px] uppercase font-bold text-slate-400">
-                  Latest Block Head Hash
+                <div className="text-[10px] uppercase font-bold text-slate-500">
+                  Latest Block Hash
                 </div>
-                <div className="text-xs font-mono text-amber-400 truncate">
+                <div className="text-xs font-mono text-slate-900 font-semibold truncate mt-0.5">
                   {auditResult.latest_block_hash}
                 </div>
               </div>
@@ -200,28 +199,28 @@ export const BlockchainLedgerView = ({ onSelectProject }) => {
       </div>
 
       {/* Filter and Search Controls */}
-      <div className="bg-white rounded-xl border border-slate-200 p-4 shadow-sm space-y-3">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-3">
+      <div className="bg-white rounded-2xl border border-slate-200/80 p-4 shadow-sm space-y-3">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="relative w-full md:w-96">
-            <Search className="absolute left-3 top-2.5 h-4 w-4 text-slate-400" />
+            <Search className="absolute left-3.5 top-3 h-4 w-4 text-slate-400" />
             <input
               type="text"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Search by Block #, Project ID, Hash, Auditor..."
-              className="w-full pl-9 pr-4 py-2 text-xs border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700 bg-slate-50 focus:bg-white transition"
+              className="w-full pl-10 pr-4 py-2.5 text-xs border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 bg-slate-50/60 focus:bg-white transition"
             />
           </div>
 
           <div className="flex flex-wrap items-center gap-3 w-full md:w-auto">
             {/* Transaction Filter */}
-            <div className="flex items-center gap-1.5 text-xs text-slate-500">
-              <Filter className="h-3.5 w-3.5" />
+            <div className="flex items-center gap-2 text-xs text-slate-500 font-medium">
+              <Filter className="h-3.5 w-3.5 text-slate-400" />
               <span>Type:</span>
               <select
                 value={filterType}
                 onChange={(e) => setFilterType(e.target.value)}
-                className="text-xs font-medium bg-slate-50 border border-slate-200 rounded-md px-2 py-1 focus:outline-none focus:ring-1 focus:ring-navy-700"
+                className="text-xs font-medium bg-slate-50/60 border border-slate-200 rounded-xl px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500"
               >
                 {transactionTypes.map((t) => (
                   <option key={t} value={t}>
@@ -236,14 +235,14 @@ export const BlockchainLedgerView = ({ onSelectProject }) => {
               onClick={() =>
                 setSortOrder(sortOrder === "desc" ? "asc" : "desc")
               }
-              className="text-xs font-medium text-slate-600 bg-slate-50 hover:bg-slate-100 border border-slate-200 px-3 py-1 rounded-md transition"
+              className="text-xs font-medium text-slate-700 bg-slate-50/60 hover:bg-slate-100 border border-slate-200 px-3.5 py-2 rounded-xl transition"
             >
               Order: {sortOrder === "desc" ? "Newest First" : "Oldest First"}
             </button>
 
             <button
               onClick={fetchBlocks}
-              className="text-xs font-medium text-slate-600 bg-slate-50 hover:bg-slate-100 border border-slate-200 p-1.5 rounded-md transition"
+              className="text-xs font-medium text-slate-600 bg-slate-50/60 hover:bg-slate-100 border border-slate-200 p-2.5 rounded-xl transition"
               title="Refresh ledger"
             >
               <RefreshCw className="h-3.5 w-3.5" />
@@ -276,21 +275,21 @@ export const BlockchainLedgerView = ({ onSelectProject }) => {
             return (
               <div
                 key={block.index}
-                className="bg-white rounded-xl border border-slate-200 hover:border-navy-400 transition-all shadow-sm overflow-hidden"
+                className="bg-white rounded-3xl border border-slate-200/80 hover:border-indigo-200 hover:shadow-md transition-all shadow-sm overflow-hidden"
               >
                 {/* Block Header Banner */}
-                <div className="bg-slate-50 border-b border-slate-200 px-5 py-3 flex flex-wrap items-center justify-between gap-3">
+                <div className="bg-slate-50/70 border-b border-slate-200/80 px-6 py-4 flex flex-wrap items-center justify-between gap-4">
                   <div className="flex items-center gap-3">
-                    <span className="font-mono text-xs font-black px-2.5 py-1 rounded bg-navy-950 text-amber-400 border border-navy-800 shadow-inner">
+                    <span className="font-mono text-xs font-black px-3 py-1 rounded-xl bg-slate-900 text-amber-300 shadow-sm">
                       BLOCK #{block.index}
                     </span>
                     <span
-                      className={`text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border ${
+                      className={`text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full border ${
                         isGenesis
                           ? "bg-purple-50 text-purple-700 border-purple-200"
                           : isDecision
                             ? decision === "ESCALATE"
-                              ? "bg-red-50 text-red-700 border-red-200"
+                              ? "bg-rose-50 text-rose-700 border-rose-200"
                               : decision === "HOLD"
                                 ? "bg-amber-50 text-amber-700 border-amber-200"
                                 : "bg-emerald-50 text-emerald-700 border-emerald-200"
@@ -300,16 +299,16 @@ export const BlockchainLedgerView = ({ onSelectProject }) => {
                       {block.transaction_type}
                     </span>
                     {decision && (
-                      <span className="text-xs font-bold text-slate-800">
-                        Verdict:{" "}
+                      <span className="text-xs font-bold text-slate-800 flex items-center gap-1.5">
+                        <span className="text-slate-400">Verdict:</span>
                         <span
-                          className={
+                          className={`px-2 py-0.5 rounded-md text-[11px] font-extrabold ${
                             decision === "ESCALATE"
-                              ? "text-red-600"
+                              ? "bg-rose-100 text-rose-700"
                               : decision === "HOLD"
-                                ? "text-amber-600"
-                                : "text-emerald-600"
-                          }
+                                ? "bg-amber-100 text-amber-800"
+                                : "bg-emerald-100 text-emerald-800"
+                          }`}
                         >
                           {decision}
                         </span>
@@ -318,15 +317,15 @@ export const BlockchainLedgerView = ({ onSelectProject }) => {
                   </div>
 
                   <div className="flex items-center gap-4 text-xs text-slate-500 font-mono">
-                    <div className="flex items-center gap-1">
+                    <div className="flex items-center gap-1.5">
                       <Clock className="h-3.5 w-3.5 text-slate-400" />
                       <span>
                         {new Date(block.timestamp).toLocaleString("en-IN")}
                       </span>
                     </div>
-                    <div className="hidden sm:flex items-center gap-1">
-                      <span className="text-slate-400">Nonce:</span>
-                      <span className="font-bold text-slate-700">
+                    <div className="hidden sm:flex items-center gap-1.5 bg-white px-2.5 py-1 rounded-lg border border-slate-200/80">
+                      <span className="text-slate-400 text-[10px]">NONCE:</span>
+                      <span className="font-bold text-slate-800">
                         {block.nonce}
                       </span>
                     </div>
@@ -334,13 +333,13 @@ export const BlockchainLedgerView = ({ onSelectProject }) => {
                 </div>
 
                 {/* Block Content Body */}
-                <div className="p-5 space-y-4">
+                <div className="p-6 space-y-4">
                   {/* Cryptographic Hashes Grid */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5 text-xs">
                     {/* Block Hash */}
-                    <div className="bg-slate-50 p-2.5 rounded-lg border border-slate-200">
-                      <div className="flex items-center justify-between text-[10px] uppercase font-bold text-slate-500 mb-1">
-                        <span className="flex items-center gap-1">
+                    <div className="bg-slate-50/70 p-3 rounded-2xl border border-slate-200/80">
+                      <div className="flex items-center justify-between text-[10px] uppercase font-bold text-slate-500 mb-1.5">
+                        <span className="flex items-center gap-1.5 text-emerald-700">
                           <Hash className="h-3 w-3 text-emerald-600" />
                           Current Block Hash (SHA-256)
                         </span>
@@ -351,24 +350,24 @@ export const BlockchainLedgerView = ({ onSelectProject }) => {
                               `bh_${block.index}`,
                             )
                           }
-                          className="hover:text-navy-900 transition flex items-center gap-1"
+                          className="hover:text-slate-900 transition flex items-center gap-1 text-slate-400 p-0.5 rounded"
                         >
                           {copiedHash === `bh_${block.index}` ? (
-                            <Check className="h-3 w-3 text-emerald-600" />
+                            <Check className="h-3.5 w-3.5 text-emerald-600" />
                           ) : (
-                            <Copy className="h-3 w-3" />
+                            <Copy className="h-3.5 w-3.5" />
                           )}
                         </button>
                       </div>
-                      <div className="font-mono text-[11px] text-slate-800 font-semibold break-all selection:bg-amber-100">
+                      <div className="font-mono text-[11px] text-slate-800 font-semibold break-all selection:bg-indigo-100">
                         {block.block_hash}
                       </div>
                     </div>
 
                     {/* Previous Block Hash */}
-                    <div className="bg-slate-50 p-2.5 rounded-lg border border-slate-200">
-                      <div className="flex items-center justify-between text-[10px] uppercase font-bold text-slate-500 mb-1">
-                        <span className="flex items-center gap-1">
+                    <div className="bg-slate-50/70 p-3 rounded-2xl border border-slate-200/80">
+                      <div className="flex items-center justify-between text-[10px] uppercase font-bold text-slate-500 mb-1.5">
+                        <span className="flex items-center gap-1.5">
                           <Lock className="h-3 w-3 text-slate-400" />
                           Previous Hash Pointer
                         </span>
@@ -379,12 +378,12 @@ export const BlockchainLedgerView = ({ onSelectProject }) => {
                               `ph_${block.index}`,
                             )
                           }
-                          className="hover:text-navy-900 transition flex items-center gap-1"
+                          className="hover:text-slate-900 transition flex items-center gap-1 text-slate-400 p-0.5 rounded"
                         >
                           {copiedHash === `ph_${block.index}` ? (
-                            <Check className="h-3 w-3 text-emerald-600" />
+                            <Check className="h-3.5 w-3.5 text-emerald-600" />
                           ) : (
-                            <Copy className="h-3 w-3" />
+                            <Copy className="h-3.5 w-3.5" />
                           )}
                         </button>
                       </div>
@@ -395,9 +394,9 @@ export const BlockchainLedgerView = ({ onSelectProject }) => {
                   </div>
 
                   {/* Decoded Transaction Payload */}
-                  <div className="bg-navy-950 text-slate-200 rounded-lg p-4 font-mono text-xs border border-navy-800 space-y-2">
-                    <div className="flex items-center justify-between border-b border-navy-800 pb-2 text-[10px] uppercase tracking-wider text-slate-400 font-bold">
-                      <span className="flex items-center gap-1.5 text-amber-400">
+                  <div className="bg-slate-900 text-slate-200 rounded-2xl p-5 font-mono text-xs border border-slate-800 space-y-2.5">
+                    <div className="flex items-center justify-between border-b border-slate-800 pb-2.5 text-[10px] uppercase tracking-wider text-slate-400 font-bold">
+                      <span className="flex items-center gap-2 text-indigo-400">
                         <FileText className="h-3.5 w-3.5" />
                         Decoded Cryptographic Payload
                       </span>
@@ -511,13 +510,13 @@ export const BlockchainLedgerView = ({ onSelectProject }) => {
                 </div>
 
                 {/* Block Chain Link Connector Footer */}
-                <div className="bg-slate-50 border-t border-slate-200 px-5 py-2 flex items-center justify-between text-[11px] text-slate-500">
-                  <div className="flex items-center gap-1 text-emerald-700 font-medium">
-                    <CheckCircle2 className="h-3.5 w-3.5 text-emerald-600" />
+                <div className="bg-slate-50/70 border-t border-slate-200/80 px-6 py-3 flex items-center justify-between text-xs text-slate-500">
+                  <div className="flex items-center gap-1.5 text-emerald-700 font-semibold">
+                    <CheckCircle2 className="h-4 w-4 text-emerald-600" />
                     <span>Cryptographic Link: Verified Valid</span>
                   </div>
-                  <div className="font-mono text-[10px] text-slate-400">
-                    Difficulty: 2 leading zeros (PoW Valid)
+                  <div className="font-mono text-[11px] text-slate-400">
+                    Difficulty: 2 leading zeros (SHA-256 Valid)
                   </div>
                 </div>
               </div>

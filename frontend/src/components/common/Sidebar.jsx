@@ -5,8 +5,9 @@ import {
   Layers,
   Share2,
   ShieldCheck,
-  Building2,
-  ExternalLink,
+  Shield,
+  Activity,
+  User,
 } from "lucide-react";
 
 export const Sidebar = ({ activeTab, setActiveTab }) => {
@@ -19,10 +20,10 @@ export const Sidebar = ({ activeTab, setActiveTab }) => {
     },
     {
       id: "high_risk",
-      label: "High-Risk Projects",
+      label: "High-Risk Queue",
       icon: AlertTriangle,
       badge: "661",
-      badgeColor: "bg-red-500/20 text-red-300 border border-red-500/30",
+      badgeColor: "bg-rose-500/20 text-rose-300 border border-rose-500/30",
     },
     {
       id: "all_projects",
@@ -33,7 +34,7 @@ export const Sidebar = ({ activeTab, setActiveTab }) => {
     },
     {
       id: "fraud_network",
-      label: "Fraud Network",
+      label: "Cartel Network",
       icon: Share2,
       badge: "Cartels",
       badgeColor:
@@ -41,7 +42,7 @@ export const Sidebar = ({ activeTab, setActiveTab }) => {
     },
     {
       id: "audit_trail",
-      label: "Audit Trail",
+      label: "Blockchain Ledger",
       icon: ShieldCheck,
       badge: "SHA-256",
       badgeColor:
@@ -50,36 +51,46 @@ export const Sidebar = ({ activeTab, setActiveTab }) => {
   ];
 
   return (
-    <aside className="w-64 bg-navy-950 text-slate-300 flex flex-col justify-between border-r border-navy-800 shrink-0 h-screen sticky top-0 select-none">
+    <aside className="w-68 bg-slate-900 text-slate-300 flex flex-col justify-between border-r border-slate-800/80 shrink-0 h-screen sticky top-0 select-none shadow-xl z-20">
       {/* Brand Header */}
       <div>
-        <div className="p-5 border-b border-navy-800/80 flex items-center gap-3">
-          <div className="h-10 w-10 rounded-lg bg-gradient-to-tr from-amber-600 to-amber-400 flex items-center justify-center text-navy-950 font-black shadow-md shadow-amber-500/10 shrink-0">
-            <Building2 className="h-6 w-6" />
+        <div className="p-6 border-b border-slate-800/80 flex items-center gap-3.5">
+          <div className="h-11 w-11 rounded-2xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-violet-500 flex items-center justify-center text-white shadow-lg shadow-indigo-500/25 shrink-0">
+            <Shield className="h-6 w-6" />
           </div>
           <div className="overflow-hidden">
             <div className="flex items-center gap-1.5">
-              <span className="text-xs font-black tracking-widest text-amber-400 uppercase">
-                MPLADS
+              <span className="text-sm font-extrabold tracking-tight text-white">
+                Vigilance<span className="text-indigo-400">AI</span>
               </span>
-              <span className="text-[10px] uppercase font-bold tracking-wider px-1.5 py-0.2 rounded bg-navy-800 text-slate-400 border border-navy-700">
-                AI Vigilance
+              <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
+                PRO
               </span>
             </div>
-            <h1 className="text-sm font-semibold text-white truncate tracking-tight">
-              Anti-Fraud Intelligence
-            </h1>
+            <p className="text-xs text-slate-400 truncate">
+              MPLADS Anti-Fraud Radar
+            </p>
           </div>
         </div>
 
-        {/* Oversight Authority Banner */}
-        <div className="px-5 py-3 bg-navy-900/60 border-b border-navy-800/60 text-[11px] text-slate-400 flex items-center justify-between">
-          <span className="truncate">Oversight: CVC / MoSPI Portal</span>
-          <span className="inline-block h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
+        {/* Live Status Pill */}
+        <div className="mx-4 my-4 px-3.5 py-2 rounded-xl bg-slate-800/60 border border-slate-700/60 flex items-center justify-between text-xs">
+          <div className="flex items-center gap-2">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
+            <span className="text-slate-300 font-medium text-[11px]">
+              Monitoring Active
+            </span>
+          </div>
+          <span className="text-[10px] font-mono text-emerald-400 font-bold">
+            100k works
+          </span>
         </div>
 
         {/* Navigation Menu */}
-        <nav className="p-3 space-y-1 mt-2">
+        <nav className="px-3 space-y-1.5 mt-2">
           {navItems.map((item) => {
             const Icon = item.icon;
             const isActive = activeTab === item.id;
@@ -87,23 +98,25 @@ export const Sidebar = ({ activeTab, setActiveTab }) => {
               <button
                 key={item.id}
                 onClick={() => setActiveTab(item.id)}
-                className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-lg text-xs font-medium transition-all ${
+                className={`w-full flex items-center justify-between px-4 py-3 rounded-xl text-xs font-semibold transition-all duration-200 ${
                   isActive
-                    ? "bg-navy-700 text-white font-semibold shadow-inner border border-navy-600"
-                    : "text-slate-400 hover:text-slate-200 hover:bg-navy-900/80"
+                    ? "bg-indigo-600 text-white shadow-md shadow-indigo-600/30"
+                    : "text-slate-400 hover:text-white hover:bg-slate-800/60"
                 }`}
               >
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-3.5">
                   <Icon
-                    className={`h-4 w-4 ${
-                      isActive ? "text-amber-400" : "text-slate-400"
+                    className={`h-4 w-4 transition-colors ${
+                      isActive ? "text-white" : "text-slate-400"
                     }`}
                   />
                   <span>{item.label}</span>
                 </div>
                 {item.badge && (
                   <span
-                    className={`text-[10px] font-mono font-bold px-1.5 py-0.5 rounded ${item.badgeColor}`}
+                    className={`text-[10px] font-mono font-bold px-2 py-0.5 rounded-full ${
+                      isActive ? "bg-white/20 text-white" : item.badgeColor
+                    }`}
                   >
                     {item.badge}
                   </span>
@@ -114,24 +127,21 @@ export const Sidebar = ({ activeTab, setActiveTab }) => {
         </nav>
       </div>
 
-      {/* Footer System Status */}
-      <div className="p-4 border-t border-navy-800/80 bg-navy-900/40 text-[11px] text-slate-400 space-y-2">
-        <div className="flex items-center justify-between text-[10px] uppercase tracking-wider font-semibold text-slate-500">
-          <span>Engine Status</span>
-          <span className="text-emerald-400 font-bold">● Operational</span>
-        </div>
-        <div className="font-mono text-[10px] text-slate-400 bg-navy-950 p-2 rounded border border-navy-800 space-y-1">
-          <div className="flex justify-between">
-            <span>FastAPI:</span>
-            <span className="text-slate-300">port 8000</span>
+      {/* Modern User Profile Footer */}
+      <div className="p-4 border-t border-slate-800/80 bg-slate-950/40">
+        <div className="flex items-center gap-3 p-2 rounded-xl hover:bg-slate-800/50 transition">
+          <div className="h-9 w-9 rounded-xl bg-gradient-to-tr from-indigo-500 to-violet-600 flex items-center justify-center font-bold text-xs text-white shadow-sm">
+            CO
           </div>
-          <div className="flex justify-between">
-            <span>Ledger:</span>
-            <span className="text-amber-400">SHA-256 Valid</span>
+          <div className="overflow-hidden flex-1 text-left">
+            <div className="text-xs font-bold text-white truncate">
+              Central Vigilance
+            </div>
+            <div className="text-[11px] text-slate-400 truncate">
+              Auditor #007
+            </div>
           </div>
-        </div>
-        <div className="text-center text-[10px] text-slate-500 pt-1">
-          SIH 2026 Audit Architecture
+          <div className="h-2 w-2 rounded-full bg-emerald-400" title="Online" />
         </div>
       </div>
     </aside>

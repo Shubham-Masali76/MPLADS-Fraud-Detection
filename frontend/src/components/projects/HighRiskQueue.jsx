@@ -52,59 +52,67 @@ export const HighRiskQueue = ({ projects = [], onSelectProject }) => {
   ];
 
   return (
-    <div className="space-y-4">
-      {/* Banner */}
-      <div className="bg-gradient-to-r from-red-900 to-navy-900 text-white rounded-xl p-5 border border-red-800/40 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
+    <div className="space-y-6">
+      {/* High-Risk Queue Banner */}
+      <div className="bg-white rounded-3xl p-7 border border-slate-200/80 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6">
         <div>
-          <div className="flex items-center gap-2">
-            <span className="h-2 w-2 rounded-full bg-red-400 animate-pulse" />
-            <h2 className="text-base font-bold tracking-tight text-white flex items-center gap-2">
-              High-Risk Vigilance Queue
-            </h2>
+          <div className="flex items-center gap-2.5">
+            <span className="flex h-2.5 w-2.5 rounded-full bg-rose-500 animate-pulse" />
+            <span className="text-[11px] font-bold uppercase tracking-wider text-rose-700 bg-rose-50 px-3 py-1 rounded-full border border-rose-100">
+              Immediate Auditor Attention Required
+            </span>
           </div>
-          <p className="text-xs text-slate-300 mt-1 max-w-2xl">
-            Prioritized cases flagged by the multi-signal AI engine (Isolation
-            Forest + Shell Cartel Adjacency + Tender Slicing + GPS Mismatch).
+          <h2 className="text-2xl font-bold tracking-tight text-slate-900 mt-3">
+            High-Risk Priority Queue
+          </h2>
+          <p className="text-sm text-slate-500 mt-1 max-w-2xl leading-relaxed">
+            Prioritized projects flagged by AI anomaly detection, shell
+            contractor networks, and photo GPS mismatches. Review each case and
+            record an official auditor verdict.
           </p>
         </div>
-        <div className="flex items-center gap-3 font-mono text-xs shrink-0">
-          <div className="bg-red-950/60 border border-red-500/30 px-3 py-2 rounded-lg text-center">
-            <div className="text-[10px] text-red-300 uppercase font-semibold">
+        <div className="flex items-center gap-3 shrink-0">
+          <div className="bg-rose-50/70 border border-rose-100 px-5 py-3.5 rounded-2xl text-center min-w-[120px]">
+            <div className="text-[11px] text-rose-700 font-bold uppercase tracking-wider">
               Critical
             </div>
-            <div className="text-lg font-bold text-red-400">1 Case</div>
+            <div className="text-2xl font-extrabold text-rose-700 tracking-tight mt-0.5">
+              1 Case
+            </div>
           </div>
-          <div className="bg-orange-950/60 border border-orange-500/30 px-3 py-2 rounded-lg text-center">
-            <div className="text-[10px] text-orange-300 uppercase font-semibold">
+          <div className="bg-amber-50/70 border border-amber-100 px-5 py-3.5 rounded-2xl text-center min-w-[120px]">
+            <div className="text-[11px] text-amber-800 font-bold uppercase tracking-wider">
               High Priority
             </div>
-            <div className="text-lg font-bold text-orange-400">660 Cases</div>
+            <div className="text-2xl font-extrabold text-amber-900 tracking-tight mt-0.5">
+              660 Cases
+            </div>
           </div>
         </div>
       </div>
 
       {/* Filter Toolbar */}
-      <div className="bg-white rounded-xl border border-slate-200 p-4 shadow-sm flex flex-col md:flex-row items-center justify-between gap-3">
-        <div className="relative w-full md:w-80">
-          <Search className="absolute left-3 top-2.5 h-4 w-4 text-slate-400" />
+      <div className="bg-white rounded-2xl border border-slate-200/80 p-4 shadow-sm flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="relative w-full md:w-96">
+          <Search className="absolute left-3.5 top-3 h-4 w-4 text-slate-400" />
           <input
             type="text"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder="Search by ID, Contractor, MP, District..."
-            className="w-full pl-9 pr-4 py-2 text-xs border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-navy-700 bg-slate-50 focus:bg-white transition"
+            className="w-full pl-10 pr-4 py-2.5 text-xs border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 bg-slate-50/60 focus:bg-white transition"
           />
         </div>
 
-        <div className="flex items-center gap-2 w-full md:w-auto">
-          <div className="flex items-center gap-1.5 text-xs text-slate-500">
-            <Filter className="h-3.5 w-3.5" />
+        <div className="flex flex-wrap items-center gap-3 w-full md:w-auto">
+          <div className="flex items-center gap-2 text-xs text-slate-500 font-medium">
+            <Filter className="h-3.5 w-3.5 text-slate-400" />
             <span>Category:</span>
           </div>
           <select
             value={selectedCategory}
             onChange={(e) => setSelectedCategory(e.target.value)}
-            className="text-xs border border-slate-200 rounded-lg px-2.5 py-2 bg-slate-50 text-slate-700 focus:outline-none focus:ring-2 focus:ring-navy-700"
+            className="text-xs border border-slate-200 rounded-xl px-3 py-2 bg-slate-50/60 text-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 font-medium"
           >
             {categories.map((c) => (
               <option key={c} value={c}>
@@ -113,16 +121,16 @@ export const HighRiskQueue = ({ projects = [], onSelectProject }) => {
             ))}
           </select>
 
-          <div className="flex items-center gap-1.5 text-xs text-slate-500 ml-2">
-            <ArrowUpDown className="h-3.5 w-3.5" />
+          <div className="flex items-center gap-2 text-xs text-slate-500 font-medium ml-1">
+            <ArrowUpDown className="h-3.5 w-3.5 text-slate-400" />
             <span>Sort:</span>
           </div>
           <select
             value={sortBy}
             onChange={(e) => setSortBy(e.target.value)}
-            className="text-xs border border-slate-200 rounded-lg px-2.5 py-2 bg-slate-50 text-slate-700 focus:outline-none focus:ring-2 focus:ring-navy-700 font-mono"
+            className="text-xs border border-slate-200 rounded-xl px-3 py-2 bg-slate-50/60 text-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 font-medium"
           >
-            <option value="vpi">Highest VPI Score</option>
+            <option value="vpi">Highest Risk Score</option>
             <option value="amount">Sanctioned Amount</option>
             <option value="id">Project ID</option>
           </select>
@@ -140,20 +148,20 @@ export const HighRiskQueue = ({ projects = [], onSelectProject }) => {
           }}
         />
       ) : (
-        <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
+        <div className="bg-white rounded-3xl border border-slate-200/80 shadow-sm overflow-hidden">
           <div className="overflow-x-auto">
             <table className="w-full text-left border-collapse text-xs">
               <thead>
-                <tr className="bg-slate-50/90 border-b border-slate-200 text-[11px] font-semibold text-slate-600 uppercase tracking-wider">
-                  <th className="py-3 px-4">Project ID</th>
-                  <th className="py-3 px-4">Category & Purpose</th>
-                  <th className="py-3 px-4">Awarding MP</th>
-                  <th className="py-3 px-4">Contractor / Syndicate</th>
-                  <th className="py-3 px-4">Constituency</th>
-                  <th className="py-3 px-4 text-right">Sanctioned INR</th>
-                  <th className="py-3 px-4 text-center">VPI Score</th>
-                  <th className="py-3 px-4 text-center">Status</th>
-                  <th className="py-3 px-4 text-right">Action</th>
+                <tr className="bg-slate-50/70 border-b border-slate-200/80 text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
+                  <th className="py-4 px-5">Project ID</th>
+                  <th className="py-4 px-5">Category & Purpose</th>
+                  <th className="py-4 px-5">Awarding MP</th>
+                  <th className="py-4 px-5">Contractor / Syndicate</th>
+                  <th className="py-4 px-5">Constituency</th>
+                  <th className="py-4 px-5 text-right">Sanctioned INR</th>
+                  <th className="py-4 px-5 text-center">Risk Score</th>
+                  <th className="py-4 px-5 text-center">Priority</th>
+                  <th className="py-4 px-5 text-right">Action</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100 font-medium">
@@ -165,66 +173,68 @@ export const HighRiskQueue = ({ projects = [], onSelectProject }) => {
                       onClick={() => onSelectProject(p.project_id)}
                       className={`cursor-pointer transition-colors ${
                         isCrit
-                          ? "bg-red-50/40 hover:bg-red-50/80"
-                          : "hover:bg-slate-50"
+                          ? "bg-rose-50/40 hover:bg-rose-50/80"
+                          : "hover:bg-slate-50/80"
                       }`}
                     >
-                      <td className="py-3.5 px-4 font-mono font-bold text-navy-900">
+                      <td className="py-4 px-5 font-mono font-bold text-slate-900">
                         {p.project_id}
                       </td>
-                      <td className="py-3.5 px-4">
+                      <td className="py-4 px-5">
                         <div className="font-semibold text-slate-900 truncate max-w-xs">
                           {p.project_description || p.project_category}
                         </div>
-                        <div className="text-[11px] text-slate-500">
+                        <div className="text-[11px] text-slate-500 mt-0.5">
                           {p.project_category}
                         </div>
                       </td>
-                      <td className="py-3.5 px-4 font-mono text-slate-700">
+                      <td className="py-4 px-5 font-mono text-slate-700">
                         {p.mp_id}
                       </td>
-                      <td className="py-3.5 px-4">
+                      <td className="py-4 px-5">
                         <div className="font-mono text-slate-800 font-semibold">
                           {p.contractor_id}
                         </div>
-                        <div className="flex items-center gap-1 mt-0.5">
+                        <div className="flex items-center gap-1.5 mt-1">
                           {p.syndicate_id && p.syndicate_id !== "NONE" && (
-                            <span className="text-[9px] font-mono font-bold px-1.5 py-0.2 rounded bg-purple-50 text-purple-700 border border-purple-200">
+                            <span className="text-[9px] font-mono font-bold px-2 py-0.5 rounded-md bg-purple-50 text-purple-700 border border-purple-200">
                               {p.syndicate_id}
                             </span>
                           )}
                           {p.is_ringleader && (
-                            <span className="text-[9px] font-mono font-bold px-1.5 py-0.2 rounded bg-red-100 text-red-800">
+                            <span className="text-[9px] font-mono font-bold px-2 py-0.5 rounded-md bg-rose-100 text-rose-800">
                               RINGLEADER
                             </span>
                           )}
                         </div>
                       </td>
-                      <td className="py-3.5 px-4 text-slate-600">
-                        <div>{p.constituency}</div>
-                        <div className="text-[10px] text-slate-400">
+                      <td className="py-4 px-5 text-slate-600">
+                        <div className="font-medium text-slate-800">
+                          {p.constituency}
+                        </div>
+                        <div className="text-[11px] text-slate-400">
                           {p.state}
                         </div>
                       </td>
-                      <td className="py-3.5 px-4 text-right font-mono font-bold text-slate-900">
+                      <td className="py-4 px-5 text-right font-mono font-bold text-slate-900 text-sm">
                         ₹{Number(p.sanctioned_amount).toLocaleString()}
                       </td>
-                      <td className="py-3.5 px-4 text-center font-mono font-black text-red-600">
+                      <td className="py-4 px-5 text-center font-mono font-extrabold text-rose-600 text-sm">
                         {Number(p.vpi).toFixed(1)}
                       </td>
-                      <td className="py-3.5 px-4 text-center">
+                      <td className="py-4 px-5 text-center">
                         <RiskBadge tier={p.priority_tier} size="sm" />
                       </td>
-                      <td className="py-3.5 px-4 text-right">
+                      <td className="py-4 px-5 text-right">
                         <button
                           onClick={(e) => {
                             e.stopPropagation();
                             onSelectProject(p.project_id);
                           }}
-                          className="inline-flex items-center gap-1 rounded-lg bg-navy-900 hover:bg-navy-800 text-white px-3 py-1.5 text-xs font-semibold transition shadow-sm"
+                          className="inline-flex items-center gap-1.5 rounded-xl bg-slate-900 hover:bg-indigo-600 text-white px-3.5 py-2 text-xs font-semibold transition-all shadow-sm"
                         >
                           <Eye className="h-3.5 w-3.5" />
-                          <span>Dossier</span>
+                          <span>Review</span>
                         </button>
                       </td>
                     </tr>

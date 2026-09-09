@@ -100,7 +100,7 @@ export function App() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-100 flex font-sans text-slate-800 antialiased selection:bg-amber-500/20">
+    <div className="min-h-screen bg-[#F8FAFC] flex font-sans text-slate-800 antialiased selection:bg-indigo-500/20">
       {/* Sidebar Navigation */}
       <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
 
@@ -108,28 +108,32 @@ export function App() {
       <div className="flex-1 flex flex-col min-w-0 h-screen overflow-y-auto">
         <Header activeTab={activeTab} />
 
-        <main className="p-6 md:p-8 space-y-6 max-w-7xl w-full mx-auto pb-16">
-          {/* Toast Alert Notification */}
+        <main className="p-6 md:p-10 space-y-8 max-w-7xl w-full mx-auto pb-20">
+          {/* Modern Toast Alert Notification */}
           {toastMessage && (
-            <div className="bg-navy-950 text-white p-4 rounded-xl border border-navy-700 shadow-xl flex items-start justify-between gap-4 animate-fadeIn">
+            <div className="bg-white text-slate-800 p-4 rounded-2xl border border-slate-200/80 shadow-2xl shadow-indigo-500/10 flex items-start justify-between gap-4 animate-in fade-in slide-in-from-top-4 transition-all">
               <div className="flex items-start gap-3">
                 {toastMessage.type === "success" ? (
-                  <CheckCircle2 className="h-5 w-5 text-emerald-400 shrink-0 mt-0.5" />
+                  <div className="h-8 w-8 rounded-xl bg-emerald-50 border border-emerald-100 flex items-center justify-center shrink-0">
+                    <CheckCircle2 className="h-4 w-4 text-emerald-600" />
+                  </div>
                 ) : (
-                  <AlertTriangle className="h-5 w-5 text-amber-400 shrink-0 mt-0.5" />
+                  <div className="h-8 w-8 rounded-xl bg-amber-50 border border-amber-100 flex items-center justify-center shrink-0">
+                    <AlertTriangle className="h-4 w-4 text-amber-600" />
+                  </div>
                 )}
                 <div>
-                  <div className="text-xs font-bold uppercase tracking-wider text-amber-400">
+                  <div className="text-xs font-bold text-slate-900 tracking-tight">
                     {toastMessage.title}
                   </div>
-                  <div className="text-xs text-slate-300 font-mono mt-0.5">
+                  <div className="text-xs text-slate-500 font-mono mt-0.5">
                     {toastMessage.detail}
                   </div>
                 </div>
               </div>
               <button
                 onClick={() => setToastMessage(null)}
-                className="text-slate-400 hover:text-white transition"
+                className="text-slate-400 hover:text-slate-700 p-1 rounded-lg hover:bg-slate-100 transition"
               >
                 <X className="h-4 w-4" />
               </button>

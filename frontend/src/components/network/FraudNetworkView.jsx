@@ -72,38 +72,43 @@ export const FraudNetworkView = ({
   const nodeMap = new Map(positionedNodes.map((n) => [n.data.id, n]));
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-6">
       {/* Header Banner */}
-      <div className="bg-gradient-to-r from-navy-950 to-slate-900 text-white rounded-xl p-5 border border-navy-800 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div className="bg-white rounded-3xl p-7 border border-slate-200/80 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6">
         <div>
-          <div className="flex items-center gap-2">
-            <Share2 className="h-4 w-4 text-purple-400" />
-            <h2 className="text-base font-bold text-white tracking-tight">
-              Fraud Network & Cartel Topology Explorer
-            </h2>
+          <div className="flex items-center gap-2.5">
+            <div className="h-7 w-7 rounded-xl bg-purple-50 border border-purple-100 flex items-center justify-center">
+              <Share2 className="h-4 w-4 text-purple-600" />
+            </div>
+            <span className="text-[11px] font-bold uppercase tracking-wider text-purple-700 bg-purple-50 px-3 py-1 rounded-full border border-purple-100">
+              Graph Network Intelligence
+            </span>
           </div>
-          <p className="text-xs text-slate-300 mt-1 max-w-2xl">
-            Exposes multi-contractor collusion rings operating under identical
-            bank accounts. Identifies puppet-masters and sister paper bidders
-            across 13 states.
+          <h2 className="text-2xl font-bold text-slate-900 tracking-tight mt-3">
+            Contractor Cartel & Collusion Topology
+          </h2>
+          <p className="text-sm text-slate-500 mt-1 max-w-2xl leading-relaxed">
+            Uncovers hidden relationships between shell contractors bidding on
+            identical projects under shared bank accounts and centralized
+            ringleaders.
           </p>
         </div>
-        <div className="flex items-center gap-2 text-xs font-mono bg-navy-900 px-3 py-1.5 rounded-lg border border-navy-700 text-purple-300">
-          <span>100 Syndicates Profiled</span>
-          <span>•</span>
-          <span>1,000 Connected Vendors</span>
+        <div className="flex items-center gap-2.5 text-xs font-mono bg-slate-50 px-4 py-2.5 rounded-2xl border border-slate-200 text-slate-700 shrink-0 font-semibold">
+          <span>100 Syndicates</span>
+          <span className="text-slate-300">•</span>
+          <span>1,000 Vendors</span>
         </div>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Left Column: Syndicates List */}
         <div className="space-y-3">
-          <div className="flex items-center justify-between text-xs font-bold uppercase tracking-wider text-slate-500">
+          <div className="flex items-center justify-between text-xs font-bold uppercase tracking-wider text-slate-500 px-1">
             <span>Detected Shell Syndicates</span>
-            <span className="text-navy-900 font-mono">100 Cartels</span>
+            <span className="text-indigo-600 font-mono">100 Cartels</span>
           </div>
 
-          <div className="space-y-2.5 max-h-[580px] overflow-y-auto pr-1">
+          <div className="space-y-3 max-h-[600px] overflow-y-auto pr-1">
             {syndicates.map((s) => (
               <SyndicateCard
                 key={s.syndicate_id}
@@ -120,15 +125,15 @@ export const FraudNetworkView = ({
 
         {/* Center & Right: Interactive Network Canvas */}
         <div className="lg:col-span-2 space-y-3">
-          <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden flex flex-col h-[580px]">
+          <div className="bg-white rounded-3xl border border-slate-200/80 shadow-sm overflow-hidden flex flex-col h-[600px]">
             {/* Canvas Toolbar */}
-            <div className="px-4 py-3 bg-slate-50 border-b border-slate-200 flex items-center justify-between text-xs">
+            <div className="px-5 py-3.5 bg-slate-50/80 border-b border-slate-200/80 flex items-center justify-between text-xs">
               <div className="flex items-center gap-3">
-                <span className="font-mono font-bold text-navy-900">
+                <span className="font-mono font-bold text-slate-900">
                   {selectedSyndicate?.syndicate_id} Graph Topology
                 </span>
-                <span className="text-slate-400">|</span>
-                <span className="text-slate-500 text-[11px]">
+                <span className="text-slate-300">|</span>
+                <span className="text-slate-500 text-xs">
                   Shared Account:{" "}
                   <strong className="font-mono text-slate-800">
                     {selectedSyndicate?.bank_account_id}
@@ -270,22 +275,22 @@ export const FraudNetworkView = ({
 
               {/* Node Inspector Floating Badge */}
               {selectedNode && (
-                <div className="absolute bottom-4 left-4 right-4 bg-navy-900/95 border border-navy-700 text-white p-3.5 rounded-xl text-xs backdrop-blur-sm shadow-xl flex items-center justify-between animate-in fade-in slide-in-from-bottom-2">
-                  <div className="space-y-0.5">
+                <div className="absolute bottom-5 left-5 right-5 bg-slate-900/90 border border-slate-700/80 text-white p-4 rounded-2xl text-xs backdrop-blur-md shadow-2xl flex items-center justify-between animate-in fade-in slide-in-from-bottom-2">
+                  <div className="space-y-1">
                     <div className="flex items-center gap-2">
-                      <span className="font-mono font-bold text-amber-400">
+                      <span className="font-mono font-bold text-amber-400 text-sm">
                         {selectedNode.id}
                       </span>
-                      <span className="text-[10px] uppercase font-bold px-1.5 py-0.2 rounded bg-navy-800 border border-navy-700 text-slate-300">
+                      <span className="text-[10px] uppercase font-bold px-2 py-0.5 rounded-full bg-slate-800 border border-slate-700 text-slate-300">
                         {selectedNode.type}
                       </span>
                       {selectedNode.is_ringleader && (
-                        <span className="text-[9px] uppercase font-mono font-black px-1.5 py-0.2 rounded bg-red-600 text-white">
+                        <span className="text-[10px] uppercase font-mono font-bold px-2.5 py-0.5 rounded-full bg-rose-600 text-white">
                           PRIMARY CARTEL RINGLEADER
                         </span>
                       )}
                     </div>
-                    <p className="text-slate-300 text-[11px]">
+                    <p className="text-slate-300 text-xs">
                       {selectedNode.label}
                     </p>
                   </div>
@@ -293,7 +298,7 @@ export const FraudNetworkView = ({
                   {selectedNode.type === "project" && (
                     <button
                       onClick={() => onSelectProject(selectedNode.id)}
-                      className="px-3 py-1.5 rounded-lg bg-red-600 hover:bg-red-500 text-white font-bold text-xs shadow transition"
+                      className="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs shadow-md transition-all shrink-0"
                     >
                       Open Dossier
                     </button>
@@ -303,27 +308,35 @@ export const FraudNetworkView = ({
             </div>
 
             {/* Canvas Legend */}
-            <div className="p-3 bg-slate-50 border-t border-slate-200 flex flex-wrap items-center justify-between text-[11px] text-slate-600">
-              <div className="flex items-center gap-4">
-                <div className="flex items-center gap-1.5">
-                  <span className="h-3 w-3 rounded-full bg-red-700 border border-red-500" />
-                  <span>Cartel Ringleader</span>
+            <div className="p-4 bg-slate-50/80 border-t border-slate-200/80 flex flex-wrap items-center justify-between text-xs text-slate-600">
+              <div className="flex items-center gap-5">
+                <div className="flex items-center gap-2">
+                  <span className="h-3 w-3 rounded-full bg-rose-600 ring-2 ring-rose-400/40" />
+                  <span className="font-medium text-slate-700">
+                    Cartel Ringleader
+                  </span>
                 </div>
-                <div className="flex items-center gap-1.5">
-                  <span className="h-3 w-3 rounded bg-emerald-800 border border-emerald-400" />
-                  <span>Shared Bank Account</span>
+                <div className="flex items-center gap-2">
+                  <span className="h-3 w-3 rounded-md bg-emerald-700 ring-2 ring-emerald-400/40" />
+                  <span className="font-medium text-slate-700">
+                    Shared Bank Account
+                  </span>
                 </div>
-                <div className="flex items-center gap-1.5">
-                  <span className="h-3 w-3 rounded-full bg-blue-900 border border-blue-600" />
-                  <span>Awarding MP</span>
+                <div className="flex items-center gap-2">
+                  <span className="h-3 w-3 rounded-full bg-blue-700 ring-2 ring-blue-400/40" />
+                  <span className="font-medium text-slate-700">
+                    Awarding MP
+                  </span>
                 </div>
-                <div className="flex items-center gap-1.5">
-                  <span className="h-3 w-3 rounded-full bg-orange-600 border border-orange-400" />
-                  <span>Project Work</span>
+                <div className="flex items-center gap-2">
+                  <span className="h-3 w-3 rounded-full bg-orange-600 ring-2 ring-orange-400/40" />
+                  <span className="font-medium text-slate-700">
+                    Project Work
+                  </span>
                 </div>
               </div>
-              <span className="font-mono text-slate-400 text-[10px]">
-                Adjacency Graph Layer
+              <span className="font-mono text-slate-400 text-[11px]">
+                Adjacency Graph Engine
               </span>
             </div>
           </div>
