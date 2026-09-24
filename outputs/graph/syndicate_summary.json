@@ -1,0 +1,2002 @@
+[
+  {
+    "Syndicate_ID": "SYNDICATE_065",
+    "Bank_Account_ID": "BANK000065",
+    "Syndicate_Size": 17,
+    "Active_Vendor_Count": 17,
+    "Total_Projects": 35,
+    "Total_Syndicate_Funds_INR": 205740000,
+    "State_Count": 9,
+    "District_Count": 17,
+    "MP_Count": 30,
+    "Constituency_Count": 29,
+    "Syndicate_Collusion_Risk": 100.0,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000065 with 16 other registered contractors.",
+      "Belongs to a 17-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 205,740,000 in sanctioned project value across 35 projects.",
+      "17 of 17 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 17 districts across 9 states involving 30 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_059",
+    "Bank_Account_ID": "BANK000059",
+    "Syndicate_Size": 16,
+    "Active_Vendor_Count": 15,
+    "Total_Projects": 37,
+    "Total_Syndicate_Funds_INR": 216440000,
+    "State_Count": 7,
+    "District_Count": 14,
+    "MP_Count": 34,
+    "Constituency_Count": 31,
+    "Syndicate_Collusion_Risk": 98.75,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000059 with 15 other registered contractors.",
+      "Belongs to a 16-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 216,440,000 in sanctioned project value across 37 projects.",
+      "15 of 16 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 14 districts across 7 states involving 34 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_060",
+    "Bank_Account_ID": "BANK000060",
+    "Syndicate_Size": 17,
+    "Active_Vendor_Count": 16,
+    "Total_Projects": 35,
+    "Total_Syndicate_Funds_INR": 191640000,
+    "State_Count": 8,
+    "District_Count": 13,
+    "MP_Count": 30,
+    "Constituency_Count": 30,
+    "Syndicate_Collusion_Risk": 97.78,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000060 with 16 other registered contractors.",
+      "Belongs to a 17-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 191,640,000 in sanctioned project value across 35 projects.",
+      "16 of 17 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 13 districts across 8 states involving 30 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_011",
+    "Bank_Account_ID": "BANK000011",
+    "Syndicate_Size": 15,
+    "Active_Vendor_Count": 14,
+    "Total_Projects": 34,
+    "Total_Syndicate_Funds_INR": 198760000,
+    "State_Count": 9,
+    "District_Count": 13,
+    "MP_Count": 28,
+    "Constituency_Count": 26,
+    "Syndicate_Collusion_Risk": 96.95,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000011 with 14 other registered contractors.",
+      "Belongs to a 15-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 198,760,000 in sanctioned project value across 34 projects.",
+      "14 of 15 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 13 districts across 9 states involving 28 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_056",
+    "Bank_Account_ID": "BANK000056",
+    "Syndicate_Size": 14,
+    "Active_Vendor_Count": 13,
+    "Total_Projects": 38,
+    "Total_Syndicate_Funds_INR": 192810000,
+    "State_Count": 8,
+    "District_Count": 12,
+    "MP_Count": 30,
+    "Constituency_Count": 29,
+    "Syndicate_Collusion_Risk": 94.55,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000056 with 13 other registered contractors.",
+      "Belongs to a 14-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 192,810,000 in sanctioned project value across 38 projects.",
+      "13 of 14 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 12 districts across 8 states involving 30 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_053",
+    "Bank_Account_ID": "BANK000053",
+    "Syndicate_Size": 15,
+    "Active_Vendor_Count": 12,
+    "Total_Projects": 35,
+    "Total_Syndicate_Funds_INR": 218660000,
+    "State_Count": 6,
+    "District_Count": 13,
+    "MP_Count": 30,
+    "Constituency_Count": 29,
+    "Syndicate_Collusion_Risk": 94.44,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000053 with 14 other registered contractors.",
+      "Belongs to a 15-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 218,660,000 in sanctioned project value across 35 projects.",
+      "12 of 15 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 13 districts across 6 states involving 30 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_005",
+    "Bank_Account_ID": "BANK000005",
+    "Syndicate_Size": 12,
+    "Active_Vendor_Count": 12,
+    "Total_Projects": 31,
+    "Total_Syndicate_Funds_INR": 183270000,
+    "State_Count": 8,
+    "District_Count": 10,
+    "MP_Count": 26,
+    "Constituency_Count": 26,
+    "Syndicate_Collusion_Risk": 91.66,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000005 with 11 other registered contractors.",
+      "Belongs to a 12-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 183,270,000 in sanctioned project value across 31 projects.",
+      "12 of 12 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 10 districts across 8 states involving 26 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_057",
+    "Bank_Account_ID": "BANK000057",
+    "Syndicate_Size": 15,
+    "Active_Vendor_Count": 15,
+    "Total_Projects": 29,
+    "Total_Syndicate_Funds_INR": 136490000,
+    "State_Count": 6,
+    "District_Count": 12,
+    "MP_Count": 25,
+    "Constituency_Count": 22,
+    "Syndicate_Collusion_Risk": 90.5,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000057 with 14 other registered contractors.",
+      "Belongs to a 15-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 136,490,000 in sanctioned project value across 29 projects.",
+      "15 of 15 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 12 districts across 6 states involving 25 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_041",
+    "Bank_Account_ID": "BANK000041",
+    "Syndicate_Size": 13,
+    "Active_Vendor_Count": 13,
+    "Total_Projects": 26,
+    "Total_Syndicate_Funds_INR": 160270000,
+    "State_Count": 7,
+    "District_Count": 10,
+    "MP_Count": 21,
+    "Constituency_Count": 21,
+    "Syndicate_Collusion_Risk": 90.34,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000041 with 12 other registered contractors.",
+      "Belongs to a 13-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 160,270,000 in sanctioned project value across 26 projects.",
+      "13 of 13 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 10 districts across 7 states involving 21 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_043",
+    "Bank_Account_ID": "BANK000043",
+    "Syndicate_Size": 15,
+    "Active_Vendor_Count": 13,
+    "Total_Projects": 30,
+    "Total_Syndicate_Funds_INR": 154060000,
+    "State_Count": 7,
+    "District_Count": 15,
+    "MP_Count": 29,
+    "Constituency_Count": 27,
+    "Syndicate_Collusion_Risk": 90.03,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000043 with 14 other registered contractors.",
+      "Belongs to a 15-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 154,060,000 in sanctioned project value across 30 projects.",
+      "13 of 15 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 15 districts across 7 states involving 29 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_018",
+    "Bank_Account_ID": "BANK000018",
+    "Syndicate_Size": 13,
+    "Active_Vendor_Count": 12,
+    "Total_Projects": 28,
+    "Total_Syndicate_Funds_INR": 168430000,
+    "State_Count": 7,
+    "District_Count": 12,
+    "MP_Count": 26,
+    "Constituency_Count": 26,
+    "Syndicate_Collusion_Risk": 89.82,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000018 with 12 other registered contractors.",
+      "Belongs to a 13-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 168,430,000 in sanctioned project value across 28 projects.",
+      "12 of 13 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 12 districts across 7 states involving 26 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_072",
+    "Bank_Account_ID": "BANK000072",
+    "Syndicate_Size": 12,
+    "Active_Vendor_Count": 12,
+    "Total_Projects": 32,
+    "Total_Syndicate_Funds_INR": 166740000,
+    "State_Count": 8,
+    "District_Count": 11,
+    "MP_Count": 28,
+    "Constituency_Count": 27,
+    "Syndicate_Collusion_Risk": 89.59,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000072 with 11 other registered contractors.",
+      "Belongs to a 12-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 166,740,000 in sanctioned project value across 32 projects.",
+      "12 of 12 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 11 districts across 8 states involving 28 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_085",
+    "Bank_Account_ID": "BANK000085",
+    "Syndicate_Size": 16,
+    "Active_Vendor_Count": 14,
+    "Total_Projects": 28,
+    "Total_Syndicate_Funds_INR": 134570000,
+    "State_Count": 8,
+    "District_Count": 15,
+    "MP_Count": 24,
+    "Constituency_Count": 22,
+    "Syndicate_Collusion_Risk": 89.32,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000085 with 15 other registered contractors.",
+      "Belongs to a 16-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 134,570,000 in sanctioned project value across 28 projects.",
+      "14 of 16 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 15 districts across 8 states involving 24 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_091",
+    "Bank_Account_ID": "BANK000091",
+    "Syndicate_Size": 12,
+    "Active_Vendor_Count": 12,
+    "Total_Projects": 28,
+    "Total_Syndicate_Funds_INR": 163240000,
+    "State_Count": 7,
+    "District_Count": 10,
+    "MP_Count": 24,
+    "Constituency_Count": 24,
+    "Syndicate_Collusion_Risk": 89.16,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000091 with 11 other registered contractors.",
+      "Belongs to a 12-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 163,240,000 in sanctioned project value across 28 projects.",
+      "12 of 12 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 10 districts across 7 states involving 24 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_058",
+    "Bank_Account_ID": "BANK000058",
+    "Syndicate_Size": 15,
+    "Active_Vendor_Count": 11,
+    "Total_Projects": 30,
+    "Total_Syndicate_Funds_INR": 167760000,
+    "State_Count": 7,
+    "District_Count": 14,
+    "MP_Count": 26,
+    "Constituency_Count": 24,
+    "Syndicate_Collusion_Risk": 89.08,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000058 with 14 other registered contractors.",
+      "Belongs to a 15-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 167,760,000 in sanctioned project value across 30 projects.",
+      "11 of 15 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 14 districts across 7 states involving 26 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_046",
+    "Bank_Account_ID": "BANK000046",
+    "Syndicate_Size": 12,
+    "Active_Vendor_Count": 10,
+    "Total_Projects": 34,
+    "Total_Syndicate_Funds_INR": 184090000,
+    "State_Count": 9,
+    "District_Count": 12,
+    "MP_Count": 29,
+    "Constituency_Count": 28,
+    "Syndicate_Collusion_Risk": 88.43,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000046 with 11 other registered contractors.",
+      "Belongs to a 12-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 184,090,000 in sanctioned project value across 34 projects.",
+      "10 of 12 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 12 districts across 9 states involving 29 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_054",
+    "Bank_Account_ID": "BANK000054",
+    "Syndicate_Size": 11,
+    "Active_Vendor_Count": 11,
+    "Total_Projects": 28,
+    "Total_Syndicate_Funds_INR": 160040000,
+    "State_Count": 8,
+    "District_Count": 9,
+    "MP_Count": 25,
+    "Constituency_Count": 23,
+    "Syndicate_Collusion_Risk": 87.19,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000054 with 10 other registered contractors.",
+      "Belongs to a 11-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 160,040,000 in sanctioned project value across 28 projects.",
+      "11 of 11 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 9 districts across 8 states involving 25 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_044",
+    "Bank_Account_ID": "BANK000044",
+    "Syndicate_Size": 11,
+    "Active_Vendor_Count": 11,
+    "Total_Projects": 29,
+    "Total_Syndicate_Funds_INR": 149420000,
+    "State_Count": 6,
+    "District_Count": 10,
+    "MP_Count": 25,
+    "Constituency_Count": 22,
+    "Syndicate_Collusion_Risk": 85.87,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000044 with 10 other registered contractors.",
+      "Belongs to a 11-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 149,420,000 in sanctioned project value across 29 projects.",
+      "11 of 11 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 10 districts across 6 states involving 25 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_096",
+    "Bank_Account_ID": "BANK000096",
+    "Syndicate_Size": 11,
+    "Active_Vendor_Count": 10,
+    "Total_Projects": 27,
+    "Total_Syndicate_Funds_INR": 163330000,
+    "State_Count": 6,
+    "District_Count": 10,
+    "MP_Count": 25,
+    "Constituency_Count": 25,
+    "Syndicate_Collusion_Risk": 85.79,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000096 with 10 other registered contractors.",
+      "Belongs to a 11-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 163,330,000 in sanctioned project value across 27 projects.",
+      "10 of 11 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 10 districts across 6 states involving 25 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_037",
+    "Bank_Account_ID": "BANK000037",
+    "Syndicate_Size": 12,
+    "Active_Vendor_Count": 11,
+    "Total_Projects": 27,
+    "Total_Syndicate_Funds_INR": 144200000,
+    "State_Count": 7,
+    "District_Count": 12,
+    "MP_Count": 21,
+    "Constituency_Count": 21,
+    "Syndicate_Collusion_Risk": 85.1,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000037 with 11 other registered contractors.",
+      "Belongs to a 12-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 144,200,000 in sanctioned project value across 27 projects.",
+      "11 of 12 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 12 districts across 7 states involving 21 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_035",
+    "Bank_Account_ID": "BANK000035",
+    "Syndicate_Size": 13,
+    "Active_Vendor_Count": 11,
+    "Total_Projects": 27,
+    "Total_Syndicate_Funds_INR": 142230000,
+    "State_Count": 8,
+    "District_Count": 13,
+    "MP_Count": 25,
+    "Constituency_Count": 23,
+    "Syndicate_Collusion_Risk": 85.01,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000035 with 12 other registered contractors.",
+      "Belongs to a 13-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 142,230,000 in sanctioned project value across 27 projects.",
+      "11 of 13 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 13 districts across 8 states involving 25 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_040",
+    "Bank_Account_ID": "BANK000040",
+    "Syndicate_Size": 11,
+    "Active_Vendor_Count": 10,
+    "Total_Projects": 24,
+    "Total_Syndicate_Funds_INR": 153720000,
+    "State_Count": 6,
+    "District_Count": 8,
+    "MP_Count": 20,
+    "Constituency_Count": 20,
+    "Syndicate_Collusion_Risk": 84.58,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000040 with 10 other registered contractors.",
+      "Belongs to a 11-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 153,720,000 in sanctioned project value across 24 projects.",
+      "10 of 11 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 8 districts across 6 states involving 20 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_050",
+    "Bank_Account_ID": "BANK000050",
+    "Syndicate_Size": 15,
+    "Active_Vendor_Count": 12,
+    "Total_Projects": 21,
+    "Total_Syndicate_Funds_INR": 121090000,
+    "State_Count": 7,
+    "District_Count": 14,
+    "MP_Count": 17,
+    "Constituency_Count": 17,
+    "Syndicate_Collusion_Risk": 84.58,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000050 with 14 other registered contractors.",
+      "Belongs to a 15-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 121,090,000 in sanctioned project value across 21 projects.",
+      "12 of 15 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 14 districts across 7 states involving 17 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_081",
+    "Bank_Account_ID": "BANK000081",
+    "Syndicate_Size": 10,
+    "Active_Vendor_Count": 10,
+    "Total_Projects": 30,
+    "Total_Syndicate_Funds_INR": 149180000,
+    "State_Count": 6,
+    "District_Count": 9,
+    "MP_Count": 26,
+    "Constituency_Count": 25,
+    "Syndicate_Collusion_Risk": 84.27,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000081 with 9 other registered contractors.",
+      "Belongs to a 10-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 149,180,000 in sanctioned project value across 30 projects.",
+      "10 of 10 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 9 districts across 6 states involving 26 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_061",
+    "Bank_Account_ID": "BANK000061",
+    "Syndicate_Size": 10,
+    "Active_Vendor_Count": 10,
+    "Total_Projects": 25,
+    "Total_Syndicate_Funds_INR": 142950000,
+    "State_Count": 5,
+    "District_Count": 9,
+    "MP_Count": 22,
+    "Constituency_Count": 22,
+    "Syndicate_Collusion_Risk": 83.49,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000061 with 9 other registered contractors.",
+      "Belongs to a 10-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 142,950,000 in sanctioned project value across 25 projects.",
+      "10 of 10 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 9 districts across 5 states involving 22 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_032",
+    "Bank_Account_ID": "BANK000032",
+    "Syndicate_Size": 14,
+    "Active_Vendor_Count": 12,
+    "Total_Projects": 20,
+    "Total_Syndicate_Funds_INR": 112550000,
+    "State_Count": 7,
+    "District_Count": 13,
+    "MP_Count": 19,
+    "Constituency_Count": 19,
+    "Syndicate_Collusion_Risk": 83.09,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000032 with 13 other registered contractors.",
+      "Belongs to a 14-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 112,550,000 in sanctioned project value across 20 projects.",
+      "12 of 14 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 13 districts across 7 states involving 19 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_100",
+    "Bank_Account_ID": "BANK000100",
+    "Syndicate_Size": 11,
+    "Active_Vendor_Count": 11,
+    "Total_Projects": 26,
+    "Total_Syndicate_Funds_INR": 125360000,
+    "State_Count": 8,
+    "District_Count": 11,
+    "MP_Count": 22,
+    "Constituency_Count": 22,
+    "Syndicate_Collusion_Risk": 82.86,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000100 with 10 other registered contractors.",
+      "Belongs to a 11-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 125,360,000 in sanctioned project value across 26 projects.",
+      "11 of 11 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 11 districts across 8 states involving 22 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_077",
+    "Bank_Account_ID": "BANK000077",
+    "Syndicate_Size": 14,
+    "Active_Vendor_Count": 10,
+    "Total_Projects": 22,
+    "Total_Syndicate_Funds_INR": 131900000,
+    "State_Count": 8,
+    "District_Count": 13,
+    "MP_Count": 19,
+    "Constituency_Count": 18,
+    "Syndicate_Collusion_Risk": 82.66,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000077 with 13 other registered contractors.",
+      "Belongs to a 14-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 131,900,000 in sanctioned project value across 22 projects.",
+      "10 of 14 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 13 districts across 8 states involving 19 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_083",
+    "Bank_Account_ID": "BANK000083",
+    "Syndicate_Size": 12,
+    "Active_Vendor_Count": 11,
+    "Total_Projects": 25,
+    "Total_Syndicate_Funds_INR": 122170000,
+    "State_Count": 7,
+    "District_Count": 12,
+    "MP_Count": 23,
+    "Constituency_Count": 21,
+    "Syndicate_Collusion_Risk": 82.35,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000083 with 11 other registered contractors.",
+      "Belongs to a 12-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 122,170,000 in sanctioned project value across 25 projects.",
+      "11 of 12 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 12 districts across 7 states involving 23 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_010",
+    "Bank_Account_ID": "BANK000010",
+    "Syndicate_Size": 11,
+    "Active_Vendor_Count": 10,
+    "Total_Projects": 25,
+    "Total_Syndicate_Funds_INR": 133480000,
+    "State_Count": 7,
+    "District_Count": 11,
+    "MP_Count": 21,
+    "Constituency_Count": 21,
+    "Syndicate_Collusion_Risk": 82.05,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000010 with 10 other registered contractors.",
+      "Belongs to a 11-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 133,480,000 in sanctioned project value across 25 projects.",
+      "10 of 11 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 11 districts across 7 states involving 21 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_076",
+    "Bank_Account_ID": "BANK000076",
+    "Syndicate_Size": 11,
+    "Active_Vendor_Count": 10,
+    "Total_Projects": 27,
+    "Total_Syndicate_Funds_INR": 133000000,
+    "State_Count": 8,
+    "District_Count": 11,
+    "MP_Count": 25,
+    "Constituency_Count": 24,
+    "Syndicate_Collusion_Risk": 81.99,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000076 with 10 other registered contractors.",
+      "Belongs to a 11-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 133,000,000 in sanctioned project value across 27 projects.",
+      "10 of 11 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 11 districts across 8 states involving 25 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_031",
+    "Bank_Account_ID": "BANK000031",
+    "Syndicate_Size": 11,
+    "Active_Vendor_Count": 10,
+    "Total_Projects": 23,
+    "Total_Syndicate_Funds_INR": 132310000,
+    "State_Count": 7,
+    "District_Count": 11,
+    "MP_Count": 20,
+    "Constituency_Count": 19,
+    "Syndicate_Collusion_Risk": 81.91,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000031 with 10 other registered contractors.",
+      "Belongs to a 11-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 132,310,000 in sanctioned project value across 23 projects.",
+      "10 of 11 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 11 districts across 7 states involving 20 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_095",
+    "Bank_Account_ID": "BANK000095",
+    "Syndicate_Size": 11,
+    "Active_Vendor_Count": 9,
+    "Total_Projects": 23,
+    "Total_Syndicate_Funds_INR": 137970000,
+    "State_Count": 6,
+    "District_Count": 11,
+    "MP_Count": 21,
+    "Constituency_Count": 20,
+    "Syndicate_Collusion_Risk": 80.8,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000095 with 10 other registered contractors.",
+      "Belongs to a 11-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 137,970,000 in sanctioned project value across 23 projects.",
+      "9 of 11 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 11 districts across 6 states involving 21 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_027",
+    "Bank_Account_ID": "BANK000027",
+    "Syndicate_Size": 11,
+    "Active_Vendor_Count": 10,
+    "Total_Projects": 23,
+    "Total_Syndicate_Funds_INR": 117280000,
+    "State_Count": 6,
+    "District_Count": 10,
+    "MP_Count": 20,
+    "Constituency_Count": 18,
+    "Syndicate_Collusion_Risk": 80.03,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000027 with 10 other registered contractors.",
+      "Belongs to a 11-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 117,280,000 in sanctioned project value across 23 projects.",
+      "10 of 11 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 10 districts across 6 states involving 20 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_020",
+    "Bank_Account_ID": "BANK000020",
+    "Syndicate_Size": 10,
+    "Active_Vendor_Count": 10,
+    "Total_Projects": 23,
+    "Total_Syndicate_Funds_INR": 109740000,
+    "State_Count": 8,
+    "District_Count": 10,
+    "MP_Count": 19,
+    "Constituency_Count": 18,
+    "Syndicate_Collusion_Risk": 79.34,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000020 with 9 other registered contractors.",
+      "Belongs to a 10-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 109,740,000 in sanctioned project value across 23 projects.",
+      "10 of 10 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 10 districts across 8 states involving 19 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_079",
+    "Bank_Account_ID": "BANK000079",
+    "Syndicate_Size": 11,
+    "Active_Vendor_Count": 10,
+    "Total_Projects": 24,
+    "Total_Syndicate_Funds_INR": 111660000,
+    "State_Count": 8,
+    "District_Count": 11,
+    "MP_Count": 21,
+    "Constituency_Count": 21,
+    "Syndicate_Collusion_Risk": 79.33,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000079 with 10 other registered contractors.",
+      "Belongs to a 11-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 111,660,000 in sanctioned project value across 24 projects.",
+      "10 of 11 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 11 districts across 8 states involving 21 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_048",
+    "Bank_Account_ID": "BANK000048",
+    "Syndicate_Size": 9,
+    "Active_Vendor_Count": 9,
+    "Total_Projects": 22,
+    "Total_Syndicate_Funds_INR": 121720000,
+    "State_Count": 5,
+    "District_Count": 6,
+    "MP_Count": 19,
+    "Constituency_Count": 18,
+    "Syndicate_Collusion_Risk": 79.27,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000048 with 8 other registered contractors.",
+      "Belongs to a 9-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 121,720,000 in sanctioned project value across 22 projects.",
+      "9 of 9 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 6 districts across 5 states involving 19 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_045",
+    "Bank_Account_ID": "BANK000045",
+    "Syndicate_Size": 10,
+    "Active_Vendor_Count": 10,
+    "Total_Projects": 23,
+    "Total_Syndicate_Funds_INR": 107750000,
+    "State_Count": 5,
+    "District_Count": 9,
+    "MP_Count": 22,
+    "Constituency_Count": 20,
+    "Syndicate_Collusion_Risk": 79.09,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000045 with 9 other registered contractors.",
+      "Belongs to a 10-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 107,750,000 in sanctioned project value across 23 projects.",
+      "10 of 10 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 9 districts across 5 states involving 22 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_021",
+    "Bank_Account_ID": "BANK000021",
+    "Syndicate_Size": 10,
+    "Active_Vendor_Count": 9,
+    "Total_Projects": 21,
+    "Total_Syndicate_Funds_INR": 120740000,
+    "State_Count": 7,
+    "District_Count": 10,
+    "MP_Count": 19,
+    "Constituency_Count": 19,
+    "Syndicate_Collusion_Risk": 78.71,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000021 with 9 other registered contractors.",
+      "Belongs to a 10-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 120,740,000 in sanctioned project value across 21 projects.",
+      "9 of 10 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 10 districts across 7 states involving 19 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_036",
+    "Bank_Account_ID": "BANK000036",
+    "Syndicate_Size": 10,
+    "Active_Vendor_Count": 9,
+    "Total_Projects": 20,
+    "Total_Syndicate_Funds_INR": 119370000,
+    "State_Count": 6,
+    "District_Count": 10,
+    "MP_Count": 18,
+    "Constituency_Count": 18,
+    "Syndicate_Collusion_Risk": 78.54,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000036 with 9 other registered contractors.",
+      "Belongs to a 10-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 119,370,000 in sanctioned project value across 20 projects.",
+      "9 of 10 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 10 districts across 6 states involving 18 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_022",
+    "Bank_Account_ID": "BANK000022",
+    "Syndicate_Size": 11,
+    "Active_Vendor_Count": 10,
+    "Total_Projects": 22,
+    "Total_Syndicate_Funds_INR": 104170000,
+    "State_Count": 7,
+    "District_Count": 9,
+    "MP_Count": 20,
+    "Constituency_Count": 18,
+    "Syndicate_Collusion_Risk": 78.39,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000022 with 10 other registered contractors.",
+      "Belongs to a 11-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 104,170,000 in sanctioned project value across 22 projects.",
+      "10 of 11 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 9 districts across 7 states involving 20 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_042",
+    "Bank_Account_ID": "BANK000042",
+    "Syndicate_Size": 10,
+    "Active_Vendor_Count": 10,
+    "Total_Projects": 20,
+    "Total_Syndicate_Funds_INR": 97660000,
+    "State_Count": 4,
+    "District_Count": 6,
+    "MP_Count": 19,
+    "Constituency_Count": 19,
+    "Syndicate_Collusion_Risk": 77.83,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000042 with 9 other registered contractors.",
+      "Belongs to a 10-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 97,660,000 in sanctioned project value across 20 projects.",
+      "10 of 10 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 6 districts across 4 states involving 19 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_038",
+    "Bank_Account_ID": "BANK000038",
+    "Syndicate_Size": 10,
+    "Active_Vendor_Count": 9,
+    "Total_Projects": 22,
+    "Total_Syndicate_Funds_INR": 111670000,
+    "State_Count": 6,
+    "District_Count": 10,
+    "MP_Count": 21,
+    "Constituency_Count": 21,
+    "Syndicate_Collusion_Risk": 77.58,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000038 with 9 other registered contractors.",
+      "Belongs to a 10-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 111,670,000 in sanctioned project value across 22 projects.",
+      "9 of 10 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 10 districts across 6 states involving 21 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_073",
+    "Bank_Account_ID": "BANK000073",
+    "Syndicate_Size": 10,
+    "Active_Vendor_Count": 9,
+    "Total_Projects": 21,
+    "Total_Syndicate_Funds_INR": 109760000,
+    "State_Count": 6,
+    "District_Count": 10,
+    "MP_Count": 19,
+    "Constituency_Count": 19,
+    "Syndicate_Collusion_Risk": 77.34,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000073 with 9 other registered contractors.",
+      "Belongs to a 10-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 109,760,000 in sanctioned project value across 21 projects.",
+      "9 of 10 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 10 districts across 6 states involving 19 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_074",
+    "Bank_Account_ID": "BANK000074",
+    "Syndicate_Size": 12,
+    "Active_Vendor_Count": 9,
+    "Total_Projects": 18,
+    "Total_Syndicate_Funds_INR": 108620000,
+    "State_Count": 7,
+    "District_Count": 11,
+    "MP_Count": 16,
+    "Constituency_Count": 16,
+    "Syndicate_Collusion_Risk": 77.33,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000074 with 11 other registered contractors.",
+      "Belongs to a 12-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 108,620,000 in sanctioned project value across 18 projects.",
+      "9 of 12 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 11 districts across 7 states involving 16 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_097",
+    "Bank_Account_ID": "BANK000097",
+    "Syndicate_Size": 10,
+    "Active_Vendor_Count": 9,
+    "Total_Projects": 17,
+    "Total_Syndicate_Funds_INR": 107860000,
+    "State_Count": 7,
+    "District_Count": 9,
+    "MP_Count": 17,
+    "Constituency_Count": 17,
+    "Syndicate_Collusion_Risk": 77.1,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000097 with 9 other registered contractors.",
+      "Belongs to a 10-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 107,860,000 in sanctioned project value across 17 projects.",
+      "9 of 10 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 9 districts across 7 states involving 17 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_068",
+    "Bank_Account_ID": "BANK000068",
+    "Syndicate_Size": 10,
+    "Active_Vendor_Count": 9,
+    "Total_Projects": 17,
+    "Total_Syndicate_Funds_INR": 107760000,
+    "State_Count": 7,
+    "District_Count": 9,
+    "MP_Count": 15,
+    "Constituency_Count": 15,
+    "Syndicate_Collusion_Risk": 77.09,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000068 with 9 other registered contractors.",
+      "Belongs to a 10-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 107,760,000 in sanctioned project value across 17 projects.",
+      "9 of 10 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 9 districts across 7 states involving 15 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_088",
+    "Bank_Account_ID": "BANK000088",
+    "Syndicate_Size": 12,
+    "Active_Vendor_Count": 8,
+    "Total_Projects": 25,
+    "Total_Syndicate_Funds_INR": 110760000,
+    "State_Count": 7,
+    "District_Count": 11,
+    "MP_Count": 21,
+    "Constituency_Count": 20,
+    "Syndicate_Collusion_Risk": 75.92,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000088 with 11 other registered contractors.",
+      "Belongs to a 12-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 110,760,000 in sanctioned project value across 25 projects.",
+      "8 of 12 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 11 districts across 7 states involving 21 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_039",
+    "Bank_Account_ID": "BANK000039",
+    "Syndicate_Size": 10,
+    "Active_Vendor_Count": 8,
+    "Total_Projects": 20,
+    "Total_Syndicate_Funds_INR": 112010000,
+    "State_Count": 7,
+    "District_Count": 10,
+    "MP_Count": 18,
+    "Constituency_Count": 18,
+    "Syndicate_Collusion_Risk": 75.62,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000039 with 9 other registered contractors.",
+      "Belongs to a 10-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 112,010,000 in sanctioned project value across 20 projects.",
+      "8 of 10 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 10 districts across 7 states involving 18 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_069",
+    "Bank_Account_ID": "BANK000069",
+    "Syndicate_Size": 12,
+    "Active_Vendor_Count": 8,
+    "Total_Projects": 18,
+    "Total_Syndicate_Funds_INR": 107470000,
+    "State_Count": 7,
+    "District_Count": 11,
+    "MP_Count": 17,
+    "Constituency_Count": 17,
+    "Syndicate_Collusion_Risk": 75.51,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000069 with 11 other registered contractors.",
+      "Belongs to a 12-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 107,470,000 in sanctioned project value across 18 projects.",
+      "8 of 12 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 11 districts across 7 states involving 17 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_071",
+    "Bank_Account_ID": "BANK000071",
+    "Syndicate_Size": 9,
+    "Active_Vendor_Count": 9,
+    "Total_Projects": 16,
+    "Total_Syndicate_Funds_INR": 90430000,
+    "State_Count": 7,
+    "District_Count": 9,
+    "MP_Count": 16,
+    "Constituency_Count": 16,
+    "Syndicate_Collusion_Risk": 75.36,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000071 with 8 other registered contractors.",
+      "Belongs to a 9-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 90,430,000 in sanctioned project value across 16 projects.",
+      "9 of 9 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 9 districts across 7 states involving 16 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_029",
+    "Bank_Account_ID": "BANK000029",
+    "Syndicate_Size": 10,
+    "Active_Vendor_Count": 9,
+    "Total_Projects": 16,
+    "Total_Syndicate_Funds_INR": 91430000,
+    "State_Count": 7,
+    "District_Count": 10,
+    "MP_Count": 14,
+    "Constituency_Count": 14,
+    "Syndicate_Collusion_Risk": 75.05,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000029 with 9 other registered contractors.",
+      "Belongs to a 10-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 91,430,000 in sanctioned project value across 16 projects.",
+      "9 of 10 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 10 districts across 7 states involving 14 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_007",
+    "Bank_Account_ID": "BANK000007",
+    "Syndicate_Size": 8,
+    "Active_Vendor_Count": 8,
+    "Total_Projects": 22,
+    "Total_Syndicate_Funds_INR": 99360000,
+    "State_Count": 5,
+    "District_Count": 7,
+    "MP_Count": 21,
+    "Constituency_Count": 21,
+    "Syndicate_Collusion_Risk": 74.92,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000007 with 7 other registered contractors.",
+      "Belongs to a 8-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 99,360,000 in sanctioned project value across 22 projects.",
+      "8 of 8 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 7 districts across 5 states involving 21 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_008",
+    "Bank_Account_ID": "BANK000008",
+    "Syndicate_Size": 8,
+    "Active_Vendor_Count": 8,
+    "Total_Projects": 22,
+    "Total_Syndicate_Funds_INR": 97830000,
+    "State_Count": 6,
+    "District_Count": 8,
+    "MP_Count": 17,
+    "Constituency_Count": 17,
+    "Syndicate_Collusion_Risk": 74.73,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000008 with 7 other registered contractors.",
+      "Belongs to a 8-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 97,830,000 in sanctioned project value across 22 projects.",
+      "8 of 8 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 8 districts across 6 states involving 17 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_084",
+    "Bank_Account_ID": "BANK000084",
+    "Syndicate_Size": 11,
+    "Active_Vendor_Count": 10,
+    "Total_Projects": 16,
+    "Total_Syndicate_Funds_INR": 74390000,
+    "State_Count": 6,
+    "District_Count": 9,
+    "MP_Count": 16,
+    "Constituency_Count": 16,
+    "Syndicate_Collusion_Risk": 74.67,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000084 with 10 other registered contractors.",
+      "Belongs to a 11-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 74,390,000 in sanctioned project value across 16 projects.",
+      "10 of 11 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 9 districts across 6 states involving 16 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_014",
+    "Bank_Account_ID": "BANK000014",
+    "Syndicate_Size": 9,
+    "Active_Vendor_Count": 8,
+    "Total_Projects": 19,
+    "Total_Syndicate_Funds_INR": 98930000,
+    "State_Count": 7,
+    "District_Count": 9,
+    "MP_Count": 18,
+    "Constituency_Count": 17,
+    "Syndicate_Collusion_Risk": 74.21,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000014 with 8 other registered contractors.",
+      "Belongs to a 9-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 98,930,000 in sanctioned project value across 19 projects.",
+      "8 of 9 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 9 districts across 7 states involving 18 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_015",
+    "Bank_Account_ID": "BANK000015",
+    "Syndicate_Size": 8,
+    "Active_Vendor_Count": 8,
+    "Total_Projects": 18,
+    "Total_Syndicate_Funds_INR": 91360000,
+    "State_Count": 6,
+    "District_Count": 8,
+    "MP_Count": 18,
+    "Constituency_Count": 17,
+    "Syndicate_Collusion_Risk": 73.92,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000015 with 7 other registered contractors.",
+      "Belongs to a 8-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 91,360,000 in sanctioned project value across 18 projects.",
+      "8 of 8 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 8 districts across 6 states involving 18 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_017",
+    "Bank_Account_ID": "BANK000017",
+    "Syndicate_Size": 10,
+    "Active_Vendor_Count": 10,
+    "Total_Projects": 16,
+    "Total_Syndicate_Funds_INR": 64420000,
+    "State_Count": 7,
+    "District_Count": 10,
+    "MP_Count": 16,
+    "Constituency_Count": 16,
+    "Syndicate_Collusion_Risk": 73.67,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000017 with 9 other registered contractors.",
+      "Belongs to a 10-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 64,420,000 in sanctioned project value across 16 projects.",
+      "10 of 10 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 10 districts across 7 states involving 16 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_094",
+    "Bank_Account_ID": "BANK000094",
+    "Syndicate_Size": 10,
+    "Active_Vendor_Count": 8,
+    "Total_Projects": 17,
+    "Total_Syndicate_Funds_INR": 94760000,
+    "State_Count": 6,
+    "District_Count": 9,
+    "MP_Count": 16,
+    "Constituency_Count": 16,
+    "Syndicate_Collusion_Risk": 73.47,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000094 with 9 other registered contractors.",
+      "Belongs to a 10-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 94,760,000 in sanctioned project value across 17 projects.",
+      "8 of 10 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 9 districts across 6 states involving 16 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_033",
+    "Bank_Account_ID": "BANK000033",
+    "Syndicate_Size": 10,
+    "Active_Vendor_Count": 9,
+    "Total_Projects": 18,
+    "Total_Syndicate_Funds_INR": 76430000,
+    "State_Count": 6,
+    "District_Count": 8,
+    "MP_Count": 15,
+    "Constituency_Count": 15,
+    "Syndicate_Collusion_Risk": 73.17,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000033 with 9 other registered contractors.",
+      "Belongs to a 10-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 76,430,000 in sanctioned project value across 18 projects.",
+      "9 of 10 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 8 districts across 6 states involving 15 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_051",
+    "Bank_Account_ID": "BANK000051",
+    "Syndicate_Size": 10,
+    "Active_Vendor_Count": 8,
+    "Total_Projects": 15,
+    "Total_Syndicate_Funds_INR": 87510000,
+    "State_Count": 5,
+    "District_Count": 7,
+    "MP_Count": 12,
+    "Constituency_Count": 11,
+    "Syndicate_Collusion_Risk": 72.56,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000051 with 9 other registered contractors.",
+      "Belongs to a 10-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 87,510,000 in sanctioned project value across 15 projects.",
+      "8 of 10 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 7 districts across 5 states involving 12 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_089",
+    "Bank_Account_ID": "BANK000089",
+    "Syndicate_Size": 10,
+    "Active_Vendor_Count": 8,
+    "Total_Projects": 16,
+    "Total_Syndicate_Funds_INR": 86740000,
+    "State_Count": 6,
+    "District_Count": 9,
+    "MP_Count": 14,
+    "Constituency_Count": 14,
+    "Syndicate_Collusion_Risk": 72.46,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000089 with 9 other registered contractors.",
+      "Belongs to a 10-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 86,740,000 in sanctioned project value across 16 projects.",
+      "8 of 10 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 9 districts across 6 states involving 14 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_024",
+    "Bank_Account_ID": "BANK000024",
+    "Syndicate_Size": 9,
+    "Active_Vendor_Count": 8,
+    "Total_Projects": 18,
+    "Total_Syndicate_Funds_INR": 84450000,
+    "State_Count": 6,
+    "District_Count": 7,
+    "MP_Count": 18,
+    "Constituency_Count": 18,
+    "Syndicate_Collusion_Risk": 72.4,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000024 with 8 other registered contractors.",
+      "Belongs to a 9-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 84,450,000 in sanctioned project value across 18 projects.",
+      "8 of 9 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 7 districts across 6 states involving 18 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_062",
+    "Bank_Account_ID": "BANK000062",
+    "Syndicate_Size": 9,
+    "Active_Vendor_Count": 9,
+    "Total_Projects": 15,
+    "Total_Syndicate_Funds_INR": 58960000,
+    "State_Count": 5,
+    "District_Count": 9,
+    "MP_Count": 14,
+    "Constituency_Count": 14,
+    "Syndicate_Collusion_Risk": 71.43,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000062 with 8 other registered contractors.",
+      "Belongs to a 9-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 58,960,000 in sanctioned project value across 15 projects.",
+      "9 of 9 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 9 districts across 5 states involving 14 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_090",
+    "Bank_Account_ID": "BANK000090",
+    "Syndicate_Size": 12,
+    "Active_Vendor_Count": 8,
+    "Total_Projects": 12,
+    "Total_Syndicate_Funds_INR": 73640000,
+    "State_Count": 9,
+    "District_Count": 12,
+    "MP_Count": 10,
+    "Constituency_Count": 10,
+    "Syndicate_Collusion_Risk": 71.29,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000090 with 11 other registered contractors.",
+      "Belongs to a 12-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 73,640,000 in sanctioned project value across 12 projects.",
+      "8 of 12 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 12 districts across 9 states involving 10 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_067",
+    "Bank_Account_ID": "BANK000067",
+    "Syndicate_Size": 8,
+    "Active_Vendor_Count": 7,
+    "Total_Projects": 17,
+    "Total_Syndicate_Funds_INR": 89460000,
+    "State_Count": 5,
+    "District_Count": 7,
+    "MP_Count": 13,
+    "Constituency_Count": 13,
+    "Syndicate_Collusion_Risk": 71.18,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000067 with 7 other registered contractors.",
+      "Belongs to a 8-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 89,460,000 in sanctioned project value across 17 projects.",
+      "7 of 8 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 7 districts across 5 states involving 13 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_080",
+    "Bank_Account_ID": "BANK000080",
+    "Syndicate_Size": 8,
+    "Active_Vendor_Count": 6,
+    "Total_Projects": 17,
+    "Total_Syndicate_Funds_INR": 101510000,
+    "State_Count": 5,
+    "District_Count": 7,
+    "MP_Count": 17,
+    "Constituency_Count": 16,
+    "Syndicate_Collusion_Risk": 70.19,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000080 with 7 other registered contractors.",
+      "Belongs to a 8-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 101,510,000 in sanctioned project value across 17 projects.",
+      "6 of 8 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 7 districts across 5 states involving 17 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_099",
+    "Bank_Account_ID": "BANK000099",
+    "Syndicate_Size": 9,
+    "Active_Vendor_Count": 7,
+    "Total_Projects": 16,
+    "Total_Syndicate_Funds_INR": 82300000,
+    "State_Count": 5,
+    "District_Count": 8,
+    "MP_Count": 16,
+    "Constituency_Count": 16,
+    "Syndicate_Collusion_Risk": 69.91,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000099 with 8 other registered contractors.",
+      "Belongs to a 9-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 82,300,000 in sanctioned project value across 16 projects.",
+      "7 of 9 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 8 districts across 5 states involving 16 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_093",
+    "Bank_Account_ID": "BANK000093",
+    "Syndicate_Size": 6,
+    "Active_Vendor_Count": 6,
+    "Total_Projects": 16,
+    "Total_Syndicate_Funds_INR": 83030000,
+    "State_Count": 4,
+    "District_Count": 5,
+    "MP_Count": 15,
+    "Constituency_Count": 14,
+    "Syndicate_Collusion_Risk": 69.76,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000093 with 5 other registered contractors.",
+      "Belongs to a 6-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 83,030,000 in sanctioned project value across 16 projects.",
+      "6 of 6 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 5 districts across 4 states involving 15 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_066",
+    "Bank_Account_ID": "BANK000066",
+    "Syndicate_Size": 10,
+    "Active_Vendor_Count": 7,
+    "Total_Projects": 15,
+    "Total_Syndicate_Funds_INR": 79170000,
+    "State_Count": 7,
+    "District_Count": 10,
+    "MP_Count": 13,
+    "Constituency_Count": 12,
+    "Syndicate_Collusion_Risk": 69.52,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000066 with 9 other registered contractors.",
+      "Belongs to a 10-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 79,170,000 in sanctioned project value across 15 projects.",
+      "7 of 10 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 10 districts across 7 states involving 13 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_001",
+    "Bank_Account_ID": "BANK000001",
+    "Syndicate_Size": 7,
+    "Active_Vendor_Count": 7,
+    "Total_Projects": 17,
+    "Total_Syndicate_Funds_INR": 68100000,
+    "State_Count": 5,
+    "District_Count": 7,
+    "MP_Count": 16,
+    "Constituency_Count": 15,
+    "Syndicate_Collusion_Risk": 69.45,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000001 with 6 other registered contractors.",
+      "Belongs to a 7-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 68,100,000 in sanctioned project value across 17 projects.",
+      "7 of 7 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 7 districts across 5 states involving 16 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_098",
+    "Bank_Account_ID": "BANK000098",
+    "Syndicate_Size": 7,
+    "Active_Vendor_Count": 6,
+    "Total_Projects": 16,
+    "Total_Syndicate_Funds_INR": 87920000,
+    "State_Count": 5,
+    "District_Count": 6,
+    "MP_Count": 14,
+    "Constituency_Count": 14,
+    "Syndicate_Collusion_Risk": 69.07,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000098 with 6 other registered contractors.",
+      "Belongs to a 7-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 87,920,000 in sanctioned project value across 16 projects.",
+      "6 of 7 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 6 districts across 5 states involving 14 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_087",
+    "Bank_Account_ID": "BANK000087",
+    "Syndicate_Size": 7,
+    "Active_Vendor_Count": 7,
+    "Total_Projects": 13,
+    "Total_Syndicate_Funds_INR": 62920000,
+    "State_Count": 6,
+    "District_Count": 7,
+    "MP_Count": 12,
+    "Constituency_Count": 12,
+    "Syndicate_Collusion_Risk": 68.81,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000087 with 6 other registered contractors.",
+      "Belongs to a 7-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 62,920,000 in sanctioned project value across 13 projects.",
+      "7 of 7 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 7 districts across 6 states involving 12 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_082",
+    "Bank_Account_ID": "BANK000082",
+    "Syndicate_Size": 11,
+    "Active_Vendor_Count": 7,
+    "Total_Projects": 14,
+    "Total_Syndicate_Funds_INR": 66270000,
+    "State_Count": 8,
+    "District_Count": 10,
+    "MP_Count": 11,
+    "Constituency_Count": 11,
+    "Syndicate_Collusion_Risk": 68.2,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000082 with 10 other registered contractors.",
+      "Belongs to a 11-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 66,270,000 in sanctioned project value across 14 projects.",
+      "7 of 11 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 10 districts across 8 states involving 11 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_025",
+    "Bank_Account_ID": "BANK000025",
+    "Syndicate_Size": 6,
+    "Active_Vendor_Count": 6,
+    "Total_Projects": 14,
+    "Total_Syndicate_Funds_INR": 70380000,
+    "State_Count": 5,
+    "District_Count": 6,
+    "MP_Count": 12,
+    "Constituency_Count": 12,
+    "Syndicate_Collusion_Risk": 68.18,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000025 with 5 other registered contractors.",
+      "Belongs to a 6-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 70,380,000 in sanctioned project value across 14 projects.",
+      "6 of 6 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 6 districts across 5 states involving 12 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_012",
+    "Bank_Account_ID": "BANK000012",
+    "Syndicate_Size": 8,
+    "Active_Vendor_Count": 6,
+    "Total_Projects": 20,
+    "Total_Syndicate_Funds_INR": 85350000,
+    "State_Count": 4,
+    "District_Count": 7,
+    "MP_Count": 19,
+    "Constituency_Count": 19,
+    "Syndicate_Collusion_Risk": 68.17,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000012 with 7 other registered contractors.",
+      "Belongs to a 8-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 85,350,000 in sanctioned project value across 20 projects.",
+      "6 of 8 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 7 districts across 4 states involving 19 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_028",
+    "Bank_Account_ID": "BANK000028",
+    "Syndicate_Size": 8,
+    "Active_Vendor_Count": 6,
+    "Total_Projects": 14,
+    "Total_Syndicate_Funds_INR": 82390000,
+    "State_Count": 6,
+    "District_Count": 8,
+    "MP_Count": 14,
+    "Constituency_Count": 13,
+    "Syndicate_Collusion_Risk": 67.8,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000028 with 7 other registered contractors.",
+      "Belongs to a 8-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 82,390,000 in sanctioned project value across 14 projects.",
+      "6 of 8 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 8 districts across 6 states involving 14 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_023",
+    "Bank_Account_ID": "BANK000023",
+    "Syndicate_Size": 9,
+    "Active_Vendor_Count": 7,
+    "Total_Projects": 14,
+    "Total_Syndicate_Funds_INR": 62630000,
+    "State_Count": 7,
+    "District_Count": 9,
+    "MP_Count": 13,
+    "Constituency_Count": 13,
+    "Syndicate_Collusion_Risk": 67.45,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000023 with 8 other registered contractors.",
+      "Belongs to a 9-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 62,630,000 in sanctioned project value across 14 projects.",
+      "7 of 9 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 9 districts across 7 states involving 13 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_047",
+    "Bank_Account_ID": "BANK000047",
+    "Syndicate_Size": 7,
+    "Active_Vendor_Count": 6,
+    "Total_Projects": 12,
+    "Total_Syndicate_Funds_INR": 74400000,
+    "State_Count": 5,
+    "District_Count": 7,
+    "MP_Count": 12,
+    "Constituency_Count": 12,
+    "Syndicate_Collusion_Risk": 67.38,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000047 with 6 other registered contractors.",
+      "Belongs to a 7-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 74,400,000 in sanctioned project value across 12 projects.",
+      "6 of 7 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 7 districts across 5 states involving 12 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_034",
+    "Bank_Account_ID": "BANK000034",
+    "Syndicate_Size": 6,
+    "Active_Vendor_Count": 6,
+    "Total_Projects": 11,
+    "Total_Syndicate_Funds_INR": 61700000,
+    "State_Count": 4,
+    "District_Count": 5,
+    "MP_Count": 11,
+    "Constituency_Count": 11,
+    "Syndicate_Collusion_Risk": 67.09,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000034 with 5 other registered contractors.",
+      "Belongs to a 6-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 61,700,000 in sanctioned project value across 11 projects.",
+      "6 of 6 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 5 districts across 4 states involving 11 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_013",
+    "Bank_Account_ID": "BANK000013",
+    "Syndicate_Size": 10,
+    "Active_Vendor_Count": 7,
+    "Total_Projects": 11,
+    "Total_Syndicate_Funds_INR": 57360000,
+    "State_Count": 6,
+    "District_Count": 10,
+    "MP_Count": 11,
+    "Constituency_Count": 10,
+    "Syndicate_Collusion_Risk": 66.79,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000013 with 9 other registered contractors.",
+      "Belongs to a 10-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 57,360,000 in sanctioned project value across 11 projects.",
+      "7 of 10 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 10 districts across 6 states involving 11 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_070",
+    "Bank_Account_ID": "BANK000070",
+    "Syndicate_Size": 8,
+    "Active_Vendor_Count": 6,
+    "Total_Projects": 13,
+    "Total_Syndicate_Funds_INR": 70500000,
+    "State_Count": 6,
+    "District_Count": 7,
+    "MP_Count": 12,
+    "Constituency_Count": 12,
+    "Syndicate_Collusion_Risk": 66.31,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000070 with 7 other registered contractors.",
+      "Belongs to a 8-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 70,500,000 in sanctioned project value across 13 projects.",
+      "6 of 8 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 7 districts across 6 states involving 12 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_016",
+    "Bank_Account_ID": "BANK000016",
+    "Syndicate_Size": 7,
+    "Active_Vendor_Count": 6,
+    "Total_Projects": 13,
+    "Total_Syndicate_Funds_INR": 63580000,
+    "State_Count": 5,
+    "District_Count": 7,
+    "MP_Count": 13,
+    "Constituency_Count": 13,
+    "Syndicate_Collusion_Risk": 66.03,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000016 with 6 other registered contractors.",
+      "Belongs to a 7-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 63,580,000 in sanctioned project value across 13 projects.",
+      "6 of 7 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 7 districts across 5 states involving 13 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_078",
+    "Bank_Account_ID": "BANK000078",
+    "Syndicate_Size": 7,
+    "Active_Vendor_Count": 6,
+    "Total_Projects": 12,
+    "Total_Syndicate_Funds_INR": 63400000,
+    "State_Count": 5,
+    "District_Count": 6,
+    "MP_Count": 11,
+    "Constituency_Count": 11,
+    "Syndicate_Collusion_Risk": 66.0,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000078 with 6 other registered contractors.",
+      "Belongs to a 7-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 63,400,000 in sanctioned project value across 12 projects.",
+      "6 of 7 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 6 districts across 5 states involving 11 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_006",
+    "Bank_Account_ID": "BANK000006",
+    "Syndicate_Size": 7,
+    "Active_Vendor_Count": 6,
+    "Total_Projects": 12,
+    "Total_Syndicate_Funds_INR": 62170000,
+    "State_Count": 4,
+    "District_Count": 7,
+    "MP_Count": 11,
+    "Constituency_Count": 11,
+    "Syndicate_Collusion_Risk": 65.85,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000006 with 6 other registered contractors.",
+      "Belongs to a 7-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 62,170,000 in sanctioned project value across 12 projects.",
+      "6 of 7 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 7 districts across 4 states involving 11 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_052",
+    "Bank_Account_ID": "BANK000052",
+    "Syndicate_Size": 7,
+    "Active_Vendor_Count": 6,
+    "Total_Projects": 11,
+    "Total_Syndicate_Funds_INR": 61300000,
+    "State_Count": 4,
+    "District_Count": 7,
+    "MP_Count": 10,
+    "Constituency_Count": 10,
+    "Syndicate_Collusion_Risk": 65.74,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000052 with 6 other registered contractors.",
+      "Belongs to a 7-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 61,300,000 in sanctioned project value across 11 projects.",
+      "6 of 7 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 7 districts across 4 states involving 10 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_049",
+    "Bank_Account_ID": "BANK000049",
+    "Syndicate_Size": 7,
+    "Active_Vendor_Count": 6,
+    "Total_Projects": 10,
+    "Total_Syndicate_Funds_INR": 52900000,
+    "State_Count": 7,
+    "District_Count": 7,
+    "MP_Count": 10,
+    "Constituency_Count": 10,
+    "Syndicate_Collusion_Risk": 64.69,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000049 with 6 other registered contractors.",
+      "Belongs to a 7-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 52,900,000 in sanctioned project value across 10 projects.",
+      "6 of 7 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 7 districts across 7 states involving 10 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_004",
+    "Bank_Account_ID": "BANK000004",
+    "Syndicate_Size": 9,
+    "Active_Vendor_Count": 6,
+    "Total_Projects": 11,
+    "Total_Syndicate_Funds_INR": 57480000,
+    "State_Count": 5,
+    "District_Count": 7,
+    "MP_Count": 10,
+    "Constituency_Count": 10,
+    "Syndicate_Collusion_Risk": 64.57,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000004 with 8 other registered contractors.",
+      "Belongs to a 9-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 57,480,000 in sanctioned project value across 11 projects.",
+      "6 of 9 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 7 districts across 5 states involving 10 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_019",
+    "Bank_Account_ID": "BANK000019",
+    "Syndicate_Size": 8,
+    "Active_Vendor_Count": 6,
+    "Total_Projects": 10,
+    "Total_Syndicate_Funds_INR": 55200000,
+    "State_Count": 5,
+    "District_Count": 7,
+    "MP_Count": 10,
+    "Constituency_Count": 10,
+    "Syndicate_Collusion_Risk": 64.4,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000019 with 7 other registered contractors.",
+      "Belongs to a 8-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 55,200,000 in sanctioned project value across 10 projects.",
+      "6 of 8 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 7 districts across 5 states involving 10 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_026",
+    "Bank_Account_ID": "BANK000026",
+    "Syndicate_Size": 6,
+    "Active_Vendor_Count": 5,
+    "Total_Projects": 12,
+    "Total_Syndicate_Funds_INR": 66670000,
+    "State_Count": 5,
+    "District_Count": 5,
+    "MP_Count": 11,
+    "Constituency_Count": 11,
+    "Syndicate_Collusion_Risk": 64.38,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000026 with 5 other registered contractors.",
+      "Belongs to a 6-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 66,670,000 in sanctioned project value across 12 projects.",
+      "5 of 6 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 5 districts across 5 states involving 11 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_030",
+    "Bank_Account_ID": "BANK000030",
+    "Syndicate_Size": 7,
+    "Active_Vendor_Count": 5,
+    "Total_Projects": 15,
+    "Total_Syndicate_Funds_INR": 62440000,
+    "State_Count": 6,
+    "District_Count": 6,
+    "MP_Count": 13,
+    "Constituency_Count": 12,
+    "Syndicate_Collusion_Risk": 63.03,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000030 with 6 other registered contractors.",
+      "Belongs to a 7-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 62,440,000 in sanctioned project value across 15 projects.",
+      "5 of 7 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 6 districts across 6 states involving 13 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_086",
+    "Bank_Account_ID": "BANK000086",
+    "Syndicate_Size": 7,
+    "Active_Vendor_Count": 5,
+    "Total_Projects": 11,
+    "Total_Syndicate_Funds_INR": 58410000,
+    "State_Count": 5,
+    "District_Count": 5,
+    "MP_Count": 11,
+    "Constituency_Count": 11,
+    "Syndicate_Collusion_Risk": 62.53,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000086 with 6 other registered contractors.",
+      "Belongs to a 7-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 58,410,000 in sanctioned project value across 11 projects.",
+      "5 of 7 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 5 districts across 5 states involving 11 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_063",
+    "Bank_Account_ID": "BANK000063",
+    "Syndicate_Size": 8,
+    "Active_Vendor_Count": 6,
+    "Total_Projects": 9,
+    "Total_Syndicate_Funds_INR": 38780000,
+    "State_Count": 5,
+    "District_Count": 7,
+    "MP_Count": 8,
+    "Constituency_Count": 7,
+    "Syndicate_Collusion_Risk": 62.35,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000063 with 7 other registered contractors.",
+      "Belongs to a 8-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 38,780,000 in sanctioned project value across 9 projects.",
+      "6 of 8 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 7 districts across 5 states involving 8 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_092",
+    "Bank_Account_ID": "BANK000092",
+    "Syndicate_Size": 6,
+    "Active_Vendor_Count": 4,
+    "Total_Projects": 15,
+    "Total_Syndicate_Funds_INR": 63280000,
+    "State_Count": 5,
+    "District_Count": 5,
+    "MP_Count": 15,
+    "Constituency_Count": 15,
+    "Syndicate_Collusion_Risk": 60.62,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000092 with 5 other registered contractors.",
+      "Belongs to a 6-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 63,280,000 in sanctioned project value across 15 projects.",
+      "4 of 6 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 5 districts across 5 states involving 15 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_075",
+    "Bank_Account_ID": "BANK000075",
+    "Syndicate_Size": 8,
+    "Active_Vendor_Count": 5,
+    "Total_Projects": 8,
+    "Total_Syndicate_Funds_INR": 43460000,
+    "State_Count": 6,
+    "District_Count": 7,
+    "MP_Count": 8,
+    "Constituency_Count": 8,
+    "Syndicate_Collusion_Risk": 60.43,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000075 with 7 other registered contractors.",
+      "Belongs to a 8-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 43,460,000 in sanctioned project value across 8 projects.",
+      "5 of 8 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 7 districts across 6 states involving 8 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_003",
+    "Bank_Account_ID": "BANK000003",
+    "Syndicate_Size": 4,
+    "Active_Vendor_Count": 3,
+    "Total_Projects": 8,
+    "Total_Syndicate_Funds_INR": 47430000,
+    "State_Count": 3,
+    "District_Count": 4,
+    "MP_Count": 8,
+    "Constituency_Count": 8,
+    "Syndicate_Collusion_Risk": 57.18,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000003 with 3 other registered contractors.",
+      "Belongs to a 4-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 47,430,000 in sanctioned project value across 8 projects.",
+      "3 of 4 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 4 districts across 3 states involving 8 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_055",
+    "Bank_Account_ID": "BANK000055",
+    "Syndicate_Size": 3,
+    "Active_Vendor_Count": 3,
+    "Total_Projects": 4,
+    "Total_Syndicate_Funds_INR": 15580000,
+    "State_Count": 2,
+    "District_Count": 2,
+    "MP_Count": 4,
+    "Constituency_Count": 4,
+    "Syndicate_Collusion_Risk": 56.64,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000055 with 2 other registered contractors.",
+      "Belongs to a 3-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 15,580,000 in sanctioned project value across 4 projects.",
+      "3 of 3 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 2 districts across 2 states involving 4 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_002",
+    "Bank_Account_ID": "BANK000002",
+    "Syndicate_Size": 4,
+    "Active_Vendor_Count": 3,
+    "Total_Projects": 4,
+    "Total_Syndicate_Funds_INR": 11090000,
+    "State_Count": 2,
+    "District_Count": 4,
+    "MP_Count": 4,
+    "Constituency_Count": 4,
+    "Syndicate_Collusion_Risk": 52.64,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000002 with 3 other registered contractors.",
+      "Belongs to a 4-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 11,090,000 in sanctioned project value across 4 projects.",
+      "3 of 4 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 4 districts across 2 states involving 4 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_009",
+    "Bank_Account_ID": "BANK000009",
+    "Syndicate_Size": 5,
+    "Active_Vendor_Count": 2,
+    "Total_Projects": 5,
+    "Total_Syndicate_Funds_INR": 20210000,
+    "State_Count": 3,
+    "District_Count": 4,
+    "MP_Count": 5,
+    "Constituency_Count": 5,
+    "Syndicate_Collusion_Risk": 48.34,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000009 with 4 other registered contractors.",
+      "Belongs to a 5-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 20,210,000 in sanctioned project value across 5 projects.",
+      "2 of 5 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 4 districts across 3 states involving 5 MPs."
+    ]
+  },
+  {
+    "Syndicate_ID": "SYNDICATE_064",
+    "Bank_Account_ID": "BANK000064",
+    "Syndicate_Size": 6,
+    "Active_Vendor_Count": 2,
+    "Total_Projects": 4,
+    "Total_Syndicate_Funds_INR": 11590000,
+    "State_Count": 5,
+    "District_Count": 6,
+    "MP_Count": 4,
+    "Constituency_Count": 4,
+    "Syndicate_Collusion_Risk": 47.5,
+    "Evidence_Reasons": [
+      "Shares bank account BANK000064 with 5 other registered contractors.",
+      "Belongs to a 6-member contractor network receiving government project awards.",
+      "The connected contractor group has collectively received INR 11,590,000 in sanctioned project value across 4 projects.",
+      "2 of 6 network members are actively receiving MPLADS projects.",
+      "The shared-account vendor structure spans 6 districts across 5 states involving 4 MPs."
+    ]
+  }
+]

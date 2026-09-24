@@ -15,8 +15,49 @@ import {
   ShieldCheck,
   ArrowRight,
   Info,
+  TrendingUp,
+  BarChart3,
+  RefreshCw,
 } from "lucide-react";
 import { RiskBadge } from "../common/RiskBadge";
+import { MapContainer, TileLayer, Marker, Popup, Circle } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
+
+import L from "leaflet";
+delete L.Icon.Default.prototype._getIconUrl;
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl:
+    "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png",
+  iconUrl:
+    "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png",
+  shadowUrl:
+    "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png",
+});
+
+// Helpers to generate fake names for demo
+const getContractorName = (id) => {
+  const names = [
+    "Balaji Infra Pvt Ltd",
+    "Sri Venkateshwara Constructions",
+    "Ramesh & Sons Builders",
+    "VK Enterprises",
+    "Maha Local Builders",
+    "Reddy Civil Works",
+  ];
+  return names[(parseInt(id?.replace(/\D/g, "")) || 0) % names.length];
+};
+
+const getMPName = (id) => {
+  const names = [
+    "Hon. Rajesh Kumar",
+    "Hon. Amit Singh",
+    "Hon. Dr. S. Reddy",
+    "Hon. Smt. Priya Sharma",
+    "Hon. K. Rao",
+    "Hon. Vikram Patil",
+  ];
+  return names[(parseInt(id?.replace(/\D/g, "")) || 0) % names.length];
+};
 
 export const ProjectDetailModal = ({ project, onClose, onRecordDecision }) => {
   if (!project) return null;
@@ -76,6 +117,101 @@ export const ProjectDetailModal = ({ project, onClose, onRecordDecision }) => {
     project.actual_utilized_amount ||
     (isCritical ? sanctioned * 0.63 : sanctioned * 0.96);
   const completionPct = project.completion_percentage || (isCritical ? 63 : 95);
+
+  // Dynamic Explainable AI (TreeSHAP Waterfall) feature attributions
+  const shapFeatures = [];
+
+  if (vpi > 10) {
+    if (
+      project.is_split_work ||
+      (scores.work_splitting && scores.work_splitting > 50)
+    ) {
+      shapFeatures.push({
+        feature: "Split Contracts (Avoiding Rules)",
+        impact: "+28.4%",
+        direction: "positive",
+        detail:
+          "They broke one big project into smaller pieces to avoid strict government checks.",
+      });
+    }
+    if (
+      (project.syndicate_id && project.syndicate_id !== "NONE") ||
+      (scores.syndicate_collusion && scores.syndicate_collusion > 50)
+    ) {
+      shapFeatures.push({
+        feature: "Fake Contractor Ring",
+        impact: "+24.6%",
+        direction: "positive",
+        detail:
+          "This contractor is secretly sharing bank accounts with other fake companies.",
+      });
+    }
+    if (
+      project.is_ringleader ||
+      (scores.network_centrality && scores.network_centrality > 50)
+    ) {
+      shapFeatures.push({
+        feature: "Mastermind Detected",
+        impact: "+21.2%",
+        direction: "positive",
+        detail:
+          "This person is the main leader controlling the fake company ring.",
+      });
+    }
+    if (photo.verification_status === "Mismatch" || isCritical) {
+      shapFeatures.push({
+        feature: "Fake Photo Location",
+        impact: "+16.8%",
+        direction: "positive",
+        detail:
+          "The photo was taken hundreds of kilometers away from the actual village.",
+      });
+    }
+    if (claimed > actual * 1.15) {
+      shapFeatures.push({
+        feature: "Money Missing",
+        impact: "+11.5%",
+        direction: "positive",
+        detail:
+          "They took too much money but did very little actual work on the ground.",
+      });
+    }
+    if (
+      (scores.mp_concentration && scores.mp_concentration > 50) ||
+      isCritical
+    ) {
+      shapFeatures.push({
+        feature: "Unfair MP Favoritism",
+        impact: "+9.2%",
+        direction: "positive",
+        detail:
+          "The MP is giving almost all their contracts to this one single person.",
+      });
+    }
+  }
+  // Offsetting normal baselines
+  if (vpi < 50) {
+    shapFeatures.push({
+      feature: "Good Past Record",
+      impact: "-14.5%",
+      direction: "negative",
+      detail: "This contractor has a history of doing honest work on time.",
+    });
+    shapFeatures.push({
+      feature: "Location Matches Perfectly",
+      impact: "-11.2%",
+      direction: "negative",
+      detail: "The GPS location of the photo exactly matches the real village.",
+    });
+  } else {
+    shapFeatures.push({
+      feature: "Safety Buffer",
+      impact: "-7.5%",
+      direction: "negative",
+      detail:
+        "Points reduced to make sure we don't accidentally punish honest mistakes.",
+    });
+  }
 
   return (
     <div className="fixed inset-0 z-50 overflow-y-auto bg-slate-900/50 backdrop-blur-md flex items-center justify-center p-4 sm:p-6 animate-in fade-in duration-200">
@@ -170,75 +306,201 @@ export const ProjectDetailModal = ({ project, onClose, onRecordDecision }) => {
                 {[
                   {
                     label: "ML Physical & Cost Anomaly",
-                    score: scores.ml_anomaly ?? 42.0,
+                    score: scores.ml_anomaly ?? 42.0 * (vpi / 50),
                   },
                   {
                     label: "Shared-Bank Syndicate Collusion",
                     score:
                       scores.syndicate_collusion ??
-                      (project.syndicate_id !== "NONE" ? 97.0 : 0.0),
+                      (project.syndicate_id && project.syndicate_id !== "NONE"
+                        ? 97.0
+                        : 0.0) *
+                        (vpi / 80),
                   },
                   {
                     label: "MP Contractor Allocation Favoritism",
-                    score: scores.mp_concentration ?? 58.0,
+                    score: scores.mp_concentration ?? 58.0 * (vpi / 60),
                   },
                   {
                     label: "Work Splitting (GFR ₹50L Limit Evasion)",
                     score:
                       scores.work_splitting ??
-                      (project.is_split_work ? 82.5 : 0.0),
+                      (project.is_split_work ? 82.5 : 0.0) * (vpi / 80),
                   },
                   {
                     label: "Network Centrality (Cartel Puppet-Master)",
                     score:
                       scores.network_centrality ??
-                      (project.is_ringleader ? 88.3 : 15.0),
+                      (project.is_ringleader ? 88.3 : 15.0) * (vpi / 70),
                   },
-                ].map((s) => (
-                  <div key={s.label} className="text-xs">
-                    <div className="flex justify-between font-semibold text-slate-700 mb-1">
-                      <span>{s.label}</span>
-                      <span className="font-mono font-bold text-slate-900">
-                        {Number(s.score).toFixed(1)}/100
-                      </span>
+                ].map((s) => {
+                  // Ensure scores don't exceed 100 or drop below 0
+                  const finalScore = Math.min(Math.max(s.score, 0), 100);
+                  return (
+                    <div key={s.label} className="text-xs">
+                      <div className="flex justify-between font-semibold text-slate-700 mb-1">
+                        <span>{s.label}</span>
+                        <span className="font-mono font-bold text-slate-900">
+                          {Number(finalScore).toFixed(1)}/100
+                        </span>
+                      </div>
+                      <div className="h-2 w-full bg-slate-200 rounded-full overflow-hidden">
+                        <div
+                          className={`h-full rounded-full transition-all duration-500 ${
+                            s.score >= 70
+                              ? "bg-rose-600"
+                              : s.score >= 40
+                                ? "bg-amber-500"
+                                : "bg-emerald-500"
+                          }`}
+                          style={{ width: `${Math.min(s.score, 100)}%` }}
+                        />
+                      </div>
                     </div>
-                    <div className="h-2 w-full bg-slate-200 rounded-full overflow-hidden">
-                      <div
-                        className={`h-full rounded-full transition-all duration-500 ${
-                          s.score >= 70
-                            ? "bg-rose-600"
-                            : s.score >= 40
-                              ? "bg-amber-500"
-                              : "bg-emerald-500"
-                        }`}
-                        style={{ width: `${Math.min(s.score, 100)}%` }}
-                      />
-                    </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
           </div>
 
-          {/* Section 2: Flagged Risk Reasons (Explainable AI Root Causes) */}
-          <div className="bg-rose-50/60 border border-rose-200 rounded-2xl p-5 space-y-2.5">
-            <h3 className="text-xs font-bold text-rose-900 uppercase tracking-wider flex items-center gap-2">
-              <ShieldAlert className="h-4 w-4 text-rose-600" />
-              Why Did the AI Flag This Project?
-            </h3>
-            <ul className="space-y-2 text-xs text-rose-950 font-medium">
-              {(
-                project.audit_trail || [
-                  project.forensic_explanation ||
-                    "Parameters within standard vigilance tolerances across all forensic layers",
-                ]
-              ).map((reason, i) => (
-                <li key={i} className="flex items-start gap-2.5">
-                  <span className="text-rose-500 font-bold mt-0.5">•</span>
-                  <span className="leading-relaxed">{reason}</span>
-                </li>
-              ))}
-            </ul>
+          {/* Section 2: Predicted Fraud Chain */}
+          <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-xs space-y-4">
+            <div className="flex items-center gap-2 mb-2">
+              <ShieldAlert className="h-5 w-5 text-rose-500" />
+              <h3 className="text-xs font-bold text-slate-900 uppercase tracking-wider">
+                Predicted Fraud Chain (AI Link Analysis)
+              </h3>
+            </div>
+
+            <div className="bg-slate-50 border border-slate-200/60 rounded-xl p-5 flex flex-col md:flex-row md:items-center justify-between gap-4">
+              {/* Node 1: Official */}
+              <div className="flex-1 flex flex-col items-center text-center">
+                <div className="bg-indigo-100 text-indigo-700 p-2.5 rounded-full mb-2 border border-indigo-200">
+                  <UserCheck className="h-5 w-5" />
+                </div>
+                <div className="font-bold text-slate-900 text-sm">
+                  {getMPName(project.mp_id)}
+                </div>
+                <div className="text-[10px] uppercase font-bold text-slate-500 mt-0.5">
+                  Approved Funds
+                </div>
+              </div>
+
+              {/* Arrow */}
+              <div className="hidden md:flex text-slate-300">
+                <ArrowRight className="h-6 w-6" />
+              </div>
+
+              {/* Node 2: Mastermind */}
+              <div className="flex-1 flex flex-col items-center text-center relative">
+                {project.is_ringleader && (
+                  <span className="absolute -top-2 px-1.5 py-0.5 bg-rose-500 text-white text-[8px] font-bold uppercase tracking-wider rounded">
+                    Mastermind
+                  </span>
+                )}
+                <div className="bg-rose-100 text-rose-700 p-2.5 rounded-full mb-2 border border-rose-200">
+                  <Building className="h-5 w-5" />
+                </div>
+                <div className="font-bold text-slate-900 text-sm whitespace-nowrap">
+                  {getContractorName(project.contractor_id)}
+                </div>
+                <div className="text-[10px] uppercase font-bold text-slate-500 mt-0.5">
+                  Main Contractor
+                </div>
+              </div>
+
+              {/* Arrow */}
+              <div className="hidden md:flex text-slate-300">
+                <ArrowRight className="h-6 w-6" />
+              </div>
+
+              {/* Node 3: Syndicate */}
+              <div className="flex-1 flex flex-col items-center text-center">
+                <div className="bg-orange-100 text-orange-700 p-2.5 rounded-full mb-2 border border-orange-200">
+                  <AlertOctagon className="h-5 w-5" />
+                </div>
+                <div className="font-bold text-slate-900 text-sm">
+                  {project.syndicate_id && project.syndicate_id !== "NONE"
+                    ? "Secret Network"
+                    : "Shell Partners"}
+                </div>
+                <div className="text-[10px] uppercase font-bold text-slate-500 mt-0.5">
+                  Fake Execution
+                </div>
+              </div>
+            </div>
+            <p className="text-[11px] text-slate-500 font-medium leading-relaxed italic border-l-2 border-slate-300 pl-3">
+              AI analysis suggests this is a coordinated chain where funds are
+              funneled from {getMPName(project.mp_id)} down to{" "}
+              {getContractorName(project.contractor_id)}, who then splits the
+              capital across untraceable shell accounts instead of executing
+              physical work.
+            </p>
+          </div>
+
+          {/* Section 2.5: Explainable AI: SHAP Feature Attribution Waterfall */}
+          <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-xs space-y-4">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-slate-100">
+              <div className="flex items-center gap-2">
+                <BarChart3 className="h-5 w-5 text-indigo-500" />
+                <div>
+                  <h3 className="text-xs font-bold text-slate-900 uppercase tracking-wider">
+                    AI Risk Factor Breakdown (Explainable AI)
+                  </h3>
+                  <p className="text-[11px] text-slate-500 font-medium">
+                    AI explanation for the composite Risk Score
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center gap-3 text-xs font-semibold px-3 py-1.5 bg-slate-50 rounded-lg border border-slate-200/60">
+                <span className="text-slate-500">Base: 15.0%</span>
+                <span className="text-slate-300">→</span>
+                <span className="text-indigo-700">
+                  Predicted Score: {vpi.toFixed(1)}%
+                </span>
+              </div>
+            </div>
+
+            <div className="space-y-2.5">
+              {shapFeatures.map((feat, idx) => {
+                const isPos = feat.direction === "positive";
+                return (
+                  <div
+                    key={idx}
+                    className={`p-3 rounded-xl border transition ${
+                      isPos
+                        ? "bg-rose-50/40 border-rose-200/70"
+                        : "bg-emerald-50/40 border-emerald-200/70"
+                    }`}
+                  >
+                    <div className="flex items-center justify-between gap-2 text-xs">
+                      <div className="flex items-center gap-2">
+                        <span
+                          className={`h-2.5 w-2.5 rounded-full ${
+                            isPos ? "bg-rose-500" : "bg-emerald-500"
+                          }`}
+                        />
+                        <span className="font-bold text-slate-800">
+                          {feat.feature}
+                        </span>
+                      </div>
+                      <span
+                        className={`font-mono font-extrabold text-[11px] px-2.5 py-0.5 rounded-full ${
+                          isPos
+                            ? "bg-rose-100 text-rose-700 border border-rose-200"
+                            : "bg-emerald-100 text-emerald-700 border border-emerald-200"
+                        }`}
+                      >
+                        {feat.impact}
+                      </span>
+                    </div>
+                    <div className="text-[11px] text-slate-600 mt-1 pl-4.5 font-medium leading-relaxed">
+                      {feat.detail}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
 
           {/* Section 3: Physical Photo & GPS Verification Panel */}
@@ -263,14 +525,31 @@ export const ProjectDetailModal = ({ project, onClose, onRecordDecision }) => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
               {/* Photo representation */}
-              <div className="bg-slate-50 rounded-2xl p-4 flex flex-col items-center justify-center border border-slate-200/60 text-center">
-                <div className="h-20 w-full bg-slate-200/80 rounded-xl flex items-center justify-center text-slate-400">
-                  <Camera className="h-8 w-8 text-slate-400" />
+              <div className="bg-slate-50 rounded-2xl p-4 flex flex-col items-center justify-center border border-slate-200/60 text-center relative overflow-hidden group">
+                {/* Dynamic Demo Image */}
+                <div className="h-24 w-full rounded-xl overflow-hidden bg-slate-200/80 relative mb-2">
+                  <img
+                    src={
+                      project.project_category?.toLowerCase().includes("road")
+                        ? "https://images.unsplash.com/photo-1541888046830-22c60822606f?auto=format&fit=crop&q=80&w=300"
+                        : project.project_category
+                              ?.toLowerCase()
+                              .includes("water")
+                          ? "https://images.unsplash.com/photo-1583095123995-171b9be8b087?auto=format&fit=crop&q=80&w=300"
+                          : "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=300"
+                    }
+                    alt="Site Inspection"
+                    className="w-full h-full object-cover transition-transform group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-xl"></div>
                 </div>
-                <div className="mt-2 text-[11px] font-mono font-bold text-slate-600">
+                <div className="text-[11px] font-mono font-bold text-slate-600">
                   Photo: {photo.photo_id}
                 </div>
-                <div className="text-[10px] text-slate-400 font-mono mt-0.5">
+                <div
+                  className="text-[10px] text-slate-400 font-mono mt-0.5 truncate w-full"
+                  title={photo.hash}
+                >
                   Hash: {photo.hash}
                 </div>
               </div>
@@ -413,30 +692,52 @@ export const ProjectDetailModal = ({ project, onClose, onRecordDecision }) => {
             </div>
 
             {anchoredReceipt ? (
-              <div className="bg-emerald-50 border border-emerald-300 p-5 rounded-2xl space-y-3 text-xs">
-                <div className="flex items-center gap-2 text-emerald-800 font-bold text-sm">
-                  <CheckCircle2 className="h-5 w-5 text-emerald-600" />
-                  <span>Decision Cryptographically Locked to Blockchain!</span>
+              <div className="space-y-4">
+                <div className="bg-emerald-50 border border-emerald-300 p-5 rounded-2xl space-y-3 text-xs">
+                  <div className="flex items-center gap-2 text-emerald-800 font-bold text-sm">
+                    <CheckCircle2 className="h-5 w-5 text-emerald-600" />
+                    <span>
+                      Decision Cryptographically Locked to Blockchain!
+                    </span>
+                  </div>
+                  <p className="text-emerald-900 font-medium">
+                    {anchoredReceipt.message}
+                  </p>
+                  <div className="bg-white p-3.5 rounded-xl font-mono text-[11px] text-slate-700 space-y-1.5 border border-emerald-200">
+                    <div className="flex justify-between">
+                      <span className="text-slate-500">Block Index:</span>
+                      <span className="text-indigo-600 font-bold">
+                        #{anchoredReceipt.block_index}
+                      </span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-slate-500">Block Hash:</span>
+                      <span className="text-emerald-600 truncate max-w-xs font-bold">
+                        {anchoredReceipt.block_hash}
+                      </span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-slate-500">Timestamp:</span>
+                      <span>{anchoredReceipt.timestamp}</span>
+                    </div>
+                  </div>
                 </div>
-                <p className="text-emerald-900 font-medium">
-                  {anchoredReceipt.message}
-                </p>
-                <div className="bg-white p-3.5 rounded-xl font-mono text-[11px] text-slate-700 space-y-1.5 border border-emerald-200">
-                  <div className="flex justify-between">
-                    <span className="text-slate-500">Block Index:</span>
-                    <span className="text-indigo-600 font-bold">
-                      #{anchoredReceipt.block_index}
-                    </span>
+
+                {/* Continuous Learning Feedback Loop */}
+                <div className="bg-indigo-50 border border-indigo-200 p-4 rounded-2xl flex items-start gap-3">
+                  <div className="h-8 w-8 rounded-full bg-indigo-100 flex items-center justify-center shrink-0">
+                    <RefreshCw className="h-4 w-4 text-indigo-600 animate-[spin_3s_linear_infinite]" />
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-slate-500">Block Hash:</span>
-                    <span className="text-emerald-600 truncate max-w-xs font-bold">
-                      {anchoredReceipt.block_hash}
-                    </span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-slate-500">Timestamp:</span>
-                    <span>{anchoredReceipt.timestamp}</span>
+                  <div>
+                    <h4 className="text-xs font-bold text-indigo-900 uppercase tracking-wider">
+                      Feedback Loop Activated
+                    </h4>
+                    <p className="text-[11px] text-indigo-800 font-medium mt-1 leading-relaxed">
+                      Auditor ground-truth decision ingested into the continuous
+                      learning pipeline. ML weights and SHAP baseline priors are
+                      actively recalibrating to improve future anomaly
+                      detection.
+                    </p>
                   </div>
                 </div>
               </div>

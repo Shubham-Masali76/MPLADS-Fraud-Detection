@@ -1,0 +1,1320 @@
+[
+  {
+    "Cluster_ID": "SPLIT_00001",
+    "Effective_Entity_ID": "SYNDICATE_005",
+    "Entity_Type": "SYNDICATE",
+    "MP_ID": "MP0053",
+    "Project_Category": "Road",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 9530000.0,
+    "Average_Amount_INR": 4765000.0,
+    "Min_Date": "2025-05-25",
+    "Max_Date": "2025-06-09",
+    "Span_Days": 15,
+    "Unique_Vendors_Count": 2,
+    "Vendors_Involved": [
+      "V000949",
+      "V000531"
+    ],
+    "Project_IDs": [
+      "P00069437",
+      "P00020002"
+    ],
+    "Is_Syndicate_Split": true,
+    "Threshold_Evasion_Flag": true,
+    "Work_Splitting_Risk_Score": 82.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Road'",
+      "Sanctioned within short 15-day window (<= 30 days)",
+      "Statutory tender threshold circumvention: Total INR 9,530,000 exceeds threshold INR 5,000,000 while individual contracts remain below",
+      "Syndicate collusion: Split across 2 sister shell contractors under same bank account"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00002",
+    "Effective_Entity_ID": "SYNDICATE_048",
+    "Entity_Type": "SYNDICATE",
+    "MP_ID": "MP0089",
+    "Project_Category": "Sports",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 5400000.0,
+    "Average_Amount_INR": 2700000.0,
+    "Min_Date": "2025-05-08",
+    "Max_Date": "2025-07-05",
+    "Span_Days": 58,
+    "Unique_Vendors_Count": 2,
+    "Vendors_Involved": [
+      "V000535",
+      "V000513"
+    ],
+    "Project_IDs": [
+      "P00026959",
+      "P00051675"
+    ],
+    "Is_Syndicate_Split": true,
+    "Threshold_Evasion_Flag": true,
+    "Work_Splitting_Risk_Score": 77.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Sports'",
+      "Sanctioned within 58-day window",
+      "Statutory tender threshold circumvention: Total INR 5,400,000 exceeds threshold INR 5,000,000 while individual contracts remain below",
+      "Syndicate collusion: Split across 2 sister shell contractors under same bank account"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00003",
+    "Effective_Entity_ID": "SYNDICATE_056",
+    "Entity_Type": "SYNDICATE",
+    "MP_ID": "MP0065",
+    "Project_Category": "Healthcare",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 9900000.0,
+    "Average_Amount_INR": 4950000.0,
+    "Min_Date": "2025-07-19",
+    "Max_Date": "2025-08-06",
+    "Span_Days": 18,
+    "Unique_Vendors_Count": 2,
+    "Vendors_Involved": [
+      "V000247",
+      "V000339"
+    ],
+    "Project_IDs": [
+      "P00068547",
+      "P00083461"
+    ],
+    "Is_Syndicate_Split": true,
+    "Threshold_Evasion_Flag": true,
+    "Work_Splitting_Risk_Score": 82.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Healthcare'",
+      "Sanctioned within short 18-day window (<= 30 days)",
+      "Statutory tender threshold circumvention: Total INR 9,900,000 exceeds threshold INR 5,000,000 while individual contracts remain below",
+      "Syndicate collusion: Split across 2 sister shell contractors under same bank account"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00004",
+    "Effective_Entity_ID": "SYNDICATE_069",
+    "Entity_Type": "SYNDICATE",
+    "MP_ID": "MP0099",
+    "Project_Category": "Electricity",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 8100000.0,
+    "Average_Amount_INR": 4050000.0,
+    "Min_Date": "2025-02-20",
+    "Max_Date": "2025-04-04",
+    "Span_Days": 43,
+    "Unique_Vendors_Count": 2,
+    "Vendors_Involved": [
+      "V000284",
+      "V000645"
+    ],
+    "Project_IDs": [
+      "P00014191",
+      "P00068677"
+    ],
+    "Is_Syndicate_Split": true,
+    "Threshold_Evasion_Flag": true,
+    "Work_Splitting_Risk_Score": 77.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Electricity'",
+      "Sanctioned within 43-day window",
+      "Statutory tender threshold circumvention: Total INR 8,100,000 exceeds threshold INR 5,000,000 while individual contracts remain below",
+      "Syndicate collusion: Split across 2 sister shell contractors under same bank account"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00005",
+    "Effective_Entity_ID": "SYNDICATE_082",
+    "Entity_Type": "SYNDICATE",
+    "MP_ID": "MP0005",
+    "Project_Category": "Sports",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 13810000.0,
+    "Average_Amount_INR": 6905000.0,
+    "Min_Date": "2025-02-16",
+    "Max_Date": "2025-03-04",
+    "Span_Days": 16,
+    "Unique_Vendors_Count": 2,
+    "Vendors_Involved": [
+      "V000838",
+      "V000891"
+    ],
+    "Project_IDs": [
+      "P00044621",
+      "P00017166"
+    ],
+    "Is_Syndicate_Split": true,
+    "Threshold_Evasion_Flag": false,
+    "Work_Splitting_Risk_Score": 67.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Sports'",
+      "Sanctioned within short 16-day window (<= 30 days)",
+      "High cumulative value INR 13,810,000",
+      "Syndicate collusion: Split across 2 sister shell contractors under same bank account"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00006",
+    "Effective_Entity_ID": "SYNDICATE_087",
+    "Entity_Type": "SYNDICATE",
+    "MP_ID": "MP0071",
+    "Project_Category": "Agriculture",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 5190000.0,
+    "Average_Amount_INR": 2595000.0,
+    "Min_Date": "2025-06-05",
+    "Max_Date": "2025-07-16",
+    "Span_Days": 41,
+    "Unique_Vendors_Count": 2,
+    "Vendors_Involved": [
+      "V000434",
+      "V000969"
+    ],
+    "Project_IDs": [
+      "P00018077",
+      "P00026510"
+    ],
+    "Is_Syndicate_Split": true,
+    "Threshold_Evasion_Flag": true,
+    "Work_Splitting_Risk_Score": 77.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Agriculture'",
+      "Sanctioned within 41-day window",
+      "Statutory tender threshold circumvention: Total INR 5,190,000 exceeds threshold INR 5,000,000 while individual contracts remain below",
+      "Syndicate collusion: Split across 2 sister shell contractors under same bank account"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00007",
+    "Effective_Entity_ID": "SYNDICATE_091",
+    "Entity_Type": "SYNDICATE",
+    "MP_ID": "MP0002",
+    "Project_Category": "Water Supply",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 9650000.0,
+    "Average_Amount_INR": 4825000.0,
+    "Min_Date": "2025-05-16",
+    "Max_Date": "2025-06-22",
+    "Span_Days": 37,
+    "Unique_Vendors_Count": 2,
+    "Vendors_Involved": [
+      "V000213",
+      "V000568"
+    ],
+    "Project_IDs": [
+      "P00007113",
+      "P00099898"
+    ],
+    "Is_Syndicate_Split": true,
+    "Threshold_Evasion_Flag": true,
+    "Work_Splitting_Risk_Score": 77.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Water Supply'",
+      "Sanctioned within 37-day window",
+      "Statutory tender threshold circumvention: Total INR 9,650,000 exceeds threshold INR 5,000,000 while individual contracts remain below",
+      "Syndicate collusion: Split across 2 sister shell contractors under same bank account"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00008",
+    "Effective_Entity_ID": "V003773",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0045",
+    "Project_Category": "Public Infrastructure",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 5230000.0,
+    "Average_Amount_INR": 2615000.0,
+    "Min_Date": "2025-01-04",
+    "Max_Date": "2025-02-09",
+    "Span_Days": 36,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V003773"
+    ],
+    "Project_IDs": [
+      "P00092370",
+      "P00074771"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": true,
+    "Work_Splitting_Risk_Score": 57.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Public Infrastructure'",
+      "Sanctioned within 36-day window",
+      "Statutory tender threshold circumvention: Total INR 5,230,000 exceeds threshold INR 5,000,000 while individual contracts remain below"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00009",
+    "Effective_Entity_ID": "V004112",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0044",
+    "Project_Category": "Water Supply",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 10830000.0,
+    "Average_Amount_INR": 5415000.0,
+    "Min_Date": "2025-01-24",
+    "Max_Date": "2025-01-28",
+    "Span_Days": 4,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V004112"
+    ],
+    "Project_IDs": [
+      "P00035381",
+      "P00081156"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": true,
+    "Work_Splitting_Risk_Score": 67.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Water Supply'",
+      "Sanctioned in rapid succession within 4 days (<= 14 days)",
+      "Statutory tender threshold circumvention: Total INR 10,830,000 exceeds threshold INR 5,000,000 while individual contracts remain below"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00010",
+    "Effective_Entity_ID": "V006386",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0008",
+    "Project_Category": "Road",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 10910000.0,
+    "Average_Amount_INR": 5455000.0,
+    "Min_Date": "2025-01-31",
+    "Max_Date": "2025-03-31",
+    "Span_Days": 59,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V006386"
+    ],
+    "Project_IDs": [
+      "P00074523",
+      "P00028233"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": true,
+    "Work_Splitting_Risk_Score": 57.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Road'",
+      "Sanctioned within 59-day window",
+      "Statutory tender threshold circumvention: Total INR 10,910,000 exceeds threshold INR 5,000,000 while individual contracts remain below"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00011",
+    "Effective_Entity_ID": "V007062",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0013",
+    "Project_Category": "Agriculture",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 9230000.0,
+    "Average_Amount_INR": 4615000.0,
+    "Min_Date": "2025-07-19",
+    "Max_Date": "2025-08-23",
+    "Span_Days": 35,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V007062"
+    ],
+    "Project_IDs": [
+      "P00099734",
+      "P00025512"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": true,
+    "Work_Splitting_Risk_Score": 57.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Agriculture'",
+      "Sanctioned within 35-day window",
+      "Statutory tender threshold circumvention: Total INR 9,230,000 exceeds threshold INR 5,000,000 while individual contracts remain below"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00012",
+    "Effective_Entity_ID": "V010550",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0089",
+    "Project_Category": "Agriculture",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 9230000.0,
+    "Average_Amount_INR": 4615000.0,
+    "Min_Date": "2025-06-09",
+    "Max_Date": "2025-08-08",
+    "Span_Days": 60,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V010550"
+    ],
+    "Project_IDs": [
+      "P00058633",
+      "P00001723"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": true,
+    "Work_Splitting_Risk_Score": 57.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Agriculture'",
+      "Sanctioned within 60-day window",
+      "Statutory tender threshold circumvention: Total INR 9,230,000 exceeds threshold INR 5,000,000 while individual contracts remain below"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00013",
+    "Effective_Entity_ID": "V011098",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0051",
+    "Project_Category": "Education",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 7070000.0,
+    "Average_Amount_INR": 3535000.0,
+    "Min_Date": "2025-01-19",
+    "Max_Date": "2025-02-04",
+    "Span_Days": 16,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V011098"
+    ],
+    "Project_IDs": [
+      "P00047561",
+      "P00050608"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": true,
+    "Work_Splitting_Risk_Score": 62.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Education'",
+      "Sanctioned within short 16-day window (<= 30 days)",
+      "Statutory tender threshold circumvention: Total INR 7,070,000 exceeds threshold INR 5,000,000 while individual contracts remain below"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00014",
+    "Effective_Entity_ID": "V011345",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0034",
+    "Project_Category": "Education",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 6210000.0,
+    "Average_Amount_INR": 3105000.0,
+    "Min_Date": "2025-02-24",
+    "Max_Date": "2025-04-09",
+    "Span_Days": 44,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V011345"
+    ],
+    "Project_IDs": [
+      "P00004528",
+      "P00061477"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": true,
+    "Work_Splitting_Risk_Score": 57.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Education'",
+      "Sanctioned within 44-day window",
+      "Statutory tender threshold circumvention: Total INR 6,210,000 exceeds threshold INR 5,000,000 while individual contracts remain below"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00015",
+    "Effective_Entity_ID": "V013129",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0067",
+    "Project_Category": "Agriculture",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 8220000.0,
+    "Average_Amount_INR": 4110000.0,
+    "Min_Date": "2025-02-03",
+    "Max_Date": "2025-03-29",
+    "Span_Days": 54,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V013129"
+    ],
+    "Project_IDs": [
+      "P00042363",
+      "P00084690"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": true,
+    "Work_Splitting_Risk_Score": 57.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Agriculture'",
+      "Sanctioned within 54-day window",
+      "Statutory tender threshold circumvention: Total INR 8,220,000 exceeds threshold INR 5,000,000 while individual contracts remain below"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00016",
+    "Effective_Entity_ID": "V014751",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0063",
+    "Project_Category": "Community Development",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 7350000.0,
+    "Average_Amount_INR": 3675000.0,
+    "Min_Date": "2025-04-13",
+    "Max_Date": "2025-06-08",
+    "Span_Days": 56,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V014751"
+    ],
+    "Project_IDs": [
+      "P00030617",
+      "P00060232"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": true,
+    "Work_Splitting_Risk_Score": 57.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Community Development'",
+      "Sanctioned within 56-day window",
+      "Statutory tender threshold circumvention: Total INR 7,350,000 exceeds threshold INR 5,000,000 while individual contracts remain below"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00017",
+    "Effective_Entity_ID": "V015025",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0071",
+    "Project_Category": "Agriculture",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 7170000.0,
+    "Average_Amount_INR": 3585000.0,
+    "Min_Date": "2025-03-07",
+    "Max_Date": "2025-04-25",
+    "Span_Days": 49,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V015025"
+    ],
+    "Project_IDs": [
+      "P00045611",
+      "P00041922"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": true,
+    "Work_Splitting_Risk_Score": 57.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Agriculture'",
+      "Sanctioned within 49-day window",
+      "Statutory tender threshold circumvention: Total INR 7,170,000 exceeds threshold INR 5,000,000 while individual contracts remain below"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00018",
+    "Effective_Entity_ID": "V016024",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0089",
+    "Project_Category": "Public Infrastructure",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 13280000.0,
+    "Average_Amount_INR": 6640000.0,
+    "Min_Date": "2025-04-18",
+    "Max_Date": "2025-05-25",
+    "Span_Days": 37,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V016024"
+    ],
+    "Project_IDs": [
+      "P00060456",
+      "P00059594"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": true,
+    "Work_Splitting_Risk_Score": 57.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Public Infrastructure'",
+      "Sanctioned within 37-day window",
+      "Statutory tender threshold circumvention: Total INR 13,280,000 exceeds threshold INR 5,000,000 while individual contracts remain below"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00019",
+    "Effective_Entity_ID": "V017156",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0056",
+    "Project_Category": "Sports",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 6600000.0,
+    "Average_Amount_INR": 3300000.0,
+    "Min_Date": "2025-03-10",
+    "Max_Date": "2025-04-02",
+    "Span_Days": 23,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V017156"
+    ],
+    "Project_IDs": [
+      "P00014624",
+      "P00055080"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": true,
+    "Work_Splitting_Risk_Score": 62.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Sports'",
+      "Sanctioned within short 23-day window (<= 30 days)",
+      "Statutory tender threshold circumvention: Total INR 6,600,000 exceeds threshold INR 5,000,000 while individual contracts remain below"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00020",
+    "Effective_Entity_ID": "V019194",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0058",
+    "Project_Category": "Agriculture",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 17670000.0,
+    "Average_Amount_INR": 8835000.0,
+    "Min_Date": "2025-06-02",
+    "Max_Date": "2025-06-29",
+    "Span_Days": 27,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V019194"
+    ],
+    "Project_IDs": [
+      "P00052881",
+      "P00067046"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": false,
+    "Work_Splitting_Risk_Score": 47.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Agriculture'",
+      "Sanctioned within short 27-day window (<= 30 days)",
+      "High cumulative value INR 17,670,000"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00021",
+    "Effective_Entity_ID": "V019469",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0073",
+    "Project_Category": "Public Infrastructure",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 6780000.0,
+    "Average_Amount_INR": 3390000.0,
+    "Min_Date": "2025-07-06",
+    "Max_Date": "2025-07-07",
+    "Span_Days": 1,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V019469"
+    ],
+    "Project_IDs": [
+      "P00090423",
+      "P00071864"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": true,
+    "Work_Splitting_Risk_Score": 67.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Public Infrastructure'",
+      "Sanctioned in rapid succession within 1 days (<= 14 days)",
+      "Statutory tender threshold circumvention: Total INR 6,780,000 exceeds threshold INR 5,000,000 while individual contracts remain below"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00022",
+    "Effective_Entity_ID": "V022078",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0087",
+    "Project_Category": "Road",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 13280000.0,
+    "Average_Amount_INR": 6640000.0,
+    "Min_Date": "2025-04-19",
+    "Max_Date": "2025-06-12",
+    "Span_Days": 54,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V022078"
+    ],
+    "Project_IDs": [
+      "P00074999",
+      "P00014706"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": true,
+    "Work_Splitting_Risk_Score": 57.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Road'",
+      "Sanctioned within 54-day window",
+      "Statutory tender threshold circumvention: Total INR 13,280,000 exceeds threshold INR 5,000,000 while individual contracts remain below"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00023",
+    "Effective_Entity_ID": "V022568",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0003",
+    "Project_Category": "Agriculture",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 15150000.0,
+    "Average_Amount_INR": 7575000.0,
+    "Min_Date": "2025-04-02",
+    "Max_Date": "2025-04-09",
+    "Span_Days": 7,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V022568"
+    ],
+    "Project_IDs": [
+      "P00075864",
+      "P00065266"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": false,
+    "Work_Splitting_Risk_Score": 52.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Agriculture'",
+      "Sanctioned in rapid succession within 7 days (<= 14 days)",
+      "High cumulative value INR 15,150,000"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00024",
+    "Effective_Entity_ID": "V025258",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0087",
+    "Project_Category": "Education",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 8650000.0,
+    "Average_Amount_INR": 4325000.0,
+    "Min_Date": "2025-01-10",
+    "Max_Date": "2025-02-11",
+    "Span_Days": 32,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V025258"
+    ],
+    "Project_IDs": [
+      "P00046683",
+      "P00002144"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": true,
+    "Work_Splitting_Risk_Score": 57.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Education'",
+      "Sanctioned within 32-day window",
+      "Statutory tender threshold circumvention: Total INR 8,650,000 exceeds threshold INR 5,000,000 while individual contracts remain below"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00025",
+    "Effective_Entity_ID": "V026568",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0092",
+    "Project_Category": "Public Infrastructure",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 9130000.0,
+    "Average_Amount_INR": 4565000.0,
+    "Min_Date": "2025-06-25",
+    "Max_Date": "2025-08-10",
+    "Span_Days": 46,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V026568"
+    ],
+    "Project_IDs": [
+      "P00096531",
+      "P00011218"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": true,
+    "Work_Splitting_Risk_Score": 57.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Public Infrastructure'",
+      "Sanctioned within 46-day window",
+      "Statutory tender threshold circumvention: Total INR 9,130,000 exceeds threshold INR 5,000,000 while individual contracts remain below"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00026",
+    "Effective_Entity_ID": "V027414",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0041",
+    "Project_Category": "Sports",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 7510000.0,
+    "Average_Amount_INR": 3755000.0,
+    "Min_Date": "2025-07-19",
+    "Max_Date": "2025-08-10",
+    "Span_Days": 22,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V027414"
+    ],
+    "Project_IDs": [
+      "P00091554",
+      "P00082902"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": true,
+    "Work_Splitting_Risk_Score": 62.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Sports'",
+      "Sanctioned within short 22-day window (<= 30 days)",
+      "Statutory tender threshold circumvention: Total INR 7,510,000 exceeds threshold INR 5,000,000 while individual contracts remain below"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00027",
+    "Effective_Entity_ID": "V029796",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0014",
+    "Project_Category": "Sports",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 5280000.0,
+    "Average_Amount_INR": 2640000.0,
+    "Min_Date": "2025-01-20",
+    "Max_Date": "2025-03-21",
+    "Span_Days": 60,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V029796"
+    ],
+    "Project_IDs": [
+      "P00096573",
+      "P00024175"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": true,
+    "Work_Splitting_Risk_Score": 57.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Sports'",
+      "Sanctioned within 60-day window",
+      "Statutory tender threshold circumvention: Total INR 5,280,000 exceeds threshold INR 5,000,000 while individual contracts remain below"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00028",
+    "Effective_Entity_ID": "V030910",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0043",
+    "Project_Category": "Water Supply",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 16160000.0,
+    "Average_Amount_INR": 8080000.0,
+    "Min_Date": "2025-04-18",
+    "Max_Date": "2025-06-07",
+    "Span_Days": 50,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V030910"
+    ],
+    "Project_IDs": [
+      "P00024539",
+      "P00091944"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": false,
+    "Work_Splitting_Risk_Score": 42.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Water Supply'",
+      "Sanctioned within 50-day window",
+      "High cumulative value INR 16,160,000"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00029",
+    "Effective_Entity_ID": "V031178",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0004",
+    "Project_Category": "Community Development",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 17910000.0,
+    "Average_Amount_INR": 8955000.0,
+    "Min_Date": "2025-06-28",
+    "Max_Date": "2025-08-27",
+    "Span_Days": 60,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V031178"
+    ],
+    "Project_IDs": [
+      "P00054271",
+      "P00029807"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": false,
+    "Work_Splitting_Risk_Score": 42.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Community Development'",
+      "Sanctioned within 60-day window",
+      "High cumulative value INR 17,910,000"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00030",
+    "Effective_Entity_ID": "V031953",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0065",
+    "Project_Category": "Healthcare",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 8920000.0,
+    "Average_Amount_INR": 4460000.0,
+    "Min_Date": "2025-03-02",
+    "Max_Date": "2025-03-17",
+    "Span_Days": 15,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V031953"
+    ],
+    "Project_IDs": [
+      "P00065045",
+      "P00009212"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": true,
+    "Work_Splitting_Risk_Score": 62.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Healthcare'",
+      "Sanctioned within short 15-day window (<= 30 days)",
+      "Statutory tender threshold circumvention: Total INR 8,920,000 exceeds threshold INR 5,000,000 while individual contracts remain below"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00031",
+    "Effective_Entity_ID": "V037853",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0035",
+    "Project_Category": "Electricity",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 12110000.0,
+    "Average_Amount_INR": 6055000.0,
+    "Min_Date": "2025-06-01",
+    "Max_Date": "2025-07-24",
+    "Span_Days": 53,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V037853"
+    ],
+    "Project_IDs": [
+      "P00073957",
+      "P00083532"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": true,
+    "Work_Splitting_Risk_Score": 57.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Electricity'",
+      "Sanctioned within 53-day window",
+      "Statutory tender threshold circumvention: Total INR 12,110,000 exceeds threshold INR 5,000,000 while individual contracts remain below"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00032",
+    "Effective_Entity_ID": "V038061",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0096",
+    "Project_Category": "Community Development",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 12620000.0,
+    "Average_Amount_INR": 6310000.0,
+    "Min_Date": "2025-07-25",
+    "Max_Date": "2025-07-28",
+    "Span_Days": 3,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V038061"
+    ],
+    "Project_IDs": [
+      "P00089999",
+      "P00003988"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": true,
+    "Work_Splitting_Risk_Score": 67.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Community Development'",
+      "Sanctioned in rapid succession within 3 days (<= 14 days)",
+      "Statutory tender threshold circumvention: Total INR 12,620,000 exceeds threshold INR 5,000,000 while individual contracts remain below"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00033",
+    "Effective_Entity_ID": "V038178",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0031",
+    "Project_Category": "Road",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 4520000.0,
+    "Average_Amount_INR": 2260000.0,
+    "Min_Date": "2025-04-26",
+    "Max_Date": "2025-05-05",
+    "Span_Days": 9,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V038178"
+    ],
+    "Project_IDs": [
+      "P00098489",
+      "P00030146"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": false,
+    "Work_Splitting_Risk_Score": 37.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Road'",
+      "Sanctioned in rapid succession within 9 days (<= 14 days)"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00034",
+    "Effective_Entity_ID": "V038621",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0077",
+    "Project_Category": "Healthcare",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 16360000.0,
+    "Average_Amount_INR": 8180000.0,
+    "Min_Date": "2025-02-05",
+    "Max_Date": "2025-03-20",
+    "Span_Days": 43,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V038621"
+    ],
+    "Project_IDs": [
+      "P00010859",
+      "P00016295"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": false,
+    "Work_Splitting_Risk_Score": 42.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Healthcare'",
+      "Sanctioned within 43-day window",
+      "High cumulative value INR 16,360,000"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00035",
+    "Effective_Entity_ID": "V039467",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0018",
+    "Project_Category": "Healthcare",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 16320000.0,
+    "Average_Amount_INR": 8160000.0,
+    "Min_Date": "2025-04-22",
+    "Max_Date": "2025-05-07",
+    "Span_Days": 15,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V039467"
+    ],
+    "Project_IDs": [
+      "P00082259",
+      "P00019839"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": false,
+    "Work_Splitting_Risk_Score": 47.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Healthcare'",
+      "Sanctioned within short 15-day window (<= 30 days)",
+      "High cumulative value INR 16,320,000"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00036",
+    "Effective_Entity_ID": "V040816",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0045",
+    "Project_Category": "Water Supply",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 14450000.0,
+    "Average_Amount_INR": 7225000.0,
+    "Min_Date": "2025-05-17",
+    "Max_Date": "2025-05-17",
+    "Span_Days": 0,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V040816"
+    ],
+    "Project_IDs": [
+      "P00096334",
+      "P00053698"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": false,
+    "Work_Splitting_Risk_Score": 52.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Water Supply'",
+      "Sanctioned in rapid succession within 0 days (<= 14 days)",
+      "High cumulative value INR 14,450,000"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00037",
+    "Effective_Entity_ID": "V042712",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0071",
+    "Project_Category": "Sanitation",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 16020000.0,
+    "Average_Amount_INR": 8010000.0,
+    "Min_Date": "2025-03-03",
+    "Max_Date": "2025-03-18",
+    "Span_Days": 15,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V042712"
+    ],
+    "Project_IDs": [
+      "P00020681",
+      "P00055108"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": false,
+    "Work_Splitting_Risk_Score": 47.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Sanitation'",
+      "Sanctioned within short 15-day window (<= 30 days)",
+      "High cumulative value INR 16,020,000"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00038",
+    "Effective_Entity_ID": "V042719",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0016",
+    "Project_Category": "Water Supply",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 12710000.0,
+    "Average_Amount_INR": 6355000.0,
+    "Min_Date": "2025-04-02",
+    "Max_Date": "2025-06-01",
+    "Span_Days": 60,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V042719"
+    ],
+    "Project_IDs": [
+      "P00076671",
+      "P00029930"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": false,
+    "Work_Splitting_Risk_Score": 42.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Water Supply'",
+      "Sanctioned within 60-day window",
+      "High cumulative value INR 12,710,000"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00039",
+    "Effective_Entity_ID": "V042728",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0038",
+    "Project_Category": "Electricity",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 17380000.0,
+    "Average_Amount_INR": 8690000.0,
+    "Min_Date": "2025-01-09",
+    "Max_Date": "2025-02-18",
+    "Span_Days": 40,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V042728"
+    ],
+    "Project_IDs": [
+      "P00080275",
+      "P00078848"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": false,
+    "Work_Splitting_Risk_Score": 42.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Electricity'",
+      "Sanctioned within 40-day window",
+      "High cumulative value INR 17,380,000"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00040",
+    "Effective_Entity_ID": "V045937",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0067",
+    "Project_Category": "Sanitation",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 13600000.0,
+    "Average_Amount_INR": 6800000.0,
+    "Min_Date": "2025-01-06",
+    "Max_Date": "2025-02-27",
+    "Span_Days": 52,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V045937"
+    ],
+    "Project_IDs": [
+      "P00068562",
+      "P00035348"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": false,
+    "Work_Splitting_Risk_Score": 42.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Sanitation'",
+      "Sanctioned within 52-day window",
+      "High cumulative value INR 13,600,000"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00041",
+    "Effective_Entity_ID": "V046378",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0063",
+    "Project_Category": "Community Development",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 11470000.0,
+    "Average_Amount_INR": 5735000.0,
+    "Min_Date": "2025-03-07",
+    "Max_Date": "2025-04-18",
+    "Span_Days": 42,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V046378"
+    ],
+    "Project_IDs": [
+      "P00001679",
+      "P00048903"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": true,
+    "Work_Splitting_Risk_Score": 57.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Community Development'",
+      "Sanctioned within 42-day window",
+      "Statutory tender threshold circumvention: Total INR 11,470,000 exceeds threshold INR 5,000,000 while individual contracts remain below"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00042",
+    "Effective_Entity_ID": "V047060",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0036",
+    "Project_Category": "Road",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 15460000.0,
+    "Average_Amount_INR": 7730000.0,
+    "Min_Date": "2025-04-04",
+    "Max_Date": "2025-05-20",
+    "Span_Days": 46,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V047060"
+    ],
+    "Project_IDs": [
+      "P00041392",
+      "P00021655"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": false,
+    "Work_Splitting_Risk_Score": 42.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Road'",
+      "Sanctioned within 46-day window",
+      "High cumulative value INR 15,460,000"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00043",
+    "Effective_Entity_ID": "V047607",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0097",
+    "Project_Category": "Water Supply",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 12430000.0,
+    "Average_Amount_INR": 6215000.0,
+    "Min_Date": "2025-05-03",
+    "Max_Date": "2025-07-02",
+    "Span_Days": 60,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V047607"
+    ],
+    "Project_IDs": [
+      "P00001154",
+      "P00002458"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": false,
+    "Work_Splitting_Risk_Score": 42.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Water Supply'",
+      "Sanctioned within 60-day window",
+      "High cumulative value INR 12,430,000"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00044",
+    "Effective_Entity_ID": "V048613",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0021",
+    "Project_Category": "Sanitation",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 13050000.0,
+    "Average_Amount_INR": 6525000.0,
+    "Min_Date": "2025-03-31",
+    "Max_Date": "2025-04-27",
+    "Span_Days": 27,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V048613"
+    ],
+    "Project_IDs": [
+      "P00016890",
+      "P00091361"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": false,
+    "Work_Splitting_Risk_Score": 47.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Sanitation'",
+      "Sanctioned within short 27-day window (<= 30 days)",
+      "High cumulative value INR 13,050,000"
+    ]
+  },
+  {
+    "Cluster_ID": "SPLIT_00045",
+    "Effective_Entity_ID": "V049855",
+    "Entity_Type": "VENDOR",
+    "MP_ID": "MP0007",
+    "Project_Category": "Education",
+    "Project_Count": 2,
+    "Total_Split_Amount_INR": 12810000.0,
+    "Average_Amount_INR": 6405000.0,
+    "Min_Date": "2025-03-23",
+    "Max_Date": "2025-05-18",
+    "Span_Days": 56,
+    "Unique_Vendors_Count": 1,
+    "Vendors_Involved": [
+      "V049855"
+    ],
+    "Project_IDs": [
+      "P00029723",
+      "P00035088"
+    ],
+    "Is_Syndicate_Split": false,
+    "Threshold_Evasion_Flag": true,
+    "Work_Splitting_Risk_Score": 57.5,
+    "Evidence_Reasons": [
+      "Work split across 2 contracts in category 'Education'",
+      "Sanctioned within 56-day window",
+      "Statutory tender threshold circumvention: Total INR 12,810,000 exceeds threshold INR 5,000,000 while individual contracts remain below"
+    ]
+  }
+]

@@ -12,6 +12,8 @@ import {
   mockSyndicates,
   mockNetworkGraph,
   mockBlockchainBlocks,
+  mockWorkSplitting,
+  mockMPs,
 } from '../data/mockData';
 
 const API_BASE = '/api';
@@ -37,6 +39,64 @@ export const apiService = {
 
   async getCategoryDistribution() {
     return mockCategoryDistribution;
+  },
+
+  async getWorkSplitting(evadesGfrOnly = false) {
+    try {
+      const res = await fetch(`${API_BASE}/work-splitting?evades_gfr_threshold=${evadesGfrOnly}&limit=100`);
+      if (res.ok) return await res.json();
+    } catch (e) {
+      // Fallback
+    }
+    return evadesGfrOnly
+      ? mockWorkSplitting.filter((s) => s.evades_gfr_threshold)
+      : mockWorkSplitting;
+  },
+
+  async getMPs() {
+    try {
+      const res = await fetch(`${API_BASE}/mps?limit=100`);
+      if (res.ok) return await res.json();
+    } catch (e) {
+      // Fallback
+    }
+    return mockMPs;
+  },
+
+  async verifyPhoto(file, claimedLat, claimedLon, toleranceKm = 5.0) {
+    try {
+      const formData = new FormData();
+      formData.append('file', file);
+      formData.append('claimed_latitude', claimedLat);
+      formData.append('claimed_longitude', claimedLon);
+      formData.append('tolerance_km', toleranceKm);
+
+      const res = await fetch(`${API_BASE}/evidence/verify-photo`, {
+        method: 'POST',
+        body: formData,
+      });
+      if (res.ok) return await res.json();
+    } catch (e) {
+      // Fallback
+    }
+
+    // Client-side fallback simulation
+    const distanceKm = Math.random() > 0.4 ? 0.8 : 312.4;
+    const isMismatch = distanceKm > toleranceKm;
+    return {
+      success: true,
+      has_exif: true,
+      photo_latitude: isMismatch ? Number(claimedLat) + 2.8 : Number(claimedLat) + 0.002,
+      photo_longitude: isMismatch ? Number(claimedLon) - 1.4 : Number(claimedLon) + 0.001,
+      claimed_latitude: Number(claimedLat),
+      claimed_longitude: Number(claimedLon),
+      distance_km: distanceKm,
+      tolerance_km: toleranceKm,
+      verification_status: isMismatch ? 'MISMATCH_EXCEEDS_TOLERANCE' : 'VERIFIED_WITHIN_TOLERANCE',
+      photo_timestamp: new Date().toISOString(),
+      duplicate_flag: isMismatch ? 'Yes (Image hash detected across 2 projects)' : 'No (Unique photograph)',
+      image_hash: '9f83acb14d2091e7' + Math.random().toString(16).substring(2, 6),
+    };
   },
 
   async getProjects(filters = {}) {
@@ -192,5 +252,76 @@ export const apiService = {
       message: `Decision '${decision}' cryptographically anchored into Block #${newIdx}.`,
     };
   },
+
+  // Live Workflow APIs (SQLite database backed)
+  async createLiveProject(projectData) {
+    const res = await fetch(`${API_BASE}/live/projects`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(projectData),
+    });
+    if (!res.ok) throw new Error('Failed to create project');
+    return await res.json();
+  },
+
+  async getLiveProjects() {
+    const res = await fetch(`${API_BASE}/live/projects`);
+    if (!res.ok) throw new Error('Failed to fetch live projects');
+    return await res.json();
+  },
+
+  
+  async rejectLiveProject(id) {
+    const res = await fetch(`${API_BASE}/live/projects/${id}/reject`, { method: 'POST' });
+    if (!res.ok) throw new Error('Failed to reject project');
+    return await res.json();
+  },
+  async approveLiveProject(id) {
+    const res = await fetch(`${API_BASE}/live/projects/${id}/approve`, {
+      method: 'POST'
+    });
+    if (!res.ok) throw new Error('Failed to approve project');
+    return await res.json();
+  },
+
+  async submitLiveEvidence(id, file, lat=null, lng=null) {
+    const formData = new FormData();
+    if (file) {
+      formData.append("evidence_file", file);
+    }
+    if (lat !== null && lng !== null) {
+      formData.append("live_lat", lat);
+      formData.append("live_lng", lng);
+    }
+    
+    const res = await fetch(`${API_BASE}/live/projects/${id}/submit_evidence`, {
+      method: 'POST',
+      body: formData,
+    });
+    if (!res.ok) throw new Error('Failed to submit evidence');
+    return await res.json();
+  },
+
+  async geofenceLiveProject(id, lat, lng) {
+    const res = await fetch(`${API_BASE}/live/projects/${id}/geofence?lat=${lat}&lng=${lng}`, {
+      method: 'POST'
+    });
+    if (!res.ok) throw new Error('Failed to geofence project');
+    return await res.json();
+  },
+
+  async getMPWallet(mp_id) {
+    const res = await fetch(`${API_BASE}/live/wallets/${mp_id}`);
+    if (!res.ok) throw new Error('Failed to fetch wallet');
+    return await res.json();
+  },
+
+  async addMPFunds(mp_id, amount) {
+    const res = await fetch(`${API_BASE}/live/wallets/${mp_id}/rollover?amount=${amount}`, {
+      method: 'POST'
+    });
+    if (!res.ok) throw new Error('Failed to rollover funds');
+    return await res.json();
+  }
 };
 

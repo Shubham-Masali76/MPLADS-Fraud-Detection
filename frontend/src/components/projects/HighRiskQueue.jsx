@@ -5,11 +5,23 @@ import {
   Filter,
   Eye,
   ArrowUpDown,
+  ArrowDownAZ,
   Building,
   ShieldCheck,
 } from "lucide-react";
 import { RiskBadge } from "../common/RiskBadge";
 import { EmptyState } from "../common/EmptyState";
+
+// Helpers to generate fake names for demo
+export const getContractorName = (id) => {
+  const names = ["Balaji Infra Pvt Ltd", "Sri Venkateshwara Constructions", "Ramesh & Sons Builders", "VK Enterprises", "Maha Local Builders", "Reddy Civil Works"];
+  return names[(parseInt(id?.replace(/\D/g, '')) || 0) % names.length];
+};
+
+export const getMPName = (id) => {
+  const names = ["Hon. Rajesh Kumar", "Hon. Amit Singh", "Hon. Dr. S. Reddy", "Hon. Smt. Priya Sharma", "Hon. K. Rao", "Hon. Vikram Patil"];
+  return names[(parseInt(id?.replace(/\D/g, '')) || 0) % names.length];
+};
 
 export const HighRiskQueue = ({ projects = [], onSelectProject }) => {
   const [search, setSearch] = useState("");
@@ -53,54 +65,55 @@ export const HighRiskQueue = ({ projects = [], onSelectProject }) => {
 
   return (
     <div className="space-y-6">
-      {/* High-Risk Queue Banner */}
-      <div className="bg-white rounded-3xl p-7 border border-slate-200/80 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6">
+      {/* Header Section */}
+      <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-6 relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-1 h-full bg-rose-500"></div>
         <div>
-          <div className="flex items-center gap-2.5">
-            <span className="flex h-2.5 w-2.5 rounded-full bg-rose-500 animate-pulse" />
-            <span className="text-[11px] font-bold uppercase tracking-wider text-rose-700 bg-rose-50 px-3 py-1 rounded-full border border-rose-100">
-              Immediate Auditor Attention Required
-            </span>
+          <div className="flex items-center gap-2 text-[10px] font-bold text-rose-600 uppercase tracking-wider mb-2">
+            <span className="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span>
+            Immediate Auditor Attention Required
           </div>
-          <h2 className="text-2xl font-bold tracking-tight text-slate-900 mt-3">
-            High-Risk Priority Queue
-          </h2>
-          <p className="text-sm text-slate-500 mt-1 max-w-2xl leading-relaxed">
-            Prioritized projects flagged by AI anomaly detection, shell
-            contractor networks, and photo GPS mismatches. Review each case and
-            record an official auditor verdict.
+          <h1 className="text-2xl font-extrabold text-slate-900 tracking-tight">
+            Projects Flagged for Fraud Investigation
+          </h1>
+          <p className="text-sm text-slate-500 mt-1.5 max-w-2xl leading-relaxed">
+            These projects have been automatically flagged by the AI for
+            suspected financial fraud, fake contractors, or fake photos. Please
+            review each case.
           </p>
         </div>
-        <div className="flex items-center gap-3 shrink-0">
-          <div className="bg-rose-50/70 border border-rose-100 px-5 py-3.5 rounded-2xl text-center min-w-[120px]">
-            <div className="text-[11px] text-rose-700 font-bold uppercase tracking-wider">
+
+        <div className="flex items-center gap-3">
+          <div className="bg-rose-50 border border-rose-100 px-4 py-3 rounded-xl text-center">
+            <div className="text-[10px] font-bold text-rose-600 uppercase tracking-wider mb-0.5">
               Critical
             </div>
-            <div className="text-2xl font-extrabold text-rose-700 tracking-tight mt-0.5">
-              1 Case
+            <div className="text-xl font-extrabold text-rose-700">
+              {highRiskPool.filter((p) => p.vpi >= 75).length} Case
             </div>
           </div>
-          <div className="bg-amber-50/70 border border-amber-100 px-5 py-3.5 rounded-2xl text-center min-w-[120px]">
-            <div className="text-[11px] text-amber-800 font-bold uppercase tracking-wider">
+          <div className="bg-orange-50 border border-orange-100 px-4 py-3 rounded-xl text-center">
+            <div className="text-[10px] font-bold text-orange-600 uppercase tracking-wider mb-0.5">
               High Priority
             </div>
-            <div className="text-2xl font-extrabold text-amber-900 tracking-tight mt-0.5">
-              660 Cases
+            <div className="text-xl font-extrabold text-orange-700">
+              {highRiskPool.filter((p) => p.vpi >= 50 && p.vpi < 75).length}{" "}
+              Cases
             </div>
           </div>
         </div>
       </div>
 
-      {/* Filter Toolbar */}
-      <div className="bg-white rounded-2xl border border-slate-200/80 p-4 shadow-sm flex flex-col md:flex-row items-center justify-between gap-4">
+      {/* Toolbar */}
+      <div className="bg-white border border-slate-200/80 rounded-2xl p-4 shadow-sm flex flex-col md:flex-row gap-4 justify-between items-center">
         <div className="relative w-full md:w-96">
-          <Search className="absolute left-3.5 top-3 h-4 w-4 text-slate-400" />
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400" />
           <input
             type="text"
+            placeholder="Search by ID, Contractor, MP, District..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            placeholder="Search by ID, Contractor, MP, District..."
-            className="w-full pl-10 pr-4 py-2.5 text-xs border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 bg-slate-50/60 focus:bg-white transition"
+            className="w-full pl-9 pr-4 py-2.5 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 bg-slate-50/50 transition-all placeholder:text-slate-400"
           />
         </div>
 
@@ -121,8 +134,10 @@ export const HighRiskQueue = ({ projects = [], onSelectProject }) => {
             ))}
           </select>
 
-          <div className="flex items-center gap-2 text-xs text-slate-500 font-medium ml-1">
-            <ArrowUpDown className="h-3.5 w-3.5 text-slate-400" />
+          <div className="h-6 w-px bg-slate-200 mx-1 hidden md:block"></div>
+
+          <div className="flex items-center gap-2 text-xs text-slate-500 font-medium">
+            <ArrowDownAZ className="h-3.5 w-3.5 text-slate-400" />
             <span>Sort:</span>
           </div>
           <select
@@ -130,17 +145,16 @@ export const HighRiskQueue = ({ projects = [], onSelectProject }) => {
             onChange={(e) => setSortBy(e.target.value)}
             className="text-xs border border-slate-200 rounded-xl px-3 py-2 bg-slate-50/60 text-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 font-medium"
           >
-            <option value="vpi">Highest Risk Score</option>
-            <option value="amount">Sanctioned Amount</option>
-            <option value="id">Project ID</option>
+            <option value="vpi">Highest Fraud Score</option>
+            <option value="budget">Largest Budget</option>
           </select>
         </div>
       </div>
 
-      {/* Projects Table */}
+      {/* Table Area */}
       {filtered.length === 0 ? (
         <EmptyState
-          title="No High-Risk Cases Match Filters"
+          title="No Flagged Cases Match Filters"
           description="Try modifying your search keywords or clearing the category filter."
           onReset={() => {
             setSearch("");
@@ -148,25 +162,31 @@ export const HighRiskQueue = ({ projects = [], onSelectProject }) => {
           }}
         />
       ) : (
-        <div className="bg-white rounded-3xl border border-slate-200/80 shadow-sm overflow-hidden">
+        <div className="bg-white border border-slate-200/80 rounded-2xl shadow-sm overflow-hidden">
           <div className="overflow-x-auto">
-            <table className="w-full text-left border-collapse text-xs">
+            <table className="w-full text-xs text-left">
               <thead>
-                <tr className="bg-slate-50/70 border-b border-slate-200/80 text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
-                  <th className="py-4 px-5">Project ID</th>
-                  <th className="py-4 px-5">Category & Purpose</th>
-                  <th className="py-4 px-5">Awarding MP</th>
-                  <th className="py-4 px-5">Contractor / Syndicate</th>
-                  <th className="py-4 px-5">Constituency</th>
-                  <th className="py-4 px-5 text-right">Sanctioned INR</th>
-                  <th className="py-4 px-5 text-center">Risk Score</th>
-                  <th className="py-4 px-5 text-center">Priority</th>
-                  <th className="py-4 px-5 text-right">Action</th>
+                <tr className="bg-slate-50/70 border-b border-slate-200/80 text-[10px] font-semibold text-slate-500 uppercase tracking-wider">
+                  <th className="py-3 px-3 whitespace-nowrap">Project ID</th>
+                  <th className="py-3 px-3">Project Type</th>
+                  <th className="py-3 px-3 whitespace-nowrap">
+                    Approved By (MP)
+                  </th>
+                  <th className="py-3 px-3">Contractor Details</th>
+                  <th className="py-3 px-3">Location</th>
+                  <th className="py-3 px-3 whitespace-nowrap">Budget (₹)</th>
+                  <th className="py-3 px-3 whitespace-nowrap">Fraud Score</th>
+                  <th className="py-3 px-3 whitespace-nowrap">
+                    AI Alert Level
+                  </th>
+                  <th className="py-3 px-3 text-right whitespace-nowrap">
+                    Action
+                  </th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100 font-medium">
                 {filtered.map((p) => {
-                  const isCrit = p.priority_tier === "CRITICAL";
+                  const isCrit = p.vpi >= 75;
                   return (
                     <tr
                       key={p.project_id}
@@ -177,61 +197,69 @@ export const HighRiskQueue = ({ projects = [], onSelectProject }) => {
                           : "hover:bg-slate-50/80"
                       }`}
                     >
-                      <td className="py-4 px-5 font-mono font-bold text-slate-900">
+                      <td className="py-3 px-3 font-mono font-medium text-slate-500 whitespace-nowrap">
                         {p.project_id}
                       </td>
-                      <td className="py-4 px-5">
-                        <div className="font-semibold text-slate-900 truncate max-w-xs">
+                      <td className="py-3 px-3">
+                        <div
+                          className="font-semibold text-slate-900 truncate max-w-[150px]"
+                          title={p.project_description || p.project_category}
+                        >
                           {p.project_description || p.project_category}
                         </div>
-                        <div className="text-[11px] text-slate-500 mt-0.5">
-                          {p.project_category}
-                        </div>
                       </td>
-                      <td className="py-4 px-5 font-mono text-slate-700">
-                        {p.mp_id}
+                      <td className="py-3 px-3 font-mono text-slate-700 whitespace-nowrap">
+                        <div className="font-semibold text-slate-900">{getMPName(p.mp_id)}</div>
+                        <div className="text-[10px] text-slate-400 mt-0.5">ID: {p.mp_id}</div>
                       </td>
-                      <td className="py-4 px-5">
-                        <div className="font-mono text-slate-800 font-semibold">
-                          {p.contractor_id}
+                      <td className="py-3 px-3">
+                        <div className="font-semibold text-slate-900 whitespace-nowrap">
+                          {getContractorName(p.contractor_id)}
                         </div>
-                        <div className="flex items-center gap-1.5 mt-1">
-                          {p.syndicate_id && p.syndicate_id !== "NONE" && (
-                            <span className="text-[9px] font-mono font-bold px-2 py-0.5 rounded-md bg-purple-50 text-purple-700 border border-purple-200">
-                              {p.syndicate_id}
+                        {p.syndicate_id && p.syndicate_id !== "NONE" && (
+                          <div className="flex flex-wrap items-center gap-1.5 mt-1">
+                            <span className="whitespace-nowrap px-1.5 py-0.5 rounded text-[9px] font-bold bg-purple-100 text-purple-700 uppercase tracking-wider">
+                              Linked to Fake Ring
                             </span>
-                          )}
-                          {p.is_ringleader && (
-                            <span className="text-[9px] font-mono font-bold px-2 py-0.5 rounded-md bg-rose-100 text-rose-800">
-                              RINGLEADER
-                            </span>
-                          )}
-                        </div>
+                            {p.is_ringleader && (
+                              <span className="whitespace-nowrap px-1.5 py-0.5 rounded text-[9px] font-bold bg-rose-100 text-rose-700 uppercase tracking-wider">
+                                Mastermind
+                              </span>
+                            )}
+                          </div>
+                        )}
+                        <div className="text-[10px] text-slate-400 mt-1">ID: {p.contractor_id}</div>
                       </td>
-                      <td className="py-4 px-5 text-slate-600">
+                      <td className="py-3 px-3 text-slate-600 whitespace-nowrap">
                         <div className="font-medium text-slate-800">
                           {p.constituency}
                         </div>
-                        <div className="text-[11px] text-slate-400">
+                        <div className="text-[10px] text-slate-400 mt-0.5">
                           {p.state}
                         </div>
                       </td>
-                      <td className="py-4 px-5 text-right font-mono font-bold text-slate-900 text-sm">
+                      <td className="py-3 px-3 font-mono font-medium text-slate-700 whitespace-nowrap">
                         ₹{Number(p.sanctioned_amount).toLocaleString()}
                       </td>
-                      <td className="py-4 px-5 text-center font-mono font-extrabold text-rose-600 text-sm">
-                        {Number(p.vpi).toFixed(1)}
+                      <td className="py-3 px-3 whitespace-nowrap">
+                        <span
+                          className={`font-mono font-bold ${
+                            p.vpi >= 75 ? "text-rose-600" : "text-orange-600"
+                          }`}
+                        >
+                          {p.vpi.toFixed(1)}/100
+                        </span>
                       </td>
-                      <td className="py-4 px-5 text-center">
+                      <td className="py-3 px-3 whitespace-nowrap">
                         <RiskBadge tier={p.priority_tier} size="sm" />
                       </td>
-                      <td className="py-4 px-5 text-right">
+                      <td className="py-3 px-3 text-right whitespace-nowrap">
                         <button
                           onClick={(e) => {
                             e.stopPropagation();
                             onSelectProject(p.project_id);
                           }}
-                          className="inline-flex items-center gap-1.5 rounded-xl bg-slate-900 hover:bg-indigo-600 text-white px-3.5 py-2 text-xs font-semibold transition-all shadow-sm"
+                          className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-slate-900 hover:bg-indigo-600 text-white text-xs font-semibold rounded-lg transition-all shadow-sm"
                         >
                           <Eye className="h-3.5 w-3.5" />
                           <span>Review</span>

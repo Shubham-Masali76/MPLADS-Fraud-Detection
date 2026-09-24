@@ -1,0 +1,80 @@
+[
+  {
+    "index": 0,
+    "timestamp": "2026-01-01T00:00:00+00:00",
+    "transaction_type": "GENESIS",
+    "payload": {
+      "system": "MPLADS AI Fraud Detection & Network Intelligence Platform",
+      "genesis_authority": "Ministry of Statistics and Programme Implementation (MoSPI) / CVC",
+      "version": "1.0.0"
+    },
+    "payload_hash": "9249b4378065203cf8cc8517fd22c03935c69e91c7a1fbc7fcdad654d8429ad2",
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "block_hash": "0e772a1678d16bd825fbd92e0146d3f54b38578cb8ece05aaf26f488a1342048",
+    "nonce": 0
+  },
+  {
+    "index": 1,
+    "timestamp": "2026-09-09T09:11:42.542692+00:00",
+    "transaction_type": "AUDITOR_DECISION",
+    "payload": {
+      "project_id": "P00059973",
+      "auditor_id": "CVC_AUDITOR_007",
+      "decision": "ESCALATE",
+      "notes": "Initiating formal vigilance probe regarding SYNDICATE_011 collusion and ringleader V000331.",
+      "recorded_at": "2026-09-09T09:11:42.542675+00:00"
+    },
+    "payload_hash": "51b194eea8d933119ec4defabfc945d7fc3e370da97d56945da8c805082ef302",
+    "previous_hash": "0e772a1678d16bd825fbd92e0146d3f54b38578cb8ece05aaf26f488a1342048",
+    "block_hash": "005add7260a67535e48ac7f08636ef3bb63df609577a619aff88bc6ba0b1e460",
+    "nonce": 201
+  },
+  {
+    "index": 2,
+    "timestamp": "2026-09-09T09:17:55.345690+00:00",
+    "transaction_type": "AUDITOR_DECISION",
+    "payload": {
+      "project_id": "P00059973",
+      "auditor_id": "CVC_INSPECTOR_001",
+      "decision": "ESCALATE",
+      "notes": "Evidence verified: Cartel ringleader V000331 detected with 97.0 collusion risk.",
+      "recorded_at": "2026-09-09T09:17:55.345674+00:00"
+    },
+    "payload_hash": "c4b2006bb40b23703c1ee2a6d7e54d86b4e99496efe905e71c6863dfb3e8496f",
+    "previous_hash": "005add7260a67535e48ac7f08636ef3bb63df609577a619aff88bc6ba0b1e460",
+    "block_hash": "00c94810a53351a5a52b2b161cc19e7fc085f763f5b62f6e324dc2ecf5045b6f",
+    "nonce": 122
+  },
+  {
+    "index": 3,
+    "timestamp": "2026-09-09T10:14:39.716038+00:00",
+    "transaction_type": "AUDITOR_DECISION",
+    "payload": {
+      "project_id": "P00059973",
+      "auditor_id": "CVC_INSPECTOR_001",
+      "decision": "ESCALATE",
+      "notes": "Evidence verified: Cartel ringleader V000331 detected with 97.0 collusion risk.",
+      "recorded_at": "2026-09-09T10:14:39.716022+00:00"
+    },
+    "payload_hash": "201a7c746fefb6748065777e492773aaae0333bdc272b17e0f8aaf287f1dd681",
+    "previous_hash": "00c94810a53351a5a52b2b161cc19e7fc085f763f5b62f6e324dc2ecf5045b6f",
+    "block_hash": "00eb184baae50155f67e9f572ff79078e530eea64ab5b7b171dbc59f654460ea",
+    "nonce": 45
+  },
+  {
+    "index": 4,
+    "timestamp": "2026-09-10T06:41:13.579195+00:00",
+    "transaction_type": "AUDITOR_DECISION",
+    "payload": {
+      "project_id": "P00059973",
+      "auditor_id": "CVC_AUDITOR_007",
+      "decision": "APPROVE",
+      "notes": "",
+      "recorded_at": "2026-09-10T06:41:13.579055+00:00"
+    },
+    "payload_hash": "0b8a183f00748b756fa8a1be1fcceee2e74c618fc03a856a32f5289731cef23b",
+    "previous_hash": "00eb184baae50155f67e9f572ff79078e530eea64ab5b7b171dbc59f654460ea",
+    "block_hash": "0077b8b27ecfd7c6279d8edf72d43a2ab4a4290d89c84b90bf6bd6bad5e61f51",
+    "nonce": 302
+  }
+]
