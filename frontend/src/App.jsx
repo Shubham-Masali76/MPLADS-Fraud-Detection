@@ -19,6 +19,9 @@ import { MPDashboard } from "./components/dashboards/MPDashboard";
 import { DistrictDashboard } from "./components/dashboards/DistrictDashboard";
 import { FieldEngineerDashboard } from "./components/dashboards/FieldEngineerDashboard";
 import { MaterialVendorDashboard } from "./components/dashboards/MaterialVendorDashboard";
+import { MoSPIDashboard } from "./components/dashboards/MoSPIDashboard";
+import { ImplementingAgencyDashboard } from "./components/dashboards/ImplementingAgencyDashboard";
+
 
 // Temporary mock for District Authority & Vendor (separated)
 const SimpleMockDashboard = ({ title, role, onLogout }) => (
@@ -128,6 +131,12 @@ export function App() {
 
   // ROLE ROUTING
   if (!currentRole) return <EntrancePortal onSelectRole={setCurrentRole} />;
+  
+  if (currentRole === "mospi")
+    return <MoSPIDashboard onLogout={() => setCurrentRole(null)} />;
+
+  if (currentRole === "implementing_agency")
+    return <ImplementingAgencyDashboard onLogout={() => setCurrentRole(null)} />;
   if (currentRole === "mp")
     return (
       <MPDashboard projects={projects} onLogout={() => setCurrentRole(null)} />

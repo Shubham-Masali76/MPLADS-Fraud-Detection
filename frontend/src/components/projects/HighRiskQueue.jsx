@@ -170,7 +170,7 @@ export const HighRiskQueue = ({ projects = [], onSelectProject }) => {
                   <th className="py-3 px-3 whitespace-nowrap">Project ID</th>
                   <th className="py-3 px-3">Project Type</th>
                   <th className="py-3 px-3 whitespace-nowrap">
-                    Approved By (MP)
+                    Recommended By (MP)
                   </th>
                   <th className="py-3 px-3">Contractor Details</th>
                   <th className="py-3 px-3">Location</th>

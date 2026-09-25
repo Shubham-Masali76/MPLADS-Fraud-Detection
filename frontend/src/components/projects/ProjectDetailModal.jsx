@@ -529,17 +529,11 @@ export const ProjectDetailModal = ({ project, onClose, onRecordDecision }) => {
                 {/* Dynamic Demo Image */}
                 <div className="h-24 w-full rounded-xl overflow-hidden bg-slate-200/80 relative mb-2">
                   <img
-                    src={
-                      project.project_category?.toLowerCase().includes("road")
-                        ? "https://images.unsplash.com/photo-1541888046830-22c60822606f?auto=format&fit=crop&q=80&w=300"
-                        : project.project_category
-                              ?.toLowerCase()
-                              .includes("water")
-                          ? "https://images.unsplash.com/photo-1583095123995-171b9be8b087?auto=format&fit=crop&q=80&w=300"
-                          : "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=300"
-                    }
+                    src={`/uploads/evidence_${project.project_id || project.id}.jpg`}
+                    onError={(e) => { if (!e.target.src.includes('mock-evidence.jpg')) { e.target.src = '/mock-evidence.jpg'; } }}
                     alt="Site Inspection"
-                    className="w-full h-full object-cover transition-transform group-hover:scale-110"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 cursor-pointer"
+                    onClick={(e) => window.open(e.target.src, '_blank')}
                   />
                   <div className="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-xl"></div>
                 </div>
@@ -802,7 +796,7 @@ export const ProjectDetailModal = ({ project, onClose, onRecordDecision }) => {
                   className="flex items-center justify-center gap-2 p-3.5 rounded-xl border border-emerald-200 bg-emerald-50 hover:bg-emerald-100/80 text-emerald-800 transition text-xs font-bold shadow-sm"
                 >
                   <CheckCircle2 className="h-4 w-4 text-emerald-600" />
-                  <span>Approve Project</span>
+                  <span>Clear AI Flag (False Positive)</span>
                 </button>
 
                 <button

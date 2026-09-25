@@ -17,7 +17,10 @@ from backend.routers.overview import router as overview_router
 from backend.routers.projects import router as projects_router
 from backend.routers.splitting import router as splitting_router
 from backend.routers.syndicates import router as syndicates_router
+from backend.routers.auth import router as auth_router
 from backend.routers.live_workflow import router as live_workflow_router
+from backend.routers.mock_gov_apis import router as gov_apis_router
+from backend.routers.system_controls import router as system_router
 from backend.services.blockchain_service import blockchain_service
 from backend.services.data_service import data_service
 from backend.database import engine, Base
@@ -98,7 +101,10 @@ app.include_router(splitting_router, prefix="/api")
 app.include_router(graph_router, prefix="/api")
 app.include_router(evidence_router, prefix="/api")
 app.include_router(blockchain_router, prefix="/api")
+app.include_router(auth_router, prefix="/api")
 app.include_router(live_workflow_router, prefix="/api")
+app.include_router(gov_apis_router, prefix="/api")
+app.include_router(system_router, prefix="/api")
 
 
 if __name__ == "__main__":

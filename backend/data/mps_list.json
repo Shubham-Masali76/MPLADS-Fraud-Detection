@@ -1,0 +1,6306 @@
+[
+  {
+    "id": "MP_VIP_001",
+    "name": "Rahul Gandhi",
+    "constituency": "Wayanad",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_VIP_002",
+    "name": "Narendra Modi",
+    "constituency": "Varanasi",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_VIP_003",
+    "name": "Amit Shah",
+    "constituency": "Gandhinagar",
+    "state": "Gujarat",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_VIP_004",
+    "name": "Shashi Tharoor",
+    "constituency": "Thiruvananthapuram",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_428",
+    "name": "Akhilesh Adityanath",
+    "constituency": "Varanasi",
+    "state": "Andhra Pradesh",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_507",
+    "name": "Akhilesh Adityanath",
+    "constituency": "Guwahati",
+    "state": "Jharkhand",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_625",
+    "name": "Akhilesh Bose",
+    "constituency": "Jammu & Kashmir (State)",
+    "state": "Jammu & Kashmir",
+    "type": "Rajya Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_093",
+    "name": "Akhilesh Das",
+    "constituency": "Guwahati",
+    "state": "Rajasthan",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_007",
+    "name": "Akhilesh Fadnavis",
+    "constituency": "Pune",
+    "state": "Jammu & Kashmir",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_741",
+    "name": "Akhilesh Gadkari",
+    "constituency": "Haryana (State)",
+    "state": "Haryana",
+    "type": "Rajya Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_279",
+    "name": "Akhilesh Gandhi",
+    "constituency": "Thiruvananthapuram",
+    "state": "Rajasthan",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_736",
+    "name": "Akhilesh Gupta",
+    "constituency": "Gujarat (State)",
+    "state": "Gujarat",
+    "type": "Rajya Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_361",
+    "name": "Akhilesh Irani",
+    "constituency": "Lucknow",
+    "state": "Telangana",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_333",
+    "name": "Akhilesh Kavya",
+    "constituency": "Mumbai North",
+    "state": "Jharkhand",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_572",
+    "name": "Akhilesh Kavya",
+    "constituency": "Karnataka (State)",
+    "state": "Karnataka",
+    "type": "Rajya Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_354",
+    "name": "Akhilesh Kejriwal",
+    "constituency": "Wayanad",
+    "state": "Jammu & Kashmir",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_389",
+    "name": "Akhilesh Kejriwal",
+    "constituency": "Mumbai North",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_542",
+    "name": "Akhilesh Kejriwal",
+    "constituency": "Varanasi",
+    "state": "Telangana",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_504",
+    "name": "Akhilesh Mishra",
+    "constituency": "Chandigarh",
+    "state": "Andhra Pradesh",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_587",
+    "name": "Akhilesh Mishra",
+    "constituency": "Delhi (State)",
+    "state": "Delhi",
+    "type": "Rajya Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_642",
+    "name": "Akhilesh Mishra",
+    "constituency": "Assam (State)",
+    "state": "Assam",
+    "type": "Rajya Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_408",
+    "name": "Akhilesh Owaisi",
+    "constituency": "Mumbai North",
+    "state": "Odisha",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_228",
+    "name": "Akhilesh Patnaik",
+    "constituency": "Nagpur",
+    "state": "Punjab",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_260",
+    "name": "Akhilesh Rao",
+    "constituency": "Varanasi",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_570",
+    "name": "Akhilesh Sarma",
+    "constituency": "Gujarat (State)",
+    "state": "Gujarat",
+    "type": "Rajya Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_692",
+    "name": "Akhilesh Sarma",
+    "constituency": "Jharkhand (State)",
+    "state": "Jharkhand",
+    "type": "Rajya Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_076",
+    "name": "Akhilesh Sharma",
+    "constituency": "Chandigarh",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_706",
+    "name": "Akhilesh Stalin",
+    "constituency": "Delhi (State)",
+    "state": "Delhi",
+    "type": "Rajya Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_780",
+    "name": "Akhilesh Stalin",
+    "constituency": "Chhattisgarh (State)",
+    "state": "Chhattisgarh",
+    "type": "Rajya Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_757",
+    "name": "Akhilesh Tharoor",
+    "constituency": "Telangana (State)",
+    "state": "Telangana",
+    "type": "Rajya Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_693",
+    "name": "Akhilesh Verma",
+    "constituency": "Chhattisgarh (State)",
+    "state": "Chhattisgarh",
+    "type": "Rajya Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_234",
+    "name": "Amit Bose",
+    "constituency": "Patna",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_049",
+    "name": "Amit Das",
+    "constituency": "Varanasi",
+    "state": "West Bengal",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_775",
+    "name": "Amit Das",
+    "constituency": "Karnataka (State)",
+    "state": "Karnataka",
+    "type": "Rajya Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_241",
+    "name": "Amit Gadkari",
+    "constituency": "Bangalore Central",
+    "state": "Odisha",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_294",
+    "name": "Amit Gadkari",
+    "constituency": "Ahmedabad",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_407",
+    "name": "Amit Gadkari",
+    "constituency": "Jaipur",
+    "state": "Andhra Pradesh",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_683",
+    "name": "Amit Gupta",
+    "constituency": "West Bengal (State)",
+    "state": "West Bengal",
+    "type": "Rajya Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_529",
+    "name": "Amit Irani",
+    "constituency": "Patna",
+    "state": "Telangana",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_191",
+    "name": "Amit Iyer",
+    "constituency": "Bangalore Rural",
+    "state": "Assam",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_562",
+    "name": "Amit Mishra",
+    "constituency": "Rajasthan (State)",
+    "state": "Rajasthan",
+    "type": "Rajya Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_493",
+    "name": "Amit Pawar",
+    "constituency": "Lucknow",
+    "state": "Maharashtra",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_659",
+    "name": "Amit Reddy",
+    "constituency": "Haryana (State)",
+    "state": "Haryana",
+    "type": "Rajya Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_506",
+    "name": "Amit Sharma",
+    "constituency": "Warangal",
+    "state": "Punjab",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_185",
+    "name": "Amit Singh",
+    "constituency": "Bhopal",
+    "state": "Punjab",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_559",
+    "name": "Amit Singh",
+    "constituency": "Chhattisgarh (State)",
+    "state": "Chhattisgarh",
+    "type": "Rajya Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_617",
+    "name": "Amit Stalin",
+    "constituency": "Chhattisgarh (State)",
+    "state": "Chhattisgarh",
+    "type": "Rajya Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_657",
+    "name": "Amit Stalin",
+    "constituency": "Telangana (State)",
+    "state": "Telangana",
+    "type": "Rajya Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_582",
+    "name": "Amit Verma",
+    "constituency": "Karnataka (State)",
+    "state": "Karnataka",
+    "type": "Rajya Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_303",
+    "name": "Amit Yadav",
+    "constituency": "Bhopal",
+    "state": "Madhya Pradesh",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_283",
+    "name": "Anurag Adityanath",
+    "constituency": "Mumbai North",
+    "state": "Assam",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_556",
+    "name": "Anurag Banerjee",
+    "constituency": "Andhra Pradesh (State)",
+    "state": "Andhra Pradesh",
+    "type": "Rajya Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_189",
+    "name": "Anurag Bose",
+    "constituency": "Gandhinagar",
+    "state": "Assam",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_002",
+    "name": "Anurag Das",
+    "constituency": "Ahmedabad",
+    "state": "Tamil Nadu",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_462",
+    "name": "Anurag Das",
+    "constituency": "Chandigarh",
+    "state": "Gujarat",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_107",
+    "name": "Anurag Fadnavis",
+    "constituency": "Chandigarh",
+    "state": "Punjab",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_186",
+    "name": "Anurag Fadnavis",
+    "constituency": "Mumbai North",
+    "state": "Punjab",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_041",
+    "name": "Anurag Gandhi",
+    "constituency": "Chandigarh",
+    "state": "West Bengal",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_538",
+    "name": "Anurag Gandhi",
+    "constituency": "Bhopal",
+    "state": "Assam",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_051",
+    "name": "Anurag Irani",
+    "constituency": "Chennai Central",
+    "state": "Tamil Nadu",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_180",
+    "name": "Anurag Irani",
+    "constituency": "Varanasi",
+    "state": "Punjab",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_101",
+    "name": "Anurag Iyer",
+    "constituency": "Gandhinagar",
+    "state": "West Bengal",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_110",
+    "name": "Anurag Kumar",
+    "constituency": "Bangalore Central",
+    "state": "Bihar",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_754",
+    "name": "Anurag Kumar",
+    "constituency": "Andhra Pradesh (State)",
+    "state": "Andhra Pradesh",
+    "type": "Rajya Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_327",
+    "name": "Anurag Modi",
+    "constituency": "Bangalore Central",
+    "state": "Jharkhand",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_170",
+    "name": "Anurag Patnaik",
+    "constituency": "Guwahati",
+    "state": "Telangana",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_731",
+    "name": "Anurag Patnaik",
+    "constituency": "Andhra Pradesh (State)",
+    "state": "Andhra Pradesh",
+    "type": "Rajya Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_199",
+    "name": "Anurag Rao",
+    "constituency": "Jaipur",
+    "state": "Haryana",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_085",
+    "name": "Anurag Reddy",
+    "constituency": "Lucknow",
+    "state": "Punjab",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_177",
+    "name": "Anurag Reddy",
+    "constituency": "Chandigarh",
+    "state": "Assam",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_552",
+    "name": "Anurag Reddy",
+    "constituency": "Tamil Nadu (State)",
+    "state": "Tamil Nadu",
+    "type": "Rajya Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_568",
+    "name": "Anurag Reddy",
+    "constituency": "Bihar (State)",
+    "state": "Bihar",
+    "type": "Rajya Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_723",
+    "name": "Anurag Sarma",
+    "constituency": "Chhattisgarh (State)",
+    "state": "Chhattisgarh",
+    "type": "Rajya Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_705",
+    "name": "Anurag Shah",
+    "constituency": "Uttar Pradesh (State)",
+    "state": "Uttar Pradesh",
+    "type": "Rajya Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_039",
+    "name": "Anurag Sharma",
+    "constituency": "Mumbai South",
+    "state": "West Bengal",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_699",
+    "name": "Anurag Tharoor",
+    "constituency": "West Bengal (State)",
+    "state": "West Bengal",
+    "type": "Rajya Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_686",
+    "name": "Anurag Verma",
+    "constituency": "Jharkhand (State)",
+    "state": "Jharkhand",
+    "type": "Rajya Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_521",
+    "name": "Anurag Vijayan",
+    "constituency": "Kolkata North",
+    "state": "West Bengal",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_663",
+    "name": "Arvind Adityanath",
+    "constituency": "Punjab (State)",
+    "state": "Punjab",
+    "type": "Rajya Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_539",
+    "name": "Arvind Banerjee",
+    "constituency": "Bangalore Central",
+    "state": "Rajasthan",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_637",
+    "name": "Arvind Bose",
+    "constituency": "Rajasthan (State)",
+    "state": "Rajasthan",
+    "type": "Rajya Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_357",
+    "name": "Arvind Das",
+    "constituency": "Wayanad",
+    "state": "Jammu & Kashmir",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_711",
+    "name": "Arvind Das",
+    "constituency": "West Bengal (State)",
+    "state": "West Bengal",
+    "type": "Rajya Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_130",
+    "name": "Arvind Fadnavis",
+    "constituency": "Bangalore Rural",
+    "state": "Madhya Pradesh",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_213",
+    "name": "Arvind Gupta",
+    "constituency": "Bhopal",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_218",
+    "name": "Arvind Kavya",
+    "constituency": "Patna",
+    "state": "Gujarat",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_382",
+    "name": "Arvind Kavya",
+    "constituency": "Mumbai North",
+    "state": "West Bengal",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_566",
+    "name": "Arvind Mishra",
+    "constituency": "Gujarat (State)",
+    "state": "Gujarat",
+    "type": "Rajya Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_090",
+    "name": "Arvind Owaisi",
+    "constituency": "Ahmedabad",
+    "state": "Andhra Pradesh",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_454",
+    "name": "Arvind Pawar",
+    "constituency": "Lucknow",
+    "state": "Assam",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_576",
+    "name": "Arvind Pawar",
+    "constituency": "Telangana (State)",
+    "state": "Telangana",
+    "type": "Rajya Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_168",
+    "name": "Arvind Rao",
+    "constituency": "Pune",
+    "state": "Gujarat",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_231",
+    "name": "Arvind Rao",
+    "constituency": "Chennai Central",
+    "state": "Odisha",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_346",
+    "name": "Arvind Reddy",
+    "constituency": "Bangalore Rural",
+    "state": "Maharashtra",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_672",
+    "name": "Arvind Reddy",
+    "constituency": "Uttar Pradesh (State)",
+    "state": "Uttar Pradesh",
+    "type": "Rajya Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_244",
+    "name": "Arvind Sarma",
+    "constituency": "Nagpur",
+    "state": "Odisha",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_135",
+    "name": "Arvind Singh",
+    "constituency": "Pune",
+    "state": "Odisha",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_270",
+    "name": "Arvind Singh",
+    "constituency": "Nagpur",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_676",
+    "name": "Arvind Singh",
+    "constituency": "Haryana (State)",
+    "state": "Haryana",
+    "type": "Rajya Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_653",
+    "name": "Arvind Stalin",
+    "constituency": "Karnataka (State)",
+    "state": "Karnataka",
+    "type": "Rajya Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_362",
+    "name": "Arvind Thackeray",
+    "constituency": "Thiruvananthapuram",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_457",
+    "name": "Arvind Thackeray",
+    "constituency": "Mumbai South",
+    "state": "Chhattisgarh",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_163",
+    "name": "Arvind Tharoor",
+    "constituency": "Bhopal",
+    "state": "Madhya Pradesh",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_441",
+    "name": "Arvind Tharoor",
+    "constituency": "Bangalore Rural",
+    "state": "Delhi",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_681",
+    "name": "Arvind Verma",
+    "constituency": "Odisha (State)",
+    "state": "Odisha",
+    "type": "Rajya Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_137",
+    "name": "Arvind Vijayan",
+    "constituency": "Hyderabad",
+    "state": "Odisha",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_400",
+    "name": "Arvind Yadav",
+    "constituency": "Wayanad",
+    "state": "Odisha",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_226",
+    "name": "Asaduddin Adityanath",
+    "constituency": "Varanasi",
+    "state": "Maharashtra",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_045",
+    "name": "Asaduddin Das",
+    "constituency": "Bangalore Rural",
+    "state": "Maharashtra",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_210",
+    "name": "Asaduddin Das",
+    "constituency": "Patna",
+    "state": "West Bengal",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_275",
+    "name": "Asaduddin Das",
+    "constituency": "Jaipur",
+    "state": "Telangana",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_494",
+    "name": "Asaduddin Fadnavis",
+    "constituency": "Warangal",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_563",
+    "name": "Asaduddin Fadnavis",
+    "constituency": "Punjab (State)",
+    "state": "Punjab",
+    "type": "Rajya Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_120",
+    "name": "Asaduddin Gadkari",
+    "constituency": "Wayanad",
+    "state": "Jharkhand",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_188",
+    "name": "Asaduddin Gadkari",
+    "constituency": "Ahmedabad",
+    "state": "Assam",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_687",
+    "name": "Asaduddin Gandhi",
+    "constituency": "Assam (State)",
+    "state": "Assam",
+    "type": "Rajya Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_220",
+    "name": "Asaduddin Gupta",
+    "constituency": "Varanasi",
+    "state": "Tamil Nadu",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_230",
+    "name": "Asaduddin Gupta",
+    "constituency": "Thiruvananthapuram",
+    "state": "West Bengal",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_390",
+    "name": "Asaduddin Gupta",
+    "constituency": "Gandhinagar",
+    "state": "Delhi",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_278",
+    "name": "Asaduddin Irani",
+    "constituency": "Ahmedabad",
+    "state": "Rajasthan",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_599",
+    "name": "Asaduddin Iyer",
+    "constituency": "Gujarat (State)",
+    "state": "Gujarat",
+    "type": "Rajya Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_680",
+    "name": "Asaduddin Kavya",
+    "constituency": "Telangana (State)",
+    "state": "Telangana",
+    "type": "Rajya Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_106",
+    "name": "Asaduddin Kejriwal",
+    "constituency": "Hyderabad",
+    "state": "Andhra Pradesh",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_308",
+    "name": "Asaduddin Kumar",
+    "constituency": "Amethi",
+    "state": "Maharashtra",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_684",
+    "name": "Asaduddin Mishra",
+    "constituency": "Andhra Pradesh (State)",
+    "state": "Andhra Pradesh",
+    "type": "Rajya Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_694",
+    "name": "Asaduddin Mishra",
+    "constituency": "West Bengal (State)",
+    "state": "West Bengal",
+    "type": "Rajya Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_302",
+    "name": "Asaduddin Owaisi",
+    "constituency": "Bhopal",
+    "state": "Tamil Nadu",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_771",
+    "name": "Asaduddin Owaisi",
+    "constituency": "Uttar Pradesh (State)",
+    "state": "Uttar Pradesh",
+    "type": "Rajya Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_436",
+    "name": "Asaduddin Patnaik",
+    "constituency": "Varanasi",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_355",
+    "name": "Asaduddin Rao",
+    "constituency": "Guwahati",
+    "state": "Tamil Nadu",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_427",
+    "name": "Asaduddin Sharma",
+    "constituency": "Mumbai North",
+    "state": "Punjab",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_464",
+    "name": "Asaduddin Sharma",
+    "constituency": "Chandigarh",
+    "state": "Bihar",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_172",
+    "name": "Asaduddin Tharoor",
+    "constituency": "Mumbai North",
+    "state": "Punjab",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_351",
+    "name": "Asaduddin Tharoor",
+    "constituency": "Kolkata North",
+    "state": "Jharkhand",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_128",
+    "name": "Asaduddin Vijayan",
+    "constituency": "Pune",
+    "state": "Delhi",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_467",
+    "name": "Devendra Banerjee",
+    "constituency": "Nagpur",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_499",
+    "name": "Devendra Das",
+    "constituency": "Mumbai South",
+    "state": "Rajasthan",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_109",
+    "name": "Devendra Fadnavis",
+    "constituency": "Varanasi",
+    "state": "Odisha",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_585",
+    "name": "Devendra Fadnavis",
+    "constituency": "Madhya Pradesh (State)",
+    "state": "Madhya Pradesh",
+    "type": "Rajya Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_665",
+    "name": "Devendra Fadnavis",
+    "constituency": "Uttar Pradesh (State)",
+    "state": "Uttar Pradesh",
+    "type": "Rajya Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_700",
+    "name": "Devendra Fadnavis",
+    "constituency": "Delhi (State)",
+    "state": "Delhi",
+    "type": "Rajya Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_266",
+    "name": "Devendra Gupta",
+    "constituency": "Gandhinagar",
+    "state": "Punjab",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_480",
+    "name": "Devendra Irani",
+    "constituency": "Kolkata North",
+    "state": "Jharkhand",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_419",
+    "name": "Devendra Iyer",
+    "constituency": "Amethi",
+    "state": "Odisha",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_435",
+    "name": "Devendra Kumar",
+    "constituency": "Gandhinagar",
+    "state": "West Bengal",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_473",
+    "name": "Devendra Kumar",
+    "constituency": "Gandhinagar",
+    "state": "Karnataka",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_337",
+    "name": "Devendra Patnaik",
+    "constituency": "Bangalore Rural",
+    "state": "West Bengal",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_616",
+    "name": "Devendra Patnaik",
+    "constituency": "Uttar Pradesh (State)",
+    "state": "Uttar Pradesh",
+    "type": "Rajya Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_058",
+    "name": "Devendra Pawar",
+    "constituency": "Bhopal",
+    "state": "Madhya Pradesh",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_652",
+    "name": "Devendra Pawar",
+    "constituency": "Assam (State)",
+    "state": "Assam",
+    "type": "Rajya Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_673",
+    "name": "Devendra Pawar",
+    "constituency": "Maharashtra (State)",
+    "state": "Maharashtra",
+    "type": "Rajya Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_114",
+    "name": "Devendra Sarma",
+    "constituency": "Hyderabad",
+    "state": "Jammu & Kashmir",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_645",
+    "name": "Devendra Sarma",
+    "constituency": "Gujarat (State)",
+    "state": "Gujarat",
+    "type": "Rajya Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_466",
+    "name": "Devendra Shah",
+    "constituency": "Chandigarh",
+    "state": "West Bengal",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_060",
+    "name": "Devendra Sharma",
+    "constituency": "Warangal",
+    "state": "Chhattisgarh",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_477",
+    "name": "Devendra Stalin",
+    "constituency": "Mumbai South",
+    "state": "Jharkhand",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_479",
+    "name": "Devendra Tharoor",
+    "constituency": "Kolkata North",
+    "state": "Punjab",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_452",
+    "name": "Devendra Vijayan",
+    "constituency": "Bhopal",
+    "state": "Tamil Nadu",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_126",
+    "name": "Devendra Yadav",
+    "constituency": "Kolkata North",
+    "state": "Assam",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_545",
+    "name": "Devendra Yadav",
+    "constituency": "Jammu & Kashmir (State)",
+    "state": "Jammu & Kashmir",
+    "type": "Rajya Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_769",
+    "name": "Eknath Adityanath",
+    "constituency": "Gujarat (State)",
+    "state": "Gujarat",
+    "type": "Rajya Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_243",
+    "name": "Eknath Banerjee",
+    "constituency": "Mumbai South",
+    "state": "Jammu & Kashmir",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_453",
+    "name": "Eknath Bose",
+    "constituency": "Guwahati",
+    "state": "West Bengal",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_254",
+    "name": "Eknath Irani",
+    "constituency": "Chennai Central",
+    "state": "Maharashtra",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_263",
+    "name": "Eknath Iyer",
+    "constituency": "Gandhinagar",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_486",
+    "name": "Eknath Kavya",
+    "constituency": "Amethi",
+    "state": "Bihar",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_204",
+    "name": "Eknath Kejriwal",
+    "constituency": "Guwahati",
+    "state": "Haryana",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_274",
+    "name": "Eknath Kejriwal",
+    "constituency": "Chandigarh",
+    "state": "Haryana",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_528",
+    "name": "Eknath Kejriwal",
+    "constituency": "Bhopal",
+    "state": "Jharkhand",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_660",
+    "name": "Eknath Kejriwal",
+    "constituency": "Haryana (State)",
+    "state": "Haryana",
+    "type": "Rajya Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_639",
+    "name": "Eknath Owaisi",
+    "constituency": "Jharkhand (State)",
+    "state": "Jharkhand",
+    "type": "Rajya Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_288",
+    "name": "Eknath Patnaik",
+    "constituency": "Wayanad",
+    "state": "Tamil Nadu",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_323",
+    "name": "Eknath Patnaik",
+    "constituency": "Kolkata North",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_198",
+    "name": "Eknath Rao",
+    "constituency": "Pune",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_508",
+    "name": "Eknath Rao",
+    "constituency": "Warangal",
+    "state": "Maharashtra",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_074",
+    "name": "Eknath Shah",
+    "constituency": "Mumbai North",
+    "state": "Punjab",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_176",
+    "name": "Eknath Shah",
+    "constituency": "Bangalore Central",
+    "state": "Odisha",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_377",
+    "name": "Eknath Sharma",
+    "constituency": "Ahmedabad",
+    "state": "Telangana",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_415",
+    "name": "Eknath Singh",
+    "constituency": "Patna",
+    "state": "Jammu & Kashmir",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_100",
+    "name": "Eknath Tharoor",
+    "constituency": "Thiruvananthapuram",
+    "state": "West Bengal",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_237",
+    "name": "Eknath Tharoor",
+    "constituency": "Hyderabad",
+    "state": "Telangana",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_330",
+    "name": "Eknath Vijayan",
+    "constituency": "Amethi",
+    "state": "Rajasthan",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_600",
+    "name": "Eknath Vijayan",
+    "constituency": "Madhya Pradesh (State)",
+    "state": "Madhya Pradesh",
+    "type": "Rajya Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_608",
+    "name": "Himanta Banerjee",
+    "constituency": "Jharkhand (State)",
+    "state": "Jharkhand",
+    "type": "Rajya Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_102",
+    "name": "Himanta Bose",
+    "constituency": "Mumbai South",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_299",
+    "name": "Himanta Bose",
+    "constituency": "Amethi",
+    "state": "Jharkhand",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_342",
+    "name": "Himanta Gadkari",
+    "constituency": "Thiruvananthapuram",
+    "state": "Karnataka",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_057",
+    "name": "Himanta Gandhi",
+    "constituency": "Patna",
+    "state": "Madhya Pradesh",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_532",
+    "name": "Himanta Irani",
+    "constituency": "Warangal",
+    "state": "Odisha",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_223",
+    "name": "Himanta Iyer",
+    "constituency": "Mumbai North",
+    "state": "Madhya Pradesh",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_340",
+    "name": "Himanta Kavya",
+    "constituency": "Varanasi",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_682",
+    "name": "Himanta Kavya",
+    "constituency": "Maharashtra (State)",
+    "state": "Maharashtra",
+    "type": "Rajya Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_141",
+    "name": "Himanta Kejriwal",
+    "constituency": "Bangalore Rural",
+    "state": "Karnataka",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_522",
+    "name": "Himanta Kejriwal",
+    "constituency": "Bhopal",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_004",
+    "name": "Himanta Kumar",
+    "constituency": "Warangal",
+    "state": "West Bengal",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_009",
+    "name": "Himanta Kumar",
+    "constituency": "Thiruvananthapuram",
+    "state": "Odisha",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_409",
+    "name": "Himanta Owaisi",
+    "constituency": "Warangal",
+    "state": "Madhya Pradesh",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_712",
+    "name": "Himanta Rao",
+    "constituency": "Andhra Pradesh (State)",
+    "state": "Andhra Pradesh",
+    "type": "Rajya Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_262",
+    "name": "Himanta Sarma",
+    "constituency": "Bhopal",
+    "state": "Assam",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_484",
+    "name": "Himanta Sarma",
+    "constituency": "Wayanad",
+    "state": "Chhattisgarh",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_048",
+    "name": "Himanta Singh",
+    "constituency": "Bangalore Central",
+    "state": "Gujarat",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_710",
+    "name": "Himanta Singh",
+    "constituency": "Andhra Pradesh (State)",
+    "state": "Andhra Pradesh",
+    "type": "Rajya Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_054",
+    "name": "Himanta Stalin",
+    "constituency": "Jaipur",
+    "state": "Andhra Pradesh",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_105",
+    "name": "Himanta Stalin",
+    "constituency": "Patna",
+    "state": "West Bengal",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_235",
+    "name": "Himanta Stalin",
+    "constituency": "Thiruvananthapuram",
+    "state": "Odisha",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_284",
+    "name": "Himanta Stalin",
+    "constituency": "Pune",
+    "state": "Delhi",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_078",
+    "name": "Himanta Tharoor",
+    "constituency": "Jaipur",
+    "state": "Punjab",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_103",
+    "name": "Himanta Yadav",
+    "constituency": "Chennai Central",
+    "state": "Karnataka",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_388",
+    "name": "Himanta Yadav",
+    "constituency": "Kolkata North",
+    "state": "Haryana",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_698",
+    "name": "Himanta Yadav",
+    "constituency": "Maharashtra (State)",
+    "state": "Maharashtra",
+    "type": "Rajya Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_667",
+    "name": "Jyotiraditya Banerjee",
+    "constituency": "Tamil Nadu (State)",
+    "state": "Tamil Nadu",
+    "type": "Rajya Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_410",
+    "name": "Jyotiraditya Bose",
+    "constituency": "Mumbai North",
+    "state": "Rajasthan",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_649",
+    "name": "Jyotiraditya Bose",
+    "constituency": "Chhattisgarh (State)",
+    "state": "Chhattisgarh",
+    "type": "Rajya Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_019",
+    "name": "Jyotiraditya Das",
+    "constituency": "Hyderabad",
+    "state": "Tamil Nadu",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_423",
+    "name": "Jyotiraditya Das",
+    "constituency": "Gandhinagar",
+    "state": "Rajasthan",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_704",
+    "name": "Jyotiraditya Das",
+    "constituency": "Tamil Nadu (State)",
+    "state": "Tamil Nadu",
+    "type": "Rajya Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_597",
+    "name": "Jyotiraditya Fadnavis",
+    "constituency": "Maharashtra (State)",
+    "state": "Maharashtra",
+    "type": "Rajya Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_259",
+    "name": "Jyotiraditya Gupta",
+    "constituency": "Bangalore Central",
+    "state": "West Bengal",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_350",
+    "name": "Jyotiraditya Gupta",
+    "constituency": "Varanasi",
+    "state": "Bihar",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_395",
+    "name": "Jyotiraditya Gupta",
+    "constituency": "Kolkata North",
+    "state": "Tamil Nadu",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_020",
+    "name": "Jyotiraditya Irani",
+    "constituency": "Thiruvananthapuram",
+    "state": "Assam",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_298",
+    "name": "Jyotiraditya Irani",
+    "constituency": "Pune",
+    "state": "Odisha",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_384",
+    "name": "Jyotiraditya Kejriwal",
+    "constituency": "Guwahati",
+    "state": "Maharashtra",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_636",
+    "name": "Jyotiraditya Kejriwal",
+    "constituency": "West Bengal (State)",
+    "state": "West Bengal",
+    "type": "Rajya Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_380",
+    "name": "Jyotiraditya Kumar",
+    "constituency": "Nagpur",
+    "state": "Delhi",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_347",
+    "name": "Jyotiraditya Mishra",
+    "constituency": "Lucknow",
+    "state": "Maharashtra",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_461",
+    "name": "Jyotiraditya Modi",
+    "constituency": "Varanasi",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_334",
+    "name": "Jyotiraditya Owaisi",
+    "constituency": "Jaipur",
+    "state": "Jammu & Kashmir",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_256",
+    "name": "Jyotiraditya Reddy",
+    "constituency": "Guwahati",
+    "state": "Jharkhand",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_696",
+    "name": "Jyotiraditya Sarma",
+    "constituency": "Madhya Pradesh (State)",
+    "state": "Madhya Pradesh",
+    "type": "Rajya Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_718",
+    "name": "Jyotiraditya Sarma",
+    "constituency": "Andhra Pradesh (State)",
+    "state": "Andhra Pradesh",
+    "type": "Rajya Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_533",
+    "name": "Jyotiraditya Shah",
+    "constituency": "Patna",
+    "state": "Bihar",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_006",
+    "name": "Jyotiraditya Sharma",
+    "constituency": "Chandigarh",
+    "state": "Madhya Pradesh",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_209",
+    "name": "Jyotiraditya Sharma",
+    "constituency": "Bhopal",
+    "state": "Telangana",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_671",
+    "name": "Jyotiraditya Sharma",
+    "constituency": "Odisha (State)",
+    "state": "Odisha",
+    "type": "Rajya Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_674",
+    "name": "Jyotiraditya Thackeray",
+    "constituency": "Odisha (State)",
+    "state": "Odisha",
+    "type": "Rajya Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_121",
+    "name": "Jyotiraditya Tharoor",
+    "constituency": "Warangal",
+    "state": "Delhi",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_038",
+    "name": "Jyotiraditya Verma",
+    "constituency": "Mumbai North",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_059",
+    "name": "Jyotiraditya Vijayan",
+    "constituency": "Bangalore Rural",
+    "state": "Jammu & Kashmir",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_634",
+    "name": "Kadiyam Adityanath",
+    "constituency": "Punjab (State)",
+    "state": "Punjab",
+    "type": "Rajya Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_367",
+    "name": "Kadiyam Fadnavis",
+    "constituency": "Bangalore Rural",
+    "state": "Rajasthan",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_760",
+    "name": "Kadiyam Fadnavis",
+    "constituency": "Madhya Pradesh (State)",
+    "state": "Madhya Pradesh",
+    "type": "Rajya Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_321",
+    "name": "Kadiyam Gadkari",
+    "constituency": "Bangalore Rural",
+    "state": "Delhi",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_450",
+    "name": "Kadiyam Gupta",
+    "constituency": "Nagpur",
+    "state": "Delhi",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_267",
+    "name": "Kadiyam Irani",
+    "constituency": "Mumbai South",
+    "state": "Punjab",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_743",
+    "name": "Kadiyam Irani",
+    "constituency": "Delhi (State)",
+    "state": "Delhi",
+    "type": "Rajya Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_247",
+    "name": "Kadiyam Iyer",
+    "constituency": "Varanasi",
+    "state": "Madhya Pradesh",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_236",
+    "name": "Kadiyam Kavya",
+    "constituency": "Warangal",
+    "state": "Assam",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_086",
+    "name": "Kadiyam Mishra",
+    "constituency": "Nagpur",
+    "state": "Maharashtra",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_320",
+    "name": "Kadiyam Owaisi",
+    "constituency": "Pune",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_023",
+    "name": "Kadiyam Patnaik",
+    "constituency": "Bhopal",
+    "state": "Telangana",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_609",
+    "name": "Kadiyam Patnaik",
+    "constituency": "West Bengal (State)",
+    "state": "West Bengal",
+    "type": "Rajya Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_217",
+    "name": "Kadiyam Pawar",
+    "constituency": "Chandigarh",
+    "state": "Gujarat",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_224",
+    "name": "Kadiyam Reddy",
+    "constituency": "Bhopal",
+    "state": "Punjab",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_447",
+    "name": "Kadiyam Singh",
+    "constituency": "Chandigarh",
+    "state": "Jammu & Kashmir",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_623",
+    "name": "Kadiyam Singh",
+    "constituency": "Gujarat (State)",
+    "state": "Gujarat",
+    "type": "Rajya Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_372",
+    "name": "Kadiyam Stalin",
+    "constituency": "Mumbai North",
+    "state": "Jammu & Kashmir",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_478",
+    "name": "Kadiyam Thackeray",
+    "constituency": "Bangalore Rural",
+    "state": "Jharkhand",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_025",
+    "name": "Kadiyam Verma",
+    "constituency": "Lucknow",
+    "state": "Rajasthan",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_056",
+    "name": "Kadiyam Verma",
+    "constituency": "Thiruvananthapuram",
+    "state": "Haryana",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_264",
+    "name": "MK Adityanath",
+    "constituency": "Pune",
+    "state": "Jammu & Kashmir",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_758",
+    "name": "MK Adityanath",
+    "constituency": "Bihar (State)",
+    "state": "Bihar",
+    "type": "Rajya Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_376",
+    "name": "MK Bose",
+    "constituency": "Jaipur",
+    "state": "Punjab",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_490",
+    "name": "MK Fadnavis",
+    "constituency": "Wayanad",
+    "state": "Tamil Nadu",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_150",
+    "name": "MK Gadkari",
+    "constituency": "Patna",
+    "state": "Rajasthan",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_238",
+    "name": "MK Gandhi",
+    "constituency": "Chandigarh",
+    "state": "Rajasthan",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_515",
+    "name": "MK Gandhi",
+    "constituency": "Kolkata North",
+    "state": "Rajasthan",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_174",
+    "name": "MK Gupta",
+    "constituency": "Bangalore Central",
+    "state": "Telangana",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_378",
+    "name": "MK Gupta",
+    "constituency": "Mumbai South",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_537",
+    "name": "MK Iyer",
+    "constituency": "Patna",
+    "state": "Delhi",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_472",
+    "name": "MK Kavya",
+    "constituency": "Lucknow",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_353",
+    "name": "MK Kejriwal",
+    "constituency": "Chandigarh",
+    "state": "Chhattisgarh",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_033",
+    "name": "MK Kumar",
+    "constituency": "Guwahati",
+    "state": "Delhi",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_482",
+    "name": "MK Kumar",
+    "constituency": "Warangal",
+    "state": "Jharkhand",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_318",
+    "name": "MK Mishra",
+    "constituency": "Hyderabad",
+    "state": "Tamil Nadu",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_366",
+    "name": "MK Modi",
+    "constituency": "Amethi",
+    "state": "Rajasthan",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_604",
+    "name": "MK Modi",
+    "constituency": "Odisha (State)",
+    "state": "Odisha",
+    "type": "Rajya Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_277",
+    "name": "MK Owaisi",
+    "constituency": "Amethi",
+    "state": "West Bengal",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_487",
+    "name": "MK Patnaik",
+    "constituency": "Bangalore Central",
+    "state": "Maharashtra",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_526",
+    "name": "MK Patnaik",
+    "constituency": "Hyderabad",
+    "state": "Maharashtra",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_551",
+    "name": "MK Patnaik",
+    "constituency": "Madhya Pradesh (State)",
+    "state": "Madhya Pradesh",
+    "type": "Rajya Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_782",
+    "name": "MK Reddy",
+    "constituency": "Uttar Pradesh (State)",
+    "state": "Uttar Pradesh",
+    "type": "Rajya Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_592",
+    "name": "MK Sarma",
+    "constituency": "Telangana (State)",
+    "state": "Telangana",
+    "type": "Rajya Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_194",
+    "name": "MK Shah",
+    "constituency": "Hyderabad",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_187",
+    "name": "MK Sharma",
+    "constituency": "Varanasi",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_360",
+    "name": "MK Stalin",
+    "constituency": "Wayanad",
+    "state": "Madhya Pradesh",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_496",
+    "name": "MK Stalin",
+    "constituency": "Hyderabad",
+    "state": "West Bengal",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_565",
+    "name": "MK Tharoor",
+    "constituency": "Punjab (State)",
+    "state": "Punjab",
+    "type": "Rajya Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_253",
+    "name": "MK Verma",
+    "constituency": "Guwahati",
+    "state": "Maharashtra",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_640",
+    "name": "Mamata Banerjee",
+    "constituency": "Gujarat (State)",
+    "state": "Gujarat",
+    "type": "Rajya Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_460",
+    "name": "Mamata Bose",
+    "constituency": "Chandigarh",
+    "state": "Bihar",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_613",
+    "name": "Mamata Bose",
+    "constituency": "Rajasthan (State)",
+    "state": "Rajasthan",
+    "type": "Rajya Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_738",
+    "name": "Mamata Bose",
+    "constituency": "Andhra Pradesh (State)",
+    "state": "Andhra Pradesh",
+    "type": "Rajya Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_518",
+    "name": "Mamata Gadkari",
+    "constituency": "Gandhinagar",
+    "state": "Delhi",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_065",
+    "name": "Mamata Gupta",
+    "constituency": "Amethi",
+    "state": "Rajasthan",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_287",
+    "name": "Mamata Iyer",
+    "constituency": "Pune",
+    "state": "Madhya Pradesh",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_702",
+    "name": "Mamata Kumar",
+    "constituency": "Punjab (State)",
+    "state": "Punjab",
+    "type": "Rajya Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_034",
+    "name": "Mamata Mishra",
+    "constituency": "Patna",
+    "state": "Tamil Nadu",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_281",
+    "name": "Mamata Mishra",
+    "constituency": "Thiruvananthapuram",
+    "state": "Jammu & Kashmir",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_624",
+    "name": "Mamata Rao",
+    "constituency": "Jharkhand (State)",
+    "state": "Jharkhand",
+    "type": "Rajya Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_003",
+    "name": "Mamata Reddy",
+    "constituency": "Guwahati",
+    "state": "Karnataka",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_015",
+    "name": "Mamata Shah",
+    "constituency": "Hyderabad",
+    "state": "Bihar",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_618",
+    "name": "Mamata Sharma",
+    "constituency": "Delhi (State)",
+    "state": "Delhi",
+    "type": "Rajya Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_708",
+    "name": "Mamata Sharma",
+    "constituency": "Andhra Pradesh (State)",
+    "state": "Andhra Pradesh",
+    "type": "Rajya Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_125",
+    "name": "Mamata Stalin",
+    "constituency": "Bangalore Central",
+    "state": "West Bengal",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_544",
+    "name": "Mamata Verma",
+    "constituency": "Assam (State)",
+    "state": "Assam",
+    "type": "Rajya Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_368",
+    "name": "Mayawati Banerjee",
+    "constituency": "Wayanad",
+    "state": "Gujarat",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_633",
+    "name": "Mayawati Bose",
+    "constituency": "Karnataka (State)",
+    "state": "Karnataka",
+    "type": "Rajya Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_343",
+    "name": "Mayawati Das",
+    "constituency": "Thiruvananthapuram",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_434",
+    "name": "Mayawati Das",
+    "constituency": "Nagpur",
+    "state": "Punjab",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_517",
+    "name": "Mayawati Das",
+    "constituency": "Chandigarh",
+    "state": "Haryana",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_620",
+    "name": "Mayawati Das",
+    "constituency": "Kerala (State)",
+    "state": "Kerala",
+    "type": "Rajya Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_690",
+    "name": "Mayawati Das",
+    "constituency": "Karnataka (State)",
+    "state": "Karnataka",
+    "type": "Rajya Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_495",
+    "name": "Mayawati Fadnavis",
+    "constituency": "Mumbai North",
+    "state": "Maharashtra",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_021",
+    "name": "Mayawati Gadkari",
+    "constituency": "Varanasi",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_429",
+    "name": "Mayawati Irani",
+    "constituency": "Kolkata North",
+    "state": "Telangana",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_405",
+    "name": "Mayawati Iyer",
+    "constituency": "Mumbai North",
+    "state": "Andhra Pradesh",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_740",
+    "name": "Mayawati Kavya",
+    "constituency": "Bihar (State)",
+    "state": "Bihar",
+    "type": "Rajya Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_161",
+    "name": "Mayawati Modi",
+    "constituency": "Mumbai North",
+    "state": "Odisha",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_655",
+    "name": "Mayawati Modi",
+    "constituency": "Kerala (State)",
+    "state": "Kerala",
+    "type": "Rajya Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_216",
+    "name": "Mayawati Owaisi",
+    "constituency": "Nagpur",
+    "state": "Assam",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_091",
+    "name": "Mayawati Patnaik",
+    "constituency": "Patna",
+    "state": "Rajasthan",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_206",
+    "name": "Mayawati Pawar",
+    "constituency": "Pune",
+    "state": "Bihar",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_193",
+    "name": "Mayawati Reddy",
+    "constituency": "Amethi",
+    "state": "Haryana",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_595",
+    "name": "Mayawati Sarma",
+    "constituency": "Odisha (State)",
+    "state": "Odisha",
+    "type": "Rajya Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_497",
+    "name": "Mayawati Sharma",
+    "constituency": "Wayanad",
+    "state": "Telangana",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_162",
+    "name": "Mayawati Stalin",
+    "constituency": "Wayanad",
+    "state": "Maharashtra",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_437",
+    "name": "Mayawati Thackeray",
+    "constituency": "Pune",
+    "state": "Jharkhand",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_183",
+    "name": "Mayawati Verma",
+    "constituency": "Gandhinagar",
+    "state": "Tamil Nadu",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_468",
+    "name": "Mayawati Verma",
+    "constituency": "Wayanad",
+    "state": "Odisha",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_148",
+    "name": "Mayawati Vijayan",
+    "constituency": "Wayanad",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_268",
+    "name": "Mayawati Vijayan",
+    "constituency": "Chennai Central",
+    "state": "West Bengal",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_661",
+    "name": "Mayawati Vijayan",
+    "constituency": "Uttar Pradesh (State)",
+    "state": "Uttar Pradesh",
+    "type": "Rajya Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_012",
+    "name": "Narendra Adityanath",
+    "constituency": "Bangalore Rural",
+    "state": "Chhattisgarh",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_179",
+    "name": "Narendra Adityanath",
+    "constituency": "Varanasi",
+    "state": "Tamil Nadu",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_554",
+    "name": "Narendra Adityanath",
+    "constituency": "Rajasthan (State)",
+    "state": "Rajasthan",
+    "type": "Rajya Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_670",
+    "name": "Narendra Banerjee",
+    "constituency": "West Bengal (State)",
+    "state": "West Bengal",
+    "type": "Rajya Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_421",
+    "name": "Narendra Das",
+    "constituency": "Warangal",
+    "state": "Haryana",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_404",
+    "name": "Narendra Fadnavis",
+    "constituency": "Bangalore Central",
+    "state": "Chhattisgarh",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_146",
+    "name": "Narendra Gadkari",
+    "constituency": "Hyderabad",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_316",
+    "name": "Narendra Gadkari",
+    "constituency": "Wayanad",
+    "state": "Karnataka",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_092",
+    "name": "Narendra Gupta",
+    "constituency": "Chandigarh",
+    "state": "Jammu & Kashmir",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_167",
+    "name": "Narendra Irani",
+    "constituency": "Mumbai South",
+    "state": "Tamil Nadu",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_297",
+    "name": "Narendra Irani",
+    "constituency": "Varanasi",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_502",
+    "name": "Narendra Irani",
+    "constituency": "Lucknow",
+    "state": "Jammu & Kashmir",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_123",
+    "name": "Narendra Iyer",
+    "constituency": "Lucknow",
+    "state": "Odisha",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_313",
+    "name": "Narendra Kavya",
+    "constituency": "Hyderabad",
+    "state": "Odisha",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_052",
+    "name": "Narendra Mishra",
+    "constituency": "Kolkata North",
+    "state": "Rajasthan",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_715",
+    "name": "Narendra Modi",
+    "constituency": "Madhya Pradesh (State)",
+    "state": "Madhya Pradesh",
+    "type": "Rajya Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_543",
+    "name": "Narendra Pawar",
+    "constituency": "Mumbai South",
+    "state": "Telangana",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_001",
+    "name": "Narendra Rao",
+    "constituency": "Chennai Central",
+    "state": "Madhya Pradesh",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_451",
+    "name": "Narendra Rao",
+    "constituency": "Ahmedabad",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_387",
+    "name": "Narendra Sarma",
+    "constituency": "Chandigarh",
+    "state": "Odisha",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_406",
+    "name": "Narendra Sarma",
+    "constituency": "Bhopal",
+    "state": "Andhra Pradesh",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_089",
+    "name": "Narendra Shah",
+    "constituency": "Patna",
+    "state": "Gujarat",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_474",
+    "name": "Narendra Shah",
+    "constituency": "Nagpur",
+    "state": "Assam",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_255",
+    "name": "Narendra Sharma",
+    "constituency": "Patna",
+    "state": "Punjab",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_022",
+    "name": "Narendra Stalin",
+    "constituency": "Kolkata North",
+    "state": "Odisha",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_573",
+    "name": "Narendra Stalin",
+    "constituency": "Rajasthan (State)",
+    "state": "Rajasthan",
+    "type": "Rajya Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_455",
+    "name": "Narendra Vijayan",
+    "constituency": "Hyderabad",
+    "state": "Jharkhand",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_527",
+    "name": "Narendra Vijayan",
+    "constituency": "Wayanad",
+    "state": "Madhya Pradesh",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_737",
+    "name": "Narendra Vijayan",
+    "constituency": "Karnataka (State)",
+    "state": "Karnataka",
+    "type": "Rajya Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_785",
+    "name": "Narendra Yadav",
+    "constituency": "Karnataka (State)",
+    "state": "Karnataka",
+    "type": "Rajya Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_061",
+    "name": "Naveen Banerjee",
+    "constituency": "Mumbai North",
+    "state": "Haryana",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_414",
+    "name": "Naveen Banerjee",
+    "constituency": "Wayanad",
+    "state": "Tamil Nadu",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_555",
+    "name": "Naveen Banerjee",
+    "constituency": "Chhattisgarh (State)",
+    "state": "Chhattisgarh",
+    "type": "Rajya Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_635",
+    "name": "Naveen Banerjee",
+    "constituency": "Jammu & Kashmir (State)",
+    "state": "Jammu & Kashmir",
+    "type": "Rajya Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_719",
+    "name": "Naveen Banerjee",
+    "constituency": "Assam (State)",
+    "state": "Assam",
+    "type": "Rajya Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_707",
+    "name": "Naveen Fadnavis",
+    "constituency": "Odisha (State)",
+    "state": "Odisha",
+    "type": "Rajya Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_201",
+    "name": "Naveen Gadkari",
+    "constituency": "Ahmedabad",
+    "state": "Jammu & Kashmir",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_426",
+    "name": "Naveen Gupta",
+    "constituency": "Hyderabad",
+    "state": "Maharashtra",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_373",
+    "name": "Naveen Irani",
+    "constituency": "Jaipur",
+    "state": "Tamil Nadu",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_077",
+    "name": "Naveen Kavya",
+    "constituency": "Chandigarh",
+    "state": "West Bengal",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_463",
+    "name": "Naveen Kumar",
+    "constituency": "Kolkata North",
+    "state": "Tamil Nadu",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_678",
+    "name": "Naveen Owaisi",
+    "constituency": "Haryana (State)",
+    "state": "Haryana",
+    "type": "Rajya Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_214",
+    "name": "Naveen Patnaik",
+    "constituency": "Wayanad",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_272",
+    "name": "Naveen Patnaik",
+    "constituency": "Lucknow",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_063",
+    "name": "Naveen Pawar",
+    "constituency": "Lucknow",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_173",
+    "name": "Naveen Pawar",
+    "constituency": "Mumbai North",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_510",
+    "name": "Naveen Pawar",
+    "constituency": "Gandhinagar",
+    "state": "Jharkhand",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_072",
+    "name": "Naveen Rao",
+    "constituency": "Chennai Central",
+    "state": "Odisha",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_144",
+    "name": "Naveen Rao",
+    "constituency": "Amethi",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_774",
+    "name": "Naveen Rao",
+    "constituency": "Punjab (State)",
+    "state": "Punjab",
+    "type": "Rajya Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_530",
+    "name": "Naveen Reddy",
+    "constituency": "Chandigarh",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_605",
+    "name": "Naveen Reddy",
+    "constituency": "Delhi (State)",
+    "state": "Delhi",
+    "type": "Rajya Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_677",
+    "name": "Naveen Reddy",
+    "constituency": "Kerala (State)",
+    "state": "Kerala",
+    "type": "Rajya Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_096",
+    "name": "Naveen Shah",
+    "constituency": "Nagpur",
+    "state": "Andhra Pradesh",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_211",
+    "name": "Naveen Shah",
+    "constituency": "Kolkata North",
+    "state": "Delhi",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_331",
+    "name": "Naveen Sharma",
+    "constituency": "Pune",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_349",
+    "name": "Naveen Tharoor",
+    "constituency": "Mumbai North",
+    "state": "Punjab",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_443",
+    "name": "Naveen Vijayan",
+    "constituency": "Guwahati",
+    "state": "Haryana",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_728",
+    "name": "Naveen Vijayan",
+    "constituency": "Assam (State)",
+    "state": "Assam",
+    "type": "Rajya Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_761",
+    "name": "Naveen Vijayan",
+    "constituency": "West Bengal (State)",
+    "state": "West Bengal",
+    "type": "Rajya Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_296",
+    "name": "Naveen Yadav",
+    "constituency": "Gandhinagar",
+    "state": "Bihar",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_153",
+    "name": "Nitin Adityanath",
+    "constituency": "Gandhinagar",
+    "state": "Andhra Pradesh",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_282",
+    "name": "Nitin Adityanath",
+    "constituency": "Warangal",
+    "state": "West Bengal",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_773",
+    "name": "Nitin Banerjee",
+    "constituency": "Jharkhand (State)",
+    "state": "Jharkhand",
+    "type": "Rajya Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_519",
+    "name": "Nitin Gadkari",
+    "constituency": "Mumbai North",
+    "state": "Punjab",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_069",
+    "name": "Nitin Gupta",
+    "constituency": "Bhopal",
+    "state": "Rajasthan",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_122",
+    "name": "Nitin Gupta",
+    "constituency": "Varanasi",
+    "state": "Tamil Nadu",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_073",
+    "name": "Nitin Irani",
+    "constituency": "Patna",
+    "state": "Odisha",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_644",
+    "name": "Nitin Iyer",
+    "constituency": "Delhi (State)",
+    "state": "Delhi",
+    "type": "Rajya Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_577",
+    "name": "Nitin Kejriwal",
+    "constituency": "Telangana (State)",
+    "state": "Telangana",
+    "type": "Rajya Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_339",
+    "name": "Nitin Mishra",
+    "constituency": "Wayanad",
+    "state": "Jharkhand",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_744",
+    "name": "Nitin Modi",
+    "constituency": "Maharashtra (State)",
+    "state": "Maharashtra",
+    "type": "Rajya Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_099",
+    "name": "Nitin Pawar",
+    "constituency": "Bangalore Rural",
+    "state": "Telangana",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_714",
+    "name": "Nitin Pawar",
+    "constituency": "West Bengal (State)",
+    "state": "West Bengal",
+    "type": "Rajya Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_286",
+    "name": "Nitin Rao",
+    "constituency": "Patna",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_627",
+    "name": "Nitin Rao",
+    "constituency": "Jharkhand (State)",
+    "state": "Jharkhand",
+    "type": "Rajya Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_304",
+    "name": "Nitin Reddy",
+    "constituency": "Gandhinagar",
+    "state": "Jammu & Kashmir",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_215",
+    "name": "Nitin Singh",
+    "constituency": "Thiruvananthapuram",
+    "state": "Telangana",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_418",
+    "name": "Nitin Singh",
+    "constituency": "Pune",
+    "state": "Andhra Pradesh",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_322",
+    "name": "Nitin Stalin",
+    "constituency": "Hyderabad",
+    "state": "Jammu & Kashmir",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_685",
+    "name": "Nitin Thackeray",
+    "constituency": "Tamil Nadu (State)",
+    "state": "Tamil Nadu",
+    "type": "Rajya Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_606",
+    "name": "Nitin Tharoor",
+    "constituency": "Jammu & Kashmir (State)",
+    "state": "Jammu & Kashmir",
+    "type": "Rajya Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_291",
+    "name": "Nitin Verma",
+    "constituency": "Wayanad",
+    "state": "Punjab",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_345",
+    "name": "Nitin Yadav",
+    "constituency": "Bangalore Central",
+    "state": "West Bengal",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_762",
+    "name": "Nitin Yadav",
+    "constituency": "Assam (State)",
+    "state": "Assam",
+    "type": "Rajya Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_301",
+    "name": "Pinarayi Adityanath",
+    "constituency": "Amethi",
+    "state": "Rajasthan",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_444",
+    "name": "Pinarayi Bose",
+    "constituency": "Nagpur",
+    "state": "Punjab",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_013",
+    "name": "Pinarayi Das",
+    "constituency": "Kolkata North",
+    "state": "Madhya Pradesh",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_547",
+    "name": "Pinarayi Gadkari",
+    "constituency": "Haryana (State)",
+    "state": "Haryana",
+    "type": "Rajya Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_590",
+    "name": "Pinarayi Gandhi",
+    "constituency": "Punjab (State)",
+    "state": "Punjab",
+    "type": "Rajya Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_614",
+    "name": "Pinarayi Gandhi",
+    "constituency": "Kerala (State)",
+    "state": "Kerala",
+    "type": "Rajya Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_195",
+    "name": "Pinarayi Gupta",
+    "constituency": "Mumbai North",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_290",
+    "name": "Pinarayi Irani",
+    "constituency": "Gandhinagar",
+    "state": "Punjab",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_087",
+    "name": "Pinarayi Iyer",
+    "constituency": "Mumbai South",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_326",
+    "name": "Pinarayi Kavya",
+    "constituency": "Pune",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_229",
+    "name": "Pinarayi Kejriwal",
+    "constituency": "Wayanad",
+    "state": "Jammu & Kashmir",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_118",
+    "name": "Pinarayi Kumar",
+    "constituency": "Patna",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_024",
+    "name": "Pinarayi Modi",
+    "constituency": "Mumbai South",
+    "state": "Rajasthan",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_439",
+    "name": "Pinarayi Patnaik",
+    "constituency": "Guwahati",
+    "state": "Chhattisgarh",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_431",
+    "name": "Pinarayi Reddy",
+    "constituency": "Jaipur",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_271",
+    "name": "Pinarayi Sharma",
+    "constituency": "Warangal",
+    "state": "Tamil Nadu",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_438",
+    "name": "Pinarayi Singh",
+    "constituency": "Mumbai South",
+    "state": "Punjab",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_269",
+    "name": "Pinarayi Stalin",
+    "constituency": "Wayanad",
+    "state": "Jammu & Kashmir",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_265",
+    "name": "Pinarayi Thackeray",
+    "constituency": "Amethi",
+    "state": "Assam",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_471",
+    "name": "Pinarayi Verma",
+    "constituency": "Bangalore Rural",
+    "state": "Jammu & Kashmir",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_571",
+    "name": "Pinarayi Verma",
+    "constituency": "Chhattisgarh (State)",
+    "state": "Chhattisgarh",
+    "type": "Rajya Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_713",
+    "name": "Pinarayi Verma",
+    "constituency": "Andhra Pradesh (State)",
+    "state": "Andhra Pradesh",
+    "type": "Rajya Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_047",
+    "name": "Pinarayi Vijayan",
+    "constituency": "Nagpur",
+    "state": "Chhattisgarh",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_535",
+    "name": "Pinarayi Vijayan",
+    "constituency": "Thiruvananthapuram",
+    "state": "Odisha",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_534",
+    "name": "Pinarayi Yadav",
+    "constituency": "Pune",
+    "state": "Assam",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_084",
+    "name": "Piyush Adityanath",
+    "constituency": "Patna",
+    "state": "Haryana",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_516",
+    "name": "Piyush Bose",
+    "constituency": "Guwahati",
+    "state": "Bihar",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_628",
+    "name": "Piyush Bose",
+    "constituency": "Rajasthan (State)",
+    "state": "Rajasthan",
+    "type": "Rajya Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_524",
+    "name": "Piyush Das",
+    "constituency": "Chandigarh",
+    "state": "Chhattisgarh",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_756",
+    "name": "Piyush Fadnavis",
+    "constituency": "Uttar Pradesh (State)",
+    "state": "Uttar Pradesh",
+    "type": "Rajya Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_788",
+    "name": "Piyush Gupta",
+    "constituency": "West Bengal (State)",
+    "state": "West Bengal",
+    "type": "Rajya Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_560",
+    "name": "Piyush Irani",
+    "constituency": "Madhya Pradesh (State)",
+    "state": "Madhya Pradesh",
+    "type": "Rajya Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_136",
+    "name": "Piyush Kavya",
+    "constituency": "Kolkata North",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_432",
+    "name": "Piyush Kejriwal",
+    "constituency": "Guwahati",
+    "state": "Gujarat",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_776",
+    "name": "Piyush Kejriwal",
+    "constituency": "Maharashtra (State)",
+    "state": "Maharashtra",
+    "type": "Rajya Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_068",
+    "name": "Piyush Kumar",
+    "constituency": "Pune",
+    "state": "Haryana",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_311",
+    "name": "Piyush Kumar",
+    "constituency": "Varanasi",
+    "state": "Jammu & Kashmir",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_315",
+    "name": "Piyush Kumar",
+    "constituency": "Ahmedabad",
+    "state": "Bihar",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_356",
+    "name": "Piyush Kumar",
+    "constituency": "Patna",
+    "state": "Tamil Nadu",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_399",
+    "name": "Piyush Kumar",
+    "constituency": "Wayanad",
+    "state": "Andhra Pradesh",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_314",
+    "name": "Piyush Mishra",
+    "constituency": "Chandigarh",
+    "state": "Delhi",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_134",
+    "name": "Piyush Owaisi",
+    "constituency": "Ahmedabad",
+    "state": "Chhattisgarh",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_145",
+    "name": "Piyush Owaisi",
+    "constituency": "Guwahati",
+    "state": "Madhya Pradesh",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_781",
+    "name": "Piyush Owaisi",
+    "constituency": "Chhattisgarh (State)",
+    "state": "Chhattisgarh",
+    "type": "Rajya Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_523",
+    "name": "Piyush Reddy",
+    "constituency": "Pune",
+    "state": "Telangana",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_580",
+    "name": "Piyush Reddy",
+    "constituency": "Madhya Pradesh (State)",
+    "state": "Madhya Pradesh",
+    "type": "Rajya Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_192",
+    "name": "Piyush Shah",
+    "constituency": "Lucknow",
+    "state": "Jammu & Kashmir",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_430",
+    "name": "Piyush Shah",
+    "constituency": "Gandhinagar",
+    "state": "Punjab",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_082",
+    "name": "Piyush Sharma",
+    "constituency": "Bangalore Rural",
+    "state": "Haryana",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_732",
+    "name": "Piyush Sharma",
+    "constituency": "Tamil Nadu (State)",
+    "state": "Tamil Nadu",
+    "type": "Rajya Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_165",
+    "name": "Piyush Singh",
+    "constituency": "Guwahati",
+    "state": "Bihar",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_221",
+    "name": "Piyush Singh",
+    "constituency": "Bangalore Central",
+    "state": "Gujarat",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_374",
+    "name": "Piyush Stalin",
+    "constituency": "Ahmedabad",
+    "state": "Andhra Pradesh",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_541",
+    "name": "Piyush Thackeray",
+    "constituency": "Warangal",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_509",
+    "name": "Piyush Vijayan",
+    "constituency": "Nagpur",
+    "state": "Jammu & Kashmir",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_396",
+    "name": "Priyanka Bose",
+    "constituency": "Bangalore Central",
+    "state": "Assam",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_491",
+    "name": "Priyanka Bose",
+    "constituency": "Bangalore Central",
+    "state": "Chhattisgarh",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_028",
+    "name": "Priyanka Das",
+    "constituency": "Lucknow",
+    "state": "Karnataka",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_397",
+    "name": "Priyanka Das",
+    "constituency": "Pune",
+    "state": "Jammu & Kashmir",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_292",
+    "name": "Priyanka Fadnavis",
+    "constituency": "Warangal",
+    "state": "Jharkhand",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_309",
+    "name": "Priyanka Gadkari",
+    "constituency": "Gandhinagar",
+    "state": "Chhattisgarh",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_584",
+    "name": "Priyanka Gadkari",
+    "constituency": "Bihar (State)",
+    "state": "Bihar",
+    "type": "Rajya Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_586",
+    "name": "Priyanka Gadkari",
+    "constituency": "Tamil Nadu (State)",
+    "state": "Tamil Nadu",
+    "type": "Rajya Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_371",
+    "name": "Priyanka Iyer",
+    "constituency": "Wayanad",
+    "state": "Maharashtra",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_394",
+    "name": "Priyanka Kumar",
+    "constituency": "Pune",
+    "state": "Gujarat",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_412",
+    "name": "Priyanka Kumar",
+    "constituency": "Bangalore Rural",
+    "state": "Jammu & Kashmir",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_442",
+    "name": "Priyanka Kumar",
+    "constituency": "Chennai Central",
+    "state": "Chhattisgarh",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_336",
+    "name": "Priyanka Patnaik",
+    "constituency": "Kolkata North",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_111",
+    "name": "Priyanka Pawar",
+    "constituency": "Bangalore Central",
+    "state": "Assam",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_154",
+    "name": "Priyanka Rao",
+    "constituency": "Ahmedabad",
+    "state": "Telangana",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_581",
+    "name": "Priyanka Reddy",
+    "constituency": "Uttar Pradesh (State)",
+    "state": "Uttar Pradesh",
+    "type": "Rajya Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_147",
+    "name": "Priyanka Sarma",
+    "constituency": "Patna",
+    "state": "Odisha",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_030",
+    "name": "Priyanka Sharma",
+    "constituency": "Lucknow",
+    "state": "Karnataka",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_558",
+    "name": "Priyanka Stalin",
+    "constituency": "West Bengal (State)",
+    "state": "West Bengal",
+    "type": "Rajya Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_293",
+    "name": "Priyanka Yadav",
+    "constituency": "Bangalore Central",
+    "state": "Karnataka",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_328",
+    "name": "Priyanka Yadav",
+    "constituency": "Mumbai South",
+    "state": "Haryana",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_010",
+    "name": "Rahul Banerjee",
+    "constituency": "Thiruvananthapuram",
+    "state": "Andhra Pradesh",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_481",
+    "name": "Rahul Banerjee",
+    "constituency": "Kolkata North",
+    "state": "Chhattisgarh",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_783",
+    "name": "Rahul Bose",
+    "constituency": "Tamil Nadu (State)",
+    "state": "Tamil Nadu",
+    "type": "Rajya Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_070",
+    "name": "Rahul Das",
+    "constituency": "Hyderabad",
+    "state": "Punjab",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_116",
+    "name": "Rahul Fadnavis",
+    "constituency": "Gandhinagar",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_113",
+    "name": "Rahul Gadkari",
+    "constituency": "Warangal",
+    "state": "Jammu & Kashmir",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_067",
+    "name": "Rahul Iyer",
+    "constituency": "Hyderabad",
+    "state": "Tamil Nadu",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_289",
+    "name": "Rahul Kavya",
+    "constituency": "Thiruvananthapuram",
+    "state": "Telangana",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_352",
+    "name": "Rahul Kavya",
+    "constituency": "Mumbai North",
+    "state": "Chhattisgarh",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_036",
+    "name": "Rahul Kumar",
+    "constituency": "Hyderabad",
+    "state": "Punjab",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_505",
+    "name": "Rahul Kumar",
+    "constituency": "Guwahati",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_675",
+    "name": "Rahul Kumar",
+    "constituency": "Telangana (State)",
+    "state": "Telangana",
+    "type": "Rajya Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_531",
+    "name": "Rahul Modi",
+    "constituency": "Chandigarh",
+    "state": "Andhra Pradesh",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_083",
+    "name": "Rahul Owaisi",
+    "constituency": "Wayanad",
+    "state": "Tamil Nadu",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_548",
+    "name": "Rahul Pawar",
+    "constituency": "Chhattisgarh (State)",
+    "state": "Chhattisgarh",
+    "type": "Rajya Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_583",
+    "name": "Rahul Rao",
+    "constituency": "Jharkhand (State)",
+    "state": "Jharkhand",
+    "type": "Rajya Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_062",
+    "name": "Rahul Shah",
+    "constituency": "Kolkata North",
+    "state": "Jammu & Kashmir",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_017",
+    "name": "Rahul Sharma",
+    "constituency": "Bangalore Rural",
+    "state": "West Bengal",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_202",
+    "name": "Rahul Sharma",
+    "constituency": "Kolkata North",
+    "state": "Haryana",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_662",
+    "name": "Rahul Sharma",
+    "constituency": "Andhra Pradesh (State)",
+    "state": "Andhra Pradesh",
+    "type": "Rajya Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_104",
+    "name": "Rahul Stalin",
+    "constituency": "Guwahati",
+    "state": "Haryana",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_422",
+    "name": "Rahul Stalin",
+    "constituency": "Warangal",
+    "state": "Madhya Pradesh",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_032",
+    "name": "Rahul Thackeray",
+    "constituency": "Amethi",
+    "state": "Assam",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_598",
+    "name": "Rahul Tharoor",
+    "constituency": "Haryana (State)",
+    "state": "Haryana",
+    "type": "Rajya Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_127",
+    "name": "Rahul Vijayan",
+    "constituency": "Lucknow",
+    "state": "Chhattisgarh",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_305",
+    "name": "Rahul Yadav",
+    "constituency": "Mumbai South",
+    "state": "Maharashtra",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_709",
+    "name": "Rahul Yadav",
+    "constituency": "Chhattisgarh (State)",
+    "state": "Chhattisgarh",
+    "type": "Rajya Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_157",
+    "name": "Rajnath Adityanath",
+    "constituency": "Amethi",
+    "state": "Tamil Nadu",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_358",
+    "name": "Rajnath Bose",
+    "constituency": "Amethi",
+    "state": "Bihar",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_688",
+    "name": "Rajnath Fadnavis",
+    "constituency": "West Bengal (State)",
+    "state": "West Bengal",
+    "type": "Rajya Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_392",
+    "name": "Rajnath Gandhi",
+    "constituency": "Wayanad",
+    "state": "Chhattisgarh",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_285",
+    "name": "Rajnath Gupta",
+    "constituency": "Amethi",
+    "state": "Madhya Pradesh",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_050",
+    "name": "Rajnath Irani",
+    "constituency": "Amethi",
+    "state": "Assam",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_222",
+    "name": "Rajnath Irani",
+    "constituency": "Chandigarh",
+    "state": "Rajasthan",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_295",
+    "name": "Rajnath Irani",
+    "constituency": "Gandhinagar",
+    "state": "Chhattisgarh",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_726",
+    "name": "Rajnath Kavya",
+    "constituency": "Punjab (State)",
+    "state": "Punjab",
+    "type": "Rajya Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_610",
+    "name": "Rajnath Kumar",
+    "constituency": "Rajasthan (State)",
+    "state": "Rajasthan",
+    "type": "Rajya Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_424",
+    "name": "Rajnath Modi",
+    "constituency": "Amethi",
+    "state": "Delhi",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_668",
+    "name": "Rajnath Owaisi",
+    "constituency": "Rajasthan (State)",
+    "state": "Rajasthan",
+    "type": "Rajya Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_766",
+    "name": "Rajnath Patnaik",
+    "constituency": "Chhattisgarh (State)",
+    "state": "Chhattisgarh",
+    "type": "Rajya Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_335",
+    "name": "Rajnath Pawar",
+    "constituency": "Pune",
+    "state": "Maharashtra",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_615",
+    "name": "Rajnath Rao",
+    "constituency": "Assam (State)",
+    "state": "Assam",
+    "type": "Rajya Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_470",
+    "name": "Rajnath Reddy",
+    "constituency": "Thiruvananthapuram",
+    "state": "Chhattisgarh",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_317",
+    "name": "Rajnath Shah",
+    "constituency": "Thiruvananthapuram",
+    "state": "Assam",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_574",
+    "name": "Rajnath Shah",
+    "constituency": "Karnataka (State)",
+    "state": "Karnataka",
+    "type": "Rajya Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_124",
+    "name": "Rajnath Singh",
+    "constituency": "Amethi",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_619",
+    "name": "Rajnath Stalin",
+    "constituency": "Punjab (State)",
+    "state": "Punjab",
+    "type": "Rajya Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_612",
+    "name": "Rajnath Thackeray",
+    "constituency": "Odisha (State)",
+    "state": "Odisha",
+    "type": "Rajya Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_420",
+    "name": "Rajnath Tharoor",
+    "constituency": "Nagpur",
+    "state": "Karnataka",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_611",
+    "name": "Rajnath Tharoor",
+    "constituency": "Madhya Pradesh (State)",
+    "state": "Madhya Pradesh",
+    "type": "Rajya Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_784",
+    "name": "Rajnath Tharoor",
+    "constituency": "Kerala (State)",
+    "state": "Kerala",
+    "type": "Rajya Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_280",
+    "name": "Rajnath Verma",
+    "constituency": "Mumbai North",
+    "state": "Jharkhand",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_622",
+    "name": "Rajnath Verma",
+    "constituency": "Madhya Pradesh (State)",
+    "state": "Madhya Pradesh",
+    "type": "Rajya Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_205",
+    "name": "Rajnath Yadav",
+    "constituency": "Mumbai South",
+    "state": "Jharkhand",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_152",
+    "name": "Sharad Banerjee",
+    "constituency": "Bhopal",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_175",
+    "name": "Sharad Banerjee",
+    "constituency": "Bangalore Rural",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_207",
+    "name": "Sharad Banerjee",
+    "constituency": "Mumbai North",
+    "state": "Madhya Pradesh",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_575",
+    "name": "Sharad Banerjee",
+    "constituency": "Bihar (State)",
+    "state": "Bihar",
+    "type": "Rajya Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_018",
+    "name": "Sharad Das",
+    "constituency": "Hyderabad",
+    "state": "Maharashtra",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_725",
+    "name": "Sharad Das",
+    "constituency": "Odisha (State)",
+    "state": "Odisha",
+    "type": "Rajya Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_446",
+    "name": "Sharad Fadnavis",
+    "constituency": "Wayanad",
+    "state": "Andhra Pradesh",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_448",
+    "name": "Sharad Fadnavis",
+    "constituency": "Mumbai South",
+    "state": "Gujarat",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_648",
+    "name": "Sharad Gadkari",
+    "constituency": "Assam (State)",
+    "state": "Assam",
+    "type": "Rajya Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_196",
+    "name": "Sharad Gandhi",
+    "constituency": "Wayanad",
+    "state": "Jharkhand",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_647",
+    "name": "Sharad Gandhi",
+    "constituency": "Jammu & Kashmir (State)",
+    "state": "Jammu & Kashmir",
+    "type": "Rajya Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_749",
+    "name": "Sharad Gandhi",
+    "constituency": "Tamil Nadu (State)",
+    "state": "Tamil Nadu",
+    "type": "Rajya Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_312",
+    "name": "Sharad Iyer",
+    "constituency": "Mumbai South",
+    "state": "Delhi",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_695",
+    "name": "Sharad Iyer",
+    "constituency": "Telangana (State)",
+    "state": "Telangana",
+    "type": "Rajya Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_602",
+    "name": "Sharad Kavya",
+    "constituency": "Jammu & Kashmir (State)",
+    "state": "Jammu & Kashmir",
+    "type": "Rajya Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_654",
+    "name": "Sharad Kumar",
+    "constituency": "Delhi (State)",
+    "state": "Delhi",
+    "type": "Rajya Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_658",
+    "name": "Sharad Modi",
+    "constituency": "Telangana (State)",
+    "state": "Telangana",
+    "type": "Rajya Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_679",
+    "name": "Sharad Pawar",
+    "constituency": "Rajasthan (State)",
+    "state": "Rajasthan",
+    "type": "Rajya Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_567",
+    "name": "Sharad Rao",
+    "constituency": "Tamil Nadu (State)",
+    "state": "Tamil Nadu",
+    "type": "Rajya Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_158",
+    "name": "Sharad Reddy",
+    "constituency": "Warangal",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_233",
+    "name": "Sharad Sarma",
+    "constituency": "Thiruvananthapuram",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_449",
+    "name": "Sharad Sarma",
+    "constituency": "Hyderabad",
+    "state": "Delhi",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_666",
+    "name": "Sharad Shah",
+    "constituency": "Chhattisgarh (State)",
+    "state": "Chhattisgarh",
+    "type": "Rajya Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_159",
+    "name": "Sharad Sharma",
+    "constituency": "Thiruvananthapuram",
+    "state": "West Bengal",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_040",
+    "name": "Sharad Singh",
+    "constituency": "Bangalore Rural",
+    "state": "Gujarat",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_456",
+    "name": "Sharad Singh",
+    "constituency": "Gandhinagar",
+    "state": "Maharashtra",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_306",
+    "name": "Sharad Stalin",
+    "constituency": "Patna",
+    "state": "Punjab",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_416",
+    "name": "Sharad Thackeray",
+    "constituency": "Warangal",
+    "state": "Delhi",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_488",
+    "name": "Sharad Tharoor",
+    "constituency": "Pune",
+    "state": "Maharashtra",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_131",
+    "name": "Sharad Verma",
+    "constituency": "Nagpur",
+    "state": "Gujarat",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_190",
+    "name": "Sharad Verma",
+    "constituency": "Wayanad",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_391",
+    "name": "Sharad Verma",
+    "constituency": "Varanasi",
+    "state": "Tamil Nadu",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_525",
+    "name": "Sharad Verma",
+    "constituency": "Chandigarh",
+    "state": "Andhra Pradesh",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_763",
+    "name": "Sharad Verma",
+    "constituency": "West Bengal (State)",
+    "state": "West Bengal",
+    "type": "Rajya Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_095",
+    "name": "Sharad Yadav",
+    "constituency": "Jaipur",
+    "state": "Gujarat",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_117",
+    "name": "Sharad Yadav",
+    "constituency": "Chandigarh",
+    "state": "Chhattisgarh",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_160",
+    "name": "Shashi Banerjee",
+    "constituency": "Mumbai South",
+    "state": "Tamil Nadu",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_098",
+    "name": "Shashi Bose",
+    "constituency": "Thiruvananthapuram",
+    "state": "Telangana",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_588",
+    "name": "Shashi Fadnavis",
+    "constituency": "Delhi (State)",
+    "state": "Delhi",
+    "type": "Rajya Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_251",
+    "name": "Shashi Gadkari",
+    "constituency": "Jaipur",
+    "state": "Delhi",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_727",
+    "name": "Shashi Gadkari",
+    "constituency": "Odisha (State)",
+    "state": "Odisha",
+    "type": "Rajya Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_607",
+    "name": "Shashi Gandhi",
+    "constituency": "Madhya Pradesh (State)",
+    "state": "Madhya Pradesh",
+    "type": "Rajya Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_042",
+    "name": "Shashi Gupta",
+    "constituency": "Hyderabad",
+    "state": "Telangana",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_245",
+    "name": "Shashi Irani",
+    "constituency": "Patna",
+    "state": "Karnataka",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_512",
+    "name": "Shashi Kavya",
+    "constituency": "Ahmedabad",
+    "state": "Bihar",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_638",
+    "name": "Shashi Kavya",
+    "constituency": "Karnataka (State)",
+    "state": "Karnataka",
+    "type": "Rajya Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_182",
+    "name": "Shashi Kejriwal",
+    "constituency": "Mumbai North",
+    "state": "Chhattisgarh",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_393",
+    "name": "Shashi Kejriwal",
+    "constituency": "Mumbai South",
+    "state": "Maharashtra",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_459",
+    "name": "Shashi Kejriwal",
+    "constituency": "Guwahati",
+    "state": "Maharashtra",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_520",
+    "name": "Shashi Kejriwal",
+    "constituency": "Bangalore Central",
+    "state": "Madhya Pradesh",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_564",
+    "name": "Shashi Kejriwal",
+    "constituency": "Tamil Nadu (State)",
+    "state": "Tamil Nadu",
+    "type": "Rajya Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_155",
+    "name": "Shashi Kumar",
+    "constituency": "Guwahati",
+    "state": "West Bengal",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_375",
+    "name": "Shashi Kumar",
+    "constituency": "Nagpur",
+    "state": "Haryana",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_745",
+    "name": "Shashi Kumar",
+    "constituency": "Haryana (State)",
+    "state": "Haryana",
+    "type": "Rajya Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_169",
+    "name": "Shashi Modi",
+    "constituency": "Wayanad",
+    "state": "Karnataka",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_626",
+    "name": "Shashi Modi",
+    "constituency": "Delhi (State)",
+    "state": "Delhi",
+    "type": "Rajya Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_475",
+    "name": "Shashi Patnaik",
+    "constituency": "Pune",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_549",
+    "name": "Shashi Pawar",
+    "constituency": "Bihar (State)",
+    "state": "Bihar",
+    "type": "Rajya Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_739",
+    "name": "Shashi Reddy",
+    "constituency": "Andhra Pradesh (State)",
+    "state": "Andhra Pradesh",
+    "type": "Rajya Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_641",
+    "name": "Shashi Shah",
+    "constituency": "Madhya Pradesh (State)",
+    "state": "Madhya Pradesh",
+    "type": "Rajya Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_724",
+    "name": "Shashi Singh",
+    "constituency": "Kerala (State)",
+    "state": "Kerala",
+    "type": "Rajya Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_501",
+    "name": "Shashi Stalin",
+    "constituency": "Bhopal",
+    "state": "Bihar",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_307",
+    "name": "Shashi Thackeray",
+    "constituency": "Chennai Central",
+    "state": "Rajasthan",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_138",
+    "name": "Shashi Tharoor",
+    "constituency": "Chandigarh",
+    "state": "Maharashtra",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_485",
+    "name": "Shashi Tharoor",
+    "constituency": "Thiruvananthapuram",
+    "state": "Madhya Pradesh",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_716",
+    "name": "Shashi Verma",
+    "constituency": "Delhi (State)",
+    "state": "Delhi",
+    "type": "Rajya Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_500",
+    "name": "Shashi Vijayan",
+    "constituency": "Warangal",
+    "state": "Haryana",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_139",
+    "name": "Shashi Yadav",
+    "constituency": "Patna",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_747",
+    "name": "Siddaramaiah Banerjee",
+    "constituency": "Tamil Nadu (State)",
+    "state": "Tamil Nadu",
+    "type": "Rajya Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_546",
+    "name": "Siddaramaiah Gandhi",
+    "constituency": "Kerala (State)",
+    "state": "Kerala",
+    "type": "Rajya Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_081",
+    "name": "Siddaramaiah Gupta",
+    "constituency": "Thiruvananthapuram",
+    "state": "Rajasthan",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_513",
+    "name": "Siddaramaiah Gupta",
+    "constituency": "Bangalore Rural",
+    "state": "Maharashtra",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_276",
+    "name": "Siddaramaiah Kavya",
+    "constituency": "Thiruvananthapuram",
+    "state": "Chhattisgarh",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_779",
+    "name": "Siddaramaiah Kumar",
+    "constituency": "Haryana (State)",
+    "state": "Haryana",
+    "type": "Rajya Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_240",
+    "name": "Siddaramaiah Modi",
+    "constituency": "Warangal",
+    "state": "Delhi",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_646",
+    "name": "Siddaramaiah Modi",
+    "constituency": "Chhattisgarh (State)",
+    "state": "Chhattisgarh",
+    "type": "Rajya Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_055",
+    "name": "Siddaramaiah Patnaik",
+    "constituency": "Mumbai North",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_257",
+    "name": "Siddaramaiah Pawar",
+    "constituency": "Varanasi",
+    "state": "Madhya Pradesh",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_778",
+    "name": "Siddaramaiah Pawar",
+    "constituency": "Telangana (State)",
+    "state": "Telangana",
+    "type": "Rajya Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_411",
+    "name": "Siddaramaiah Rao",
+    "constituency": "Guwahati",
+    "state": "Tamil Nadu",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_094",
+    "name": "Siddaramaiah Reddy",
+    "constituency": "Chennai Central",
+    "state": "Madhya Pradesh",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_753",
+    "name": "Siddaramaiah Singh",
+    "constituency": "Odisha (State)",
+    "state": "Odisha",
+    "type": "Rajya Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_589",
+    "name": "Siddaramaiah Tharoor",
+    "constituency": "Bihar (State)",
+    "state": "Bihar",
+    "type": "Rajya Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_365",
+    "name": "Siddaramaiah Verma",
+    "constituency": "Lucknow",
+    "state": "Gujarat",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_369",
+    "name": "Siddaramaiah Verma",
+    "constituency": "Bangalore Central",
+    "state": "Karnataka",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_071",
+    "name": "Siddaramaiah Vijayan",
+    "constituency": "Gandhinagar",
+    "state": "Madhya Pradesh",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_332",
+    "name": "Smriti Adityanath",
+    "constituency": "Bhopal",
+    "state": "Madhya Pradesh",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_348",
+    "name": "Smriti Adityanath",
+    "constituency": "Bhopal",
+    "state": "Rajasthan",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_088",
+    "name": "Smriti Banerjee",
+    "constituency": "Kolkata North",
+    "state": "Haryana",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_359",
+    "name": "Smriti Banerjee",
+    "constituency": "Pune",
+    "state": "Punjab",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_730",
+    "name": "Smriti Fadnavis",
+    "constituency": "Haryana (State)",
+    "state": "Haryana",
+    "type": "Rajya Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_656",
+    "name": "Smriti Gandhi",
+    "constituency": "Rajasthan (State)",
+    "state": "Rajasthan",
+    "type": "Rajya Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_310",
+    "name": "Smriti Kejriwal",
+    "constituency": "Chennai Central",
+    "state": "West Bengal",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_166",
+    "name": "Smriti Mishra",
+    "constituency": "Gandhinagar",
+    "state": "Andhra Pradesh",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_720",
+    "name": "Smriti Patnaik",
+    "constituency": "Punjab (State)",
+    "state": "Punjab",
+    "type": "Rajya Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_722",
+    "name": "Smriti Patnaik",
+    "constituency": "Tamil Nadu (State)",
+    "state": "Tamil Nadu",
+    "type": "Rajya Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_550",
+    "name": "Smriti Pawar",
+    "constituency": "Karnataka (State)",
+    "state": "Karnataka",
+    "type": "Rajya Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_591",
+    "name": "Smriti Rao",
+    "constituency": "Delhi (State)",
+    "state": "Delhi",
+    "type": "Rajya Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_593",
+    "name": "Smriti Rao",
+    "constituency": "Haryana (State)",
+    "state": "Haryana",
+    "type": "Rajya Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_750",
+    "name": "Smriti Rao",
+    "constituency": "Karnataka (State)",
+    "state": "Karnataka",
+    "type": "Rajya Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_579",
+    "name": "Smriti Reddy",
+    "constituency": "Uttar Pradesh (State)",
+    "state": "Uttar Pradesh",
+    "type": "Rajya Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_239",
+    "name": "Smriti Sarma",
+    "constituency": "Chennai Central",
+    "state": "Gujarat",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_242",
+    "name": "Smriti Sarma",
+    "constituency": "Chennai Central",
+    "state": "Punjab",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_319",
+    "name": "Smriti Shah",
+    "constituency": "Varanasi",
+    "state": "Delhi",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_132",
+    "name": "Smriti Sharma",
+    "constituency": "Chandigarh",
+    "state": "Karnataka",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_225",
+    "name": "Smriti Sharma",
+    "constituency": "Mumbai South",
+    "state": "West Bengal",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_458",
+    "name": "Smriti Sharma",
+    "constituency": "Amethi",
+    "state": "Delhi",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_578",
+    "name": "Smriti Sharma",
+    "constituency": "Assam (State)",
+    "state": "Assam",
+    "type": "Rajya Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_402",
+    "name": "Smriti Stalin",
+    "constituency": "Lucknow",
+    "state": "Karnataka",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_383",
+    "name": "Smriti Tharoor",
+    "constituency": "Bangalore Rural",
+    "state": "West Bengal",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_011",
+    "name": "Smriti Verma",
+    "constituency": "Chennai Central",
+    "state": "Odisha",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_112",
+    "name": "Smriti Verma",
+    "constituency": "Hyderabad",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_178",
+    "name": "Smriti Verma",
+    "constituency": "Bangalore Central",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_246",
+    "name": "Smriti Verma",
+    "constituency": "Hyderabad",
+    "state": "Punjab",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_258",
+    "name": "Smriti Verma",
+    "constituency": "Chandigarh",
+    "state": "Bihar",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_417",
+    "name": "Smriti Verma",
+    "constituency": "Kolkata North",
+    "state": "Madhya Pradesh",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_787",
+    "name": "Smriti Verma",
+    "constituency": "Odisha (State)",
+    "state": "Odisha",
+    "type": "Rajya Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_735",
+    "name": "Supriya Adityanath",
+    "constituency": "Uttar Pradesh (State)",
+    "state": "Uttar Pradesh",
+    "type": "Rajya Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_329",
+    "name": "Supriya Bose",
+    "constituency": "Ahmedabad",
+    "state": "Bihar",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_498",
+    "name": "Supriya Bose",
+    "constituency": "Bangalore Central",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_770",
+    "name": "Supriya Das",
+    "constituency": "Andhra Pradesh (State)",
+    "state": "Andhra Pradesh",
+    "type": "Rajya Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_764",
+    "name": "Supriya Fadnavis",
+    "constituency": "West Bengal (State)",
+    "state": "West Bengal",
+    "type": "Rajya Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_064",
+    "name": "Supriya Gadkari",
+    "constituency": "Ahmedabad",
+    "state": "West Bengal",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_037",
+    "name": "Supriya Gandhi",
+    "constituency": "Nagpur",
+    "state": "Maharashtra",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_250",
+    "name": "Supriya Gandhi",
+    "constituency": "Mumbai South",
+    "state": "Haryana",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_273",
+    "name": "Supriya Kavya",
+    "constituency": "Nagpur",
+    "state": "Rajasthan",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_701",
+    "name": "Supriya Kavya",
+    "constituency": "Karnataka (State)",
+    "state": "Karnataka",
+    "type": "Rajya Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_364",
+    "name": "Supriya Kumar",
+    "constituency": "Bhopal",
+    "state": "Assam",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_643",
+    "name": "Supriya Mishra",
+    "constituency": "Odisha (State)",
+    "state": "Odisha",
+    "type": "Rajya Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_129",
+    "name": "Supriya Patnaik",
+    "constituency": "Thiruvananthapuram",
+    "state": "Bihar",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_561",
+    "name": "Supriya Rao",
+    "constituency": "Punjab (State)",
+    "state": "Punjab",
+    "type": "Rajya Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_621",
+    "name": "Supriya Rao",
+    "constituency": "Delhi (State)",
+    "state": "Delhi",
+    "type": "Rajya Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_325",
+    "name": "Supriya Reddy",
+    "constituency": "Chandigarh",
+    "state": "Chhattisgarh",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_338",
+    "name": "Supriya Reddy",
+    "constituency": "Chandigarh",
+    "state": "Madhya Pradesh",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_691",
+    "name": "Supriya Sarma",
+    "constituency": "Andhra Pradesh (State)",
+    "state": "Andhra Pradesh",
+    "type": "Rajya Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_219",
+    "name": "Supriya Shah",
+    "constituency": "Thiruvananthapuram",
+    "state": "Tamil Nadu",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_385",
+    "name": "Supriya Sharma",
+    "constituency": "Jaipur",
+    "state": "Delhi",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_143",
+    "name": "Supriya Thackeray",
+    "constituency": "Jaipur",
+    "state": "Rajasthan",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_752",
+    "name": "Supriya Thackeray",
+    "constituency": "Odisha (State)",
+    "state": "Odisha",
+    "type": "Rajya Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_596",
+    "name": "Supriya Tharoor",
+    "constituency": "Odisha (State)",
+    "state": "Odisha",
+    "type": "Rajya Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_398",
+    "name": "Supriya Vijayan",
+    "constituency": "Varanasi",
+    "state": "Jammu & Kashmir",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_511",
+    "name": "Supriya Yadav",
+    "constituency": "Bhopal",
+    "state": "Jammu & Kashmir",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_553",
+    "name": "Supriya Yadav",
+    "constituency": "West Bengal (State)",
+    "state": "West Bengal",
+    "type": "Rajya Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_703",
+    "name": "Supriya Yadav",
+    "constituency": "Gujarat (State)",
+    "state": "Gujarat",
+    "type": "Rajya Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_014",
+    "name": "Tejashwi Banerjee",
+    "constituency": "Warangal",
+    "state": "Delhi",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_717",
+    "name": "Tejashwi Das",
+    "constituency": "West Bengal (State)",
+    "state": "West Bengal",
+    "type": "Rajya Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_734",
+    "name": "Tejashwi Gadkari",
+    "constituency": "Tamil Nadu (State)",
+    "state": "Tamil Nadu",
+    "type": "Rajya Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_483",
+    "name": "Tejashwi Gupta",
+    "constituency": "Gandhinagar",
+    "state": "Jharkhand",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_664",
+    "name": "Tejashwi Irani",
+    "constituency": "Madhya Pradesh (State)",
+    "state": "Madhya Pradesh",
+    "type": "Rajya Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_669",
+    "name": "Tejashwi Iyer",
+    "constituency": "Telangana (State)",
+    "state": "Telangana",
+    "type": "Rajya Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_403",
+    "name": "Tejashwi Kumar",
+    "constituency": "Patna",
+    "state": "Madhya Pradesh",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_203",
+    "name": "Tejashwi Modi",
+    "constituency": "Mumbai North",
+    "state": "Bihar",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_300",
+    "name": "Tejashwi Owaisi",
+    "constituency": "Jaipur",
+    "state": "West Bengal",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_386",
+    "name": "Tejashwi Pawar",
+    "constituency": "Bangalore Rural",
+    "state": "Jammu & Kashmir",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_603",
+    "name": "Tejashwi Pawar",
+    "constituency": "Jharkhand (State)",
+    "state": "Jharkhand",
+    "type": "Rajya Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_108",
+    "name": "Tejashwi Sarma",
+    "constituency": "Pune",
+    "state": "Assam",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_631",
+    "name": "Tejashwi Sarma",
+    "constituency": "Rajasthan (State)",
+    "state": "Rajasthan",
+    "type": "Rajya Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_767",
+    "name": "Tejashwi Sarma",
+    "constituency": "West Bengal (State)",
+    "state": "West Bengal",
+    "type": "Rajya Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_115",
+    "name": "Tejashwi Sharma",
+    "constituency": "Pune",
+    "state": "Tamil Nadu",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_079",
+    "name": "Tejashwi Singh",
+    "constituency": "Bangalore Rural",
+    "state": "Haryana",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_164",
+    "name": "Tejashwi Singh",
+    "constituency": "Chennai Central",
+    "state": "Karnataka",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_469",
+    "name": "Tejashwi Singh",
+    "constituency": "Ahmedabad",
+    "state": "Gujarat",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_759",
+    "name": "Tejashwi Singh",
+    "constituency": "Kerala (State)",
+    "state": "Kerala",
+    "type": "Rajya Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_569",
+    "name": "Tejashwi Tharoor",
+    "constituency": "Madhya Pradesh (State)",
+    "state": "Madhya Pradesh",
+    "type": "Rajya Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_197",
+    "name": "Uddhav Adityanath",
+    "constituency": "Pune",
+    "state": "Haryana",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_008",
+    "name": "Uddhav Bose",
+    "constituency": "Gandhinagar",
+    "state": "Madhya Pradesh",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_651",
+    "name": "Uddhav Das",
+    "constituency": "Telangana (State)",
+    "state": "Telangana",
+    "type": "Rajya Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_232",
+    "name": "Uddhav Gandhi",
+    "constituency": "Varanasi",
+    "state": "Haryana",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_697",
+    "name": "Uddhav Gandhi",
+    "constituency": "Uttar Pradesh (State)",
+    "state": "Uttar Pradesh",
+    "type": "Rajya Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_751",
+    "name": "Uddhav Gandhi",
+    "constituency": "Karnataka (State)",
+    "state": "Karnataka",
+    "type": "Rajya Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_140",
+    "name": "Uddhav Gupta",
+    "constituency": "Lucknow",
+    "state": "Odisha",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_489",
+    "name": "Uddhav Iyer",
+    "constituency": "Ahmedabad",
+    "state": "Karnataka",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_249",
+    "name": "Uddhav Kavya",
+    "constituency": "Mumbai South",
+    "state": "West Bengal",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_536",
+    "name": "Uddhav Kejriwal",
+    "constituency": "Bangalore Rural",
+    "state": "Telangana",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_492",
+    "name": "Uddhav Mishra",
+    "constituency": "Bangalore Central",
+    "state": "West Bengal",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_630",
+    "name": "Uddhav Mishra",
+    "constituency": "Madhya Pradesh (State)",
+    "state": "Madhya Pradesh",
+    "type": "Rajya Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_632",
+    "name": "Uddhav Mishra",
+    "constituency": "Kerala (State)",
+    "state": "Kerala",
+    "type": "Rajya Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_043",
+    "name": "Uddhav Patnaik",
+    "constituency": "Lucknow",
+    "state": "Madhya Pradesh",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_629",
+    "name": "Uddhav Reddy",
+    "constituency": "Maharashtra (State)",
+    "state": "Maharashtra",
+    "type": "Rajya Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_729",
+    "name": "Uddhav Reddy",
+    "constituency": "Jharkhand (State)",
+    "state": "Jharkhand",
+    "type": "Rajya Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_080",
+    "name": "Uddhav Sarma",
+    "constituency": "Varanasi",
+    "state": "Andhra Pradesh",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_413",
+    "name": "Uddhav Shah",
+    "constituency": "Warangal",
+    "state": "Tamil Nadu",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_557",
+    "name": "Uddhav Singh",
+    "constituency": "Jammu & Kashmir (State)",
+    "state": "Jammu & Kashmir",
+    "type": "Rajya Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_171",
+    "name": "Uddhav Thackeray",
+    "constituency": "Thiruvananthapuram",
+    "state": "Telangana",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_445",
+    "name": "Uddhav Tharoor",
+    "constituency": "Pune",
+    "state": "Jharkhand",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_200",
+    "name": "Uddhav Verma",
+    "constituency": "Bangalore Rural",
+    "state": "Odisha",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_476",
+    "name": "Uddhav Yadav",
+    "constituency": "Gandhinagar",
+    "state": "Assam",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_748",
+    "name": "Uddhav Yadav",
+    "constituency": "Assam (State)",
+    "state": "Assam",
+    "type": "Rajya Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_381",
+    "name": "YS Adityanath",
+    "constituency": "Guwahati",
+    "state": "Rajasthan",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_156",
+    "name": "YS Banerjee",
+    "constituency": "Bangalore Rural",
+    "state": "Maharashtra",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_035",
+    "name": "YS Bose",
+    "constituency": "Bangalore Central",
+    "state": "Maharashtra",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_363",
+    "name": "YS Bose",
+    "constituency": "Chennai Central",
+    "state": "West Bengal",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_768",
+    "name": "YS Bose",
+    "constituency": "Jharkhand (State)",
+    "state": "Jharkhand",
+    "type": "Rajya Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_765",
+    "name": "YS Das",
+    "constituency": "West Bengal (State)",
+    "state": "West Bengal",
+    "type": "Rajya Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_097",
+    "name": "YS Fadnavis",
+    "constituency": "Jaipur",
+    "state": "Madhya Pradesh",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_075",
+    "name": "YS Gandhi",
+    "constituency": "Wayanad",
+    "state": "Gujarat",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_181",
+    "name": "YS Gandhi",
+    "constituency": "Patna",
+    "state": "Punjab",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_133",
+    "name": "YS Kejriwal",
+    "constituency": "Bhopal",
+    "state": "Assam",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_261",
+    "name": "YS Kejriwal",
+    "constituency": "Gandhinagar",
+    "state": "Karnataka",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_227",
+    "name": "YS Mishra",
+    "constituency": "Mumbai North",
+    "state": "Chhattisgarh",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_027",
+    "name": "YS Modi",
+    "constituency": "Mumbai North",
+    "state": "Rajasthan",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_053",
+    "name": "YS Owaisi",
+    "constituency": "Mumbai North",
+    "state": "Punjab",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_594",
+    "name": "YS Owaisi",
+    "constituency": "Haryana (State)",
+    "state": "Haryana",
+    "type": "Rajya Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_755",
+    "name": "YS Owaisi",
+    "constituency": "Odisha (State)",
+    "state": "Odisha",
+    "type": "Rajya Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_746",
+    "name": "YS Rao",
+    "constituency": "Assam (State)",
+    "state": "Assam",
+    "type": "Rajya Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_016",
+    "name": "YS Reddy",
+    "constituency": "Bangalore Rural",
+    "state": "Rajasthan",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_046",
+    "name": "YS Sharma",
+    "constituency": "Lucknow",
+    "state": "Andhra Pradesh",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_721",
+    "name": "YS Sharma",
+    "constituency": "Tamil Nadu (State)",
+    "state": "Tamil Nadu",
+    "type": "Rajya Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_503",
+    "name": "YS Singh",
+    "constituency": "Varanasi",
+    "state": "Jammu & Kashmir",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_212",
+    "name": "YS Verma",
+    "constituency": "Hyderabad",
+    "state": "Gujarat",
+    "type": "Lok Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_777",
+    "name": "YS Vijayan",
+    "constituency": "Andhra Pradesh (State)",
+    "state": "Andhra Pradesh",
+    "type": "Rajya Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_650",
+    "name": "Yogi Adityanath",
+    "constituency": "Jharkhand (State)",
+    "state": "Jharkhand",
+    "type": "Rajya Sabha",
+    "party": "DMK"
+  },
+  {
+    "id": "MP_772",
+    "name": "Yogi Banerjee",
+    "constituency": "Jharkhand (State)",
+    "state": "Jharkhand",
+    "type": "Rajya Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_370",
+    "name": "Yogi Bose",
+    "constituency": "Wayanad",
+    "state": "Delhi",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_425",
+    "name": "Yogi Bose",
+    "constituency": "Bangalore Central",
+    "state": "Maharashtra",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_440",
+    "name": "Yogi Das",
+    "constituency": "Patna",
+    "state": "Karnataka",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_029",
+    "name": "Yogi Fadnavis",
+    "constituency": "Hyderabad",
+    "state": "Maharashtra",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_252",
+    "name": "Yogi Gadkari",
+    "constituency": "Varanasi",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_208",
+    "name": "Yogi Gandhi",
+    "constituency": "Mumbai North",
+    "state": "Jharkhand",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_031",
+    "name": "Yogi Gupta",
+    "constituency": "Warangal",
+    "state": "Delhi",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_044",
+    "name": "Yogi Gupta",
+    "constituency": "Varanasi",
+    "state": "Telangana",
+    "type": "Lok Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_149",
+    "name": "Yogi Gupta",
+    "constituency": "Chandigarh",
+    "state": "Assam",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_142",
+    "name": "Yogi Kejriwal",
+    "constituency": "Warangal",
+    "state": "Karnataka",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_786",
+    "name": "Yogi Kejriwal",
+    "constituency": "Jharkhand (State)",
+    "state": "Jharkhand",
+    "type": "Rajya Sabha",
+    "party": "TMC"
+  },
+  {
+    "id": "MP_026",
+    "name": "Yogi Kumar",
+    "constituency": "Bangalore Central",
+    "state": "Delhi",
+    "type": "Lok Sabha",
+    "party": "INC"
+  },
+  {
+    "id": "MP_005",
+    "name": "Yogi Mishra",
+    "constituency": "Kolkata North",
+    "state": "Punjab",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_344",
+    "name": "Yogi Modi",
+    "constituency": "Amethi",
+    "state": "Tamil Nadu",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_540",
+    "name": "Yogi Modi",
+    "constituency": "Bangalore Rural",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "party": "BJP"
+  },
+  {
+    "id": "MP_341",
+    "name": "Yogi Patnaik",
+    "constituency": "Bangalore Central",
+    "state": "Punjab",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_689",
+    "name": "Yogi Patnaik",
+    "constituency": "West Bengal (State)",
+    "state": "West Bengal",
+    "type": "Rajya Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_151",
+    "name": "Yogi Reddy",
+    "constituency": "Mumbai North",
+    "state": "Punjab",
+    "type": "Lok Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_733",
+    "name": "Yogi Reddy",
+    "constituency": "Gujarat (State)",
+    "state": "Gujarat",
+    "type": "Rajya Sabha",
+    "party": "BJD"
+  },
+  {
+    "id": "MP_066",
+    "name": "Yogi Sarma",
+    "constituency": "Patna",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_324",
+    "name": "Yogi Sarma",
+    "constituency": "Guwahati",
+    "state": "Delhi",
+    "type": "Lok Sabha",
+    "party": "AAP"
+  },
+  {
+    "id": "MP_433",
+    "name": "Yogi Sarma",
+    "constituency": "Jaipur",
+    "state": "Chhattisgarh",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_465",
+    "name": "Yogi Shah",
+    "constituency": "Hyderabad",
+    "state": "Odisha",
+    "type": "Lok Sabha",
+    "party": "YSRCP"
+  },
+  {
+    "id": "MP_514",
+    "name": "Yogi Shah",
+    "constituency": "Ahmedabad",
+    "state": "Andhra Pradesh",
+    "type": "Lok Sabha",
+    "party": "CPIM"
+  },
+  {
+    "id": "MP_184",
+    "name": "Yogi Sharma",
+    "constituency": "Wayanad",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_248",
+    "name": "Yogi Thackeray",
+    "constituency": "Chandigarh",
+    "state": "Chhattisgarh",
+    "type": "Lok Sabha",
+    "party": "SP"
+  },
+  {
+    "id": "MP_742",
+    "name": "Yogi Thackeray",
+    "constituency": "Tamil Nadu (State)",
+    "state": "Tamil Nadu",
+    "type": "Rajya Sabha",
+    "party": "YSRCP"
+  }
+]

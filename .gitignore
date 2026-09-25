@@ -39,3 +39,8 @@ build/
 .Trashes
 ehthumbs.db
 Thumbs.db
+# Antigravity/Gemini Config
+.gemini/
+
+# Large ML Models
+

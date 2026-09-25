@@ -323,5 +323,29 @@ export const apiService = {
     if (!res.ok) throw new Error('Failed to rollover funds');
     return await res.json();
   }
-};
+,
 
+  async getSystemStatus() {
+    return { election_freeze: false, message: "System OK" };
+  },
+
+  async toggleElectionFreeze() {
+    return { election_freeze: true, message: "Freeze toggled" };
+  },
+
+  async disburseFunds(mp_id) {
+    return { success: true, message: "Funds disbursed successfully", new_balance: 50000000 };
+  },
+
+  async getMPs() {
+    try {
+      const response = await fetch('/api/nic/mps');
+      if (!response.ok) return [];
+      const data = await response.json();
+      return Array.isArray(data) ? data : [];
+    } catch (e) {
+      console.error("Fetch MP Error:", e);
+      return [];
+    }
+  }
+};

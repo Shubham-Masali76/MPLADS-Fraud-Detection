@@ -7,6 +7,8 @@ export function DistrictDashboard({ onLogout }) {
   const [liveProjects, setLiveProjects] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [actionStatus, setActionStatus] = useState(null);
+  const [freezeActive, setFreezeActive] = useState(false);
+  const [agencies, setAgencies] = useState({});
 
   const fetchLiveProjects = async () => {
     setIsLoading(true);
@@ -19,10 +21,24 @@ export function DistrictDashboard({ onLogout }) {
     setIsLoading(false);
   };
 
+  const fetchSystemStatus = async () => {
+    try {
+      const status = await apiService.getSystemStatus();
+      setFreezeActive(status.election_freeze);
+    } catch (e) {
+      console.error("Failed to fetch system status", e);
+    }
+  };
+
   useEffect(() => {
     fetchLiveProjects();
+    fetchSystemStatus();
   }, []);
 
+  
+  const handleAgencyChange = (id, val) => {
+    setAgencies(prev => ({...prev, [id]: val}));
+  };
   const handleApprove = async (projectId) => {
     try {
       await apiService.approveLiveProject(projectId);
@@ -43,7 +59,7 @@ export function DistrictDashboard({ onLogout }) {
     }
   };
 
-  const pendingProjects = liveProjects.filter((p) => p.status === "GEOFENCED");
+  const pendingProjects = liveProjects.filter((p) => p.status === "PENDING_DC_APPROVAL");
   const approvedProjects = liveProjects.filter(
     (p) => p.status === "APPROVED" || p.status === "EVIDENCE_SUBMITTED",
   );
@@ -126,7 +142,7 @@ export function DistrictDashboard({ onLogout }) {
             <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
               <div className="px-6 py-4 border-b border-slate-200 bg-slate-50">
                 <h3 className="font-bold text-slate-800">
-                  Geofenced Works Pending Sanction
+                  MP Recommended Works Pending Sanction
                 </h3>
               </div>
               <div className="divide-y divide-slate-100 max-h-[600px] overflow-auto">
@@ -170,7 +186,7 @@ export function DistrictDashboard({ onLogout }) {
                       <div className="bg-slate-100 p-4 rounded-lg flex items-start gap-4">
                         <div className="h-20 w-32 bg-slate-200 rounded overflow-hidden flex-shrink-0 border border-slate-300">
                           <img
-                            src="https://placehold.co/300x200/e2e8f0/475569?text=EXIF+Photo"
+                            src={`/uploads/evidence_${p.id}.jpg`} onError={(e) => { e.target.onerror = null; e.target.src = "/mock-evidence.jpg"; }}
                             alt="Site Baseline"
                             className="w-full h-full object-cover"
                           />
@@ -192,7 +208,21 @@ export function DistrictDashboard({ onLogout }) {
                         </div>
                       </div>
 
-                      <div className="flex justify-end gap-3 mt-2">
+                      
+                      <div className="flex justify-end gap-3 mt-4 items-center bg-slate-50 p-3 rounded-lg border border-slate-200">
+                        <label className="text-sm font-bold text-slate-700">Assign IA:</label>
+                        <select 
+                          className="border border-slate-300 rounded-lg px-3 py-2 text-sm outline-none focus:border-indigo-500 min-w-[250px]"
+                          value={agencies[p.id] || ''}
+                          onChange={(e) => handleAgencyChange(p.id, e.target.value)}
+                        >
+                          <option value="">-- Select Implementing Agency --</option>
+                          <option value="pwd">Public Works Dept (PWD)</option>
+                          <option value="rws">Rural Water Supply (RWS)</option>
+                          <option value="zp">Zilla Parishad (ZP)</option>
+                          <option value="ulb">Urban Local Body (ULB)</option>
+                        </select>
+                        <div className="flex-1"></div>
                         <button
                           onClick={() => handleReject(p.id)}
                           className="bg-white border border-rose-600 text-rose-600 px-6 py-2 rounded-lg text-sm font-bold hover:bg-rose-50 transition-colors"
@@ -201,18 +231,26 @@ export function DistrictDashboard({ onLogout }) {
                         </button>
                         <button
                           onClick={() => handleApprove(p.id)}
-                          className="bg-emerald-600 text-white px-6 py-2 rounded-lg text-sm font-bold hover:bg-emerald-700 transition-colors"
+                          disabled={!agencies[p.id]}
+                          className={`px-6 py-2 rounded-lg text-sm font-bold text-white transition-colors ${agencies[p.id] ? 'bg-emerald-600 hover:bg-emerald-700' : 'bg-slate-300 cursor-not-allowed'}`}
                         >
-                          Sanction & Release Funds
+                          Route to Agency & Sanction
                         </button>
                       </div>
+
                     </div>
                   ))
                 )}
               </div>
             </div>
-          ) : (
-            <div className="space-y-6">
+          ) : ( <div>{freezeActive && (
+          <div className="bg-red-50 border border-red-200 rounded-xl p-4 mb-6">
+            <h3 className="font-bold text-red-700">Model Code of Conduct Enforced</h3>
+            <p className="text-red-600 text-sm">Election dates have been announced. You are strictly prohibited from sanctioning new projects or routing funds to implementing agencies. Ongoing construction may continue.</p>
+          </div>
+        )}
+
+        <div className="space-y-6">
               <div className="grid grid-cols-2 gap-6">
                 <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
                   <div className="text-slate-500 text-sm font-medium mb-1">
@@ -271,6 +309,7 @@ export function DistrictDashboard({ onLogout }) {
                 </div>
               </div>
             </div>
+          </div>
           )}
         </main>
       </div>

@@ -40,6 +40,7 @@ export function MPDashboard({ onLogout }) {
   const [justification, setJustification] = useState("");
   const [submitStatus, setSubmitStatus] = useState({ type: "", message: "" });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [freezeActive, setFreezeActive] = useState(false);
 
   // Projects State
   const [liveProjects, setLiveProjects] = useState([]);
@@ -71,6 +72,16 @@ export function MPDashboard({ onLogout }) {
   // Fetch projects as soon as dashboard loads to populate the overview
   useEffect(() => {
     fetchData();
+
+        const fetchStatusAndWallet = async () => {
+      try {
+        const statusRes = await apiService.getSystemStatus();
+        setFreezeActive(statusRes.election_freeze);
+      } catch (err) {
+        console.error(err);
+      }
+    };
+    fetchStatusAndWallet();
   }, []);
 
   // --- Dynamic Financial Calculations ---
@@ -285,7 +296,7 @@ export function MPDashboard({ onLogout }) {
               <div className="w-full md:w-1/2 flex flex-col">
                 <div className="bg-slate-50 p-4 border-b border-slate-200">
                   <div className="text-xs font-bold text-slate-500 uppercase">
-                    Reverse Geocoded Location
+                    Physical Site Evidence
                   </div>
                   <div className="text-sm font-bold text-slate-800 mt-1 flex items-start gap-2">
                     <svg
@@ -311,26 +322,18 @@ export function MPDashboard({ onLogout }) {
                   </div>
                 </div>
                 <div className="flex-1 w-full bg-slate-200 relative">
-                  <MapContainer
-                    center={[18.5204, 73.8567]}
-                    zoom={15}
-                    style={{ height: "100%", width: "100%" }}
-                    zoomControl={false}
-                    dragging={false}
-                    touchZoom={false}
-                    scrollWheelZoom={false}
-                    doubleClickZoom={false}
-                  >
-                    <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                    <Marker position={[18.5204, 73.8567]}></Marker>
-                    <Circle
-                      center={[18.5204, 73.8567]}
-                      radius={100}
-                      pathOptions={{ color: "red", fillOpacity: 0.2 }}
+                  <div className="w-full h-full rounded-xl overflow-hidden border border-slate-200 shadow-inner group relative">
+                    <img 
+                      src={`/uploads/evidence_${selectedExifProject.id}.jpg`}
+                      onError={(e) => { if (!e.target.src.includes('mock-evidence.jpg')) { e.target.src = '/mock-evidence.jpg'; } }}
+                      alt="Site Evidence"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
+                      onClick={(e) => window.open(e.target.src, '_blank')}
+                      title="Click to view full screen evidence"
                     />
-                  </MapContainer>
-                  <div className="absolute top-2 right-2 bg-white/90 px-3 py-1 rounded shadow text-[10px] font-bold text-red-600 z-[400] border border-red-200">
-                    100m Geo-Fence Perimeter
+                    <div className="absolute top-2 right-2 bg-black/70 px-3 py-1 rounded shadow text-[10px] font-bold text-white z-[10] backdrop-blur-sm flex items-center gap-1 border border-white/20">
+                      <CheckCircle2 className="w-3 h-3 text-emerald-400" /> Day-0 Photo Verified
+                    </div>
                   </div>
                 </div>
               </div>

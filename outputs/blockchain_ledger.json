@@ -76,5 +76,21 @@
     "previous_hash": "00eb184baae50155f67e9f572ff79078e530eea64ab5b7b171dbc59f654460ea",
     "block_hash": "0077b8b27ecfd7c6279d8edf72d43a2ab4a4290d89c84b90bf6bd6bad5e61f51",
     "nonce": 302
+  },
+  {
+    "index": 5,
+    "timestamp": "2026-09-24T07:47:33.639620+00:00",
+    "transaction_type": "AUDITOR_DECISION",
+    "payload": {
+      "project_id": "P00059973",
+      "auditor_id": "CVC_AUDITOR_007",
+      "decision": "HOLD",
+      "notes": "2884000 work not done",
+      "recorded_at": "2026-09-24T07:47:33.639581+00:00"
+    },
+    "payload_hash": "1ad865a1c38aaff0b546990b357919c8cc11493c4174859d793de48319525d7a",
+    "previous_hash": "0077b8b27ecfd7c6279d8edf72d43a2ab4a4290d89c84b90bf6bd6bad5e61f51",
+    "block_hash": "004c649d6be7da50d91ca52c6e36e75801a939583bbc62fc1c45948a95c9afb2",
+    "nonce": 85
   }
 ]

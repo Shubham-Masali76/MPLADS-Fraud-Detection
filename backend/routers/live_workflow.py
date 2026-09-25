@@ -1,4 +1,9 @@
-from fastapi import APIRouter, Depends, HTTPException, File, UploadFile, Form
+from pydantic import BaseModel
+from fastapi import APIRouter, Depends, HTTPException
+from backend.services.spatial_service import haversine_distance
+from fastapi import File, UploadFile, Form
+import shutil
+import os
 from sqlalchemy.orm import Session
 from typing import List, Optional
 import io
@@ -79,8 +84,23 @@ def rollover_funds(mp_id: str, amount: float, db: Session = Depends(get_db)):
     db.refresh(wallet)
     return wallet
 
+def jaccard_similarity(s1, s2):
+    s1_words = set(s1.lower().split())
+    s2_words = set(s2.lower().split())
+    if not s1_words or not s2_words: return 0.0
+    return len(s1_words.intersection(s2_words)) / len(s1_words.union(s2_words))
+
 @router.post("/projects", response_model=schemas.LiveProjectResponse)
 def create_project(project: LiveProjectCreate, db: Session = Depends(get_db)):
+    # MoSPI Duplicate Detection NLP check
+    existing_projects = db.query(LiveProject).filter(LiveProject.district == project.district).all()
+    is_dup = 0
+    for ep in existing_projects:
+        if jaccard_similarity(project.work_description, ep.work_description) > 0.6: # 60% similarity threshold
+            print(f"[MoSPI-NLP] ALERT: Duplicate work detected! Similar to LIVE-{ep.id}")
+            is_dup = 1
+            break
+
     db_project = LiveProject(
         mp_id=project.mp_id,
         constituency=project.constituency,
@@ -90,7 +110,8 @@ def create_project(project: LiveProjectCreate, db: Session = Depends(get_db)):
         estimated_budget=project.estimated_budget,
         expected_duration_months=project.expected_duration_months,
         justification=project.justification,
-        status="PENDING_DC_APPROVAL"
+        status="PENDING_DC_APPROVAL",
+        is_duplicate=is_dup
     )
     db.add(db_project)
     db.commit()
@@ -108,7 +129,7 @@ def approve_project(project_id: int, db: Session = Depends(get_db)):
         raise HTTPException(status_code=404, detail="Project not found")
     
     db_project.status = "APPROVED"
-    db_project.contractor_assigned = "VEN-9942" # Mock assigning to our contractor
+    # Contractor assigned later by IA # Mock assigning to our contractor
     db.commit()
     db.refresh(db_project)
     return db_project
@@ -158,6 +179,14 @@ async def submit_evidence(
         file_bytes = await evidence_file.read()
         print(f"[VIGIL-AI] File Received: {evidence_file.filename} ({len(file_bytes)} bytes)")
         
+        # Save the real image for the UI to display
+        upload_dir = os.path.join(os.path.dirname(__file__), '../../frontend/public/uploads')
+        os.makedirs(upload_dir, exist_ok=True)
+        file_path = os.path.join(upload_dir, f"evidence_{project_id}.jpg")
+        with open(file_path, "wb") as f:
+            f.write(file_bytes)
+        print(f"[VIGIL-AI] Real evidence image saved to {file_path}")
+        
         if live_lat and live_lng:
             print(f"[GEO-INTEL] SUCCESS: Live PWA browser location captured -> Lat: {live_lat:.4f}, Long: {live_lng:.4f}")
             print(f"[GEO-INTEL] ALERT: Browser live location does not match Day-0 geofence baseline!")
@@ -184,17 +213,24 @@ async def submit_evidence(
         __main__.MPLADSFeatureEngineer = MPLADSFeatureEngineer
         __main__.MPLADSFraudDetector = MPLADSFraudDetector
         
-        # Build realtime dataframe for the model
+        # Build realtime dataframe for the model mapping to actual project data
+        # Simulate cost overrun and delays for demonstration if budget > 5 Cr
+        actual_cost = db_project.estimated_budget * 1.2 if db_project.estimated_budget > 5000000 else db_project.estimated_budget * 0.9
+        
         df = pd.DataFrame([{
-            'project_id': db_project.id or 'P999',
+            'project_id': f"LIVE-{db_project.id}",
             'category': db_project.project_category or 'Infrastructure',
             'constituency': db_project.constituency or 'WARANGAL',
-            'state': 'Telangana',
+            'state': db_project.state or 'Telangana',
             'recommended_amount': db_project.estimated_budget or 5000000.0,
             'sanctioned_amount': db_project.estimated_budget or 5000000.0,
-            'cost_incurred': (db_project.estimated_budget or 5000000.0) * 0.95,
+            'cost_incurred': actual_cost,
             'physical_progress_pct': 100
         }])
+        
+        # Update db_project with the simulated actuals for MoSPI dashboard
+        db_project.actual_expenditure = actual_cost
+        db_project.days_delayed = 45 if actual_cost > db_project.estimated_budget else 0
         
         detector = MPLADSFraudDetector.load('mplads_fraud_model.joblib')
         res = detector.predict_with_scores(df)
@@ -282,4 +318,42 @@ def reject_project(project_id: int, db: Session = Depends(get_db)):
     except Exception as e:
         print(f"Failed to send notification: {e}")
         
+    return db_project
+
+
+class AssignEngineerRequest(BaseModel):
+    employee_id: str
+
+@router.post("/projects/{project_id}/assign_engineer", response_model=schemas.LiveProjectResponse)
+def assign_engineer(project_id: int, req: AssignEngineerRequest, db: Session = Depends(get_db)):
+    db_project = db.query(LiveProject).filter(LiveProject.id == project_id).first()
+    if not db_project:
+        raise HTTPException(status_code=404, detail="Project not found")
+        
+    db_project.status = "PENDING_GEOFENCE"
+    db.commit()
+    db.refresh(db_project)
+    
+    from backend.services.twilio_service import twilio_service
+    twilio_service.alert_fe_assignment(project_id, req.employee_id)
+    
+    return db_project
+
+
+class AssignContractorRequest(BaseModel):
+    gstin: str
+
+@router.post("/projects/{project_id}/assign_contractor", response_model=schemas.LiveProjectResponse)
+def assign_contractor(project_id: int, req: AssignContractorRequest, db: Session = Depends(get_db)):
+    db_project = db.query(LiveProject).filter(LiveProject.id == project_id).first()
+    if not db_project:
+        raise HTTPException(status_code=404, detail="Project not found")
+        
+    db_project.contractor_assigned = req.gstin
+    db.commit()
+    db.refresh(db_project)
+    
+    from backend.services.twilio_service import twilio_service
+    twilio_service.alert_contractor_award(project_id, req.gstin)
+    
     return db_project

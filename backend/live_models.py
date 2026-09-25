@@ -21,9 +21,17 @@ class LiveProject(Base):
     estimated_budget = Column(Float)
     expected_duration_months = Column(Integer)
     justification = Column(String)
+    
+    # MoSPI Analytics Fields
+    actual_expenditure = Column(Float, default=0.0)
+    state = Column(String, default='Telangana')
+    is_duplicate = Column(Integer, default=0) # SQLite doesn't have strict boolean
+    days_delayed = Column(Integer, default=0)
+    
     target_location = Column(String, nullable=True)
     
     status = Column(String, default="PENDING_DC_APPROVAL") # PENDING_DC_APPROVAL, APPROVED, REJECTED
+    implementing_agency = Column(String, nullable=True)
     contractor_assigned = Column(String, nullable=True)
     created_at = Column(DateTime, default=datetime.utcnow)
     
