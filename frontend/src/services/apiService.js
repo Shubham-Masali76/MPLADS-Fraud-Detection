@@ -16,7 +16,7 @@ import {
   mockMPs,
 } from '../data/mockData';
 
-const API_BASE = '/api';
+const API_BASE = import.meta.env.VITE_API_URL || '/api';
 
 // In-memory runtime state for mock fallback mutations
 let runtimeProjects = [...mockProjects];
@@ -339,7 +339,7 @@ export const apiService = {
 
   async getMPs() {
     try {
-      const response = await fetch('/api/nic/mps');
+      const response = await fetch(`${API_BASE}/nic/mps`);
       if (!response.ok) return [];
       const data = await response.json();
       return Array.isArray(data) ? data : [];
