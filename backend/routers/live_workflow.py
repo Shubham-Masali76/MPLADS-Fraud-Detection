@@ -232,7 +232,8 @@ async def submit_evidence(
         db_project.actual_expenditure = actual_cost
         db_project.days_delayed = 45 if actual_cost > db_project.estimated_budget else 0
         
-        detector = MPLADSFraudDetector.load('mplads_fraud_model.joblib')
+        from backend.config import MODEL_PATH
+        detector = MPLADSFraudDetector.load(str(MODEL_PATH))
         res = detector.predict_with_scores(df)
         risk_score = res.iloc[0]['risk_score']
         reasons = res.iloc[0]['fraud_reasons']

@@ -104,4 +104,26 @@ class TwilioBhashiniService:
         print(f"      STATUS: 201 CREATED (Queued for Delivery)")
         print(f"[TWILIO-API] --------------------------------------------------")
 
+    def alert_fe_assignment(self, project_id: int, employee_id: str):
+        print(f"\n[TWILIO-API] Initiating secure SMS/WhatsApp Gateway for Field Engineer Assignment...")
+        import time
+        time.sleep(0.5)
+        print(f"[TWILIO-API] --------------------------------------------------")
+        print(f"      TO: whatsapp:+919876543210 (Field Engineer {employee_id})")
+        print(f"      FROM: {self.twilio_number}")
+        print(f"      MESSAGE: 'Alert: You have been assigned to geofence and inspect Project LIVE-{project_id}.'")
+        print(f"      STATUS: 201 CREATED (Queued for Delivery)")
+        print(f"[TWILIO-API] --------------------------------------------------")
+
+    def alert_contractor_award(self, project_id: int, gstin: str):
+        print(f"\n[TWILIO-API] Initiating secure SMS/WhatsApp Gateway for Contractor Award...")
+        import time
+        time.sleep(0.5)
+        print(f"[TWILIO-API] --------------------------------------------------")
+        print(f"      TO: whatsapp:+919876543210 (Contractor {gstin})")
+        print(f"      FROM: {self.twilio_number}")
+        print(f"      MESSAGE: 'Alert: You have been awarded the contract for Project LIVE-{project_id}.'")
+        print(f"      STATUS: 201 CREATED (Queued for Delivery)")
+        print(f"[TWILIO-API] --------------------------------------------------")
+
 twilio_service = TwilioBhashiniService()

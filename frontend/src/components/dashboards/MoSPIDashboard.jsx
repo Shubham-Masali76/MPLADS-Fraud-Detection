@@ -9,11 +9,31 @@ export function MoSPIDashboard({ onLogout }) {
   const [message, setMessage] = useState("");
   const [isDisbursing, setIsDisbursing] = useState(false);
   const [allMPs, setAllMPs] = useState([]);
+  
+  const [overview, setOverview] = useState(null);
+  const [districts, setDistricts] = useState([]);
+  const [blocks, setBlocks] = useState([]);
 
   useEffect(() => {
     fetchStatus();
     fetchMPs();
+    fetchAnalytics();
   }, []);
+
+  const fetchAnalytics = async () => {
+    try {
+      const [overviewData, districtData, blockData] = await Promise.all([
+        apiService.getOverview(),
+        apiService.getDistrictRisk(),
+        apiService.getBlockchainBlocks()
+      ]);
+      setOverview(overviewData);
+      setDistricts(districtData);
+      setBlocks(blockData);
+    } catch (e) {
+      console.error("Analytics fetch error", e);
+    }
+  };
   
   const fetchMPs = async () => {
     try {
@@ -225,15 +245,15 @@ export function MoSPIDashboard({ onLogout }) {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
            <div className="bg-white p-4 md:p-6 rounded-2xl shadow-sm border border-slate-200">
              <div className="text-slate-500 text-sm font-medium mb-1">Total National Corpus</div>
-             <div className="text-3xl font-extrabold text-slate-900">₹3,950 Cr</div>
+             <div className="text-3xl font-extrabold text-slate-900">{overview ? `₹${(overview.total_sanctioned_funds_inr / 10000000).toLocaleString(undefined, {maximumFractionDigits: 0})} Cr` : 'Loading...'}</div>
            </div>
            <div className="bg-white p-4 md:p-6 rounded-2xl shadow-sm border border-slate-200">
              <div className="text-slate-500 text-sm font-medium mb-1">Active MPLADS Projects</div>
-             <div className="text-3xl font-extrabold text-slate-900">12,403</div>
+             <div className="text-3xl font-extrabold text-slate-900">{overview ? overview.total_projects.toLocaleString() : 'Loading...'}</div>
            </div>
            <div className="bg-white p-4 md:p-6 rounded-2xl shadow-sm border border-slate-200">
              <div className="text-slate-500 text-sm font-medium mb-1">Fraud Flagged (AI)</div>
-             <div className="text-3xl font-extrabold text-rose-600">47</div>
+             <div className="text-3xl font-extrabold text-rose-600">{overview ? (overview.critical_priority_count + overview.high_priority_count).toLocaleString() : 'Loading...'}</div>
            </div>
         </div>
 
@@ -257,7 +277,7 @@ export function MoSPIDashboard({ onLogout }) {
                 <div>
                   <div className="flex flex-col md:flex-row md:justify-between gap-4 md:gap-0 text-xs mb-1.5">
                     <span className="font-medium text-slate-600">Disbursed to Districts</span>
-                    <span className="font-bold text-emerald-600">₹2,840 Cr (72%)</span>
+                    <span className="font-bold text-emerald-600">₹{overview ? (overview.total_sanctioned_funds_inr * 0.72 / 10000000).toLocaleString(undefined, {maximumFractionDigits: 0}) : 0} Cr (72%)</span>
                   </div>
                   <div className="w-full bg-slate-200 rounded-full h-2.5">
                     <div className="bg-emerald-500 h-2.5 rounded-full" style={{ width: '72%' }}></div>
@@ -266,7 +286,7 @@ export function MoSPIDashboard({ onLogout }) {
                 <div>
                   <div className="flex flex-col md:flex-row md:justify-between gap-4 md:gap-0 text-xs mb-1.5">
                     <span className="font-medium text-slate-600">Pending Release</span>
-                    <span className="font-bold text-amber-600">₹1,110 Cr (28%)</span>
+                    <span className="font-bold text-amber-600">₹{overview ? (overview.total_sanctioned_funds_inr * 0.28 / 10000000).toLocaleString(undefined, {maximumFractionDigits: 0}) : 0} Cr (28%)</span>
                   </div>
                   <div className="w-full bg-slate-200 rounded-full h-2.5">
                     <div className="bg-amber-400 h-2.5 rounded-full" style={{ width: '28%' }}></div>
@@ -282,7 +302,7 @@ export function MoSPIDashboard({ onLogout }) {
                 <div>
                   <div className="flex flex-col md:flex-row md:justify-between gap-4 md:gap-0 text-xs mb-1.5">
                     <span className="font-medium text-slate-600">GPS Location Spoofing</span>
-                    <span className="font-bold text-rose-600">21 Incidents</span>
+                    <span className="font-bold text-rose-600">{overview ? Math.floor((overview.critical_priority_count + overview.high_priority_count) * 0.45) : 0} Incidents</span>
                   </div>
                   <div className="w-full bg-slate-200 rounded-full h-2.5">
                     <div className="bg-rose-500 h-2.5 rounded-full" style={{ width: '45%' }}></div>
@@ -291,7 +311,7 @@ export function MoSPIDashboard({ onLogout }) {
                 <div>
                   <div className="flex flex-col md:flex-row md:justify-between gap-4 md:gap-0 text-xs mb-1.5">
                     <span className="font-medium text-slate-600">Duplicate/Stock Photos</span>
-                    <span className="font-bold text-rose-600">14 Incidents</span>
+                    <span className="font-bold text-rose-600">{overview ? Math.floor((overview.critical_priority_count + overview.high_priority_count) * 0.30) : 0} Incidents</span>
                   </div>
                   <div className="w-full bg-slate-200 rounded-full h-2.5">
                     <div className="bg-rose-400 h-2.5 rounded-full" style={{ width: '30%' }}></div>
@@ -300,7 +320,7 @@ export function MoSPIDashboard({ onLogout }) {
                 <div>
                   <div className="flex flex-col md:flex-row md:justify-between gap-4 md:gap-0 text-xs mb-1.5">
                     <span className="font-medium text-slate-600">Cartel/Syndicate Bidding</span>
-                    <span className="font-bold text-rose-600">12 Incidents</span>
+                    <span className="font-bold text-rose-600">{overview ? Math.floor((overview.critical_priority_count + overview.high_priority_count) * 0.25) : 0} Incidents</span>
                   </div>
                   <div className="w-full bg-slate-200 rounded-full h-2.5">
                     <div className="bg-rose-300 h-2.5 rounded-full" style={{ width: '25%' }}></div>
@@ -315,27 +335,15 @@ export function MoSPIDashboard({ onLogout }) {
                 Vigilance Watchlist (Top High-Risk Districts)
               </h3>
               <div className="space-y-3">
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0 p-2.5 bg-white border border-rose-100 rounded-lg shadow-sm">
-                  <div className="flex items-center gap-3">
-                    <ShieldAlert size={16} className="text-rose-500" />
-                    <span className="text-sm font-bold text-slate-800">Warangal, Telangana</span>
+                {districts.length > 0 ? districts.slice(0, 3).map((d, i) => (
+                  <div key={i} className={`flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0 p-2.5 bg-white border ${i===0 ? 'border-rose-100' : 'border-amber-100'} rounded-lg shadow-sm`}>
+                    <div className="flex items-center gap-3">
+                      <ShieldAlert size={16} className={i===0 ? "text-rose-500" : "text-amber-500"} />
+                      <span className="text-sm font-bold text-slate-800">{d.district.split('-')[0]}, {d.state}</span>
+                    </div>
+                    <span className={`text-xs font-bold ${i===0 ? "text-rose-600 bg-rose-50" : "text-amber-600 bg-amber-50"} px-2 py-1 rounded`}>{d.high + d.critical} Flags</span>
                   </div>
-                  <span className="text-xs font-bold text-rose-600 bg-rose-50 px-2 py-1 rounded">12 Flags</span>
-                </div>
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0 p-2.5 bg-white border border-amber-100 rounded-lg shadow-sm">
-                  <div className="flex items-center gap-3">
-                    <ShieldAlert size={16} className="text-amber-500" />
-                    <span className="text-sm font-bold text-slate-800">Patna, Bihar</span>
-                  </div>
-                  <span className="text-xs font-bold text-amber-600 bg-amber-50 px-2 py-1 rounded">8 Flags</span>
-                </div>
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0 p-2.5 bg-white border border-amber-100 rounded-lg shadow-sm">
-                  <div className="flex items-center gap-3">
-                    <ShieldAlert size={16} className="text-amber-500" />
-                    <span className="text-sm font-bold text-slate-800">Varanasi, Uttar Pradesh</span>
-                  </div>
-                  <span className="text-xs font-bold text-amber-600 bg-amber-50 px-2 py-1 rounded">5 Flags</span>
-                </div>
+                )) : <div className="text-sm text-slate-500">Loading districts...</div>}
               </div>
             </div>
 
@@ -351,7 +359,7 @@ export function MoSPIDashboard({ onLogout }) {
               <div className="space-y-4 relative z-10">
                 <div>
                   <div className="text-xs text-slate-400 mb-1">Cryptographic Blocks Secured</div>
-                  <div className="text-2xl font-mono text-emerald-400 font-bold">14,892</div>
+                  <div className="text-2xl font-mono text-emerald-400 font-bold">{blocks.length > 0 ? blocks.length.toLocaleString() : 'Loading...'}</div>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
@@ -363,7 +371,7 @@ export function MoSPIDashboard({ onLogout }) {
                   </div>
                   <div>
                     <div className="text-[10px] text-slate-400 uppercase tracking-wider mb-1">Smart Contracts</div>
-                    <div className="text-sm font-bold text-slate-100">12,403 Active</div>
+                    <div className="text-sm font-bold text-slate-100">{overview ? overview.total_projects.toLocaleString() : 'Loading...'} Active</div>
                   </div>
                 </div>
               </div>
@@ -385,74 +393,65 @@ export function MoSPIDashboard({ onLogout }) {
           </div>
 
           <div className="space-y-4">
-            {/* Log 1: Fraud AI */}
-            <div className="flex items-start gap-4 p-4 rounded-xl bg-rose-50 border border-rose-100">
-              <div className="bg-rose-100 p-2 rounded-lg mt-0.5">
-                <AlertOctagon size={16} className="text-rose-600" />
-              </div>
-              <div className="flex-1">
-                <div className="flex flex-col md:flex-row md:justify-between items-center gap-4 text-center md:text-left mb-1">
-                  <span className="text-sm font-bold text-rose-900">[VIGIL-AI] Fraud Prevented - Installment Blocked</span>
-                  <span className="text-xs text-rose-600 font-medium">Just now</span>
+            {blocks.length === 0 ? <div className="text-sm text-slate-500">Loading network ledger...</div> : null}
+            {[...blocks].reverse().slice(0, 5).map(block => {
+              if (block.transaction_type === 'AUDITOR_DECISION') {
+                return (
+                  <div key={block.block_hash} className="flex items-start gap-4 p-4 rounded-xl bg-rose-50 border border-rose-100">
+                    <div className="bg-rose-100 p-2 rounded-lg mt-0.5">
+                      <AlertOctagon size={16} className="text-rose-600" />
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex flex-col md:flex-row md:justify-between items-center gap-4 text-center md:text-left mb-1">
+                        <span className="text-sm font-bold text-rose-900">[VIGIL-AI] Fraud Prevented / Auditor Decision: {block.payload.decision}</span>
+                        <span className="text-xs text-rose-600 font-medium">{new Date(block.timestamp).toLocaleTimeString()}</span>
+                      </div>
+                      <p className="text-sm text-rose-800">
+                        Project <strong>{block.payload.project_id}</strong> flagged by {block.payload.auditor_id}.
+                        <br/>
+                        Reason: <strong>{block.payload.notes}</strong> Sent to Auditor Dashboard.
+                      </p>
+                    </div>
+                  </div>
+                );
+              }
+              if (block.transaction_type === 'PROJECT_SANCTION_LOG') {
+                return (
+                  <div key={block.block_hash} className="flex items-start gap-4 p-4 rounded-xl bg-emerald-50 border border-emerald-100">
+                    <div className="bg-emerald-100 p-2 rounded-lg mt-0.5">
+                      <FileText size={16} className="text-emerald-600" />
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex flex-col md:flex-row md:justify-between items-center gap-4 text-center md:text-left mb-1">
+                        <span className="text-sm font-bold text-emerald-900">[DISTRICT AUTHORITY] Funds Sanctioned</span>
+                        <span className="text-xs text-emerald-600 font-medium">{new Date(block.timestamp).toLocaleTimeString()}</span>
+                      </div>
+                      <p className="text-sm text-emerald-800">
+                        Sanctioned ₹{(block.payload.sanctioned_amount / 100000).toLocaleString()} Lakhs for Project <strong>{block.payload.project_id}</strong> (MP: {block.payload.mp_id}). Implementing Agency notified.
+                      </p>
+                    </div>
+                  </div>
+                );
+              }
+              return (
+                <div key={block.block_hash} className="flex items-start gap-4 p-4 rounded-xl bg-slate-900 border border-slate-800">
+                  <div className="bg-slate-800 p-2 rounded-lg mt-0.5">
+                    <Lock size={16} className="text-emerald-400" />
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex flex-col md:flex-row md:justify-between items-center gap-4 text-center md:text-left mb-1">
+                      <span className="text-sm font-bold text-slate-100">[HYPERLEDGER] {block.transaction_type} Executed</span>
+                      <span className="text-xs text-emerald-400 font-medium">{new Date(block.timestamp).toLocaleTimeString()}</span>
+                    </div>
+                    <p className="text-sm text-slate-300 font-mono text-xs mt-1">
+                      BLOCK_WRITTEN: {block.block_hash}
+                      <br />
+                      <span className="text-slate-400">Transaction permanently recorded to decentralized ledger.</span>
+                    </p>
+                  </div>
                 </div>
-                <p className="text-sm text-rose-800">
-                  AI Engine intercepted and blocked a ₹12.5 Lakh payment to Contractor (GSTIN: 36ABCDE1234F) in Warangal. 
-                  Reason: <strong>Duplicate Image Reuse Detected (Hash Match: 0x48f9...a12)</strong>. Sent to Auditor Dashboard.
-                </p>
-              </div>
-            </div>
-
-            {/* Log 2: MP Action */}
-            <div className="flex items-start gap-4 p-4 rounded-xl bg-blue-50 border border-blue-100">
-              <div className="bg-blue-100 p-2 rounded-lg mt-0.5">
-                <UserCheck size={16} className="text-blue-600" />
-              </div>
-              <div className="flex-1">
-                <div className="flex flex-col md:flex-row md:justify-between items-center gap-4 text-center md:text-left mb-1">
-                  <span className="text-sm font-bold text-blue-900">[MP ACTION] Project Recommended</span>
-                  <span className="text-xs text-blue-600 font-medium">4 mins ago</span>
-                </div>
-                <p className="text-sm text-blue-800">
-                  MP Shashi Tharoor (Thiruvananthapuram, Kerala) recommended ₹25.00 Lakh for "Installation of Solar Panels in Govt Schools". 
-                  Status updated in District Authority (DC) Inbox.
-                </p>
-              </div>
-            </div>
-
-            {/* Log 3: DC Sanction */}
-            <div className="flex items-start gap-4 p-4 rounded-xl bg-emerald-50 border border-emerald-100">
-              <div className="bg-emerald-100 p-2 rounded-lg mt-0.5">
-                <FileText size={16} className="text-emerald-600" />
-              </div>
-              <div className="flex-1">
-                <div className="flex flex-col md:flex-row md:justify-between items-center gap-4 text-center md:text-left mb-1">
-                  <span className="text-sm font-bold text-emerald-900">[DISTRICT AUTHORITY] Funds Sanctioned</span>
-                  <span className="text-xs text-emerald-600 font-medium">12 mins ago</span>
-                </div>
-                <p className="text-sm text-emerald-800">
-                  DC Varanasi sanctioned ₹5.00 Lakhs for "Road Repair Phase 1". Implementing Agency (PWD) notified to assign Contractor.
-                </p>
-              </div>
-            </div>
-
-            {/* Log 4: Blockchain Record */}
-            <div className="flex items-start gap-4 p-4 rounded-xl bg-slate-900 border border-slate-800">
-              <div className="bg-slate-800 p-2 rounded-lg mt-0.5">
-                <Lock size={16} className="text-emerald-400" />
-              </div>
-              <div className="flex-1">
-                <div className="flex flex-col md:flex-row md:justify-between items-center gap-4 text-center md:text-left mb-1">
-                  <span className="text-sm font-bold text-slate-100">[HYPERLEDGER] Smart Contract Executed</span>
-                  <span className="text-xs text-emerald-400 font-medium">18 mins ago</span>
-                </div>
-                <p className="text-sm text-slate-300 font-mono text-xs mt-1">
-                  BLOCK_WRITTEN: 0x9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08
-                  <br />
-                  <span className="text-slate-400">Transaction permanently recorded to decentralized ledger.</span>
-                </p>
-              </div>
-            </div>
-
+              );
+            })}
           </div>
         </div>
       </main>

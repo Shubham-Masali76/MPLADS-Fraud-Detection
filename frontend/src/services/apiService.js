@@ -22,6 +22,8 @@ const API_BASE = import.meta.env.VITE_API_URL || '/api';
 let runtimeProjects = [...mockProjects];
 let runtimeBlocks = [...mockBlockchainBlocks];
 
+let isElectionFreeze = false;
+
 export const apiService = {
   async getOverview() {
     try {
@@ -34,10 +36,18 @@ export const apiService = {
   },
 
   async getDistrictRisk() {
+    try {
+      const res = await fetch(`${API_BASE}/overview/district-risk`);
+      if (res.ok) return await res.json();
+    } catch (e) {}
     return mockDistrictRisk;
   },
 
   async getCategoryDistribution() {
+    try {
+      const res = await fetch(`${API_BASE}/overview/category-distribution`);
+      if (res.ok) return await res.json();
+    } catch (e) {}
     return mockCategoryDistribution;
   },
 
@@ -195,62 +205,28 @@ export const apiService = {
   },
 
   async recordAuditorDecision(projectId, decision, notes = '') {
-    try {
-      const res = await fetch(`${API_BASE}/blockchain/decision`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          project_id: projectId,
-          auditor_id: 'CVC_AUDITOR_007',
-          decision: decision,
-          notes: notes,
-        }),
-      });
-      if (res.ok) return await res.json();
-    } catch (e) {
-      // Fallback
-    }
-
-    // Mock blockchain block append
-    const newIdx = runtimeBlocks.length;
-    const prevBlock = runtimeBlocks[newIdx - 1];
-    const timestamp = new Date().toISOString();
-    const mockHash = '00' + Math.random().toString(16).substring(2, 10) + '9b14cf5fca649a37';
-
-    const newBlock = {
-      index: newIdx,
-      timestamp: timestamp,
-      transaction_type: 'AUDITOR_DECISION',
-      payload: {
+    const res = await fetch(`${API_BASE}/blockchain/decision`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
         project_id: projectId,
         auditor_id: 'CVC_AUDITOR_007',
         decision: decision,
         notes: notes,
-      },
-      payload_hash: Math.random().toString(16).substring(2) + Math.random().toString(16).substring(2),
-      previous_hash: prevBlock.block_hash,
-      block_hash: mockHash,
-      nonce: Math.floor(Math.random() * 500),
-    };
-
-    runtimeBlocks.push(newBlock);
-
-    // Update local project status if present
+      }),
+    });
+    if (!res.ok) {
+        const errorData = await res.json().catch(() => ({}));
+        throw new Error(errorData.detail || "Failed to record auditor decision");
+    }
+    
+    // Update local project status if present for UI reactivity
     const p = runtimeProjects.find((x) => x.project_id === projectId);
     if (p) {
       p.auditor_verdict = decision;
     }
-
-    return {
-      success: true,
-      block_index: newIdx,
-      block_hash: mockHash,
-      timestamp: timestamp,
-      project_id: projectId,
-      auditor_id: 'CVC_AUDITOR_007',
-      decision: decision,
-      message: `Decision '${decision}' cryptographically anchored into Block #${newIdx}.`,
-    };
+    
+    return await res.json();
   },
 
   // Live Workflow APIs (SQLite database backed)
@@ -326,15 +302,40 @@ export const apiService = {
 ,
 
   async getSystemStatus() {
-    return { election_freeze: false, message: "System OK" };
+    try {
+      const res = await fetch(`${API_BASE}/status`);
+      if (res.ok) return await res.json();
+    } catch (e) {
+      console.error("Backend unreachable for getSystemStatus", e);
+    }
+    // Fallback if backend is completely down
+    return { election_freeze: isElectionFreeze, message: "System OK (Mock)" };
   },
 
   async toggleElectionFreeze() {
-    return { election_freeze: true, message: "Freeze toggled" };
+    try {
+      const res = await fetch(`${API_BASE}/toggle_freeze`, { method: 'POST' });
+      if (res.ok) return await res.json();
+    } catch (e) {
+      console.error("Backend unreachable for toggleElectionFreeze", e);
+    }
+    // Fallback if backend is completely down
+    isElectionFreeze = !isElectionFreeze;
+    return { election_freeze: isElectionFreeze, message: "Freeze toggled (Mock)" };
   },
 
   async disburseFunds(mp_id) {
-    return { success: true, message: "Funds disbursed successfully", new_balance: 50000000 };
+    try {
+      const res = await fetch(`${API_BASE}/disburse_funds`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ district: mp_id, amount: 50000000.0 })
+      });
+      if (res.ok) return await res.json();
+    } catch (e) {
+      console.error("Backend unreachable for disburseFunds", e);
+    }
+    return { success: true, message: "Funds disbursed successfully (Mock)", new_balance: 50000000 };
   },
 
   async getMPs() {

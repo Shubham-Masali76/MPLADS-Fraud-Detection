@@ -52,8 +52,7 @@ const SimpleMockDashboard = ({ title, role, onLogout }) => (
   </div>
 );
 
-export function App() {
-  const [currentRole, setCurrentRole] = useState(null);
+function AuditorDashboard({ onLogout }) {
   const [activeTab, setActiveTab] = useState("dashboard");
   const [stats, setStats] = useState({});
   const [categoryData, setCategoryData] = useState([]);
@@ -129,56 +128,12 @@ export function App() {
     return receipt;
   };
 
-  // ROLE ROUTING
-  if (!currentRole) return <EntrancePortal onSelectRole={setCurrentRole} />;
-  
-  if (currentRole === "mospi")
-    return <MoSPIDashboard onLogout={() => setCurrentRole(null)} />;
-
-  if (currentRole === "implementing_agency")
-    return <ImplementingAgencyDashboard onLogout={() => setCurrentRole(null)} />;
-  if (currentRole === "mp")
-    return (
-      <MPDashboard projects={projects} onLogout={() => setCurrentRole(null)} />
-    );
-  if (currentRole === "contractor")
-    return (
-      <VendorDashboard
-        projects={projects}
-        onLogout={() => setCurrentRole(null)}
-      />
-    );
-
-  if (currentRole === "vendor")
-    return (
-      <MaterialVendorDashboard
-        projects={projects}
-        onLogout={() => setCurrentRole(null)}
-      />
-    );
-  if (currentRole === "district_authority")
-    return (
-      <DistrictDashboard
-        projects={projects}
-        onLogout={() => setCurrentRole(null)}
-      />
-    );
-
-  if (currentRole === "field_engineer")
-    return (
-      <FieldEngineerDashboard
-        projects={projects}
-        onLogout={() => setCurrentRole(null)}
-      />
-    );
-
-  // AUDITOR DASHBOARD
   return (
     <div className="min-h-screen bg-[#F8FAFC] flex flex-col md:flex-row font-sans text-slate-800 antialiased selection:bg-indigo-500/20">
       <Sidebar
         activeTab={activeTab}
         setActiveTab={setActiveTab}
-        onLogout={() => setCurrentRole(null)}
+        onLogout={onLogout}
       />
       <div className="flex-1 flex flex-col min-w-0 h-screen overflow-y-auto">
         <Header activeTab={activeTab} />
@@ -267,5 +222,28 @@ export function App() {
       )}
     </div>
   );
+}
+
+export function App() {
+  const [currentRole, setCurrentRole] = useState(null);
+
+  if (!currentRole) return <EntrancePortal onSelectRole={setCurrentRole} />;
+  
+  if (currentRole === "mospi")
+    return <MoSPIDashboard onLogout={() => setCurrentRole(null)} />;
+  if (currentRole === "implementing_agency")
+    return <ImplementingAgencyDashboard onLogout={() => setCurrentRole(null)} />;
+  if (currentRole === "mp")
+    return <MPDashboard onLogout={() => setCurrentRole(null)} />;
+  if (currentRole === "contractor")
+    return <VendorDashboard onLogout={() => setCurrentRole(null)} />;
+  if (currentRole === "vendor")
+    return <MaterialVendorDashboard onLogout={() => setCurrentRole(null)} />;
+  if (currentRole === "district_authority")
+    return <DistrictDashboard onLogout={() => setCurrentRole(null)} />;
+  if (currentRole === "field_engineer")
+    return <FieldEngineerDashboard onLogout={() => setCurrentRole(null)} />;
+
+  return <AuditorDashboard onLogout={() => setCurrentRole(null)} />;
 }
 export default App;
