@@ -73,7 +73,7 @@ export const Header = ({ activeTab }) => {
   };
 
   return (
-    <header className="h-20 bg-white border-b border-slate-200/80 px-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0 sticky top-0 z-10 shadow-sm relative">
+    <header className="min-h-[80px] py-4 md:py-0 bg-white border-b border-slate-200/80 px-4 md:px-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4 sticky top-0 z-10 shadow-sm relative">
       <div>
         <div className="flex items-center gap-2 text-xs font-semibold text-indigo-600 mb-0.5">
           <Sparkles className="h-3.5 w-3.5 text-indigo-500" />
@@ -86,7 +86,7 @@ export const Header = ({ activeTab }) => {
         </h2>
       </div>
 
-      <div className="flex items-center gap-4">
+      <div className="flex flex-wrap items-center gap-2 md:gap-4">
         {/* Live Clock Pill */}
         <div className="hidden lg:flex items-center gap-2 text-xs text-slate-600 font-medium bg-slate-50 px-3.5 py-1.5 rounded-full border border-slate-200">
           <Clock className="h-3.5 w-3.5 text-slate-400" />
@@ -96,7 +96,7 @@ export const Header = ({ activeTab }) => {
         {/* Cryptographic Ledger Indicator */}
         <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 text-xs font-semibold shadow-sm">
           <Shield className="h-3.5 w-3.5 text-emerald-600" />
-          <span>SHA-256 Ledger Intact</span>
+          <span className="whitespace-nowrap">SHA-256 Ledger Intact</span>
         </div>
 
         {/* Notification Bell */}
@@ -114,7 +114,7 @@ export const Header = ({ activeTab }) => {
 
           {/* Notifications Dropdown */}
           {showNotifications && (
-            <div className="absolute right-0 mt-2 w-72 bg-white border border-slate-200 rounded-xl shadow-lg z-50 overflow-hidden">
+            <div className="absolute right-0 mt-2 w-72 max-w-[85vw] bg-white border border-slate-200 rounded-xl shadow-lg z-50 overflow-hidden">
               <div className="bg-slate-50 px-4 py-3 border-b border-slate-100 flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0">
                 <span className="text-sm font-bold text-slate-800">Alerts</span>
                 {hasUnread && (

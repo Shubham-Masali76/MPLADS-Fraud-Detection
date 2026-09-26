@@ -217,26 +217,26 @@ export const ProjectDetailModal = ({ project, onClose, onRecordDecision }) => {
     <div className="fixed inset-0 z-50 overflow-y-auto bg-slate-900/50 backdrop-blur-md flex items-center justify-center p-4 sm:p-6 animate-in fade-in duration-200">
       <div className="bg-white w-full max-w-4xl rounded-3xl border border-slate-200/80 shadow-2xl overflow-hidden flex flex-col max-h-[92vh]">
         {/* Header */}
-        <div className="px-8 py-5 bg-white border-b border-slate-100 flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0">
-          <div className="flex items-center gap-3.5">
+        <div className="px-6 py-5 bg-white border-b border-slate-100 flex items-start justify-between gap-4">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-3.5">
             <div
-              className={`p-3 rounded-2xl ${isCritical ? "bg-rose-50 text-rose-600" : "bg-amber-50 text-amber-600"}`}
+              className={`p-3 rounded-2xl w-fit ${isCritical ? "bg-rose-50 text-rose-600" : "bg-amber-50 text-amber-600"}`}
             >
               <ShieldAlert className="h-6 w-6" />
             </div>
             <div>
-              <div className="flex items-center gap-2">
-                <span className="font-mono text-base font-extrabold text-slate-900">
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="font-mono text-base font-extrabold text-slate-900 break-all">
                   {project.project_id}
                 </span>
                 <RiskBadge tier={project.priority_tier} score={vpi} size="sm" />
                 {project.is_ringleader && (
-                  <span className="bg-rose-100 text-rose-700 text-[11px] font-bold px-2.5 py-0.5 rounded-full">
+                  <span className="bg-rose-100 text-rose-700 text-[11px] font-bold px-2.5 py-0.5 rounded-full whitespace-nowrap">
                     Cartel Ringleader
                   </span>
                 )}
               </div>
-              <h2 className="text-sm font-semibold text-slate-500 mt-0.5 truncate max-w-xl">
+              <h2 className="text-sm font-semibold text-slate-500 mt-1 sm:mt-0.5 truncate max-w-xs sm:max-w-xl">
                 {project.project_description ||
                   `${project.project_category} Development Project`}
               </h2>
@@ -244,14 +244,14 @@ export const ProjectDetailModal = ({ project, onClose, onRecordDecision }) => {
           </div>
           <button
             onClick={onClose}
-            className="p-2 rounded-full text-slate-400 hover:text-slate-700 hover:bg-slate-100 transition"
+            className="p-2 shrink-0 rounded-full text-slate-400 hover:text-slate-700 hover:bg-slate-100 transition"
           >
             <X className="h-5 w-5" />
           </button>
         </div>
 
         {/* Modal Scrollable Body */}
-        <div className="p-8 overflow-y-auto space-y-7 text-slate-800">
+        <div className="p-4 sm:p-8 overflow-y-auto space-y-7 text-slate-800">
           {/* Section 1: 0–100 Visual Risk Gauge & Radar Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 bg-slate-50/80 p-6 rounded-3xl border border-slate-200/80">
             {/* Gauge */}
