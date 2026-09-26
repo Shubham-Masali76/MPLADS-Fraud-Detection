@@ -122,15 +122,29 @@ def create_project(project: LiveProjectCreate, db: Session = Depends(get_db)):
 def get_projects(db: Session = Depends(get_db)):
     return db.query(LiveProject).all()
 
+class ApproveProjectRequest(BaseModel):
+    agency: str
+
 @router.post("/projects/{project_id}/approve", response_model=schemas.LiveProjectResponse)
-def approve_project(project_id: int, db: Session = Depends(get_db)):
+def approve_project(project_id: int, req: ApproveProjectRequest, db: Session = Depends(get_db)):
     db_project = db.query(LiveProject).filter(LiveProject.id == project_id).first()
     if not db_project:
         raise HTTPException(status_code=404, detail="Project not found")
     
     db_project.status = "APPROVED"
-    # Mock assigning to our contractor so VendorDashboard picks it up
-    db_project.contractor_assigned = "VEN-9942"
+    db_project.implementing_agency = req.agency
+    db.commit()
+    db.refresh(db_project)
+    return db_project
+
+
+@router.post("/projects/{project_id}/assign_engineer", response_model=schemas.LiveProjectResponse)
+def assign_engineer(project_id: int, db: Session = Depends(get_db)):
+    db_project = db.query(LiveProject).filter(LiveProject.id == project_id).first()
+    if not db_project:
+        raise HTTPException(status_code=404, detail="Project not found")
+        
+    db_project.status = "PENDING_GEOFENCE"
     db.commit()
     db.refresh(db_project)
     return db_project
@@ -142,7 +156,7 @@ def geofence_project(project_id: int, lat: float, lng: float, db: Session = Depe
     if not db_project:
         raise HTTPException(status_code=404, detail="Project not found")
     
-    db_project.status = "PENDING_DC_APPROVAL"
+    db_project.status = "GEOFENCED"
     # Overwrite the target location with the precise Day-0 geofence GPS coordinates
     db_project.target_location = f"LAT: {lat} | LNG: {lng}"
     db.commit()

@@ -30,7 +30,7 @@ class LiveProject(Base):
     
     target_location = Column(String, nullable=True)
     
-    status = Column(String, default="PENDING_GEOFENCE") # PENDING_GEOFENCE, PENDING_DC_APPROVAL, APPROVED, REJECTED
+    status = Column(String, default="PENDING_DC_APPROVAL") # PENDING_DC_APPROVAL, APPROVED, PENDING_GEOFENCE, GEOFENCED, REJECTED
     implementing_agency = Column(String, nullable=True)
     contractor_assigned = Column(String, nullable=True)
     created_at = Column(DateTime, default=datetime.utcnow)

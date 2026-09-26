@@ -252,11 +252,31 @@ export const apiService = {
     if (!res.ok) throw new Error('Failed to reject project');
     return await res.json();
   },
-  async approveLiveProject(id) {
+  async approveLiveProject(id, agency) {
     const res = await fetch(`${API_BASE}/live/projects/${id}/approve`, {
-      method: 'POST'
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ agency })
     });
     if (!res.ok) throw new Error('Failed to approve project');
+    return await res.json();
+  },
+
+  async assignEngineer(id) {
+    const res = await fetch(`${API_BASE}/live/projects/${id}/assign_engineer`, {
+      method: 'POST'
+    });
+    if (!res.ok) throw new Error('Failed to assign engineer');
+    return await res.json();
+  },
+
+  async assignContractor(id, gstin) {
+    const res = await fetch(`${API_BASE}/live/projects/${id}/assign_contractor`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ gstin })
+    });
+    if (!res.ok) throw new Error('Failed to assign contractor');
     return await res.json();
   },
 

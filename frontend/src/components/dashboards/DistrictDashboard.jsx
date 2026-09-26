@@ -41,8 +41,9 @@ export function DistrictDashboard({ onLogout }) {
   };
   const handleApprove = async (projectId) => {
     try {
-      await apiService.approveLiveProject(projectId);
-      setActionStatus(`Success: Project LIVE-${projectId} sanctioned!`);
+      const agency = agencies[projectId] || "PWD";
+      await apiService.approveLiveProject(projectId, agency);
+      setActionStatus(`Success: Project LIVE-${projectId} sanctioned and assigned to ${agency}!`);
       fetchLiveProjects();
     } catch (e) {
       setActionStatus("Error: Failed to sanction project.");
