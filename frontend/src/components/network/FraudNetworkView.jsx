@@ -100,7 +100,7 @@ export const FraudNetworkView = ({
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-1 md:grid-cols-3 gap-6">
         {/* Left Column: Syndicates List */}
         <div className="space-y-3">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0 text-xs font-bold uppercase tracking-wider text-slate-500 px-1">

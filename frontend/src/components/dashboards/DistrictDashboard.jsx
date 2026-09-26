@@ -251,7 +251,7 @@ export function DistrictDashboard({ onLogout }) {
         )}
 
         <div className="space-y-6">
-              <div className="grid grid-cols-2 gap-4 md:gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                 <div className="bg-white p-4 md:p-6 rounded-2xl border border-slate-200 shadow-sm">
                   <div className="text-slate-500 text-sm font-medium mb-1">
                     Funds Released (FY)

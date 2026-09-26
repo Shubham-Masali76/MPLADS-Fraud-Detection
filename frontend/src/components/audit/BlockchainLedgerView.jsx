@@ -45,7 +45,7 @@ export function BlockchainLedgerView({ onSelectProject }) {
     <div className="space-y-6 max-w-5xl mx-auto">
       {/* Header section */}
       <div className="bg-white rounded-2xl border border-slate-200 p-8 shadow-sm">
-        <div className="flex items-start justify-between">
+        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 md:gap-0">
           <div>
             <div className="flex items-center gap-2 text-emerald-600 font-bold text-sm mb-2">
               <ShieldCheck className="h-4 w-4" /> Secure System
@@ -135,7 +135,7 @@ export function BlockchainLedgerView({ onSelectProject }) {
               {/* Block Content */}
               <div className="p-6">
                 {!isGenesis ? (
-                  <div className="flex items-start justify-between">
+                  <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 md:gap-0">
                     <div>
                       <div className="flex items-center gap-2 mb-2">
                         <span className="text-sm font-bold text-slate-900">

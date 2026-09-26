@@ -87,7 +87,7 @@ export const WorkSplittingView = ({ clusters = [], onSelectProject }) => {
       </div>
 
       {/* KPI Cards Row */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-1 md:grid-cols-4 gap-5">
         <div className="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm">
           <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider">
             Total Clusters
@@ -195,7 +195,7 @@ export const WorkSplittingView = ({ clusters = [], onSelectProject }) => {
                   : "border-slate-200/80"
               }`}
             >
-              <div className="flex items-start justify-between gap-4">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 md:gap-0 gap-4">
                 <div>
                   <div className="flex items-center gap-2">
                     <span className="font-mono text-sm font-bold text-slate-900">
@@ -236,7 +236,7 @@ export const WorkSplittingView = ({ clusters = [], onSelectProject }) => {
               </div>
 
               {/* Entity Breakdown */}
-              <div className="mt-4 pt-4 border-t border-slate-100 grid grid-cols-2 gap-3 text-xs">
+              <div className="mt-4 pt-4 border-t border-slate-100 grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
                 <div className="bg-slate-50 p-2.5 rounded-xl border border-slate-100">
                   <div className="text-[10px] text-slate-400 font-semibold uppercase">
                     Awarding MP

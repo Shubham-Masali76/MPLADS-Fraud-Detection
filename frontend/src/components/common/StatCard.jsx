@@ -48,7 +48,7 @@ export const StatCard = ({
         onClick ? "cursor-pointer hover:-translate-y-0.5" : ""
       } ${style.card}`}
     >
-      <div className="flex items-start justify-between gap-4">
+      <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 md:gap-0 gap-4">
         <div>
           <span className="text-xs font-bold uppercase tracking-wider text-slate-500">
             {title}

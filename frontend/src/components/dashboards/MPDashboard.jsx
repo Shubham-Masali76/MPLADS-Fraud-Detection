@@ -238,7 +238,7 @@ export function MPDashboard({ onLogout }) {
                     GPS METADATA RAW BASELINE COORDINATES GPS METADATA RAW
                     BASELINE COORDINATES
                   </div>
-                                      <div className="grid grid-cols-2 gap-2 mt-2">
+                                      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-2">
                       <div className="text-slate-400">COORDINATES:</div>
                       <div>{selectedExifProject.target_location}</div>
                       <div className="text-slate-400">ALTITUDE:</div>
@@ -438,7 +438,7 @@ export function MPDashboard({ onLogout }) {
                   </div>
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-4 md:gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                 <div className="bg-white p-4 md:p-6 rounded-2xl border border-slate-200 shadow-sm">
                   <div className="text-slate-500 text-sm font-medium mb-1">
                     Funds Spent (Approved by DC)
@@ -574,7 +574,7 @@ export function MPDashboard({ onLogout }) {
                   />
                 </div>
 
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-medium text-slate-700 mb-1">
                       Project Category
@@ -601,7 +601,7 @@ export function MPDashboard({ onLogout }) {
                   <h4 className="text-sm font-bold text-slate-800 uppercase tracking-wide">
                     Target Location
                   </h4>
-                  <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 md:grid-cols-5 gap-4">
                     <div>
                       <label className="block text-sm font-medium text-slate-700 mb-1">
                         State
@@ -665,7 +665,7 @@ export function MPDashboard({ onLogout }) {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-medium text-slate-700 mb-1">
                       Estimated Budget (INR)

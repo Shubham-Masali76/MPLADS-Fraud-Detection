@@ -85,7 +85,7 @@ export const PhotoVerificationView = () => {
             <label className="text-xs font-bold text-slate-700 uppercase tracking-wider">
               Quick Test Scenarios
             </label>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+            <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-2.5">
               {demoScenarios.map((sc, i) => (
                 <button
                   key={i}
@@ -130,7 +130,7 @@ export const PhotoVerificationView = () => {
           </div>
 
           {/* Coordinate Inputs */}
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
               <label className="text-xs font-bold text-slate-700 block mb-1">Claimed Latitude</label>
               <input
@@ -218,7 +218,7 @@ export const PhotoVerificationView = () => {
                 </div>
 
                 {/* Metrics Breakdown */}
-                <div className="grid grid-cols-2 gap-3 text-xs">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
                   <div className="bg-slate-50 p-3 rounded-xl border border-slate-100">
                     <div className="text-[10px] text-slate-400 uppercase font-semibold">Haversine Discrepancy</div>
                     <div className="text-xl font-mono font-black text-slate-900 mt-1">

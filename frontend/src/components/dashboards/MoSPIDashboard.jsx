@@ -353,7 +353,7 @@ export function MoSPIDashboard({ onLogout }) {
                   <div className="text-xs text-slate-400 mb-1">Cryptographic Blocks Secured</div>
                   <div className="text-2xl font-mono text-emerald-400 font-bold">14,892</div>
                 </div>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <div className="text-[10px] text-slate-400 uppercase tracking-wider mb-1">Network Integrity</div>
                     <div className="text-sm font-bold text-slate-100 flex items-center gap-1.5">

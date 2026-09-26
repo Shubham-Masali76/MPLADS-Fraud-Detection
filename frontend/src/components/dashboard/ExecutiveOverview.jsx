@@ -5,7 +5,7 @@ export function ExecutiveOverview({ stats, onNavigateToHighRisk }) {
   return (
     <div className="space-y-6">
       <div className="bg-white rounded-2xl border border-slate-200 p-8 shadow-sm">
-        <div className="flex items-start justify-between">
+        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 md:gap-0">
           <div>
             <h1 className="text-3xl font-extrabold text-slate-900 tracking-tight">System Summary</h1>
             <p className="text-slate-500 mt-2 text-lg">The AI is actively checking all projects for suspicious activity.</p>
@@ -15,7 +15,7 @@ export function ExecutiveOverview({ stats, onNavigateToHighRisk }) {
           </button>
         </div>
         
-        <div className="grid grid-cols-3 gap-6 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
           <div className="p-6 rounded-2xl bg-slate-50 border border-slate-100">
             <div className="flex items-center gap-3 mb-2">
               <div className="bg-emerald-100 p-2 rounded-lg text-emerald-600"><Wallet className="h-5 w-5" /></div>

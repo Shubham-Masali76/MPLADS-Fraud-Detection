@@ -550,7 +550,7 @@ export const ProjectDetailModal = ({ project, onClose, onRecordDecision }) => {
 
               {/* Coordinates Comparison */}
               <div className="col-span-2 space-y-3">
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   <div className="bg-slate-50 p-3.5 rounded-xl border border-slate-200/70">
                     <div className="text-[10px] uppercase font-bold text-slate-400">
                       Official Constituency Site
@@ -620,7 +620,7 @@ export const ProjectDetailModal = ({ project, onClose, onRecordDecision }) => {
               </span>
             </div>
 
-            <div className="grid grid-cols-3 gap-3 font-mono text-xs">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 font-mono text-xs">
               <div className="bg-slate-50 p-3 rounded-xl border border-slate-200/70">
                 <div className="text-[10px] text-slate-500 uppercase font-sans font-bold">
                   Sanctioned Budget
@@ -790,7 +790,7 @@ export const ProjectDetailModal = ({ project, onClose, onRecordDecision }) => {
               </div>
             ) : (
               /* 3 Action Buttons */
-              <div className="grid grid-cols-3 gap-3.5">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-3.5">
                 <button
                   onClick={() => setDecisionType("APPROVE")}
                   className="flex items-center justify-center gap-2 p-3.5 rounded-xl border border-emerald-200 bg-emerald-50 hover:bg-emerald-100/80 text-emerald-800 transition text-xs font-bold shadow-sm"
