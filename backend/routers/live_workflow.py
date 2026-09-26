@@ -129,7 +129,8 @@ def approve_project(project_id: int, db: Session = Depends(get_db)):
         raise HTTPException(status_code=404, detail="Project not found")
     
     db_project.status = "APPROVED"
-    # Contractor assigned later by IA # Mock assigning to our contractor
+    # Mock assigning to our contractor so VendorDashboard picks it up
+    db_project.contractor_assigned = "VEN-9942"
     db.commit()
     db.refresh(db_project)
     return db_project
@@ -141,7 +142,7 @@ def geofence_project(project_id: int, lat: float, lng: float, db: Session = Depe
     if not db_project:
         raise HTTPException(status_code=404, detail="Project not found")
     
-    db_project.status = "GEOFENCED"
+    db_project.status = "PENDING_DC_APPROVAL"
     # Overwrite the target location with the precise Day-0 geofence GPS coordinates
     db_project.target_location = f"LAT: {lat} | LNG: {lng}"
     db.commit()

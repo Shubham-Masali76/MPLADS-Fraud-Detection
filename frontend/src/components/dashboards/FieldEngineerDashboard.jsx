@@ -88,10 +88,10 @@ export function FieldEngineerDashboard({ onLogout }) {
 
   // Filter projects by status
   const pendingProjects = liveProjects.filter(
-    (p) => p.status === "PENDING_DC_APPROVAL",
+    (p) => p.status === "PENDING_GEOFENCE",
   );
   const approvedProjects = liveProjects.filter(
-    (p) => p.status !== "PENDING_DC_APPROVAL",
+    (p) => p.status !== "PENDING_GEOFENCE",
   );
 
   // Dynamic calculations based on real live data
