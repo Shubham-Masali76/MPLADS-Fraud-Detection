@@ -239,7 +239,7 @@ export function MoSPIDashboard({ onLogout }) {
 
         {/* Analytics Section */}
         <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-6">
-          <div className="flex items-center justify-between mb-6">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0 mb-6">
             <h2 className="text-lg font-bold text-slate-800 flex items-center gap-2">
               <BarChart3 className="text-indigo-600" />
               National Analytics & Fraud Intelligence
@@ -255,7 +255,7 @@ export function MoSPIDashboard({ onLogout }) {
               <h3 className="text-sm font-bold text-slate-700 mb-4">Annual Fund Utilization</h3>
               <div className="space-y-5">
                 <div>
-                  <div className="flex justify-between text-xs mb-1.5">
+                  <div className="flex flex-col md:flex-row md:justify-between gap-4 md:gap-0 text-xs mb-1.5">
                     <span className="font-medium text-slate-600">Disbursed to Districts</span>
                     <span className="font-bold text-emerald-600">₹2,840 Cr (72%)</span>
                   </div>
@@ -264,7 +264,7 @@ export function MoSPIDashboard({ onLogout }) {
                   </div>
                 </div>
                 <div>
-                  <div className="flex justify-between text-xs mb-1.5">
+                  <div className="flex flex-col md:flex-row md:justify-between gap-4 md:gap-0 text-xs mb-1.5">
                     <span className="font-medium text-slate-600">Pending Release</span>
                     <span className="font-bold text-amber-600">₹1,110 Cr (28%)</span>
                   </div>
@@ -280,7 +280,7 @@ export function MoSPIDashboard({ onLogout }) {
               <h3 className="text-sm font-bold text-slate-700 mb-4">AI Fraud Detection Breakdown</h3>
               <div className="space-y-4">
                 <div>
-                  <div className="flex justify-between text-xs mb-1.5">
+                  <div className="flex flex-col md:flex-row md:justify-between gap-4 md:gap-0 text-xs mb-1.5">
                     <span className="font-medium text-slate-600">GPS Location Spoofing</span>
                     <span className="font-bold text-rose-600">21 Incidents</span>
                   </div>
@@ -289,7 +289,7 @@ export function MoSPIDashboard({ onLogout }) {
                   </div>
                 </div>
                 <div>
-                  <div className="flex justify-between text-xs mb-1.5">
+                  <div className="flex flex-col md:flex-row md:justify-between gap-4 md:gap-0 text-xs mb-1.5">
                     <span className="font-medium text-slate-600">Duplicate/Stock Photos</span>
                     <span className="font-bold text-rose-600">14 Incidents</span>
                   </div>
@@ -298,7 +298,7 @@ export function MoSPIDashboard({ onLogout }) {
                   </div>
                 </div>
                 <div>
-                  <div className="flex justify-between text-xs mb-1.5">
+                  <div className="flex flex-col md:flex-row md:justify-between gap-4 md:gap-0 text-xs mb-1.5">
                     <span className="font-medium text-slate-600">Cartel/Syndicate Bidding</span>
                     <span className="font-bold text-rose-600">12 Incidents</span>
                   </div>
@@ -315,21 +315,21 @@ export function MoSPIDashboard({ onLogout }) {
                 Vigilance Watchlist (Top High-Risk Districts)
               </h3>
               <div className="space-y-3">
-                <div className="flex items-center justify-between p-2.5 bg-white border border-rose-100 rounded-lg shadow-sm">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0 p-2.5 bg-white border border-rose-100 rounded-lg shadow-sm">
                   <div className="flex items-center gap-3">
                     <ShieldAlert size={16} className="text-rose-500" />
                     <span className="text-sm font-bold text-slate-800">Warangal, Telangana</span>
                   </div>
                   <span className="text-xs font-bold text-rose-600 bg-rose-50 px-2 py-1 rounded">12 Flags</span>
                 </div>
-                <div className="flex items-center justify-between p-2.5 bg-white border border-amber-100 rounded-lg shadow-sm">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0 p-2.5 bg-white border border-amber-100 rounded-lg shadow-sm">
                   <div className="flex items-center gap-3">
                     <ShieldAlert size={16} className="text-amber-500" />
                     <span className="text-sm font-bold text-slate-800">Patna, Bihar</span>
                   </div>
                   <span className="text-xs font-bold text-amber-600 bg-amber-50 px-2 py-1 rounded">8 Flags</span>
                 </div>
-                <div className="flex items-center justify-between p-2.5 bg-white border border-amber-100 rounded-lg shadow-sm">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0 p-2.5 bg-white border border-amber-100 rounded-lg shadow-sm">
                   <div className="flex items-center gap-3">
                     <ShieldAlert size={16} className="text-amber-500" />
                     <span className="text-sm font-bold text-slate-800">Varanasi, Uttar Pradesh</span>
@@ -374,7 +374,7 @@ export function MoSPIDashboard({ onLogout }) {
 
         {/* God Mode: Live National Audit Feed */}
         <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-4 md:p-6 mt-6">
-          <div className="flex items-center justify-between mb-6">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0 mb-6">
             <h2 className="text-lg font-bold text-slate-800 flex items-center gap-2">
               <Activity className="text-indigo-600" />
               Global System Audit Trail (Live Action Feed)

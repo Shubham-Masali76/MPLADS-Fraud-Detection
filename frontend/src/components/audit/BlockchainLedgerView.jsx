@@ -107,7 +107,7 @@ export function BlockchainLedgerView({ onSelectProject }) {
               className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden flex flex-col"
             >
               {/* Block Header */}
-              <div className="px-6 py-4 border-b border-slate-100 bg-slate-50/50 flex items-center justify-between">
+              <div className="px-6 py-4 border-b border-slate-100 bg-slate-50/50 flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0">
                 <div className="flex items-center gap-4">
                   <span className="font-mono text-sm font-bold text-slate-400">
                     #{block.index}

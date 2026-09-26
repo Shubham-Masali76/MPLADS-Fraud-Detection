@@ -257,7 +257,7 @@ export const WorkSplittingView = ({ clusters = [], onSelectProject }) => {
 
               {/* Member Projects List */}
               <div className="mt-4 space-y-2">
-                <div className="text-[11px] font-bold uppercase tracking-wider text-slate-400 flex items-center justify-between">
+                <div className="text-[11px] font-bold uppercase tracking-wider text-slate-400 flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0">
                   <span>
                     Fragmented Projects ({cluster.project_ids?.length || 0})
                   </span>

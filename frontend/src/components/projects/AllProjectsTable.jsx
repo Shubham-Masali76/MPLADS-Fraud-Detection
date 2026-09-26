@@ -105,7 +105,7 @@ export const AllProjectsTable = ({ projects = [], onSelectProject }) => {
           </div>
         </div>
 
-        <div className="text-xs text-slate-500 flex items-center justify-between pt-3 border-t border-slate-100">
+        <div className="text-xs text-slate-500 flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0 pt-3 border-t border-slate-100">
           <span>
             Showing{" "}
             <strong className="text-slate-900 font-semibold">
@@ -207,7 +207,7 @@ export const AllProjectsTable = ({ projects = [], onSelectProject }) => {
           </div>
 
           {/* Pagination Controls */}
-          <div className="p-4 px-6 border-t border-slate-200/80 bg-slate-50/50 flex items-center justify-between text-xs text-slate-600">
+          <div className="p-4 px-6 border-t border-slate-200/80 bg-slate-50/50 flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0 text-xs text-slate-600">
             <div>
               Page <span className="font-bold text-slate-900">{page}</span> of{" "}
               <span className="font-bold text-slate-900">{totalPages}</span>

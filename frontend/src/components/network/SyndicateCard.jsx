@@ -11,7 +11,7 @@ export const SyndicateCard = ({ syndicate, isSelected, onSelect }) => {
           : "bg-white hover:bg-slate-50/80 border-slate-200/80 text-slate-800 shadow-sm hover:shadow-md hover:border-slate-300"
       }`}
     >
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0">
         <span className="font-mono text-xs font-bold text-slate-900">
           {syndicate.syndicate_id}
         </span>
@@ -35,7 +35,7 @@ export const SyndicateCard = ({ syndicate, isSelected, onSelect }) => {
         </div>
       </div>
 
-      <div className="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs font-mono">
+      <div className="mt-3 pt-2.5 border-t border-slate-100 flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0 text-xs font-mono">
         <span className="text-slate-400 text-[11px]">
           {syndicate.total_projects} Projects
         </span>

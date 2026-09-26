@@ -217,7 +217,7 @@ export const ProjectDetailModal = ({ project, onClose, onRecordDecision }) => {
     <div className="fixed inset-0 z-50 overflow-y-auto bg-slate-900/50 backdrop-blur-md flex items-center justify-center p-4 sm:p-6 animate-in fade-in duration-200">
       <div className="bg-white w-full max-w-4xl rounded-3xl border border-slate-200/80 shadow-2xl overflow-hidden flex flex-col max-h-[92vh]">
         {/* Header */}
-        <div className="px-8 py-5 bg-white border-b border-slate-100 flex items-center justify-between">
+        <div className="px-8 py-5 bg-white border-b border-slate-100 flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0">
           <div className="flex items-center gap-3.5">
             <div
               className={`p-3 rounded-2xl ${isCritical ? "bg-rose-50 text-rose-600" : "bg-amber-50 text-amber-600"}`}
@@ -295,7 +295,7 @@ export const ProjectDetailModal = ({ project, onClose, onRecordDecision }) => {
 
             {/* 5 Forensic Risk Sub-Scores */}
             <div className="col-span-2 space-y-3">
-              <div className="text-xs font-bold uppercase tracking-wider text-slate-500 flex justify-between">
+              <div className="text-xs font-bold uppercase tracking-wider text-slate-500 flex flex-col md:flex-row md:justify-between gap-4 md:gap-0">
                 <span>Multi-Signal AI Breakdown</span>
                 <span className="text-indigo-600 font-bold">
                   5 Detection Layers
@@ -338,7 +338,7 @@ export const ProjectDetailModal = ({ project, onClose, onRecordDecision }) => {
                   const finalScore = Math.min(Math.max(s.score, 0), 100);
                   return (
                     <div key={s.label} className="text-xs">
-                      <div className="flex justify-between font-semibold text-slate-700 mb-1">
+                      <div className="flex flex-col md:flex-row md:justify-between gap-4 md:gap-0 font-semibold text-slate-700 mb-1">
                         <span>{s.label}</span>
                         <span className="font-mono font-bold text-slate-900">
                           {Number(finalScore).toFixed(1)}/100
@@ -473,7 +473,7 @@ export const ProjectDetailModal = ({ project, onClose, onRecordDecision }) => {
                         : "bg-emerald-50/40 border-emerald-200/70"
                     }`}
                   >
-                    <div className="flex items-center justify-between gap-2 text-xs">
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0 gap-2 text-xs">
                       <div className="flex items-center gap-2">
                         <span
                           className={`h-2.5 w-2.5 rounded-full ${
@@ -505,7 +505,7 @@ export const ProjectDetailModal = ({ project, onClose, onRecordDecision }) => {
 
           {/* Section 3: Physical Photo & GPS Verification Panel */}
           <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-xs space-y-4">
-            <div className="flex items-center justify-between pb-3 border-b border-slate-100">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0 pb-3 border-b border-slate-100">
               <h3 className="text-xs font-bold text-slate-900 uppercase tracking-wider flex items-center gap-2">
                 <Camera className="h-4 w-4 text-indigo-600" />
                 Physical Inspection Photo & GPS Verification
@@ -610,7 +610,7 @@ export const ProjectDetailModal = ({ project, onClose, onRecordDecision }) => {
 
           {/* Section 4: Utilization & Expenditure Progress */}
           <div className="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-xs space-y-3">
-            <div className="flex items-center justify-between">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0">
               <h3 className="text-xs font-bold text-slate-900 uppercase tracking-wider flex items-center gap-2">
                 <FileCheck className="h-4 w-4 text-indigo-600" />
                 Budget & Expenditure Progress
@@ -648,7 +648,7 @@ export const ProjectDetailModal = ({ project, onClose, onRecordDecision }) => {
             </div>
 
             <div className="space-y-1.5 pt-1">
-              <div className="flex justify-between text-xs text-slate-500 font-medium">
+              <div className="flex flex-col md:flex-row md:justify-between gap-4 md:gap-0 text-xs text-slate-500 font-medium">
                 <span>Fund Claimed vs Physical Delivery Gap</span>
                 <span className="font-mono text-rose-600 font-bold">
                   ₹{Number(claimed - actual).toLocaleString()} Unverified Gap
@@ -673,7 +673,7 @@ export const ProjectDetailModal = ({ project, onClose, onRecordDecision }) => {
 
           {/* Section 5: Human-in-the-Loop Auditor Decision Action Panel */}
           <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200/80 space-y-4">
-            <div className="flex items-center justify-between pb-3 border-b border-slate-200">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0 pb-3 border-b border-slate-200">
               <div className="flex items-center gap-2">
                 <UserCheck className="h-5 w-5 text-indigo-600" />
                 <h3 className="text-sm font-bold text-slate-900">
@@ -698,19 +698,19 @@ export const ProjectDetailModal = ({ project, onClose, onRecordDecision }) => {
                     {anchoredReceipt.message}
                   </p>
                   <div className="bg-white p-3.5 rounded-xl font-mono text-[11px] text-slate-700 space-y-1.5 border border-emerald-200">
-                    <div className="flex justify-between">
+                    <div className="flex flex-col md:flex-row md:justify-between gap-4 md:gap-0">
                       <span className="text-slate-500">Block Index:</span>
                       <span className="text-indigo-600 font-bold">
                         #{anchoredReceipt.block_index}
                       </span>
                     </div>
-                    <div className="flex justify-between">
+                    <div className="flex flex-col md:flex-row md:justify-between gap-4 md:gap-0">
                       <span className="text-slate-500">Block Hash:</span>
                       <span className="text-emerald-600 truncate max-w-xs font-bold">
                         {anchoredReceipt.block_hash}
                       </span>
                     </div>
-                    <div className="flex justify-between">
+                    <div className="flex flex-col md:flex-row md:justify-between gap-4 md:gap-0">
                       <span className="text-slate-500">Timestamp:</span>
                       <span>{anchoredReceipt.timestamp}</span>
                     </div>
@@ -738,7 +738,7 @@ export const ProjectDetailModal = ({ project, onClose, onRecordDecision }) => {
             ) : decisionType ? (
               /* Confirmation Prompt */
               <div className="bg-white p-5 rounded-2xl border border-slate-200 space-y-3.5 shadow-sm">
-                <div className="flex items-center justify-between text-xs">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0 text-xs">
                   <span className="font-bold text-slate-800">
                     Confirm Action:{" "}
                     <span className="font-extrabold text-indigo-600 uppercase">
@@ -820,7 +820,7 @@ export const ProjectDetailModal = ({ project, onClose, onRecordDecision }) => {
         </div>
 
         {/* Footer */}
-        <div className="px-8 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+        <div className="px-8 py-4 bg-slate-50 border-t border-slate-100 flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0 text-xs text-slate-500">
           <div className="flex items-center gap-2 font-mono text-[11px]">
             <Hash className="h-3 w-3 text-slate-400" />
             <span>Constituency Code: {project.constituency}</span>

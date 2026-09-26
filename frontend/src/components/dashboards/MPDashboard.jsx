@@ -391,7 +391,7 @@ export function MPDashboard({ onLogout }) {
       </div>
 
       <div className="flex-1 overflow-auto">
-        <header className="bg-white border-b border-slate-200 h-16 flex items-center px-8 justify-between">
+        <header className="bg-white border-b border-slate-200 min-h-[4rem] h-auto py-2 md:py-0 flex items-center px-8 justify-between">
           <h2 className="text-lg font-bold text-slate-800">
             {activeTab === "overview" && "Constituency Overview"}
             {activeTab === "projects" && "My Proposed Projects"}
@@ -402,7 +402,7 @@ export function MPDashboard({ onLogout }) {
         <main className="p-4 md:p-8 max-w-5xl mx-auto space-y-6">
           {activeTab === "overview" && (
             <>
-              <div className="bg-white p-4 md:p-8 rounded-2xl border border-slate-200 shadow-sm flex items-center justify-between">
+              <div className="bg-white p-4 md:p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0">
                 <div>
                   <h3 className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-2">
                     Total Available Fund Pool

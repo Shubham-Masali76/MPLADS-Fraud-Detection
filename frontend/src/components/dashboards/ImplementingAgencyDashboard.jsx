@@ -38,7 +38,7 @@ export function ImplementingAgencyDashboard({ onLogout }) {
       </header>
 
       <main className="p-4 md:p-8 max-w-6xl mx-auto w-full flex-grow">
-        <div className="flex justify-between items-end mb-6">
+        <div className="flex flex-col md:flex-row md:justify-between gap-4 md:gap-0 items-end mb-6">
           <div>
             <h2 className="text-2xl font-bold text-slate-800">Tender & Execution Management</h2>
             <p className="text-slate-500 mt-1">
@@ -68,7 +68,7 @@ export function ImplementingAgencyDashboard({ onLogout }) {
 
             {/* Details */}
             <div className="w-full md:w-2/3 flex flex-col justify-center">
-              <div className="flex items-center justify-between mb-2">
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0 mb-2">
                 <span className="text-xs font-bold text-indigo-600 bg-indigo-50 px-2 py-1 rounded uppercase tracking-wider">Sanctioned</span>
                 <span className="text-sm font-medium text-slate-500">ID: LIVE-1029</span>
               </div>

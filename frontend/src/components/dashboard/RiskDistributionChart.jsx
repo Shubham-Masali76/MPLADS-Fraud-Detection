@@ -5,7 +5,7 @@ export const RiskDistributionChart = ({ data = [], stats = null }) => {
   return (
     <div className="bg-white rounded-3xl border border-slate-200/80 p-7 shadow-xs flex flex-col justify-between">
       <div>
-        <div className="flex items-center justify-between pb-5 border-b border-slate-100">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0 pb-5 border-b border-slate-100">
           <div>
             <h3 className="text-base font-extrabold text-slate-900 tracking-tight flex items-center gap-2">
               <BarChart3 className="h-5 w-5 text-indigo-600" />
@@ -25,7 +25,7 @@ export const RiskDistributionChart = ({ data = [], stats = null }) => {
         <div className="mt-6 space-y-4">
           {data.map((item) => (
             <div key={item.category} className="space-y-1.5">
-              <div className="flex items-center justify-between text-xs font-semibold">
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0 text-xs font-semibold">
                 <span className="text-slate-800">{item.category}</span>
                 <div className="flex items-center gap-2">
                   <span className="text-rose-600 font-extrabold font-mono">
@@ -50,7 +50,7 @@ export const RiskDistributionChart = ({ data = [], stats = null }) => {
       {/* Risk Tier Overall Bar */}
       {stats && (
         <div className="mt-8 pt-5 border-t border-slate-100">
-          <div className="flex items-center justify-between text-xs font-bold text-slate-700 mb-2">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0 text-xs font-bold text-slate-700 mb-2">
             <span>Overall Portfolio Safety Breakdown</span>
             <span className="text-indigo-600 font-mono">100% Calibrated</span>
           </div>
@@ -76,7 +76,7 @@ export const RiskDistributionChart = ({ data = [], stats = null }) => {
               style={{ width: "50%" }}
             />
           </div>
-          <div className="flex items-center justify-between text-xs text-slate-500 mt-2.5 font-medium">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0 text-xs text-slate-500 mt-2.5 font-medium">
             <div className="flex items-center gap-1.5">
               <span className="h-2 w-2 rounded-full bg-rose-600" />
               <span>Critical (1)</span>

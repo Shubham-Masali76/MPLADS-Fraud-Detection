@@ -122,7 +122,7 @@ export function DistrictDashboard({ onLogout }) {
         </div>
       </div>
       <div className="flex-1 overflow-auto">
-        <header className="bg-white border-b border-slate-200 h-16 flex items-center px-8">
+        <header className="bg-white border-b border-slate-200 min-h-[4rem] h-auto py-2 md:py-0 flex items-center px-8">
           <h2 className="text-lg font-bold text-slate-800">
             {activeTab === "sanction"
               ? "Pending Sanctions"
@@ -160,7 +160,7 @@ export function DistrictDashboard({ onLogout }) {
                       key={p.id}
                       className="p-4 md:p-6 hover:bg-slate-50 flex flex-col gap-4"
                     >
-                      <div className="flex justify-between items-start">
+                      <div className="flex flex-col md:flex-row md:justify-between gap-4 md:gap-0 items-start">
                         <div>
                           <div className="font-bold text-slate-900 text-lg">
                             {p.work_description}

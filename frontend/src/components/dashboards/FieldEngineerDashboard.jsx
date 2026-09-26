@@ -216,7 +216,7 @@ export function FieldEngineerDashboard({ onLogout }) {
         </div>
       </div>
       <div className="flex-1 overflow-auto">
-        <header className="bg-white border-b border-slate-200 h-16 flex items-center px-8">
+        <header className="bg-white border-b border-slate-200 min-h-[4rem] h-auto py-2 md:py-0 flex items-center px-8">
           <h2 className="text-lg font-bold text-slate-800">
             {activeTab === "sanction"
               ? "Pending Sanctions"

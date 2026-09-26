@@ -73,7 +73,7 @@ export const Header = ({ activeTab }) => {
   };
 
   return (
-    <header className="h-20 bg-white border-b border-slate-200/80 px-8 flex items-center justify-between sticky top-0 z-10 shadow-sm relative">
+    <header className="h-20 bg-white border-b border-slate-200/80 px-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0 sticky top-0 z-10 shadow-sm relative">
       <div>
         <div className="flex items-center gap-2 text-xs font-semibold text-indigo-600 mb-0.5">
           <Sparkles className="h-3.5 w-3.5 text-indigo-500" />
@@ -115,7 +115,7 @@ export const Header = ({ activeTab }) => {
           {/* Notifications Dropdown */}
           {showNotifications && (
             <div className="absolute right-0 mt-2 w-72 bg-white border border-slate-200 rounded-xl shadow-lg z-50 overflow-hidden">
-              <div className="bg-slate-50 px-4 py-3 border-b border-slate-100 flex justify-between items-center">
+              <div className="bg-slate-50 px-4 py-3 border-b border-slate-100 flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0">
                 <span className="text-sm font-bold text-slate-800">Alerts</span>
                 {hasUnread && (
                   <span className="text-xs bg-indigo-100 text-indigo-700 font-bold px-2 py-0.5 rounded-full">

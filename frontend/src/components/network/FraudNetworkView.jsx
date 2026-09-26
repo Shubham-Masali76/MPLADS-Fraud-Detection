@@ -103,7 +103,7 @@ export const FraudNetworkView = ({
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Left Column: Syndicates List */}
         <div className="space-y-3">
-          <div className="flex items-center justify-between text-xs font-bold uppercase tracking-wider text-slate-500 px-1">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0 text-xs font-bold uppercase tracking-wider text-slate-500 px-1">
             <span>Detected Shell Syndicates</span>
             <span className="text-indigo-600 font-mono">100 Cartels</span>
           </div>
@@ -127,7 +127,7 @@ export const FraudNetworkView = ({
         <div className="lg:col-span-2 space-y-3">
           <div className="bg-white rounded-3xl border border-slate-200/80 shadow-sm overflow-hidden flex flex-col h-[600px]">
             {/* Canvas Toolbar */}
-            <div className="px-5 py-3.5 bg-slate-50/80 border-b border-slate-200/80 flex items-center justify-between text-xs">
+            <div className="px-5 py-3.5 bg-slate-50/80 border-b border-slate-200/80 flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0 text-xs">
               <div className="flex items-center gap-3">
                 <span className="font-mono font-bold text-slate-900">
                   {selectedSyndicate?.syndicate_id} Graph Topology
@@ -275,7 +275,7 @@ export const FraudNetworkView = ({
 
               {/* Node Inspector Floating Badge */}
               {selectedNode && (
-                <div className="absolute bottom-5 left-5 right-5 bg-slate-900/90 border border-slate-700/80 text-white p-4 rounded-2xl text-xs backdrop-blur-md shadow-2xl flex items-center justify-between animate-in fade-in slide-in-from-bottom-2">
+                <div className="absolute bottom-5 left-5 right-5 bg-slate-900/90 border border-slate-700/80 text-white p-4 rounded-2xl text-xs backdrop-blur-md shadow-2xl flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0 animate-in fade-in slide-in-from-bottom-2">
                   <div className="space-y-1">
                     <div className="flex items-center gap-2">
                       <span className="font-mono font-bold text-amber-400 text-sm">

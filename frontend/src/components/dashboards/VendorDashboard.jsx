@@ -145,7 +145,7 @@ export function VendorDashboard({ onLogout }) {
       </div>
 
       <div className="flex-1 overflow-auto">
-        <header className="bg-white border-b border-slate-200 h-16 flex items-center px-8 justify-between">
+        <header className="bg-white border-b border-slate-200 min-h-[4rem] h-auto py-2 md:py-0 flex items-center px-8 justify-between">
           <h2 className="text-lg font-bold text-slate-800">
             Assigned Contracts
           </h2>
@@ -205,7 +205,7 @@ export function VendorDashboard({ onLogout }) {
                 liveProjects.map((proj) => (
                   <div
                     key={proj.id}
-                    className="p-4 md:p-6 flex items-center justify-between"
+                    className="p-4 md:p-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0"
                   >
                     <div>
                       <h4 className="font-bold text-slate-900">

@@ -183,7 +183,7 @@ export const PhotoVerificationView = () => {
         {/* Right Output: Verification Dossier */}
         <div className="lg:col-span-6 bg-white rounded-3xl border border-slate-200/80 p-6 shadow-sm flex flex-col justify-between">
           <div>
-            <div className="flex items-center justify-between border-b border-slate-100 pb-4 mb-5">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0 border-b border-slate-100 pb-4 mb-5">
               <h3 className="text-base font-bold text-slate-900">Forensic Physical Verification Result</h3>
               <span className="text-xs font-mono text-slate-400">Live AI Output</span>
             </div>
@@ -235,19 +235,19 @@ export const PhotoVerificationView = () => {
 
                 {/* GPS Coordinates Comparison */}
                 <div className="bg-slate-50 p-4 rounded-2xl border border-slate-100 space-y-2 text-xs font-mono">
-                  <div className="flex items-center justify-between">
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0">
                     <span className="text-slate-500">Claimed Site:</span>
                     <span className="font-bold text-slate-800">
                       {result.claimed_latitude?.toFixed(4)}° N, {result.claimed_longitude?.toFixed(4)}° E
                     </span>
                   </div>
-                  <div className="flex items-center justify-between">
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0">
                     <span className="text-slate-500">Extracted EXIF GPS:</span>
                     <span className={`font-bold ${result.distance_km > Number(toleranceKm) ? "text-rose-600 font-black" : "text-emerald-700"}`}>
                       {result.photo_latitude?.toFixed(4)}° N, {result.photo_longitude?.toFixed(4)}° E
                     </span>
                   </div>
-                  <div className="flex items-center justify-between pt-2 border-t border-slate-200/60 text-[11px]">
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0 pt-2 border-t border-slate-200/60 text-[11px]">
                     <span className="text-slate-400">Capture Timestamp:</span>
                     <span className="text-slate-600">{result.photo_timestamp ? new Date(result.photo_timestamp).toLocaleString("en-IN") : "EXIF Timestamp Verified"}</span>
                   </div>
@@ -255,7 +255,7 @@ export const PhotoVerificationView = () => {
 
                 {/* Duplicate Hash Check */}
                 <div className="p-3.5 rounded-xl border border-slate-200 bg-slate-50/70 text-xs space-y-1">
-                  <div className="flex items-center justify-between text-[11px] font-bold text-slate-700">
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0 text-[11px] font-bold text-slate-700">
                     <span className="flex items-center gap-1.5">
                       <Hash className="h-3.5 w-3.5 text-indigo-500" />
                       Cryptographic SHA-256 Photo Hash
@@ -278,7 +278,7 @@ export const PhotoVerificationView = () => {
             )}
           </div>
 
-          <div className="pt-4 border-t border-slate-100 text-[11px] text-slate-400 flex items-center justify-between font-mono">
+          <div className="pt-4 border-t border-slate-100 text-[11px] text-slate-400 flex flex-col md:flex-row md:items-center md:justify-between gap-4 md:gap-0 font-mono">
             <span>Module: evidence_service.py</span>
             <span>API: POST /api/evidence/verify-photo</span>
           </div>
