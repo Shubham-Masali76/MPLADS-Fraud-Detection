@@ -236,7 +236,7 @@ export const ProjectDetailModal = ({ project, onClose, onRecordDecision }) => {
                   </span>
                 )}
               </div>
-              <h2 className="text-sm font-semibold text-slate-500 mt-1 sm:mt-0.5 truncate max-w-xs sm:max-w-xl">
+              <h2 className="text-sm font-semibold text-slate-500 mt-1 sm:mt-0.5 leading-relaxed">
                 {project.project_description ||
                   `${project.project_category} Development Project`}
               </h2>

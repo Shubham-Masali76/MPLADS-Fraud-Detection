@@ -67,6 +67,14 @@ function AuditorDashboard({ onLogout }) {
   const [selectedProject, setSelectedProject] = useState(null);
   const [toastMessage, setToastMessage] = useState(null);
 
+  const scrollRef = React.useRef(null);
+
+  useEffect(() => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollTo(0, 0);
+    }
+  }, [activeTab]);
+
   useEffect(() => {
     async function loadInitialData() {
       setLoading(true);
@@ -135,7 +143,7 @@ function AuditorDashboard({ onLogout }) {
         setActiveTab={setActiveTab}
         onLogout={onLogout}
       />
-      <div className="flex-1 flex flex-col min-w-0 h-screen overflow-y-auto">
+      <div ref={scrollRef} className="flex-1 flex flex-col min-w-0 h-screen overflow-y-auto">
         <Header activeTab={activeTab} />
         <main className="p-6 md:p-10 space-y-8 max-w-7xl w-full mx-auto pb-20">
           {toastMessage && (
@@ -226,6 +234,10 @@ function AuditorDashboard({ onLogout }) {
 
 export function App() {
   const [currentRole, setCurrentRole] = useState(null);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [currentRole]);
 
   if (!currentRole) return <EntrancePortal onSelectRole={setCurrentRole} />;
   

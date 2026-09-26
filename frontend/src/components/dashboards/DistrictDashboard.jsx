@@ -10,6 +10,14 @@ export function DistrictDashboard({ onLogout }) {
   const [freezeActive, setFreezeActive] = useState(false);
   const [agencies, setAgencies] = useState({});
 
+  const scrollRef = React.useRef(null);
+
+  useEffect(() => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollTo(0, 0);
+    }
+  }, [activeTab]);
+
   const fetchLiveProjects = async () => {
     setIsLoading(true);
     try {
@@ -122,7 +130,7 @@ export function DistrictDashboard({ onLogout }) {
           </button>
         </div>
       </div>
-      <div className="flex-1 overflow-auto">
+      <div ref={scrollRef} className="flex-1 overflow-auto">
         <header className="bg-white border-b border-slate-200 min-h-[4rem] h-auto py-2 md:py-0 flex items-center px-8">
           <h2 className="text-lg font-bold text-slate-800">
             {activeTab === "sanction"
