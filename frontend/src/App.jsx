@@ -25,8 +25,8 @@ import { ImplementingAgencyDashboard } from "./components/dashboards/Implementin
 
 // Temporary mock for District Authority & Vendor (separated)
 const SimpleMockDashboard = ({ title, role, onLogout }) => (
-  <div className="flex h-screen bg-slate-50 font-sans">
-    <div className="w-64 bg-slate-900 text-white flex flex-col justify-between">
+  <div className="flex flex-col md:flex-row min-h-screen md:h-screen md:overflow-hidden bg-slate-50 font-sans">
+    <div className="w-full md:w-64 md:h-screen md:shrink-0 overflow-y-auto bg-slate-900 text-white flex flex-col justify-between">
       <div className="p-6 border-b border-slate-800">
         <h1 className="font-bold text-sm">{title}</h1>
         <p className="text-[10px] text-slate-400 font-mono">Role: {role}</p>
@@ -174,7 +174,7 @@ export function App() {
 
   // AUDITOR DASHBOARD
   return (
-    <div className="min-h-screen bg-[#F8FAFC] flex font-sans text-slate-800 antialiased selection:bg-indigo-500/20">
+    <div className="min-h-screen bg-[#F8FAFC] flex flex-col md:flex-row font-sans text-slate-800 antialiased selection:bg-indigo-500/20">
       <Sidebar
         activeTab={activeTab}
         setActiveTab={setActiveTab}

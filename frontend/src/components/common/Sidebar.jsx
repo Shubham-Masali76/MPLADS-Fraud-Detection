@@ -3,7 +3,7 @@ import { LayoutDashboard, AlertTriangle, ShieldCheck, LogOut, Database } from "l
 
 export function Sidebar({ activeTab, setActiveTab, onLogout }) {
   return (
-    <div className="w-64 bg-white text-slate-800 flex flex-col h-screen font-sans border-r border-slate-200 shrink-0 shadow-sm z-10">
+    <div className="w-full md:w-64 md:h-screen md:shrink-0 overflow-y-auto bg-white text-slate-800 flex flex-col h-screen font-sans border-r border-slate-200 shrink-0 shadow-sm z-10">
       <div className="h-16 flex items-center px-6 border-b border-slate-200 shrink-0">
         <div className="flex items-center gap-3">
           <div className="h-8 w-8 bg-indigo-600 rounded-md flex items-center justify-center shadow-sm">

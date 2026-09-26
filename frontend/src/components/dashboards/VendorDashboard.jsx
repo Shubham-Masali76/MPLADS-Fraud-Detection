@@ -111,8 +111,8 @@ export function VendorDashboard({ onLogout }) {
   const formatCr = (amount) => `INR ${(amount / 10000000).toFixed(2)} Cr`;
 
   return (
-    <div className="flex h-screen bg-slate-50 font-sans">
-      <div className="w-64 bg-slate-900 text-white flex flex-col">
+    <div className="flex flex-col md:flex-row min-h-screen md:h-screen md:overflow-hidden bg-slate-50 font-sans">
+      <div className="w-full md:w-64 md:h-screen md:shrink-0 overflow-y-auto bg-slate-900 text-white flex flex-col">
         <div className="p-6 flex items-center gap-3 border-b border-slate-800">
           <div className="bg-amber-500 p-2 rounded-lg">
             <HardHat className="h-6 w-6 text-white" />

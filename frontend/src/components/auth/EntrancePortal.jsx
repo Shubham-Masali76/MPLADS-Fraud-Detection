@@ -100,7 +100,7 @@ export function EntrancePortal({ onSelectRole }) {
           {roles.map((role) => (
             <div
               key={role.id}
-              className={`relative bg-white rounded-2xl border-2 transition-all duration-300 shadow-sm hover:shadow-xl p-5 flex flex-col group w-full md:w-[calc(50%-1rem)] lg:w-[calc(25%-1rem)] max-w-[280px] ${role.color}`}
+              className={`relative bg-white rounded-2xl border-2 transition-all duration-300 shadow-sm hover:shadow-xl p-5 flex flex-col group w-full md:w-[calc(50%-1rem)] lg:w-[calc(25%-1rem)] max-w-full md:max-w-[280px] ${role.color}`}
             >
               <div
                 className={`h-12 w-12 rounded-2xl flex items-center justify-center mb-3 ${role.iconBg}`}

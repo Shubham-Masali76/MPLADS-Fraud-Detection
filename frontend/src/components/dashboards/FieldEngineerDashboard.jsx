@@ -101,7 +101,7 @@ export function FieldEngineerDashboard({ onLogout }) {
   const formatCr = (val) => `INR ${(val / 10000000).toFixed(3)} Cr`;
 
   return (
-    <div className="flex h-screen bg-slate-50 font-sans relative">
+    <div className="flex flex-col md:flex-row min-h-screen md:h-screen md:overflow-hidden bg-slate-50 font-sans relative">
       {/* Photo Upload Modal */}
       {mapModalOpen && (
         <div className="absolute inset-0 z-50 flex items-center justify-center bg-slate-900/60 p-10">
@@ -179,7 +179,7 @@ export function FieldEngineerDashboard({ onLogout }) {
         </div>
       )}
 
-      <div className="w-64 bg-slate-900 text-white flex flex-col justify-between">
+      <div className="w-full md:w-64 md:h-screen md:shrink-0 overflow-y-auto bg-slate-900 text-white flex flex-col justify-between">
         <div className="p-6 flex items-center gap-3 border-b border-slate-800">
           <div className="bg-emerald-600 p-2 rounded-lg">
             <Building2 className="h-6 w-6 text-white" />

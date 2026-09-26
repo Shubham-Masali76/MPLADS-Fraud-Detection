@@ -178,7 +178,7 @@ export function MPDashboard({ onLogout }) {
   };
 
   return (
-    <div className="flex h-screen bg-slate-50 font-sans">
+    <div className="flex flex-col md:flex-row min-h-screen md:h-screen md:overflow-hidden bg-slate-50 font-sans">
       {/* EXIF Modal */}
       {showExifModal && selectedExifProject && (
         <div className="absolute inset-0 z-50 flex items-center justify-center bg-slate-900/60 p-6">
@@ -342,7 +342,7 @@ export function MPDashboard({ onLogout }) {
         </div>
       )}
 
-      <div className="w-64 bg-slate-900 text-white flex flex-col">
+      <div className="w-full md:w-64 md:h-screen md:shrink-0 overflow-y-auto bg-slate-900 text-white flex flex-col">
         <div className="p-6 flex items-center gap-3 border-b border-slate-800">
           <div className="bg-blue-600 p-2 rounded-lg">
             <Landmark className="h-6 w-6 text-white" />
