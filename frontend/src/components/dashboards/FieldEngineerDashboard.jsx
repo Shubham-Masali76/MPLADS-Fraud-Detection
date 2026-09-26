@@ -104,9 +104,9 @@ export function FieldEngineerDashboard({ onLogout }) {
     <div className="flex flex-col md:flex-row min-h-screen md:h-screen md:overflow-hidden bg-slate-50 font-sans relative">
       {/* Photo Upload Modal */}
       {mapModalOpen && (
-        <div className="absolute inset-0 z-50 flex items-center justify-center bg-slate-900/60 p-10">
+        <div className="absolute inset-0 z-50 flex items-center justify-center bg-slate-900/60 p-4 md:p-10">
           <div className="bg-white rounded-2xl shadow-2xl w-full max-w-xl flex flex-col overflow-hidden">
-            <div className="p-6 border-b border-slate-200 bg-slate-50 flex justify-between items-center">
+            <div className="p-4 md:p-6 border-b border-slate-200 bg-slate-50 flex flex-col md:flex-row md:justify-between items-center gap-4 text-center md:text-left">
               <div>
                 <h3 className="text-xl font-bold text-slate-800">
                   Upload Inspector Baseline Photo
@@ -124,7 +124,7 @@ export function FieldEngineerDashboard({ onLogout }) {
               </button>
             </div>
             
-            <div className="p-8 bg-slate-50 flex flex-col items-center justify-center border-b border-slate-200">
+            <div className="p-4 md:p-8 bg-slate-50 flex flex-col items-center justify-center border-b border-slate-200">
               <label className="w-full flex flex-col items-center px-4 py-12 bg-white text-emerald-600 rounded-xl shadow-inner border-2 border-dashed border-emerald-300 cursor-pointer hover:bg-emerald-50 transition-colors">
                 <svg className="w-12 h-12 mb-3 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"></path></svg>
                 <span className="text-lg font-bold">Select Baseline Photo</span>
@@ -165,7 +165,7 @@ export function FieldEngineerDashboard({ onLogout }) {
               </div>
             </div>
 
-            <div className="p-6 bg-white flex justify-end items-center">
+            <div className="p-4 md:p-6 bg-white flex justify-end items-center">
               <button
                 id="approve-btn"
                 onClick={handleApprove}
@@ -180,7 +180,7 @@ export function FieldEngineerDashboard({ onLogout }) {
       )}
 
       <div className="w-full md:w-64 md:h-screen md:shrink-0 overflow-y-auto bg-slate-900 text-white flex flex-col justify-between">
-        <div className="p-6 flex items-center gap-3 border-b border-slate-800">
+        <div className="p-4 md:p-6 flex items-center gap-3 border-b border-slate-800">
           <div className="bg-emerald-600 p-2 rounded-lg">
             <Building2 className="h-6 w-6 text-white" />
           </div>
@@ -223,7 +223,7 @@ export function FieldEngineerDashboard({ onLogout }) {
               : "Fund Release Logs"}
           </h2>
         </header>
-        <main className="p-8 max-w-5xl mx-auto space-y-6">
+        <main className="p-4 md:p-8 max-w-5xl mx-auto space-y-6">
           {actionStatus && (
             <div
               className={`p-4 rounded-lg font-bold ${actionStatus.includes("Error") ? "bg-rose-100 text-rose-800" : "bg-emerald-100 text-emerald-800"}`}
@@ -241,18 +241,18 @@ export function FieldEngineerDashboard({ onLogout }) {
               </div>
               <div className="divide-y divide-slate-100 max-h-[600px] overflow-auto">
                 {isLoading ? (
-                  <div className="p-8 text-center text-slate-500">
+                  <div className="p-4 md:p-8 text-center text-slate-500">
                     Loading live projects...
                   </div>
                 ) : pendingProjects.length === 0 ? (
-                  <div className="p-8 text-center text-slate-500">
+                  <div className="p-4 md:p-8 text-center text-slate-500">
                     No pending projects awaiting your approval.
                   </div>
                 ) : (
                   pendingProjects.map((p) => (
                     <div
                       key={p.id}
-                      className="p-4 flex justify-between items-center hover:bg-slate-50"
+                      className="p-4 flex flex-col md:flex-row md:justify-between items-center gap-4 text-center md:text-left hover:bg-slate-50"
                     >
                       <div className="flex-1 mr-4">
                         <div className="font-bold text-slate-900">
@@ -295,8 +295,8 @@ export function FieldEngineerDashboard({ onLogout }) {
             </div>
           ) : (
             <div className="space-y-6">
-              <div className="grid grid-cols-2 gap-6">
-                <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+              <div className="grid grid-cols-2 gap-4 md:gap-6">
+                <div className="bg-white p-4 md:p-6 rounded-2xl border border-slate-200 shadow-sm">
                   <div className="text-slate-500 text-sm font-medium mb-1">
                     Funds Released (FY)
                   </div>
@@ -304,7 +304,7 @@ export function FieldEngineerDashboard({ onLogout }) {
                     {formatCr(totalReleased)}
                   </div>
                 </div>
-                <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                <div className="bg-white p-4 md:p-6 rounded-2xl border border-slate-200 shadow-sm">
                   <div className="text-slate-500 text-sm font-medium mb-1">
                     Pending Installments
                   </div>
@@ -323,14 +323,14 @@ export function FieldEngineerDashboard({ onLogout }) {
                 </div>
                 <div className="divide-y divide-slate-100 max-h-[600px] overflow-auto">
                   {approvedProjects.length === 0 ? (
-                    <div className="p-8 text-center text-slate-500">
+                    <div className="p-4 md:p-8 text-center text-slate-500">
                       No projects have been approved yet.
                     </div>
                   ) : (
                     approvedProjects.map((p) => (
                       <div
                         key={p.id}
-                        className="p-4 flex justify-between items-center"
+                        className="p-4 flex flex-col md:flex-row md:justify-between items-center gap-4 text-center md:text-left"
                       >
                         <div>
                           <div className="font-bold text-slate-900">

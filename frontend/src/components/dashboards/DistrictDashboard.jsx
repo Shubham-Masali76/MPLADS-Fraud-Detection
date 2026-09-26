@@ -78,7 +78,7 @@ export function DistrictDashboard({ onLogout }) {
   return (
     <div className="flex flex-col md:flex-row min-h-screen md:h-screen md:overflow-hidden bg-slate-50 font-sans">
       <div className="w-full md:w-64 md:h-screen md:shrink-0 overflow-y-auto bg-slate-900 text-white flex flex-col">
-        <div className="p-6 border-b border-slate-800 flex items-center gap-3">
+        <div className="p-4 md:p-6 border-b border-slate-800 flex items-center gap-3">
           <div className="bg-emerald-500/20 p-2 rounded-lg">
             <Building2 className="h-6 w-6 text-emerald-400" />
           </div>
@@ -129,7 +129,7 @@ export function DistrictDashboard({ onLogout }) {
               : "Fund Release Logs"}
           </h2>
         </header>
-        <main className="p-8 max-w-5xl mx-auto space-y-6">
+        <main className="p-4 md:p-8 max-w-5xl mx-auto space-y-6">
           {actionStatus && (
             <div
               className={`p-4 rounded-lg font-bold ${actionStatus.includes("Error") ? "bg-rose-100 text-rose-800" : "bg-emerald-100 text-emerald-800"}`}
@@ -147,18 +147,18 @@ export function DistrictDashboard({ onLogout }) {
               </div>
               <div className="divide-y divide-slate-100 max-h-[600px] overflow-auto">
                 {isLoading ? (
-                  <div className="p-8 text-center text-slate-500">
+                  <div className="p-4 md:p-8 text-center text-slate-500">
                     Loading live projects...
                   </div>
                 ) : pendingProjects.length === 0 ? (
-                  <div className="p-8 text-center text-slate-500">
+                  <div className="p-4 md:p-8 text-center text-slate-500">
                     No pending projects awaiting your approval.
                   </div>
                 ) : (
                   pendingProjects.map((p) => (
                     <div
                       key={p.id}
-                      className="p-6 hover:bg-slate-50 flex flex-col gap-4"
+                      className="p-4 md:p-6 hover:bg-slate-50 flex flex-col gap-4"
                     >
                       <div className="flex justify-between items-start">
                         <div>
@@ -251,8 +251,8 @@ export function DistrictDashboard({ onLogout }) {
         )}
 
         <div className="space-y-6">
-              <div className="grid grid-cols-2 gap-6">
-                <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+              <div className="grid grid-cols-2 gap-4 md:gap-6">
+                <div className="bg-white p-4 md:p-6 rounded-2xl border border-slate-200 shadow-sm">
                   <div className="text-slate-500 text-sm font-medium mb-1">
                     Funds Released (FY)
                   </div>
@@ -260,7 +260,7 @@ export function DistrictDashboard({ onLogout }) {
                     {formatCr(totalReleased)}
                   </div>
                 </div>
-                <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                <div className="bg-white p-4 md:p-6 rounded-2xl border border-slate-200 shadow-sm">
                   <div className="text-slate-500 text-sm font-medium mb-1">
                     Pending Installments
                   </div>
@@ -278,14 +278,14 @@ export function DistrictDashboard({ onLogout }) {
                 </div>
                 <div className="divide-y divide-slate-100 max-h-[600px] overflow-auto">
                   {approvedProjects.length === 0 ? (
-                    <div className="p-8 text-center text-slate-500">
+                    <div className="p-4 md:p-8 text-center text-slate-500">
                       No projects have been approved yet.
                     </div>
                   ) : (
                     approvedProjects.map((p) => (
                       <div
                         key={p.id}
-                        className="p-4 flex justify-between items-center"
+                        className="p-4 flex flex-col md:flex-row md:justify-between items-center gap-4 text-center md:text-left"
                       >
                         <div>
                           <div className="font-bold text-slate-900">

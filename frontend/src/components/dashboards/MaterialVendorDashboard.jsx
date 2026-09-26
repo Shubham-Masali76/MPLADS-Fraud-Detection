@@ -7,7 +7,7 @@ export function MaterialVendorDashboard({ projects = [], onLogout }) {
   return (
     <div className="flex flex-col md:flex-row min-h-screen md:h-screen md:overflow-hidden bg-slate-50 font-sans">
       <div className="w-full md:w-64 md:h-screen md:shrink-0 overflow-y-auto bg-slate-900 text-white flex flex-col">
-        <div className="p-6 flex items-center gap-3 border-b border-slate-800">
+        <div className="p-4 md:p-6 flex items-center gap-3 border-b border-slate-800">
           <div className="bg-orange-500 p-2 rounded-lg"><Truck className="h-6 w-6 text-white" /></div>
           <div>
             <h1 className="font-bold text-sm">Supplier Portal</h1>
@@ -32,15 +32,15 @@ export function MaterialVendorDashboard({ projects = [], onLogout }) {
         <header className="bg-white border-b border-slate-200 h-16 flex items-center px-8">
           <h2 className="text-lg font-bold text-slate-800">{activeTab === "invoices" ? "Submitted Invoices" : "Payment Ledger"}</h2>
         </header>
-        <main className="p-8 max-w-5xl mx-auto space-y-6">
+        <main className="p-4 md:p-8 max-w-5xl mx-auto space-y-6">
           <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
-            <div className="px-6 py-4 border-b border-slate-200 bg-slate-50 flex justify-between items-center">
+            <div className="px-6 py-4 border-b border-slate-200 bg-slate-50 flex flex-col md:flex-row md:justify-between items-center gap-4 text-center md:text-left">
               <h3 className="font-bold text-slate-800">Active Material Orders</h3>
               <button className="bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-bold">+ New Invoice</button>
             </div>
             <div className="divide-y divide-slate-100 max-h-[600px] overflow-auto">
               {projects.slice(10, 20).map(p => (
-                <div key={p.project_id} className="p-4 flex justify-between items-center hover:bg-slate-50">
+                <div key={p.project_id} className="p-4 flex flex-col md:flex-row md:justify-between items-center gap-4 text-center md:text-left hover:bg-slate-50">
                   <div>
                     <div className="font-bold text-slate-900">Materials for {p.work_category}</div>
                     <div className="text-sm text-slate-500">Contractor: {p.executing_agency}</div>

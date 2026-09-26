@@ -100,12 +100,12 @@ export function MoSPIDashboard({ onLogout }) {
 
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col">
-      <header className="bg-indigo-900 text-white p-4 shadow-md flex justify-between items-center">
+      <header className="bg-indigo-900 text-white p-4 shadow-md flex flex-col md:flex-row md:justify-between items-center gap-4 text-center md:text-left">
         <div className="flex items-center gap-3">
           <Shield className="text-indigo-400" />
           <h1 className="text-xl font-bold">MoSPI Central Oversight Dashboard</h1>
         </div>
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-4 md:gap-6">
           <div className="text-sm opacity-80 hidden md:block">Ministry of Statistics and Programme Implementation</div>
           <button 
             onClick={onLogout}
@@ -117,7 +117,7 @@ export function MoSPIDashboard({ onLogout }) {
         </div>
       </header>
 
-      <main className="p-8 max-w-6xl mx-auto w-full space-y-6">
+      <main className="p-4 md:p-8 max-w-6xl mx-auto w-full space-y-6">
         {message && (
           <div className="bg-emerald-50 text-emerald-700 p-4 rounded-xl border border-emerald-200 font-medium flex items-center gap-2">
             <CheckCircle size={20} />
@@ -131,7 +131,7 @@ export function MoSPIDashboard({ onLogout }) {
             National System Controls
           </h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
             <div className="border border-slate-200 p-5 rounded-xl bg-slate-50 flex flex-col">
               <h3 className="font-bold text-slate-700 mb-2">Fund Allocation to Districts</h3>
               <p className="text-sm text-slate-500 mb-4">
@@ -151,10 +151,10 @@ export function MoSPIDashboard({ onLogout }) {
                 </div>
 
                 {!isSearching ? (
-                  <div className="flex-1 flex flex-col items-center justify-center p-6 text-center bg-slate-50/50">
+                  <div className="flex-1 flex flex-col items-center justify-center p-4 md:p-6 text-center bg-slate-50/50">
                     <Search size={32} className="text-slate-300 mb-3" />
                     <p className="text-sm text-slate-600 font-bold">Search Database</p>
-                    <p className="text-xs text-slate-400 mt-1 max-w-[200px]">Type a state, party, or MP name to begin selecting records.</p>
+                    <p className="text-xs text-slate-400 mt-1 max-w-full md:max-w-[200px]">Type a state, party, or MP name to begin selecting records.</p>
                   </div>
                 ) : (
                   <>
@@ -222,16 +222,16 @@ export function MoSPIDashboard({ onLogout }) {
           </div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-           <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+           <div className="bg-white p-4 md:p-6 rounded-2xl shadow-sm border border-slate-200">
              <div className="text-slate-500 text-sm font-medium mb-1">Total National Corpus</div>
              <div className="text-3xl font-extrabold text-slate-900">₹3,950 Cr</div>
            </div>
-           <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+           <div className="bg-white p-4 md:p-6 rounded-2xl shadow-sm border border-slate-200">
              <div className="text-slate-500 text-sm font-medium mb-1">Active MPLADS Projects</div>
              <div className="text-3xl font-extrabold text-slate-900">12,403</div>
            </div>
-           <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+           <div className="bg-white p-4 md:p-6 rounded-2xl shadow-sm border border-slate-200">
              <div className="text-slate-500 text-sm font-medium mb-1">Fraud Flagged (AI)</div>
              <div className="text-3xl font-extrabold text-rose-600">47</div>
            </div>
@@ -249,7 +249,7 @@ export function MoSPIDashboard({ onLogout }) {
             </div>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:p-8">
             {/* Chart 1: Fund Utilization */}
             <div className="bg-slate-50 p-5 rounded-xl border border-slate-100">
               <h3 className="text-sm font-bold text-slate-700 mb-4">Annual Fund Utilization</h3>
@@ -373,7 +373,7 @@ export function MoSPIDashboard({ onLogout }) {
         </div>
 
         {/* God Mode: Live National Audit Feed */}
-        <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 mt-6">
+        <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-4 md:p-6 mt-6">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-lg font-bold text-slate-800 flex items-center gap-2">
               <Activity className="text-indigo-600" />
@@ -391,7 +391,7 @@ export function MoSPIDashboard({ onLogout }) {
                 <AlertOctagon size={16} className="text-rose-600" />
               </div>
               <div className="flex-1">
-                <div className="flex justify-between items-center mb-1">
+                <div className="flex flex-col md:flex-row md:justify-between items-center gap-4 text-center md:text-left mb-1">
                   <span className="text-sm font-bold text-rose-900">[VIGIL-AI] Fraud Prevented - Installment Blocked</span>
                   <span className="text-xs text-rose-600 font-medium">Just now</span>
                 </div>
@@ -408,7 +408,7 @@ export function MoSPIDashboard({ onLogout }) {
                 <UserCheck size={16} className="text-blue-600" />
               </div>
               <div className="flex-1">
-                <div className="flex justify-between items-center mb-1">
+                <div className="flex flex-col md:flex-row md:justify-between items-center gap-4 text-center md:text-left mb-1">
                   <span className="text-sm font-bold text-blue-900">[MP ACTION] Project Recommended</span>
                   <span className="text-xs text-blue-600 font-medium">4 mins ago</span>
                 </div>
@@ -425,7 +425,7 @@ export function MoSPIDashboard({ onLogout }) {
                 <FileText size={16} className="text-emerald-600" />
               </div>
               <div className="flex-1">
-                <div className="flex justify-between items-center mb-1">
+                <div className="flex flex-col md:flex-row md:justify-between items-center gap-4 text-center md:text-left mb-1">
                   <span className="text-sm font-bold text-emerald-900">[DISTRICT AUTHORITY] Funds Sanctioned</span>
                   <span className="text-xs text-emerald-600 font-medium">12 mins ago</span>
                 </div>
@@ -441,7 +441,7 @@ export function MoSPIDashboard({ onLogout }) {
                 <Lock size={16} className="text-emerald-400" />
               </div>
               <div className="flex-1">
-                <div className="flex justify-between items-center mb-1">
+                <div className="flex flex-col md:flex-row md:justify-between items-center gap-4 text-center md:text-left mb-1">
                   <span className="text-sm font-bold text-slate-100">[HYPERLEDGER] Smart Contract Executed</span>
                   <span className="text-xs text-emerald-400 font-medium">18 mins ago</span>
                 </div>

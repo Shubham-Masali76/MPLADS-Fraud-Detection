@@ -182,8 +182,8 @@ export function MPDashboard({ onLogout }) {
       {/* EXIF Modal */}
       {showExifModal && selectedExifProject && (
         <div className="absolute inset-0 z-50 flex items-center justify-center bg-slate-900/60 p-6">
-          <div className="bg-white rounded-2xl shadow-2xl w-full max-w-4xl flex flex-col overflow-hidden border border-slate-200">
-            <div className="p-4 border-b border-slate-200 bg-slate-50 flex justify-between items-center">
+          <div className="bg-white rounded-2xl shadow-2xl w-full max-w-[95vw] md:max-w-4xl flex flex-col overflow-hidden border border-slate-200">
+            <div className="p-4 border-b border-slate-200 bg-slate-50 flex flex-col md:flex-row md:justify-between items-center gap-4 text-center md:text-left">
               <div>
                 <h3 className="text-lg font-bold text-slate-800 flex items-center gap-2">
                   <CheckCircle2 className="h-5 w-5 text-emerald-600" />
@@ -203,7 +203,7 @@ export function MPDashboard({ onLogout }) {
 
             <div className="flex flex-col md:flex-row h-[450px]">
               {/* Left Column: Location Metadata & Security */}
-              <div className="w-full md:w-1/2 p-6 bg-slate-900 text-emerald-400 font-mono text-xs overflow-y-auto shadow-inner flex flex-col gap-4">
+              <div className="w-full md:w-1/2 p-4 md:p-6 bg-slate-900 text-emerald-400 font-mono text-xs overflow-y-auto shadow-inner flex flex-col gap-4">
                 {/* Reverse Geocoded Address */}
                 <div className="bg-emerald-900/30 p-4 rounded border border-emerald-500/50 mb-2">
                   <div className="text-emerald-300 font-bold mb-2 flex items-center gap-2">
@@ -343,7 +343,7 @@ export function MPDashboard({ onLogout }) {
       )}
 
       <div className="w-full md:w-64 md:h-screen md:shrink-0 overflow-y-auto bg-slate-900 text-white flex flex-col">
-        <div className="p-6 flex items-center gap-3 border-b border-slate-800">
+        <div className="p-4 md:p-6 flex items-center gap-3 border-b border-slate-800">
           <div className="bg-blue-600 p-2 rounded-lg">
             <Landmark className="h-6 w-6 text-white" />
           </div>
@@ -399,10 +399,10 @@ export function MPDashboard({ onLogout }) {
           </h2>
         </header>
 
-        <main className="p-8 max-w-5xl mx-auto space-y-6">
+        <main className="p-4 md:p-8 max-w-5xl mx-auto space-y-6">
           {activeTab === "overview" && (
             <>
-              <div className="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm flex items-center justify-between">
+              <div className="bg-white p-4 md:p-8 rounded-2xl border border-slate-200 shadow-sm flex items-center justify-between">
                 <div>
                   <h3 className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-2">
                     Total Available Fund Pool
@@ -438,8 +438,8 @@ export function MPDashboard({ onLogout }) {
                   </div>
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-6">
-                <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+              <div className="grid grid-cols-2 gap-4 md:gap-6">
+                <div className="bg-white p-4 md:p-6 rounded-2xl border border-slate-200 shadow-sm">
                   <div className="text-slate-500 text-sm font-medium mb-1">
                     Funds Spent (Approved by DC)
                   </div>
@@ -447,7 +447,7 @@ export function MPDashboard({ onLogout }) {
                     {formatCr(fundsSpent)}
                   </div>
                 </div>
-                <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+                <div className="bg-white p-4 md:p-6 rounded-2xl border border-slate-200 shadow-sm">
                   <div className="text-slate-500 text-sm font-medium mb-1">
                     Unspent Balance (Rollover)
                   </div>
@@ -460,7 +460,7 @@ export function MPDashboard({ onLogout }) {
           )}
 
           {activeTab === "projects" && (
-            <div className="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
+            <div className="bg-white p-4 md:p-8 rounded-2xl border border-slate-200 shadow-sm">
               <h3 className="text-lg font-bold text-slate-700 mb-6">
                 Live Project Directory
               </h3>
@@ -481,7 +481,7 @@ export function MPDashboard({ onLogout }) {
                   {liveProjects.map((p) => (
                     <div
                       key={p.id}
-                      className="p-4 border border-slate-200 rounded-xl flex justify-between items-center"
+                      className="p-4 border border-slate-200 rounded-xl flex flex-col md:flex-row md:justify-between items-center gap-4 text-center md:text-left"
                     >
                       <div>
                         <div className="font-bold text-slate-800">
@@ -540,7 +540,7 @@ export function MPDashboard({ onLogout }) {
           )}
 
           {activeTab === "recommend" && (
-            <div className="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
+            <div className="bg-white p-4 md:p-8 rounded-2xl border border-slate-200 shadow-sm">
               <h3 className="text-lg font-bold text-slate-800 mb-6">
                 Submit Recommendation to District Authority
               </h3>

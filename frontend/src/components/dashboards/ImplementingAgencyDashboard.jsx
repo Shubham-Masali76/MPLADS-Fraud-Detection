@@ -7,7 +7,7 @@ export function ImplementingAgencyDashboard({ onLogout }) {
 
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col font-sans">
-      <header className="bg-slate-900 text-white p-4 shadow-md flex justify-between items-center">
+      <header className="bg-slate-900 text-white p-4 shadow-md flex flex-col md:flex-row md:justify-between items-center gap-4 text-center md:text-left">
         <div className="flex items-center gap-4">
           <Briefcase className="text-emerald-400" />
           <h1 className="text-xl font-bold tracking-tight">Implementing Agency Portal</h1>
@@ -37,7 +37,7 @@ export function ImplementingAgencyDashboard({ onLogout }) {
         </button>
       </header>
 
-      <main className="p-8 max-w-6xl mx-auto w-full flex-grow">
+      <main className="p-4 md:p-8 max-w-6xl mx-auto w-full flex-grow">
         <div className="flex justify-between items-end mb-6">
           <div>
             <h2 className="text-2xl font-bold text-slate-800">Tender & Execution Management</h2>
@@ -49,7 +49,7 @@ export function ImplementingAgencyDashboard({ onLogout }) {
 
         <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
           {/* Mock Project for IA */}
-          <div className="p-6 border-b border-slate-100 flex flex-col md:flex-row gap-6">
+          <div className="p-4 md:p-6 border-b border-slate-100 flex flex-col md:flex-row gap-4 md:gap-6">
             
             {/* Image Viewer */}
             <div className="w-full md:w-1/3">

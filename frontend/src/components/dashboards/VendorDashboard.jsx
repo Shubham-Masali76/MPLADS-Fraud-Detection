@@ -113,7 +113,7 @@ export function VendorDashboard({ onLogout }) {
   return (
     <div className="flex flex-col md:flex-row min-h-screen md:h-screen md:overflow-hidden bg-slate-50 font-sans">
       <div className="w-full md:w-64 md:h-screen md:shrink-0 overflow-y-auto bg-slate-900 text-white flex flex-col">
-        <div className="p-6 flex items-center gap-3 border-b border-slate-800">
+        <div className="p-4 md:p-6 flex items-center gap-3 border-b border-slate-800">
           <div className="bg-amber-500 p-2 rounded-lg">
             <HardHat className="h-6 w-6 text-white" />
           </div>
@@ -151,7 +151,7 @@ export function VendorDashboard({ onLogout }) {
           </h2>
         </header>
 
-        <main className="p-8 max-w-5xl mx-auto space-y-6">
+        <main className="p-4 md:p-8 max-w-5xl mx-auto space-y-6">
           {uploadStatus && (
             <div
               className={`p-4 rounded-xl border flex items-center gap-3 ${uploadStatus.type === "success" ? "bg-emerald-50 border-emerald-200 text-emerald-800" : "bg-red-50 border-red-200 text-red-800"}`}
@@ -161,8 +161,8 @@ export function VendorDashboard({ onLogout }) {
             </div>
           )}
 
-          <div className="grid grid-cols-3 gap-6">
-            <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <div className="grid grid-cols-3 gap-4 md:gap-6">
+            <div className="bg-white p-4 md:p-6 rounded-2xl border border-slate-200 shadow-sm">
               <div className="text-slate-500 text-sm font-medium mb-1">
                 Active Contracts (Approved)
               </div>
@@ -170,7 +170,7 @@ export function VendorDashboard({ onLogout }) {
                 {activeContractsCount}
               </div>
             </div>
-            <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+            <div className="bg-white p-4 md:p-6 rounded-2xl border border-slate-200 shadow-sm">
               <div className="text-slate-500 text-sm font-medium mb-1">
                 Pending Payments
               </div>
@@ -178,7 +178,7 @@ export function VendorDashboard({ onLogout }) {
                 {formatCr(pendingPayments)}
               </div>
             </div>
-            <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+            <div className="bg-white p-4 md:p-6 rounded-2xl border border-slate-200 shadow-sm">
               <div className="text-slate-500 text-sm font-medium mb-1">
                 Evidence Submitted
               </div>
@@ -194,18 +194,18 @@ export function VendorDashboard({ onLogout }) {
             </div>
             <div className="divide-y divide-slate-100">
               {isLoading ? (
-                <div className="p-8 text-center text-slate-500">
+                <div className="p-4 md:p-8 text-center text-slate-500">
                   Loading contracts...
                 </div>
               ) : liveProjects.length === 0 ? (
-                <div className="p-8 text-center text-slate-500">
+                <div className="p-4 md:p-8 text-center text-slate-500">
                   No active contracts assigned to you yet.
                 </div>
               ) : (
                 liveProjects.map((proj) => (
                   <div
                     key={proj.id}
-                    className="p-6 flex items-center justify-between"
+                    className="p-4 md:p-6 flex items-center justify-between"
                   >
                     <div>
                       <h4 className="font-bold text-slate-900">
