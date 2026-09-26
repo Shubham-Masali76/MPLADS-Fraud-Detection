@@ -19,8 +19,11 @@ def get_overview_kpis():
 @router.get("/district-risk")
 def get_district_risk():
     """Dynamically aggregates risk by district from the loaded projects data."""
+    if not data_service.is_loaded:
+        data_service.load_data()
+        
     districts = {}
-    for p in data_service.projects_list:
+    for p in data_service.projects_dict.values():
         d = p.get("Constituency", "Unknown")
         s = p.get("State", "Unknown")
         key = f"{d}-{s}"
@@ -50,8 +53,11 @@ def get_district_risk():
 @router.get("/category-distribution")
 def get_category_distribution():
     """Dynamically aggregates projects by category."""
+    if not data_service.is_loaded:
+        data_service.load_data()
+        
     cats = {}
-    for p in data_service.projects_list:
+    for p in data_service.projects_dict.values():
         cat = p.get("Project_Category", "Unknown")
         if cat not in cats:
             cats[cat] = {"category": cat, "total": 0, "high_risk": 0}
