@@ -202,7 +202,7 @@ export const HighRiskQueue = ({ projects = [], onSelectProject }) => {
                       </td>
                       <td className="py-3 px-3">
                         <div
-                          className="font-semibold text-slate-900 truncate max-w-[150px]"
+                          className="font-semibold text-slate-900"
                           title={p.project_description || p.project_category}
                         >
                           {p.project_description || p.project_category}
