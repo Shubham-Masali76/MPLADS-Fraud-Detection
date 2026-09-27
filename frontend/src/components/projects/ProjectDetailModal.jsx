@@ -66,6 +66,7 @@ export const ProjectDetailModal = ({ project, onClose, onRecordDecision }) => {
   const [notes, setNotes] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [anchoredReceipt, setAnchoredReceipt] = useState(null);
+  const [errorMsg, setErrorMsg] = useState(null);
 
   const vpi = Number(project.vpi || 0);
   const isCritical = project.priority_tier === "CRITICAL";
@@ -74,6 +75,7 @@ export const ProjectDetailModal = ({ project, onClose, onRecordDecision }) => {
   const handleConfirmDecision = async () => {
     if (!decisionType) return;
     setIsSubmitting(true);
+    setErrorMsg(null);
     try {
       const receipt = await onRecordDecision(
         project.project_id,
@@ -82,7 +84,7 @@ export const ProjectDetailModal = ({ project, onClose, onRecordDecision }) => {
       );
       setAnchoredReceipt(receipt);
     } catch (e) {
-      alert("Error anchoring decision to blockchain.");
+      setErrorMsg("Failed to anchor decision to blockchain. Please check your connection.");
     } finally {
       setIsSubmitting(false);
     }
@@ -760,6 +762,13 @@ export const ProjectDetailModal = ({ project, onClose, onRecordDecision }) => {
                   rows={2}
                   className="w-full text-xs bg-slate-50 border border-slate-200 rounded-xl p-3 text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 />
+
+                {errorMsg && (
+                  <div className="bg-rose-50 border border-rose-200 text-rose-700 text-xs px-3 py-2 rounded-lg flex items-start gap-2">
+                    <AlertOctagon className="h-4 w-4 shrink-0 mt-0.5" />
+                    <p>{errorMsg}</p>
+                  </div>
+                )}
 
                 <div className="flex justify-end gap-2.5">
                   <button

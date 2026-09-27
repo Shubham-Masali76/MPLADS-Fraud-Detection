@@ -10,6 +10,7 @@ export const PhotoVerificationView = () => {
   const [fileName, setFileName] = useState("");
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
+  const [errorMsg, setErrorMsg] = useState(null);
 
   const demoScenarios = [
     {
@@ -34,16 +35,18 @@ export const PhotoVerificationView = () => {
     setFileName(sc.fileName);
     setSelectedFile(new File(["demo_bytes"], sc.fileName, { type: "image/jpeg" }));
     setResult(null);
+    setErrorMsg(null);
   };
 
   const handleRunVerification = async () => {
     setLoading(true);
+    setErrorMsg(null);
     try {
       const fileToUpload = selectedFile || new File(["dummy"], fileName || "inspection_photo.jpg", { type: "image/jpeg" });
       const res = await apiService.verifyPhoto(fileToUpload, claimedLat, claimedLon, Number(toleranceKm));
       setResult(res);
     } catch (e) {
-      alert("Photo verification failed: " + e.message);
+      setErrorMsg("Photo verification failed: " + e.message);
     } finally {
       setLoading(false);
     }
@@ -160,6 +163,13 @@ export const PhotoVerificationView = () => {
               className="w-full px-3.5 py-2.5 text-xs font-mono border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 bg-slate-50/60"
             />
           </div>
+
+          {errorMsg && (
+            <div className="bg-rose-50 border border-rose-200 text-rose-700 text-xs px-3 py-3 rounded-xl flex items-start gap-2 shadow-sm">
+              <AlertTriangle className="h-4 w-4 shrink-0 mt-0.5" />
+              <p className="font-medium leading-relaxed">{errorMsg}</p>
+            </div>
+          )}
 
           <button
             onClick={handleRunVerification}
