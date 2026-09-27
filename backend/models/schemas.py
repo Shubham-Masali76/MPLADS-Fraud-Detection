@@ -126,7 +126,7 @@ class BlockchainBlock(BaseModel):
 class AuditDecisionRequest(BaseModel):
     project_id: str
     auditor_id: str
-    decision: str = Field(..., description="Action: 'APPROVE', 'ESCALATE', or 'HOLD'")
+    decision: str = Field(..., description="Action: 'APPROVE', 'ESCALATE', 'HOLD', or 'UNHOLD'")
     notes: Optional[str] = ""
 
 

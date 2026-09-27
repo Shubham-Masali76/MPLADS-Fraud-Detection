@@ -131,8 +131,8 @@ class BlockchainService:
     def record_decision(
         self, project_id: str, auditor_id: str, decision: str, notes: str = ""
     ) -> Dict[str, Any]:
-        """Records a human auditor review decision (APPROVE / ESCALATE / HOLD)."""
-        valid_decisions = {"APPROVE", "ESCALATE", "HOLD"}
+        """Records a human auditor review decision (APPROVE / ESCALATE / HOLD / UNHOLD)."""
+        valid_decisions = {"APPROVE", "ESCALATE", "HOLD", "UNHOLD"}
         dec_norm = decision.strip().upper()
         if dec_norm not in valid_decisions:
             raise ValueError(f"Invalid decision '{decision}'. Must be one of {valid_decisions}")

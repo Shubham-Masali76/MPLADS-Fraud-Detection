@@ -45,7 +45,7 @@ def validate_ledger():
 def record_auditor_decision(request: AuditDecisionRequest):
     """
     Human-in-the-loop endpoint:
-    Anchors a vigilance officer's review decision (APPROVE / ESCALATE / HOLD)
+    Anchors a vigilance officer's review decision (APPROVE / ESCALATE / HOLD / UNHOLD)
     as an immutable cryptographic block on the blockchain.
     """
     try:
