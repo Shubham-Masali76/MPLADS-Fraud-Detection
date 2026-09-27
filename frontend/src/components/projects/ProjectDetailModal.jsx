@@ -789,31 +789,52 @@ export const ProjectDetailModal = ({ project, onClose, onRecordDecision }) => {
                 </div>
               </div>
             ) : (
-              /* 3 Action Buttons */
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-3.5">
-                <button
-                  onClick={() => setDecisionType("APPROVE")}
-                  className="flex items-center justify-center gap-2 p-3.5 rounded-xl border border-emerald-200 bg-emerald-50 hover:bg-emerald-100/80 text-emerald-800 transition text-xs font-bold shadow-sm"
-                >
-                  <CheckCircle2 className="h-4 w-4 text-emerald-600" />
-                  <span>Clear AI Flag (False Positive)</span>
-                </button>
+              /* Dynamic Action Buttons based on State */
+              <div className={`grid grid-cols-1 ${project.auditor_verdict === "HOLD" ? "md:grid-cols-2" : "md:grid-cols-3"} gap-3.5`}>
+                {project.auditor_verdict === "HOLD" ? (
+                  <>
+                    <button
+                      onClick={() => setDecisionType("UNHOLD")}
+                      className="flex items-center justify-center gap-2 p-3.5 rounded-xl border border-emerald-200 bg-emerald-50 hover:bg-emerald-100/80 text-emerald-800 transition text-xs font-bold shadow-sm"
+                    >
+                      <CheckCircle2 className="h-4 w-4 text-emerald-600" />
+                      <span>Unhold (Clear Inquiry)</span>
+                    </button>
+                    <button
+                      onClick={() => setDecisionType("ESCALATE")}
+                      className="flex items-center justify-center gap-2 p-3.5 rounded-xl border border-rose-200 bg-rose-600 hover:bg-rose-500 text-white transition text-xs font-bold shadow-md shadow-rose-600/20"
+                    >
+                      <AlertOctagon className="h-4 w-4 text-white" />
+                      <span>Escalate to CBI / CVC</span>
+                    </button>
+                  </>
+                ) : (
+                  <>
+                    <button
+                      onClick={() => setDecisionType("APPROVE")}
+                      className="flex items-center justify-center gap-2 p-3.5 rounded-xl border border-emerald-200 bg-emerald-50 hover:bg-emerald-100/80 text-emerald-800 transition text-xs font-bold shadow-sm"
+                    >
+                      <CheckCircle2 className="h-4 w-4 text-emerald-600" />
+                      <span>Clear AI Flag (False Positive)</span>
+                    </button>
 
-                <button
-                  onClick={() => setDecisionType("HOLD")}
-                  className="flex items-center justify-center gap-2 p-3.5 rounded-xl border border-amber-200 bg-amber-50 hover:bg-amber-100/80 text-amber-800 transition text-xs font-bold shadow-sm"
-                >
-                  <PauseCircle className="h-4 w-4 text-amber-600" />
-                  <span>Place on Hold</span>
-                </button>
+                    <button
+                      onClick={() => setDecisionType("HOLD")}
+                      className="flex items-center justify-center gap-2 p-3.5 rounded-xl border border-amber-200 bg-amber-50 hover:bg-amber-100/80 text-amber-800 transition text-xs font-bold shadow-sm"
+                    >
+                      <PauseCircle className="h-4 w-4 text-amber-600" />
+                      <span>Place on Hold</span>
+                    </button>
 
-                <button
-                  onClick={() => setDecisionType("ESCALATE")}
-                  className="flex items-center justify-center gap-2 p-3.5 rounded-xl border border-rose-200 bg-rose-600 hover:bg-rose-500 text-white transition text-xs font-bold shadow-md shadow-rose-600/20"
-                >
-                  <AlertOctagon className="h-4 w-4 text-white" />
-                  <span>Escalate to CBI / CVC</span>
-                </button>
+                    <button
+                      onClick={() => setDecisionType("ESCALATE")}
+                      className="flex items-center justify-center gap-2 p-3.5 rounded-xl border border-rose-200 bg-rose-600 hover:bg-rose-500 text-white transition text-xs font-bold shadow-md shadow-rose-600/20"
+                    >
+                      <AlertOctagon className="h-4 w-4 text-white" />
+                      <span>Escalate to CBI / CVC</span>
+                    </button>
+                  </>
+                )}
               </div>
             )}
           </div>
